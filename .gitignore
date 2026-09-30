@@ -1,0 +1,9 @@
+*.dts
+*.dds
+*.dso
+*.ogg
+*.wav
+*.exe
+*.dll
+*.bak*
+__pycache__/

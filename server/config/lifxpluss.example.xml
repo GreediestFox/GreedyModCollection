@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- LiFx (lifxpluss) runtime config. Read only by the LiFx mod DLL at boot;
+     the engine does not read this file (its world config is config/world_1.xml).
+     LiFx aborts startup if this file is missing.
+     The root element is kept as <cm_config> for backwards compatibility with the
+     tinyxml2 parser in source/server/cm_server.cpp; only the <log> subtree is
+     consumed today, and <worldMaxPlayers> is currently unused (legacy). -->
+<cm_config>
+
+    <!-- Network configuration -->
+
+    <worldMaxPlayers>64</worldMaxPlayers> <!-- It's for dispatcher (RelayServer) -->
+
+    <!-- One-shot NetEvent ABI dumper. When 1, the DLL walks the engine's
+         NetClassRep list at boot and writes logs/netclassrep_dump.log with
+         each rep's first 0x80 bytes (+ EXEC tag on pointers that look like
+         code). Used to recover pack/unpack/factory fn-pointer offsets;
+         turn off afterwards. See docs/netevent_abi.md (issue #54). -->
+    <dumpNetClassRep>0</dumpNetClassRep>
+
+    <!-- SectorHandoff MVP class registration (issue #58, first chunk of #45).
+         When 1, the DLL clones ServerUUIDEvent's ClassRep template at attach
+         time, swaps slots 7 (create) + 8 (unpack) for our stubs, and inserts
+         the rep into the engine's classRep list. Off in production until the
+         full handoff protocol lands. See docs/netevent_receive_path.md. -->
+    <registerSectorHandoff>0</registerSectorHandoff>
+
+    <!-- SectorHandoff auto-post smoke test (issue #62, third chunk of #45).
+         When 1, the DLL posts one of our own events on every real (non-NULL)
+         client connection. postNetEvent itself accepts the event (returns 1)
+         but the engine's send-drainer then walks the event's vtable past
+         slot 6 (we currently clone ServerUUIDEvent's 7-slot vftable as a
+         template) — that reads adjacent .rdata bytes as fn ptrs and crashes
+         the engine. Leave this OFF until the next chunk extends our event
+         vftable with stub slots at +0x50/+0x58/+0x60. Requires
+         <registerSectorHandoff>. -->
+    <sectorHandoffAutoPost>0</sectorHandoffAutoPost>
+
+    <!-- Dispatcher daemon client (issue #74, third chunk of #47). When 1,
+         the DLL opens a one-shot TCP connection to lifxd at boot and
+         completes a JSON hello/ack handshake. Logs the assigned peer_id.
+         Off in production until the daemon is part of the deployment. -->
+    <!-- LiFx world ID. Drives the deterministic dispatcher peer UUID
+         (00000000-0000-0000-0000-{worldID:012X}). MUST be unique per
+         federated server instance — two servers reporting the same
+         worldID will collide on the same peer_id and only one will be
+         routable. Default 1 if omitted. -->
+    <worldID>1</worldID>
+
+    <dispatcherEnabled>0</dispatcherEnabled>
+    <dispatcherHost>127.0.0.1</dispatcherHost>
+    <dispatcherPort>7400</dispatcherPort>
+
+    <!-- Sector ownership claims (issue #91, chunk 10b of #47/#86).
+         Comma-separated ranges + singles, e.g. "442-450,500,505-510".
+         At session-up the DLL sends one claim_sector frame per id; the
+         dispatcher persists the (sector -> peer_id) mapping in its
+         dispatcher_sectors table. Used later for edge-trigger routing.
+         Empty = claim nothing. -->
+    <sectorClaims></sectorClaims>
+
+    <!-- Sector handoff forwarding over the dispatcher daemon (issue #82,
+         chunk 7 of #47). When sectorHandoffTargetPeer is non-empty AND
+         auto-post fires, the 96-byte wire payload is also forwarded via
+         the dispatcher daemon to that peer. When sectorHandoffReceiveLog
+         is 1, the DLL registers a delivery callback that decodes the
+         96-byte payload and logs the typed fields. Both rely on
+         dispatcherEnabled=1. -->
+    <sectorHandoffTargetPeer></sectorHandoffTargetPeer>
+    <sectorHandoffReceiveLog>0</sectorHandoffReceiveLog>
+
+    <!-- Sector handoff receive-side injection (issue #84, chunk 8 of #47).
+         When 1, the delivery callback ALSO synthesizes a real
+         engine-allocated SectorHandoffEvent from the wire payload
+         (allocate via slot-7 create() + memcpy bytes), logs a read-back
+         trace, then frees it. Driving the engine drainer to actually
+         PROCESS the event is chunk 9 (needs RE of the post-unpack
+         process slot first). Requires registerSectorHandoff. -->
+    <sectorHandoffInjectOnReceive>0</sectorHandoffInjectOnReceive>
+
+    <!-- World grid (issue #103, chunk 15a of #47/#86). Declarative
+         description of THIS world's sector grid; replaces the chunk-14
+         per-edge <sectorEdgeTriggers> list.
+           origin="cx,cy"   centre of cell (col=0, row=0) — i.e. the
+                            CENTRE OF THE SW CORNER CELL, NOT the grid
+                            centre. For a 3x3 of 2044m cells with sector
+                            442 (SW) probed at (-2042, -2042), this is
+                            origin="-2042,-2042".
+           cellSize         square cell side in metres
+           gridSize="CxR"   columns x rows
+           firstSector      sector id at (col=0, row=0); ids increase
+                            row-major SW -> NE
+         Omit (or leave attrs unset) to disable handoff entirely. -->
+    <worldGrid />
+
+    <!-- Adjacent worlds (issue #103). Each <neighbour> uses the SAME
+         attrs as <worldGrid> plus direction="north|south|east|west" that
+         names which of OUR edges this neighbour sits against. On a tick
+         where the player's position resolves to one of the neighbour's
+         sectors, the DLL fires ForwardToSector with the destination's
+         local coords. Empty block = no neighbours. -->
+    <worldNeighbours></worldNeighbours>
+
+    <!-- StartingToolsID-aware recipe selection. The stock recipe lookup does
+         not compare a recipe's StartingToolsID, so a custom high-capacity
+         device silently receives its vanilla counterpart's recipe. List the
+         device ObjectTypeIDs that should get their own recipe instead.
+         Disabled or absent = vanilla behaviour. See docs/craftwork_containers.md. -->
+    <recipeStartingTools enabled="0">
+        <!-- <tool objectTypeId="472" /> -->
+    </recipeStartingTools>
+    <!-- Workshop crafting-quality buff (hook_workshop_buff). Both craft paths (Craft window and
+         device abilities) end in CmCreationManager::checkExceptionalChance; after it runs, a crafter
+         standing within radiusTiles of a placed <workshop> object gets quality x multiplier (max 100).
+         abilityIds limits it to those crafting abilities (201 = Create Jewelry); empty = any ability.
+         Placed workshops are read from the DB every refreshSeconds. debug=1 logs every craft. -->
+    <herbGardenGate enabled="1" verbose="1" abilityId="328" growSeconds="32400" firstGrowRecipe="5200" lastGrowRecipe="5265" collectOffset="100" pendingMessageId="3632" emptyMessageId="5160" collectAnyRecipe="5299" timeMessageBase="5099" file="config/herb_garden_batches.txt">
+        <!-- Ore Washer (Sculpt ability 64): instant craft after a durationSeconds progress bar; output quality follows the curve (input +20 falling to +1 at 90, capped at 90); workshop bonus off. -->
+        <gate abilityId="64" instant="1" durationSeconds="60" firstGrowRecipe="5610" lastGrowRecipe="5613" curveEnd="90" curveGainStart="20" curveGainEnd="1" noWorkshopBuff="1" />
+    </herbGardenGate>
+
+    <greenhouseAlias enabled="1" verbose="1">
+        <!-- Big Drying Frame / Big Tanning Tub: restore their working state (model + timer) at boot; finished-while-down = Working with 1 s left -->
+        <alias objectTypeId="2829" behavesLike="118" finishedAsWorking="1" />
+        <alias objectTypeId="2017" behavesLike="472" finishedAsWorking="1" />
+        <!-- Big Tanning Tub (2017): the tub abilities pick the first matching recipe, which is the vanilla 1-at-a-time one; hand back the 5-at-once versions instead (thick leather, thin leather, flax fibers). -->
+        <recipeOverride objectTypeId="2017" from="186" to="5021" />
+        <recipeOverride objectTypeId="2017" from="187" to="5600" />
+        <recipeOverride objectTypeId="2017" from="191" to="5601" />
+        <!-- Extra storage buildings the open-inventory check ("Look in Inventory") must treat like the vanilla warehouses: 2480 = Woodshed, 2400 = Small Wooden Shed, 2830-2832 = Ore/Stone/Grain Stockpile, 2833 = Compost Heap. -->
+        <warehouse objectTypeId="2480" />
+        <warehouse objectTypeId="2400" />
+        <warehouse objectTypeId="2830" />
+        <warehouse objectTypeId="2831" />
+        <warehouse objectTypeId="2832" />
+        <warehouse objectTypeId="2833" />
+        <warehouse objectTypeId="2834" />
+    </greenhouseAlias>
+
+    <!-- Species rules: the Coop (144) accepts only chickens (item 1052); the Rabbit Cage (2834) is a plain storage container that accepts ONLY rabbits (item 1053, strict = every other item is refused too). A real Coop-style rabbit stable (breeding UI) was tried and reverted - the client has an unidentified compiled-in gate on Manage/Harvest/Clean/Slaughter for non-vanilla types; see project memory for the RE trail. -->
+    <stableAlias enabled="1" verbose="1">
+        <stable objectTypeId="144" allowAnimals="1052" />
+        <stable objectTypeId="2834" allowAnimals="1053" strict="1" />
+    </stableAlias>
+
+
+
+    <workshopBuff enabled="1" refreshSeconds="30" verbose="1" debug="0">
+        <db host="127.0.0.1" port="3306" user="root" password="CHANGE_ME" name="lif_1" />
+        <workshop objectTypeId="2894" radiusTiles="6" multiplier="1.2" abilityIds="201 316" />
+        <!-- Tailor's Workshop: Sew (88), Sew Armor (282) -->
+        <workshop objectTypeId="2836" radiusTiles="6" multiplier="1.2" abilityIds="88 282" />
+        <!-- Stonemason's Workplace: Shape Stones (61), Mold (62), Sculpt (64) -->
+        <workshop objectTypeId="2020" radiusTiles="6" multiplier="1.2" abilityIds="61 62 64" />
+    </workshopBuff>
+
+    <!-- Gem drops. chancePercent (0..100) overrides the roll probability at
+         the gem call site; <item> entries replace the vanilla 481..486 pick
+         with a weighted draw. Either may be given on its own. Absent or
+         disabled = vanilla behaviour. See docs/offsets.md "Gem drop hooks". -->
+    <gemDrops enabled="0" chancePercent="5">
+        <!-- <item id="481" weight="10" /> -->
+    </gemDrops>
+
+    <!-- Extra tunnelling drops, awarded only after the vanilla material
+         reward of a tunnel dig succeeds. Every item rolls independently, so
+         one dig may award none, one, or several. quality (1..100) overrides
+         the quality inherited from the dug materials.
+         See docs/offsets.md "Tunnelling material rewards". -->
+    <tunnelDrops enabled="0">
+        <!-- <item id="1234" chancePercent="5" minQuantity="1" maxQuantity="3" /> -->
+    </tunnelDrops>
+
+    <!-- Per-species felled-tree drops. Vanilla drops 653 (softwood) or 626
+         (hardwood); each <drop> overrides one species. tree accepts a name
+         (apple, birch, elm, spruce, pine, maple, mulberry, oak, aspen, hazel,
+         juniper, spinny) or a raw TreeType 0..255.
+         See docs/offsets.md "Tree felling and movable-log creation". -->
+    <treeDrops enabled="0">
+        <!-- <drop tree="oak" itemId="626" /> -->
+    </treeDrops>
+
+    <!-- Logging configuration -->
+    <log>
+        <level>0</level> <!-- 0 - allow all, 1 - skip INFO, 2 - skip INFO and WARN, 3 - allow only ERRORS -->
+        <skipSQLQueriesLog>0</skipSQLQueriesLog>
+        <enableExternalErrorLog>0</enableExternalErrorLog>
+        <enableExternalSqlLog>0</enableExternalSqlLog>
+    </log>
+    <cartPlaces enabled="1" verbose="1">
+        <cart datablockId="707" places="30" />
+    </cartPlaces>
+    <wellWater enabled="1" verbose="1">
+        <well objectTypeId="95" amount="20" itemTypeId="3180" />
+        <well objectTypeId="1712" amount="20" itemTypeId="3180" />
+        <!-- wild wheat plants sometimes give wild grains instead of wheat -->
+        <swap from="352" to="3175" chance="12" />
+        <swap from="352" to="3176" chance="12" />
+        <swap from="352" to="3177" chance="12" />
+        <!-- fish: sometimes a sardine / pike (only if fishing goes through the gather function; see logs\well_water.log) -->
+        <swap from="393" to="3178" chance="35" />
+        <swap from="392" to="3179" chance="35" />
+    </wellWater>
+<datablockRange enabled="1" verbose="1" />
+<cropTypes enabled="1" verbose="1" maxSubstanceWidth="136" maxGatherableType="224">
+    <!-- Wild Rye/Barley/Oat reuse Wheat's own terrain visuals+friction for now (aliasBase defaults to Wheat/101);
+         Hops reuses Grape's (aliasBase="161"); Sugar Beet reuses Carrot's (aliasBase="141").
+         GreedyFox will retexture all five separately later. -->
+    <crop abilityId="360" seedItemId="3175" fertileSmallSubstance="191" nonFertileSmallSubstance="192" name="Rye" />
+    <crop abilityId="361" seedItemId="3176" fertileSmallSubstance="201" nonFertileSmallSubstance="202" name="Barley" />
+    <crop abilityId="362" seedItemId="3177" fertileSmallSubstance="211" nonFertileSmallSubstance="212" name="Oat" />
+    <crop abilityId="363" seedItemId="3751" fertileSmallSubstance="221" nonFertileSmallSubstance="222" aliasBase="161" name="Hops" />
+    <crop abilityId="364" seedItemId="3752" fertileSmallSubstance="231" nonFertileSmallSubstance="232" aliasBase="141" name="Sugar Beet" />
+</cropTypes>
+</cm_config>

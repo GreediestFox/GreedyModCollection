@@ -1,0 +1,894 @@
+﻿ObjectID;Name (EN);Pack;Kind;Category;In DB;Note;German name status;German name now;German description present
+2017;Big Tanning Tub;BigTanningTub;Device/workshop;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Große Gerbwanne;no
+2020;Stonemason's Workplace;StonemasonsWorkplace;Device/workshop;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Steinmetzwerkstatt;no
+2021;Ore Washer;OreWasher;Device/workshop;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Erzwaschtisch;no
+2359;Chieftain Carcass;KnoolMod-Pack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > System movable objects;NOT IN DB;commented;OK;Häuptlingskadaver;no
+2360;Hunter Carcass;KnoolMod-Pack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > System movable objects;NOT IN DB;commented;OK;Jägerkadaver;no
+2361;Mole Carcass;KnoolMod-Pack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > System movable objects;NOT IN DB;commented;OK;Maulwurfsmenschkadaver;no
+2362;Witch Carcass;KnoolMod-Pack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > System movable objects;NOT IN DB;commented;OK;Hexenkadaver;no
+2394;Bear Knool;KnoolMod-Pack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Animals-NPC;NOT IN DB;commented;MISSING;;no
+2395;Chieftain;KnoolMod-Pack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Animals-NPC;NOT IN DB;commented;MISSING;;no
+2396;Hunter;KnoolMod-Pack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Animals-NPC;NOT IN DB;commented;MISSING;;no
+2397;Mole;KnoolMod-Pack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Animals-NPC;NOT IN DB;commented;MISSING;;no
+2398;Witch;KnoolMod-Pack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Animals-NPC;NOT IN DB;commented;MISSING;;no
+2399;BearKnool Carcass;KnoolMod-Pack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > System movable objects;NOT IN DB;commented;OK;Bärenkrieger-Kadaver;no
+2400;Small Wooden Shed;StorageBuildings;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Kleiner Holzschuppen;no
+2461;Witch Sickle;KnoolMod-Pack;Item;Gameplay Objects > Equipment Objects > Tools;yes;;OK;Hexensichel;yes
+2462;Bear Axe;KnoolMod-Pack;Item;Gameplay Objects > Equipment Objects > Weapons;yes;;OK;Bärenaxt;yes
+2463;Chieftain Sword;KnoolMod-Pack;Item;Gameplay Objects > Equipment Objects > Weapons;yes;;OK;Runengroßschwert;yes
+2464;Hunter Axe;KnoolMod-Pack;Item;Gameplay Objects > Equipment Objects > Tools;yes;;OK;Jägeraxt;yes
+2465;Mole Pickaxe;KnoolMod-Pack;Item;Gameplay Objects > Equipment Objects > Tools;yes;;OK;Maulwurfspitzhacke;yes
+2466;Hunter Bow;KnoolMod-Pack;Item;Gameplay Objects > Equipment Objects > Weapons;yes;;OK;Jägerbogen;yes
+2480;Woodshed;Woodshed;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Holzlager;no
+2829;Big Drying Frame;BigDryingFrame;Device/workshop;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Großes Trockengestell;no
+2830;Ore Stockpile;StorageBuildings;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Erzlager;no
+2831;Stone Stockpile;StorageBuildings;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Steinlager;no
+2832;Grain Stockpile;StorageBuildings;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Kornspeicher;no
+2833;Compost Heap;StorageBuildings;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Komposthaufen;no
+2834;Rabbit Cage;OilPressRabbitCage;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Kaninchenstall;no
+2835;Large Herbal Garden;LargeHerbalGarden;Device/workshop;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Großer Kräutergarten;no
+2836;Tailors Workshop;TailorsWorkshop;Device/workshop;Gameplay Objects > World objects > Buildings;yes;;OK;Schneiderwerkstatt;no
+2873;Linen oil;OilPressRabbitCage;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;OK;Leinöl;no
+2894;Jeweler's Workshop;JewelersWorkshop;Device/workshop;Gameplay Objects > World objects > Buildings;yes;;OK;Goldschmiedewerkstatt;no
+2895;Oil Press;OilPressRabbitCage;Device/workshop;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Ölpresse;no
+2900;Slavic Stone Wall;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstliche Steinmauer;no
+2901;Slavic Stone Wall with Stairs;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstliche Steinmauer mit Treppenaufgang;no
+2902;Slavic Stone Wall with Inverted Stairs;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstliche Steinmauer mit abwärtsführender Treppe;no
+2903;Slavic Stone Tower;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstlicher Steinturm;no
+2904;Slavic Stone Inner Tower;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstlicher innerer Steinturm;no
+2905;Slavic Stone Angular Tower;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstlicher Eckturm;no
+2906;Slavic Stone Gatehouse;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstliches Steintorhaus;no
+2907;Slavic Stone Inner Gatehouse;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstliches inneres Steintorhaus;no
+2908;Slavic Castle Tower;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstlicher Burgturm;no
+2909;Slavic Castle Tower Angle;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstlicher Burgeckturm;no
+2910;Slavic Castle Tower with transitions;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstlicher Burgturm mit Übergängen;no
+2911;Slavic Castle Gatehouse;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstliches Burgtorhaus;no
+2912;Slavic Castle Gatehouse with Drawbridge;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstliches Burgtorhaus mit Zugbrücke;no
+2913;Slavic Castle Wall Hoarding (no buttress);SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstlicher Wehrgang ohne Stützpfeiler;no
+2914;Stone Wall Corner;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Steinmauerecke;no
+2915;Slavic Stone Wall Corner;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstliche Steinmauerecke;no
+2916;Stone Wall (no merlon);SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Steinmauer ohne Zinnen;no
+2917;Slavic Stone Wall (no merlon);SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstliche Steinmauer ohne Zinnen;no
+2918;Stone Gatehouse with Drawbridge;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Steintorhaus mit Zugbrücke;no
+2919;Slavic Stone Gatehouse with Drawbridge;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstliches Steintorhaus mit Zugbrücke;no
+2920;Stone Inner Gatehouse with Drawbridge;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Inneres Steintorhaus mit Zugbrücke;no
+2921;Slavic Stone Inner Gatehouse with Drawbridge;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Fürstliches inneres Steintorhaus mit Zugbrücke;no
+2922;Wooden Wall Corner;SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Holzmauerecke;no
+2923;Wooden Wall Corner (loophole);SlavicFortifications;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Holzmauerecke mit Schießscharte;no
+2940;Tribe Camp Torch I;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Stammesfackel I;no
+2941;Tribe Camp Torch II;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Stammesfackel II;no
+2942;Tribe Camp Torch III;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Stammesfackel III;no
+2943;Tribe Camp Torch IV;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Stammesfackel IV;no
+2944;Tribe Camp Torch V;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Stammesfackel V;no
+2945;Tribe Camp Totem I;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Stammespfahl I;no
+2946;Tribe Camp Totem II;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Stammespfahl II;no
+2947;Tribe Camp Shield I;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Stammesschild I;no
+2948;Tribe Camp Shield II;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Stammesschild II;no
+2949;Tribe Camp Shield III;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Stammesschild III;no
+2950;Tribe Camp Shield IV;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Stammesschild IV;no
+2951;Tribe Camp Shield V;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Stammesschild V;no
+2952;Tribe Camp Big Shield I;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Großer Stammesschild I;no
+2953;Tribe Camp Big Shield II;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Großer Stammesschild II;no
+2954;Tribe Camp Big Shield III;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Großer Stammesschild III;no
+2955;Tribe Camp Tree I;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Knorriger Baum I;no
+2956;Tribe Camp Tree II;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Knorriger Baum II;no
+2957;Tribe Camp Tree III;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Knorriger Baum III;no
+2958;Tribe Camp Tree IV;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Knorriger Baum IV;no
+2959;Tribe Camp Tree V;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Knorriger Baum V;no
+2960;Tribe Camp Tree VI;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Knorriger Baum VI;no
+2961;Tribe Camp Tree VII;TribeCampDecorations;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;OK;Knorriger Baum VII;no
+3000;Small Wooden Shed;JorvikModPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Buildings;NOT IN DB;commented;OK;Kleiner Holzschuppen;yes
+3001;Flag PvP;JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;PvP-Flagge;yes
+3002;Flag PvE;JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;PvE-Flagge;yes
+3003;Long house;JorvikModPack;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Langhaus;yes
+3004;Stone Gate;JorvikModPack;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Kleines Steintorhaus;yes
+3005;Small Wooden Bridge;JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Kleine Holzbrücke;yes
+3006;Small Stone Bridge;JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Kleine Steinbrücke;yes
+3007;Large Wooden Bridge;JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Große Holzbrücke;yes
+3008;Large Stone Bridge;JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Große Steinbrücke;yes
+3009;Large Stone Bridge End;JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Großes Steinbrückenende;yes
+3010;Small Stone Bridge End;JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Kleines Steinbrückenende;yes
+3011;Small Wooden Stairs;JorvikModPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;OK;Kleine Holztreppe;yes
+3012;Wall Torch;JorvikModPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;OK;Wandfackel A;yes
+3013;Wall Torch;JorvikModPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;OK;Wandfackel B;yes
+3014;Small Candle;JorvikModPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;OK;Kleine Kerze A;yes
+3015;Small Candle;JorvikModPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;OK;Kleine Kerze B;yes
+3016;Aurochs Cow (stand);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Auerochsenkuh ""stehend""";yes
+3017;Aurochs Cow (eat);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Auerochsenkuh ""fressend""";yes
+3018;Aurochs Cow (sleep);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Auerochsenkuh ""schlafend""";yes
+3019;Small Wooden Stairs;JorvikModPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;OK;Kleine Holztreppe;yes
+3020;Sow (stand);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Bache ""stehend""";yes
+3021;Sow (eat);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Bache ""fressend""";yes
+3022;Sow (sleep);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Bache ""schlafend""";yes
+3023;Horse (stand);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Stute ""stehend""";yes
+3024;Horse (eat);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Stute ""fressend""";yes
+3025;Horse (sleep);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Stute ""schlafend""";yes
+3026;Slave (working);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Sklave ""arbeitend""";yes
+3027;Wranen the Hunter (stand);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Wranen der Jäger;yes
+3028;Book Paper;JorvikModPack;Item;Gameplay Objects > Inventory objects;yes;;OK;Papier;yes
+3029;Health Book;JorvikModPack;Item;Gameplay Objects > Equipment Objects > Tools;yes;;OK;Heilkundebuch;yes
+3030;Wood Cart;JorvikModPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Movable objects;yes;;OK;Holzkarren;yes
+3031;Siege Tower;JorvikModPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Outdoor static;yes;;OK;Belagerungsturm;yes
+3032;Aurochs Bull (stand);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Auerochsenbulle ""stehend""";yes
+3033;Aurochs Bull (eat);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Auerochsenbulle ""fressend""";yes
+3034;Aurochs Bull (sleep);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Auerochsenbulle ""schlafend""";yes
+3035;Small Wooden Pier;JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Kleiner Holzsteg;yes
+3036;Small Wooden Pier T;JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Kleiner Holzsteg T-förmig;yes
+3037;Small Wooden Pier L;JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Kleiner Holzsteg L-förmig;yes
+3038;Wattle Wicket;JorvikModPack;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Flechtwerkzaun mit Bogen;yes
+3039;Idol Cross;JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;Holzkreuz;no
+3040;Wooden Church;JorvikModPack;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Holzkirche;yes
+3041;Sanctum of the Sleeper;JorvikModPack;Building;Gameplay Objects > World objects > Buildings;yes;;OK;Heiligtum des Schläfers;yes
+3042;Novice Decorator Kit;JorvikModPack;Item;Gameplay Objects > Inventory objects;yes;;OK;Dekorationssatz des Lehrlings;yes
+3043;Apprentice Decorator Kit;JorvikModPack;Item;Gameplay Objects > Inventory objects;yes;;OK;Dekorationssatz des Gesellen;yes
+3044;Master Decorator Kit;JorvikModPack;Item;Gameplay Objects > Inventory objects;yes;;OK;Dekorationssatz des Meisters;yes
+3045;Wolf (stand);JorvikModPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;OK;"Wolf ""stehend""";yes
+3046;Gold Sheet;JorvikModPack;Item;Gameplay Objects > Inventory objects > Manufactured products;yes;;OK;Goldblech;yes
+3047;Metal Scissors;JorvikModPack;Item;Gameplay Objects > Equipment Objects > Tools;yes;;OK;Metallschere;yes
+3048;Metal Stamp;JorvikModPack;Item;Gameplay Objects > Equipment Objects > Tools;yes;;OK;Metallstempel;yes
+3049;Gold Blanks;JorvikModPack;Item;Gameplay Objects > Inventory objects > Manufactured products;yes;;OK;Goldrohlinge;yes
+3050;Silver Sheet;JorvikModPack;Item;Gameplay Objects > Inventory objects > Manufactured products;yes;;OK;Silberblech;yes
+3051;Copper Sheet;JorvikModPack;Item;Gameplay Objects > Inventory objects > Manufactured products;yes;;OK;Kupferblech;yes
+3052;Silver Blanks;JorvikModPack;Item;Gameplay Objects > Inventory objects > Manufactured products;yes;;OK;Silberrohlinge;yes
+3053;Copper Blanks;JorvikModPack;Item;Gameplay Objects > Inventory objects > Manufactured products;yes;;OK;Kupferrohlinge;yes
+3100;Altar Ferryman;AltarsIdolsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3101;Altar Rob;AltarsIdolsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3102;Altar Sofapek;AltarsIdolsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3103;Altar Terskel;AltarsIdolsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3104;Idol Sofapek;AltarsIdolsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3105;Idol Terskel;AltarsIdolsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3106;Owls' Pillar;SignsPillarsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3107;Gavran's Soul;SignsPillarsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3108;Horse Head Pillar;SignsPillarsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3109;Sign of Hidden Paths;SignsPillarsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3110;Sleeper's Sign;SignsPillarsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3111;Blade Stand;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3112;Derelict's Shield;DisplaysPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3113;Vanguard Shield;DisplaysPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3114;Spearman Guard Shield;DisplaysPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3115;Swordsman Set Shield;DisplaysPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3116;Graceful Shield;DisplaysPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3117;Iron Head Shield;DisplaysPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3118;Footman Shield;DisplaysPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3119;Heavy Shield;DisplaysPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3120;Light Shield;DisplaysPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3121;Guard Shield;DisplaysPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3122;Royal Shield;DisplaysPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3123;Grand Shield;DisplaysPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3124;Heavy Padded Armor Stand;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3125;Half Plate Armor Stand;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3126;Full Plate Armor Stand;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3127;Royal Full Plate Armor Stand;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3128;Regular Scale Armor Stand;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3129;Regular Chainmail Armor Stand;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3130;Heavy Chainmail Armor Stand;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3131;Heavy Leather Armor Stand;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3132;Royal Leather Armor Stand;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3133;Heavy Scale Armor Stand;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3134;Rider in Regular Chain Armor;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3135;Rider in Regular Padded Armor;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3136;Rider in Heavy Padded Armor;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3137;Rider in Royal Padded Armor;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3138;Jousting Half Plate Set;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3139;Jousting Full Plate Set;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3140;Jousting Royal Full Plate Set;DisplaysPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3141;Derelict's Shield;DisplaysPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3142;Vanguard Shield;DisplaysPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3143;Spearman Guard Shield;DisplaysPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3144;Swordsman Set Shield;DisplaysPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3145;Graceful Shield;DisplaysPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3146;Iron Head Shield;DisplaysPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3147;Footman Shield;DisplaysPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3148;Heavy Shield;DisplaysPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3149;Light Shield;DisplaysPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3150;Guard Shield;DisplaysPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3151;Royal Shield;DisplaysPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3152;Grand Shield;DisplaysPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3153;Canopy Bed;FurniturePack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3154;Carved Bench;FurniturePack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3155;Carved Slavard Bench;FurniturePack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3156;Ornate Gottlung Bench;FurniturePack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3157;Ornate Slavard Table;FurniturePack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3158;Ornate Slavard Throne;FurniturePack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3159;Simple Table;FurniturePack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3160;Primitive Bed;FurniturePack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;MISSING;;no
+3161;Canopy Bed;FurniturePack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3162;Carved Bench;FurniturePack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3163;Carved Slavard Bench;FurniturePack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3164;Ornate Gottlung Bench;FurniturePack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3165;Ornate Slavard Table;FurniturePack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3166;Ornate Slavard Throne;FurniturePack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3167;Simple Table;FurniturePack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3168;Primitive Bed;FurniturePack;Item;Gameplay Objects > Inventory objects > Movable Objects (items);NOT IN DB;commented;MISSING;;no
+3169;Statue Tusgaal;StatuesPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3170;Statue McTir;StatuesPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3171;Statue Sovereign;StatuesPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3172;Statue Tusgaal;StatuesPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3173;Statue McTir;StatuesPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3174;Statue Sovereign;StatuesPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3175;Rye;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3176;Barley;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3177;Oat;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3178;Sardine;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3179;Pike;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3180;Fresh Water;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;OK;Frischwasser;no
+3181;White Flour;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3182;Oat Malt;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3183;Rye Malt;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3184;Wheat Malt;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3185;Butter;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3186;White Beer;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Food and drink;yes;;MISSING;;no
+3187;Oat Stout;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Food and drink;yes;;MISSING;;no
+3188;South Fish Soup;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Food and drink;yes;;MISSING;;no
+3189;Red Ale;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Food and drink;yes;;MISSING;;no
+3190;West Fish Soup;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Food and drink;yes;;MISSING;;no
+3191;Fish Soup;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Food and drink;yes;;MISSING;;no
+3192;East Fish Soup;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Food and drink;yes;;MISSING;;no
+3193;Baguette;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Food and drink;yes;;MISSING;;no
+3194;Case-hardened Metal Band;TierGearPack;Item;Gameplay Objects > Inventory objects > Manufactured products;NOT IN DB;commented;MISSING;;no
+3195;Toughened Metal Band;TierGearPack;Item;Gameplay Objects > Inventory objects > Manufactured products;NOT IN DB;commented;MISSING;;no
+3196;Case-hardened Metal Sheet;TierGearPack;Item;Gameplay Objects > Inventory objects > Manufactured products;NOT IN DB;commented;MISSING;;no
+3197;Toughened Metal Sheet;TierGearPack;Item;Gameplay Objects > Inventory objects > Manufactured products;NOT IN DB;commented;MISSING;;no
+3198;Case-hardened Chainmail;TierGearPack;Item;Gameplay Objects > Inventory objects > Manufactured products;NOT IN DB;commented;MISSING;;no
+3199;Toughened Chainmail;TierGearPack;Item;Gameplay Objects > Inventory objects > Manufactured products;NOT IN DB;commented;MISSING;;no
+3200;Case-hardened Small metal plate;TierGearPack;Item;Gameplay Objects > Inventory objects > Manufactured products;NOT IN DB;commented;MISSING;;no
+3201;Toughened Small metal plate;TierGearPack;Item;Gameplay Objects > Inventory objects > Manufactured products;NOT IN DB;commented;MISSING;;no
+3202;Case-hardened Metal plate;TierGearPack;Item;Gameplay Objects > Inventory objects > Manufactured products;NOT IN DB;commented;MISSING;;no
+3203;Toughened Metal plate;TierGearPack;Item;Gameplay Objects > Inventory objects > Manufactured products;NOT IN DB;commented;MISSING;;no
+3204;Case-hardened Scale strip;TierGearPack;Item;Gameplay Objects > Inventory objects > Manufactured products;NOT IN DB;commented;MISSING;;no
+3205;Toughened Scale strip;TierGearPack;Item;Gameplay Objects > Inventory objects > Manufactured products;NOT IN DB;commented;MISSING;;no
+3206;Sharpened Falchion;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3207;Perfect Falchion;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3208;Sharpened Light Saber;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3209;Perfect Light Saber;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3210;Sharpened Nordic Sword;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3211;Perfect Nordic Sword;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3212;Sharpened Scimitar;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3213;Perfect Scimitar;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3214;Sharpened Gross Messer;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3215;Perfect Gross Messer;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3216;Sharpened War Axe;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3217;Perfect War Axe;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3218;Sharpened Nordic Axe;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3219;Perfect Nordic Axe;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3220;Sharpened Battle Axe;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3221;Perfect Battle Axe;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3222;Sharpened Cudgel;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3223;Perfect Cudgel;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3224;Sharpened Flanged Mace;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3225;Perfect Flanged Mace;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3226;Sharpened Morning Star;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3227;Perfect Morning Star;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3228;Sharpened War Pick;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3229;Perfect War Pick;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3230;Sharpened Bastard Sword;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3231;Perfect Bastard Sword;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3232;Sharpened Big Falchion;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3233;Perfect Big Falchion;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3234;Sharpened Estoc;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3235;Perfect Estoc;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3236;Sharpened Knight Sword;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3237;Perfect Knight Sword;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3238;Sharpened Claymore;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3239;Perfect Claymore;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3240;Sharpened Flamberge;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3241;Perfect Flamberge;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3242;Sharpened Zweihaender;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3243;Perfect Zweihaender;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3244;Sharpened Bardiche;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3245;Perfect Bardiche;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3246;Sharpened Broad Axe;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3247;Perfect Broad Axe;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3248;Sharpened War Scythe;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3249;Perfect War Scythe;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3250;Sharpened Sledge Hammer;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3251;Perfect Sledge Hammer;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3252;Sharpened Maul;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3253;Perfect Maul;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3254;Sharpened Pitchfork;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3255;Perfect Pitchfork;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3256;Sharpened Spear;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3257;Perfect Spear;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3258;Sharpened Boar Spear;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3259;Perfect Boar Spear;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3260;Sharpened Awl Pike;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3261;Perfect Awl Pike;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3262;Sharpened Bec de Corbin;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3263;Perfect Bec de Corbin;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3264;Sharpened Jousting Lance;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3265;Perfect Jousting Lance;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3266;Sharpened Lance;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3267;Perfect Lance;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3268;Sharpened Decorated Jousting Lance;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3269;Perfect Decorated Jousting Lance;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3270;Sharpened Short Pike;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3271;Perfect Short Pike;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3272;Sharpened Medium Pike;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3273;Perfect Medium Pike;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3274;Sharpened Long Pike;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3275;Perfect Long Pike;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3276;Sharpened Staff;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3277;Perfect Staff;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3278;Sharpened Glaive;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3279;Perfect Glaive;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3280;Sharpened Guisarme;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3281;Perfect Guisarme;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3282;Sharpened Pollaxe;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3283;Perfect Pollaxe;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3284;Sharpened Partisan;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3285;Perfect Partisan;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3286;Sharpened Balanced Staff;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3287;Perfect Balanced Staff;TierGearPack;Item;Gameplay Objects > Equipment Objects > Weapons;NOT IN DB;commented;MISSING;;no
+3288;Reinforced Novice Padded Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3289;Masterwork Novice Padded Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3290;Reinforced Novice Padded Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3291;Masterwork Novice Padded Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3292;Reinforced Novice Padded Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3293;Masterwork Novice Padded Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3294;Reinforced Novice Padded Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3295;Masterwork Novice Padded Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3296;Reinforced Novice Padded Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3297;Masterwork Novice Padded Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3298;Reinforced Novice Padded Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3299;Masterwork Novice Padded Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3300;Reinforced Regular Padded Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3301;Masterwork Regular Padded Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3302;Reinforced Regular Padded Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3303;Masterwork Regular Padded Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3304;Reinforced Regular Padded Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3305;Masterwork Regular Padded Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3306;Reinforced Regular Padded Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3307;Masterwork Regular Padded Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3308;Reinforced Regular Padded Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3309;Masterwork Regular Padded Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3310;Reinforced Regular Padded Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3311;Masterwork Regular Padded Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3312;Reinforced Heavy Padded Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3313;Masterwork Heavy Padded Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3314;Reinforced Heavy Padded Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3315;Masterwork Heavy Padded Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3316;Reinforced Heavy Padded Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3317;Masterwork Heavy Padded Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3318;Reinforced Heavy Padded Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3319;Masterwork Heavy Padded Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3320;Reinforced Heavy Padded Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3321;Masterwork Heavy Padded Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3322;Reinforced Heavy Padded Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3323;Masterwork Heavy Padded Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3324;Reinforced Royal Padded Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3325;Masterwork Royal Padded Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3326;Reinforced Royal Padded Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3327;Masterwork Royal Padded Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3328;Reinforced Royal Padded Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3329;Masterwork Royal Padded Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3330;Reinforced Royal Padded Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3331;Masterwork Royal Padded Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3332;Reinforced Royal Padded Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3333;Masterwork Royal Padded Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3334;Reinforced Royal Padded Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3335;Masterwork Royal Padded Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3336;Reinforced Novice Leather Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3337;Masterwork Novice Leather Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3338;Reinforced Novice Leather Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3339;Masterwork Novice Leather Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3340;Reinforced Novice Leather Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3341;Masterwork Novice Leather Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3342;Reinforced Novice Leather Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3343;Masterwork Novice Leather Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3344;Reinforced Novice Leather Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3345;Masterwork Novice Leather Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3346;Reinforced Novice Leather Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3347;Masterwork Novice Leather Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3348;Reinforced Regular Leather Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3349;Masterwork Regular Leather Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3350;Reinforced Regular Leather Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3351;Masterwork Regular Leather Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3352;Reinforced Regular Leather Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3353;Masterwork Regular Leather Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3354;Reinforced Regular Leather Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3355;Masterwork Regular Leather Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3356;Reinforced Regular Leather Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3357;Masterwork Regular Leather Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3358;Reinforced Regular Leather Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3359;Masterwork Regular Leather Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3360;Reinforced Heavy Leather Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3361;Masterwork Heavy Leather Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3362;Reinforced Heavy Leather Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3363;Masterwork Heavy Leather Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3364;Reinforced Heavy Leather Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3365;Masterwork Heavy Leather Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3366;Reinforced Heavy Leather Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3367;Masterwork Heavy Leather Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3368;Reinforced Heavy Leather Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3369;Masterwork Heavy Leather Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3370;Reinforced Heavy Leather Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3371;Masterwork Heavy Leather Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3372;Reinforced Royal Leather Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3373;Masterwork Royal Leather Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3374;Reinforced Royal Leather Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3375;Masterwork Royal Leather Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3376;Reinforced Royal Leather Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3377;Masterwork Royal Leather Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3378;Reinforced Royal Leather Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3379;Masterwork Royal Leather Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3380;Reinforced Royal Leather Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3381;Masterwork Royal Leather Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3382;Reinforced Royal Leather Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3383;Masterwork Royal Leather Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3384;Reinforced Light Chainmail Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3385;Masterwork Light Chainmail Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3386;Reinforced Light Chainmail Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3387;Masterwork Light Chainmail Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3388;Reinforced Light Chainmail Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3389;Masterwork Light Chainmail Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3390;Reinforced Light Chainmail Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3391;Masterwork Light Chainmail Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3392;Reinforced Light Chainmail Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3393;Masterwork Light Chainmail Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3394;Reinforced Light Chainmail Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3395;Masterwork Light Chainmail Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3396;Reinforced Regular Chainmail Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3397;Masterwork Regular Chainmail Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3398;Reinforced Regular Chainmail Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3399;Masterwork Regular Chainmail Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3400;Reinforced Regular Chainmail Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3401;Masterwork Regular Chainmail Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3402;Reinforced Regular Chainmail Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3403;Masterwork Regular Chainmail Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3404;Reinforced Regular Chainmail Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3405;Masterwork Regular Chainmail Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3406;Reinforced Regular Chainmail Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3407;Masterwork Regular Chainmail Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3408;Reinforced Heavy Chainmail Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3409;Masterwork Heavy Chainmail Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3410;Reinforced Heavy Chainmail Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3411;Masterwork Heavy Chainmail Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3412;Reinforced Heavy Chainmail Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3413;Masterwork Heavy Chainmail Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3414;Reinforced Heavy Chainmail Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3415;Masterwork Heavy Chainmail Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3416;Reinforced Heavy Chainmail Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3417;Masterwork Heavy Chainmail Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3418;Reinforced Heavy Chainmail Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3419;Masterwork Heavy Chainmail Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3420;Reinforced Royal Chainmail Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3421;Masterwork Royal Chainmail Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3422;Reinforced Royal Chainmail Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3423;Masterwork Royal Chainmail Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3424;Reinforced Royal Chainmail Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3425;Masterwork Royal Chainmail Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3426;Reinforced Royal Chainmail Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3427;Masterwork Royal Chainmail Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3428;Reinforced Royal Chainmail Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3429;Masterwork Royal Chainmail Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3430;Reinforced Royal Chainmail Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3431;Masterwork Royal Chainmail Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3432;Reinforced Light Scale Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3433;Masterwork Light Scale Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3434;Reinforced Light Scale Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3435;Masterwork Light Scale Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3436;Reinforced Light Scale Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3437;Masterwork Light Scale Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3438;Reinforced Light Scale Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3439;Masterwork Light Scale Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3440;Reinforced Light Scale Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3441;Masterwork Light Scale Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3442;Reinforced Light Scale Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3443;Masterwork Light Scale Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3444;Reinforced Regular Scale Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3445;Masterwork Regular Scale Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3446;Reinforced Regular Scale Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3447;Masterwork Regular Scale Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3448;Reinforced Regular Scale Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3449;Masterwork Regular Scale Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3450;Reinforced Regular Scale Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3451;Masterwork Regular Scale Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3452;Reinforced Regular Scale Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3453;Masterwork Regular Scale Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3454;Reinforced Regular Scale Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3455;Masterwork Regular Scale Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3456;Reinforced Heavy Scale Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3457;Masterwork Heavy Scale Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3458;Reinforced Heavy Scale Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3459;Masterwork Heavy Scale Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3460;Reinforced Heavy Scale Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3461;Masterwork Heavy Scale Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3462;Reinforced Heavy Scale Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3463;Masterwork Heavy Scale Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3464;Reinforced Heavy Scale Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3465;Masterwork Heavy Scale Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3466;Reinforced Heavy Scale Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3467;Masterwork Heavy Scale Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3468;Reinforced Royal Scale Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3469;Masterwork Royal Scale Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3470;Reinforced Royal Scale Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3471;Masterwork Royal Scale Tunic;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3472;Reinforced Royal Scale Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3473;Masterwork Royal Scale Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3474;Reinforced Royal Scale Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3475;Masterwork Royal Scale Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3476;Reinforced Royal Scale Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3477;Masterwork Royal Scale Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3478;Reinforced Royal Scale Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3479;Masterwork Royal Scale Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3480;Reinforced Half Plate Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3481;Masterwork Half Plate Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3482;Reinforced Half Plate Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3483;Masterwork Half Plate Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3484;Reinforced Half Plate Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3485;Masterwork Half Plate Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3486;Reinforced Half Plate Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3487;Masterwork Half Plate Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3488;Reinforced Half Plate Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3489;Masterwork Half Plate Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3490;Reinforced Half Plate Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3491;Masterwork Half Plate Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3492;Reinforced Iron Plate Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3493;Masterwork Iron Plate Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3494;Reinforced Iron Plate Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3495;Masterwork Iron Plate Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3496;Reinforced Iron Plate Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3497;Masterwork Iron Plate Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3498;Reinforced Iron Plate Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3499;Masterwork Iron Plate Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3500;Reinforced Iron Plate Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3501;Masterwork Iron Plate Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3502;Reinforced Iron Plate Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3503;Masterwork Iron Plate Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3504;Reinforced Full Plate Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3505;Masterwork Full Plate Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3506;Reinforced Full Plate Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3507;Masterwork Full Plate Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3508;Reinforced Full Plate Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3509;Masterwork Full Plate Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3510;Reinforced Full Plate Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3511;Masterwork Full Plate Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3512;Reinforced Full Plate Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3513;Masterwork Full Plate Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3514;Reinforced Full Plate Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3515;Masterwork Full Plate Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3516;Reinforced Royal Full Plate Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3517;Masterwork Royal Full Plate Helm;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3518;Reinforced Royal Full Plate Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3519;Masterwork Royal Full Plate Breastplate;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3520;Reinforced Royal Full Plate Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3521;Masterwork Royal Full Plate Vambraces;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3522;Reinforced Royal Full Plate Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3523;Masterwork Royal Full Plate Gauntlets;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3524;Reinforced Royal Full Plate Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3525;Masterwork Royal Full Plate Leggings;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3526;Reinforced Royal Full Plate Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3527;Masterwork Royal Full Plate Greaves;TierGearPack;Item;Gameplay Objects > Equipment Objects > Armors;NOT IN DB;commented;MISSING;;no
+3528;Hank of Wool (any);TierGearPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;commented;MISSING;;no
+3529;Rocksalt;TierGearPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;commented;MISSING;;no
+3530;Brimstone;TierGearPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;commented;MISSING;;no
+3531;Thick Leather (any);TierGearPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;commented;MISSING;;no
+3532;Thin Leather (any);TierGearPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;commented;MISSING;;no
+3533;Small Sharpening Stone;TierGearPack;Item;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;MISSING;;no
+3534;Great Sharpening Stone;TierGearPack;Item;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;MISSING;;no
+3535;Small Essence of Hardness;TierGearPack;Item;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;MISSING;;no
+3536;Large Essence of Hardness;TierGearPack;Item;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;MISSING;;no
+3537;Carved Chest 1;ChestsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3538;Carved Chest 2;ChestsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3539;Carved Chest 3;ChestsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3540;Carved Strongbox;ChestsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3541;Carved Chest 1;ChestsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3542;Carved Chest 2;ChestsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3543;Carved Chest 3;ChestsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3544;Carved Strongbox;ChestsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3545;Thick Leather (any);MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3546;Thin Leather (any);MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3547;Wool Cloth (any);MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3548;Case-hardened Bars;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3549;Toughened Bars;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3550;Case-hardened Ingots;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3551;Toughened Ingots;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3552;Hank of Wool (any);MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3553;Wool Pack (any);MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3554;Rough Thick Leather;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3555;Soft Thick Leather;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3556;Rough Thin Leather;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3557;Soft Thin Leather;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3558;Coarse Wool Cloth;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3559;Soft Wool Cloth;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3560;Lime Mortar;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3561;Gypsum Mortar;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3562;Case-hardened Steel Bar;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3563;Toughened Steel Bar;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3564;Case-hardened Iron Bar;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3565;Toughened Iron Bar;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3566;Case-hardened Vostaskus Bar;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3567;Toughened Vostaskus Bar;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3568;Case-hardened Steel Ingot;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3569;Toughened Steel Ingot;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3570;Case-hardened Iron Ingot;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3571;Toughened Iron Ingot;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3572;Case-hardened Vostaskus Ingot;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3573;Toughened Vostaskus Ingot;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3574;Hank of Coarse Wool;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3575;Hank of Soft Wool;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3576;Rough Thin Dried Hide;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3577;Soft Thin Dried Hide;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3578;Rough Thick Dried Hide;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3579;Soft Thick Dried Hide;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3580;Coarse Wool;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3581;Soft Wool;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3582;Rocksalt;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3583;Brimstone;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3584;Limestone;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3585;Gypsum;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3586;Rough Sheepskin;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3587;Rough Cowhide;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3588;Pigskin;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3589;Rough Pigskin;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3590;Cowhide;MaterialsChainPack;Item;Gameplay Objects > Inventory objects > Raw materials;yes;;MISSING;;no
+3591;Stonecutter's Outfit;OutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3592;Breeder's Outfit;OutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3593;Siege Ladder Kit;SiegePack;Item;Gameplay Objects > Inventory objects > Processed materials;yes;;MISSING;;no
+3594;Small Siege Ladder;SiegePack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3595;Large Siege Ladder;SiegePack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3596;Big Siege Ladder;SiegePack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3597;Siege Platform;SiegePack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3598;Small Siege Ladder;SiegePack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3599;Large Siege Ladder;SiegePack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3600;Big Siege Ladder;SiegePack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3601;Siege Platform;SiegePack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3602;Watchtower;BuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3603;Castle Wall Hoarding (angle, no buttress);BuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3611;Mantle Red Capelet;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3612;Checker Capelet Mantle;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3613;Mantle Gold and White Capelet;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3614;Royal Outfit;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3615;Monarch's Dress;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3616;Liege's Garb;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3617;Tiara of the Sleepless Eye;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3618;Svefnibrann;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3619;Crown of the Eternal Watchman;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3620;Golden Mark;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3621;Tiara of the Sleepless Eye (red);KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3622;Thousand-Strong Host;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3623;Dyed Gottlung Rags;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3624;Dyed Northern Rags;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3625;Dyed Steppe Rags;KingOutfitsPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3626;Elegant Purple Cloak;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3627;Elegant Red Cloak;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3628;Elegant Blue Cloak;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3629;Elegant Orange Cloak;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3630;Captain of the Light Cavalry Banner;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3631;Captain of the Heavy Cavalry Banner;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3632;Banner of the Pikemen's Commander;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3633;Banner of the Halberdier Commander;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3634;Captain of the Shieldbearers Banner;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3635;Captain of the Heavy Infantry Banner;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3636;Captain of the Berserkers Banner;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3637;Captain of the Swordsmen Banner;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3638;Captain of the Archers Banner;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3639;Captain of the Crossbowmen Banner;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3640;Siege Engine Master Banner;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3641;Healer's Standard;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3642;General's Standard;CloakFlagPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3643;Half Plate Gottlung Helm with Deer Antlers;HornSkinPack;Item;Gameplay Objects > Equipment Objects > Armors;yes;;MISSING;;no
+3644;Heavy Full Plate Helm with Deer Antlers;HornSkinPack;Item;Gameplay Objects > Equipment Objects > Armors;yes;;MISSING;;no
+3645;Royal Full Plate Helm with Moose Antlers;HornSkinPack;Item;Gameplay Objects > Equipment Objects > Armors;yes;;MISSING;;no
+3646;Khoorsian Horned Helm;HornSkinPack;Item;Gameplay Objects > Equipment Objects > Armors;yes;;MISSING;;no
+3647;Heavy Khoorsian Horned Helm;HornSkinPack;Item;Gameplay Objects > Equipment Objects > Armors;yes;;MISSING;;no
+3648;Royal Khoorsian Horned Helm;HornSkinPack;Item;Gameplay Objects > Equipment Objects > Armors;yes;;MISSING;;no
+3649;Heavy Chainmail Helm with Bull Horns;HornSkinPack;Item;Gameplay Objects > Equipment Objects > Armors;yes;;MISSING;;no
+3650;Leather Gottlung Helm with Deer Antlers;HornSkinPack;Item;Gameplay Objects > Equipment Objects > Armors;yes;;MISSING;;no
+3651;Heavy Leather Helm with Deer Antlers;HornSkinPack;Item;Gameplay Objects > Equipment Objects > Armors;yes;;MISSING;;no
+3652;Heavy Quilted Helm with Cow Horns;HornSkinPack;Item;Gameplay Objects > Equipment Objects > Armors;yes;;MISSING;;no
+3653;Fancy Stonecutter's Outfit;HornSkinPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3654;Fancy Breeder's Outfit;HornSkinPack;Item;Gameplay Objects > Equipment Objects > Clothes;yes;;MISSING;;no
+3655;Taverne;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3656;Tuer;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3657;Tuer;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3658;Badezuber;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3659;Badezuber;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3660;Hase;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3661;Huhn;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3662;Bock;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3663;Kuh;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3664;Bulle;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3665;Pferd;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3666;Blumengarten;EkrBuildingsPack;Building;Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3667;Schiffsbaustelle;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3668;Kamin;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3669;Kamin;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3670;Wachhaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;NOT IN DB;commented;MISSING;;no
+3671;Engelsstatue;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;NOT IN DB;commented;MISSING;;no
+3672;Lehmsteinvilla;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;NOT IN DB;commented;MISSING;;no
+3673;Lehmhuette;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3674;Einfacher Unterstand;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3675;Gewoehnlicheshaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3676;Kleines Lehmhaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3677;Lehmbarracke;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;NOT IN DB;commented;MISSING;;no
+3678;Lehmdoppelhaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;NOT IN DB;commented;MISSING;;no
+3679;Stabile Lehmhuette;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3680;Steinkreuz;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3681;Reiterstatue;EkrBuildingsPack;Building;Gameplay Objects > World objects > Outdoor static;NOT IN DB;commented;MISSING;;no
+3682;SkandinavischesHaus2;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3683;SkandinavischesHaus3;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3684;SkandinavischesHaus4;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3685;SkandinavischesHaus5;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3686;SkandinavischesHaus6;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;NOT IN DB;commented;MISSING;;no
+3687;SkandinavischerTempel;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;NOT IN DB;commented;MISSING;;no
+3688;Mordgangsteinmauer;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3689;MordgangsteinmauerMitZaun;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3690;Mordgangsteintorhaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3691;Mordgangsteinmauereckturm;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3692;Einsiedlerheim;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3693;Steinkirche;EkrBuildingsPack;Building;Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3694;Holzkran;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3695;Holzkran;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3696;HohesSteinmauerchen;EkrBuildingsPack;Building;Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3697;HohesSteinmauerchentor;EkrBuildingsPack;Building;Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3698;Marktstand1;EkrBuildingsPack;Building;Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3699;Marktstand2;EkrBuildingsPack;Building;Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3700;Marktstand3;EkrBuildingsPack;Building;Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3701;BeweglicheLaterne;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3702;BeweglicheLaterne;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3703;DiagonalesHohesSteinmauerchen;EkrBuildingsPack;Building;Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3704;HohesSteinmauerchenOhneZinnen;EkrBuildingsPack;Building;Gameplay Objects > World objects > Outdoor static;yes;;MISSING;;no
+3705;Bewegliches Wasser;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3706;Bewegliches Wasser;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3707;Metal Cage;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3708;Wooden Barricade;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3709;Wooden Barricade;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3710;Stone Altar;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3711;Wooden House with Tower;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3712;Stone tomb with cross;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3713;KleinerBergfried2;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3714;Bergfried2;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;NOT IN DB;commented;MISSING;;no
+3715;GrosserBergfried2;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;NOT IN DB;commented;MISSING;;no
+3716;Karte;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3717;Karte;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3718;Mahlzeit;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3719;Mahlzeit;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3720;Hirschfell_aufrecht;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3721;Hirschfell_aufrecht;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3722;Buch;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3723;Buch;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3724;Krug;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3725;Krug;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3726;Netz;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3727;Netz;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3728;Schaffell_liegend;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3729;Schaffell_liegend;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3730;Sack;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3731;Sack;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3732;TischOH;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3733;TischOH;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3734;Waldhuette;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3735;Erkerhaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;NOT IN DB;commented;MISSING;;no
+3736;Gasthaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;NOT IN DB;commented;MISSING;;no
+3737;Burgtuer;EkrBuildingsPack;Movable (furniture/decoration/siege);Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3738;Burgtuer;EkrBuildingsPack;Carried twin of a movable;Gameplay Objects > Inventory objects > Movable Objects (items);yes;;MISSING;;no
+3739;Bauernhaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3740;Haendlerhaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;NOT IN DB;commented;MISSING;;no
+3741;Herrenhaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3742;HolzKueche;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3743;HolzSchmiede;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3744;FachwerkhausErkertuer;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3745;Holzeckhaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3746;KeltischesHaus1;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3747;KeltischesHaus2;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3748;Spitzdachhaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3749;Stegwohnhaus;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3750;Werkstatt;EkrBuildingsPack;Building;Gameplay Objects > World objects > Buildings;yes;;MISSING;;no
+3751;Hops;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Food and drink;yes;;MISSING;;no
+3752;Sugar Beet;FoodDrinksPack;Item;Gameplay Objects > Inventory objects > Food and drink;yes;;MISSING;;no
+3753;Steintreppe;EkrBuildingsPack;Building;Gameplay Objects > World objects > Indoor static objects;yes;;MISSING;;no
+3800;Amberwood Board;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3801;Amberwood Building Block;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3802;Whitewood Board;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3803;Whitewood Building Block;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3804;Big Potato;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3805;Fat Wheat;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3806;Green Onion;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3807;Green Peas;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3808;White Cabbage;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3809;Sugar Carrot;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3810;Big Onion;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3811;Large Onion;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3812;Cabbage Seeds;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3813;Carrot Seeds;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3814;Onion Seeds;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3815;Rich Flax Seeds;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3816;Sugar Carrot Seeds;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3817;White Cabbage Seeds;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3818;Wine Sprout;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3819;Wild Wine Sprout;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3820;Fatty Pork;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3821;Marbled Beef;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3822;Lamb;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3823;Rough Thick Leather;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3824;Soft Thick Leather;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3825;Rock Salt Trap;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3826;Dark Honey;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3827;White Honey;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3828;Yellow Honey;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3829;Raw Gem;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3830;Rough Gem;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3831;Cracked Gem;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3832;Aquamarine;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3833;Carnelian;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3834;Jasper;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3835;Onyx;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3836;Topaz;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3837;Case-hardened Toughened Metal Band;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Raw materials;NOT IN DB;;MISSING;;no
+3838;Bone Amulet;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3839;Copper Amulet;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3840;Amulet of the Blind Spirit;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3841;Amulet of the Spirit Bear;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3842;Amulet of the Spirit Crow;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3843;Amulet of the Lynx;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3844;Amulet of the White Hunt;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3845;Pioneer's Amulet;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3846;Raven Amulet;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3847;Bone Ring;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3848;Copper Ring;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3849;Ring of the Hissing Snake;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3850;Ring of the Red Hunt;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3851;Ring of the Silver Lynx;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3852;Ring of the Swift Wolf;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3853;Ring of the White Hunt;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3854;Adjaruli Khachapuri;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3855;Ashlyamfu;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3856;Stuffed Cabbage Rolls;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3857;Bigos;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3858;Blood Sausage;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3859;Carbonara;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3860;Cheesecake;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3861;Chicken Broth;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3862;Chicken with Potatoes;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3863;Cream Cake;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3864;Dumplings;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3865;Hunter's Sausage;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3866;Noodles;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3867;Olivier Salad;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3868;Pork Goulash;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3869;Potato Pancake;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3870;Red Cabbage Soup;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3871;Sour Cabbage Rolls;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3872;Sausages with Potatoes;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3873;Sour Rye Soup;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3874;Wild Mushroom Soup;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3875;Basic Work Ration;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3876;Medium Work Ration;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3877;Large Work Ration;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Food and drink;NOT IN DB;;MISSING;;no
+3878;Blacksmith's Precision Tools;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Craft tools;NOT IN DB;;MISSING;;no
+3879;Carpenter's Precision Measuring Set;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Craft tools;NOT IN DB;;MISSING;;no
+3880;Cook's Professional Kitchenware;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Craft tools;NOT IN DB;;MISSING;;no
+3881;Engineer's Precision Blueprint Tools;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Craft tools;NOT IN DB;;MISSING;;no
+3882;Herbalist's Distillation Set;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Craft tools;NOT IN DB;;MISSING;;no
+3883;Kitchen Seasoning Set;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Craft tools;NOT IN DB;;MISSING;;no
+3884;Primitive Sewing Tools;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Craft tools;NOT IN DB;;MISSING;;no
+3885;Stonecutter Precision Chiseling Set;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Craft tools;NOT IN DB;;MISSING;;no
+3886;Armor Fitting Stand Kit;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3887;Breeder's Animal Husbandry Kit;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3888;Gem Engraving and Polishing Kit;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3889;Herb Drying and Preserving Rack Kit;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3890;Master Smithing Tool Rack Kit;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3891;Pattern Cutting Table Precision Kit;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3892;Precision Woodworking Frame Kit;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3893;Siege Mechanism Assembly Rig Kit;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3894;Animal Skull;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3895;Inhuman Skull;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3896;Witch Skull;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3897;Shrunken Head;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3898;Dead Fetus;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3899;Clawed Paw;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3900;Hand Lace;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3901;Witch Braid;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3902;Savage Trophy;MmoItemsPack;Item;Gameplay Objects > Inventory objects > Processed materials;NOT IN DB;;MISSING;;no
+3903;Chieftain's Helm;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3904;Chieftain's Knee Pad;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3905;Impious Chieftain's Symbol;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3906;Hunter Mask;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3907;Skull Mask;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3908;Crow Charm;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3909;Gods' Coins;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3910;Horse Badge;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3911;Homecoming Totem;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3912;Teleportation Totem;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no
+3913;Chest Pendulum;MmoItemsPack;Item;Gameplay Objects > Inventory objects;NOT IN DB;;MISSING;;no

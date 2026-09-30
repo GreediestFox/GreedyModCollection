@@ -1,0 +1,174 @@
+// Armor stands, shield displays, jousting sets and blade stand ported from Life is Feudal MMO. Object ids 3111-3140, recipes 5911-5940.
+
+if (!isObject(LiFxDisplaysPack))
+{
+    new ScriptObject(LiFxDisplaysPack)
+    {
+    };
+}
+
+package LiFxDisplaysPack
+{
+    function LiFxDisplaysPack::setup() {
+        LiFx::registerCallback($LiFx::hooks::onInitServerDBChangesCallbacks, dbChanges, LiFxDisplaysPack);
+    }
+    function LiFxDisplaysPack::version() {
+        return "1.0.0";
+    }
+    function LiFxDisplaysPack::dbChanges() {
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3141,1902,'Derelict''s Shield',0,0,0,0,0,0,0,0,1,1,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Objects/shield_a1.png','',NULL,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3142,1902,'Vanguard Shield',0,0,0,0,0,0,0,0,1,1,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Objects/shield_a2.png','',NULL,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3143,1902,'Spearman Guard Shield',0,0,0,0,0,0,0,0,1,1,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Objects/shield_a3.png','',NULL,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3144,1902,'Swordsman Set Shield',0,0,0,0,0,0,0,0,1,1,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Objects/shield_a5.png','',NULL,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3145,1902,'Graceful Shield',0,0,0,0,0,0,0,0,1,1,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Objects/shield_a6.png','',NULL,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3146,1902,'Iron Head Shield',0,0,0,0,0,0,0,0,1,1,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Objects/shield_a7.png','',NULL,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3147,1902,'Footman Shield',0,0,0,0,0,0,0,0,1,1,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Objects/shield_a8.png','',NULL,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3148,1902,'Heavy Shield',0,0,0,0,0,0,0,0,1,1,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Objects/shield_a9.png','',NULL,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3149,1902,'Light Shield',0,0,0,0,0,0,0,0,1,1,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Objects/shield_a10.png','',NULL,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3150,1902,'Guard Shield',0,0,0,0,0,0,0,0,1,1,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Objects/shield_b2.png','',NULL,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3151,1902,'Royal Shield',0,0,0,0,0,0,0,0,1,1,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Objects/shield_b3.png','',NULL,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3152,1902,'Grand Shield',0,0,0,0,0,0,0,0,1,1,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Objects/shield_b4.png','',NULL,NULL,0,0)");
+        dbi.Update("UPDATE `objects_types` SET ParentID=60,IsMovableObject=1,IsUnmovableobject=0,Length=1,UnitWeight=3000 WHERE ID BETWEEN 3112 AND 3123");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3111,1637,'Blade Stand',0,0,1,0,0,0,0,0,0,0,1000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/wallshelfb_v1.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3112,60,'Derelict''s Shield',0,1,0,0,0,0,0,0,1,0,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a1.png','',57600,120,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3113,60,'Vanguard Shield',0,1,0,0,0,0,0,0,1,0,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a2.png','',57600,120,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3114,60,'Spearman Guard Shield',0,1,0,0,0,0,0,0,1,0,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a3.png','',57600,120,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3115,60,'Swordsman Set Shield',0,1,0,0,0,0,0,0,1,0,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a5.png','',57600,120,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3116,60,'Graceful Shield',0,1,0,0,0,0,0,0,1,0,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a6.png','',57600,120,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3117,60,'Iron Head Shield',0,1,0,0,0,0,0,0,1,0,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a7.png','',57600,120,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3118,60,'Footman Shield',0,1,0,0,0,0,0,0,1,0,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a8.png','',57600,120,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3119,60,'Heavy Shield',0,1,0,0,0,0,0,0,1,0,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a9.png','',57600,120,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3120,60,'Light Shield',0,1,0,0,0,0,0,0,1,0,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a10.png','',57600,120,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3121,60,'Guard Shield',0,1,0,0,0,0,0,0,1,0,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_b2.png','',57600,120,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3122,60,'Royal Shield',0,1,0,0,0,0,0,0,1,0,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_b3.png','',57600,120,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3123,60,'Grand Shield',0,1,0,0,0,0,0,0,1,0,3000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_b4.png','',57600,120,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3124,1637,'Heavy Padded Armor Stand',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_01.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3125,1637,'Half Plate Armor Stand',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_02.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3126,1637,'Full Plate Armor Stand',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_03.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3127,1637,'Royal Full Plate Armor Stand',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_04.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3128,1637,'Regular Scale Armor Stand',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_05.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3129,1637,'Regular Chainmail Armor Stand',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_06.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3130,1637,'Heavy Chainmail Armor Stand',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_07.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3131,1637,'Heavy Leather Armor Stand',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_08.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3132,1637,'Royal Leather Armor Stand',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_09.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3133,1637,'Heavy Scale Armor Stand',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_10.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3134,1637,'Rider in Regular Chain Armor',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a1.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3135,1637,'Rider in Regular Padded Armor',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a2.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3136,1637,'Rider in Heavy Padded Armor',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a3.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3137,1637,'Rider in Royal Padded Armor',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a4.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3138,1637,'Jousting Half Plate Set',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a5.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3139,1637,'Jousting Full Plate Set',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a6.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3140,1637,'Jousting Royal Full Plate Set',0,0,1,0,0,0,0,0,0,0,20000,'',0,0,0,0,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a7.png','',20,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5911,'Blade Stand','Ported from Life is Feudal MMO',NULL,53,0,3111,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/wallshelfb_v1.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5912,'Derelict''s Shield','Ported from Life is Feudal MMO',NULL,53,0,3112,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a1.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5913,'Vanguard Shield','Ported from Life is Feudal MMO',NULL,53,0,3113,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a2.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5914,'Spearman Guard Shield','Ported from Life is Feudal MMO',NULL,53,0,3114,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a3.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5915,'Swordsman Set Shield','Ported from Life is Feudal MMO',NULL,53,0,3115,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a5.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5916,'Graceful Shield','Ported from Life is Feudal MMO',NULL,53,0,3116,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a6.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5917,'Iron Head Shield','Ported from Life is Feudal MMO',NULL,53,0,3117,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a7.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5918,'Footman Shield','Ported from Life is Feudal MMO',NULL,53,0,3118,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a8.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5919,'Heavy Shield','Ported from Life is Feudal MMO',NULL,53,0,3119,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a9.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5920,'Light Shield','Ported from Life is Feudal MMO',NULL,53,0,3120,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_a10.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5921,'Guard Shield','Ported from Life is Feudal MMO',NULL,53,0,3121,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_b2.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5922,'Royal Shield','Ported from Life is Feudal MMO',NULL,53,0,3122,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_b3.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5923,'Grand Shield','Ported from Life is Feudal MMO',NULL,53,0,3123,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/shield_b4.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5924,'Heavy Padded Armor Stand','Ported from Life is Feudal MMO',NULL,53,0,3124,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_01.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5925,'Half Plate Armor Stand','Ported from Life is Feudal MMO',NULL,53,0,3125,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_02.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5926,'Full Plate Armor Stand','Ported from Life is Feudal MMO',NULL,53,0,3126,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_03.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5927,'Royal Full Plate Armor Stand','Ported from Life is Feudal MMO',NULL,53,0,3127,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_04.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5928,'Regular Scale Armor Stand','Ported from Life is Feudal MMO',NULL,53,0,3128,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_05.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5929,'Regular Chainmail Armor Stand','Ported from Life is Feudal MMO',NULL,53,0,3129,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_06.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5930,'Heavy Chainmail Armor Stand','Ported from Life is Feudal MMO',NULL,53,0,3130,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_07.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5931,'Heavy Leather Armor Stand','Ported from Life is Feudal MMO',NULL,53,0,3131,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_08.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5932,'Royal Leather Armor Stand','Ported from Life is Feudal MMO',NULL,53,0,3132,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_09.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5933,'Heavy Scale Armor Stand','Ported from Life is Feudal MMO',NULL,53,0,3133,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/stand_10.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5934,'Rider in Regular Chain Armor','Ported from Life is Feudal MMO',NULL,53,0,3134,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a1.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5935,'Rider in Regular Padded Armor','Ported from Life is Feudal MMO',NULL,53,0,3135,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a2.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5936,'Rider in Heavy Padded Armor','Ported from Life is Feudal MMO',NULL,53,0,3136,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a3.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5937,'Rider in Royal Padded Armor','Ported from Life is Feudal MMO',NULL,53,0,3137,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a4.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5938,'Jousting Half Plate Set','Ported from Life is Feudal MMO',NULL,53,0,3138,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a5.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5939,'Jousting Full Plate Set','Ported from Life is Feudal MMO',NULL,53,0,3139,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a6.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5940,'Jousting Royal Full Plate Set','Ported from Life is Feudal MMO',NULL,53,0,3140,10,1,0,0,'mod/DisplaysMod/art/2D/Recipes/dummyhorsedoll_a7.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5911,1634,0,40,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5911,1635,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5912,1634,0,40,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5912,1635,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5913,1634,0,40,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5913,1635,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5914,1634,0,40,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5914,1635,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5915,1634,0,40,3,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5915,1635,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5916,1634,0,40,3,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5916,1635,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5917,1634,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5917,1635,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5918,1634,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5918,1635,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5919,1634,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5919,1635,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5920,1634,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5920,1635,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5921,1634,0,40,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5921,1636,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5922,1635,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5922,1636,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5923,1635,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5923,1636,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5924,1635,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5924,1636,0,50,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5925,1635,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5925,1636,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5926,1635,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5926,1636,0,50,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5927,1635,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5927,1636,0,50,3,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5928,1635,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5928,1636,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5929,1635,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5929,1636,0,50,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5930,1635,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5930,1636,0,50,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5931,1635,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5931,1636,0,50,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5932,1635,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5932,1636,0,50,3,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5933,1635,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5933,1636,0,50,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5934,1634,0,30,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5934,1635,0,30,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5934,1636,0,30,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5935,1634,0,30,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5935,1635,0,30,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5935,1636,0,30,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5936,1634,0,30,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5936,1635,0,30,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5936,1636,0,30,3,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5937,1634,0,30,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5937,1635,0,30,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5937,1636,0,30,4,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5938,1634,0,30,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5938,1635,0,30,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5938,1636,0,30,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5939,1634,0,30,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5939,1635,0,30,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5939,1636,0,30,3,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5940,1634,0,30,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5940,1635,0,30,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5940,1636,0,30,4,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3112,3141)");
+        dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3113,3142)");
+        dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3114,3143)");
+        dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3115,3144)");
+        dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3116,3145)");
+        dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3117,3146)");
+        dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3118,3147)");
+        dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3119,3148)");
+        dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3120,3149)");
+        dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3121,3150)");
+        dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3122,3151)");
+        dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3123,3152)");
+    }
+};
+activatePackage(LiFxDisplaysPack);
+LiFx::registerCallback($LiFx::hooks::mods, setup, LiFxDisplaysPack);

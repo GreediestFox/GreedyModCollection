@@ -1,0 +1,4280 @@
+<!-- Blocks to add inside <object_types> in the client AND server data\cm_objects.xml. 104 blocks. -->
+<object id="2017" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = Big Tanning Tub-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="0" y="-1" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/tanning_tub/big_tanning_tub.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Working">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/tanning_tub/big_tanning_tub.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+                <particleEmitters>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>SmokeEmitterLiF2Z</emitter>
+                        <offset x="-1.05" y="0" z="1" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </particleEmitters>
+                <soundEmitters>
+                    <emitter>
+                        <profile>env_big_tanning_tub</profile>
+                        <offset x="0" y="0" z="0.520921" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </soundEmitters>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/tanning_tub/big_tanning_tub.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2020" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = Stonemason's Workplace-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/mason_workplace/mason_workplace.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/mason_workplace/mason_workplace.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2021" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = Ore Washer-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/ore_washer/ore_washer.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/ore_washer/ore_washer.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2894" isUnflattenAllowed="0" rotationStep="1" defaultState="Complete" StreamingGroup="2">
+        <!--name = Jeweler's Workshop (REAL MMO model, found 2026-09-18 in a separate "Arden" client build;
+             jewellery_workshop_01, with real Complete/Damaged/Incomplete states. Replaces the earlier
+             Herbalist's Shop placeholder.) -->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="-1" y="0" />
+            <cell x="1" y="0" />
+            <cell x="1" y="-1" />
+            <cell x="0" y="-1" />
+            <cell x="-1" y="-1" />
+            <cell x="1" y="1" />
+            <cell x="0" y="1" />
+            <cell x="-1" y="1" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape isDoor="1">
+                        <shapeName>art/models/3d/construction/craftingbonus/jeweler_workshop/jewellery_workshop_01.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="0" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape isDoor="1">
+                        <shapeName>art/models/3d/construction/craftingbonus/jeweler_workshop/jewellery_workshop_01_dmg.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="0" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingbonus/jeweler_workshop/jewellery_workshop_01_inc.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="0" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2829" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = Big Drying Frame (REAL MMO model, found 2026-09-18 in a separate "Arden" client build;
+             dryingframe_2x2, with real Complete/Incomplete states plus a Working "skin" state (hide
+             stretched on the frame) the earlier placeholder never had. No separate Damaged variant was
+             found, so Damaged reuses the Complete shape.) -->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="0" y="-1" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/bigdrying2x2/dryingframe_2x2.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Working">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/bigdrying2x2/dryingframe_2x2_skin.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/bigdrying2x2/dryingframe_2x2.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/bigdrying2x2/dryingframe_2x2_inc.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2835" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = Large Herbal Garden (REAL model from the Arden client, herbalist_garden folder, with Working state; the footprint of 2 cells is my own guess)-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="0" y="-1" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/herbalist_garden/alchemy_box.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Working">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/herbalist_garden/alchemy_box_work.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/herbalist_garden/alchemy_box_dmg.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingdevices/herbalist_garden/alchemy_box_inc.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2836" isUnflattenAllowed="0" rotationStep="1" defaultState="Complete" StreamingGroup="2">
+        <!--name = Tailor's Workshop (REAL MMO model, found 2026-09-18 in a separate "Arden" client build;
+             leather_workshop, with real Complete/Damaged/Incomplete states. Replaces the earlier
+             Blacksmith's Shop placeholder.) -->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="0" y="-1" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+            <cell x="1" y="1" />
+            <cell x="0" y="1" />
+            <cell x="-1" y="1" />
+            <cell x="-1" y="0" />
+            <cell x="-1" y="-1" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingbonus/leather_workshop/leather_workshop.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingbonus/leather_workshop/leather_workshop_dmg.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/craftingbonus/leather_workshop/leather_workshop_inc.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2900" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Stone Wall-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_wall/Slav_stone_wall4m_wall.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_wall/Slav_stone_wall4m_wall_dmg.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_wall/stone_wall4m_wall_inc.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2900" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" slopeDir="right" StreamingGroup="3">
+        <!--name = Slavic Stone Wall-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                     <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_angle/Slav_stone_wall4m_anglel.dts</shapeName>
+                        <offset x="-2" y="2" z="-0.5" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                       <shapeName>art/models/3d/construction/fortifications/stone_wall4m_angle/Slav_stone_wall4m_anglel_dmg.dts</shapeName>
+                        <offset x="-2" y="2" z="-0.5" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                         <shapeName>art/models/3d/construction/fortifications/stone_wall4m_angle/stone_wall4m_anglel_inc.dts</shapeName>
+                        <offset x="-2" y="2" z="-0.5" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2900" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" slopeDir="left" StreamingGroup="3">
+        <!--name = Slavic Stone Wall-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                     <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_angle/Slav_stone_wall4m_angler.dts</shapeName>
+                        <offset x="-2" y="2" z="-0.5" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                       <shapeName>art/models/3d/construction/fortifications/stone_wall4m_angle/Slav_stone_wall4m_angler_dmg.dts</shapeName>
+                        <offset x="-2" y="2" z="-0.5" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                         <shapeName>art/models/3d/construction/fortifications/stone_wall4m_angle/stone_wall4m_angler_inc.dts</shapeName>
+                        <offset x="-2" y="2" z="-0.5" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2901" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Stone Wall with Stairs-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="0" y="-1" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_ladder/Slav_stone_wall4m_ladder.dts</shapeName>
+                        <offset x="6" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_ladder/Slav_stone_wall4m_ladder_dmg.dts</shapeName>
+                        <offset x="6" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+                <decals>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="0.602472" y="-5.33472" z="8.03443" />
+                        <normal x="0.0359196" y="-1.24177e-007" z="0.999355" />
+                        <tangent x="-0.999355" y="-1.74155e-016" z="0.0359196" />
+                        <size>2.69685</size>
+                    </decal>
+                </decals>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_ladder/stone_wall4m_ladder_inc.dts</shapeName>
+                        <offset x="6" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2902" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Stone Wall with Inverted Stairs-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="0" y="-1" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_ladder/Slav_stone_wall4m_ladder_invert.dts</shapeName>
+                        <offset x="6" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_ladder/Slav_stone_wall4m_ladder_dmg.dts</shapeName>
+                        <offset x="6" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+                <decals>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="0.602472" y="-5.33472" z="8.03443" />
+                        <normal x="0.0359196" y="-1.24177e-007" z="0.999355" />
+                        <tangent x="-0.999355" y="-1.74155e-016" z="0.0359196" />
+                        <size>2.69685</size>
+                    </decal>
+                </decals>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_ladder/stone_wall4m_ladder_invert_inc.dts</shapeName>
+                        <offset x="6" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2903" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Stone Tower-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="0" y="-1" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_tower/Slav_stone_wall4m_tower1.dts</shapeName>
+                        <offset x="2" y="-2" z="-0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_tower/Slav_stone_wall4m_tower_dmg.dts</shapeName>
+                        <offset x="2" y="-2" z="-0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+
+                <decals>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="6.2375" y="-0.032033" z="4.51" />
+                        <normal x="0.999871" y="-6.53732e-006" z="0.016045" />
+                        <tangent x="-0.0094277" y="-0.809408" z="0.587171" />
+                        <size>3.07065</size>
+                    </decal>
+                </decals>
+                <soundEmitters>
+                    <emitter>
+                        <profile>env_fire_medium</profile>
+                        <offset x="5.47762" y="0.187504" z="4.93045" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </soundEmitters>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_tower/stone_wall4m_tower1_inc.dts</shapeName>
+                        <offset x="2" y="-2" z="-0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2904" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Stone Inner Tower-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="0" y="-1" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_tower/Slav_stone_wall4m_tower_alternate.dts</shapeName>
+                        <offset x="2" y="-2" z="-0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_tower/Slav_stone_wall4m_tower_alternate_dmg.dts</shapeName>
+                        <offset x="2" y="-2" z="-0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            
+                <decals>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="6.2375" y="-0.032033" z="4.51" />
+                        <normal x="0.999871" y="-6.53732e-006" z="0.016045" />
+                        <tangent x="-0.0094277" y="-0.809408" z="0.587171" />
+                        <size>3.07065</size>
+                    </decal>
+                </decals>
+                <soundEmitters>
+                    <emitter>
+                        <profile>env_fire_medium</profile>
+                        <offset x="5.47762" y="0.187504" z="4.93045" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </soundEmitters>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_tower/stone_wall4m_tower1_inc.dts</shapeName>
+                        <offset x="2" y="-2" z="-0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2905" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Stone Angular Tower-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="0" y="-1" />
+            <cell x="-1" y="-1" />
+            <cell x="-1" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_tower_angular/Slav_stone_wall4m_tower_angular.dts</shapeName>
+                        <offset x="-1.85" y="-1.95" z="-0.6" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_tower_angular/Slav_stone_wall4m_tower_angular_dmg.dts</shapeName>
+                        <offset x="-2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+                <pointLights>
+                    <light>
+                        <prototype>FirePointLight</prototype>
+                        <offset x="-4.74568" y="-4.68555" z="11.9741" />
+                        <radius>6</radius>
+                    </light>
+                </pointLights>
+                <particleEmitters>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_fire_big</emitter>
+                        <offset x="-4.74568" y="-4.68555" z="9.77779" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+
+
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_sparks_big</emitter>
+                        <offset x="-4.74568" y="-4.68555" z="9.77779" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_smoke_big</emitter>
+                        <offset x="-4.74568" y="-4.68555" z="9.77779" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </particleEmitters>
+                <decals>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="-4.23352" y="-4.35766" z="9.69507" />
+                        <normal x="3.625e-007" y="0.000347082" z="1" />
+                        <tangent x="5.9165e-018" y="1" z="-0.000347082" />
+                        <size>4.01314</size>
+                    </decal>
+                </decals>
+                <soundEmitters>
+                    <emitter>
+                        <profile>env_fire</profile>
+                        <offset x="-4.74568" y="-4.68555" z="9.77779" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </soundEmitters>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_tower_angular/stone_wall4m_tower_angular_inc.dts</shapeName>
+                        <offset x="-2" y="-2" z="0" />
+                        <rot x="0" y="0" z="-1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2906" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Stone Gatehouse-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="1" y="-2" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+            <cell x="1" y="1" />
+            <cell x="0" y="1" />
+            <cell x="0" y="-1" />
+            <cell x="0" y="-2" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape isDoor="1">
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_gate/Slav_stone_wall4m_gate.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_gate/Slav_stone_wall4m_gate_dmg.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+                <pointLights>
+                    <light>
+                        <prototype>FirePointLight</prototype>
+                        <offset x="-0.496299" y="0.661908" z="10.1302" />
+                        <radius>4</radius>
+                    </light>
+                </pointLights>
+                <particleEmitters>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_fire_big</emitter>
+                        <offset x="-1.04827" y="0.661908" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+
+
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_sparks_big</emitter>
+                        <offset x="-1.04827" y="0.661908" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_smoke_big</emitter>
+                        <offset x="-0.899379" y="0.914388" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </particleEmitters>
+                <decals>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="5.21498" y="3.6001" z="9.27544" />
+                        <normal x="1" y="0.000415202" z="0.000419161" />
+                        <tangent x="-0.000419161" y="7.95806e-015" z="1" />
+                        <size>5.03126</size>
+                    </decal>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="-1.04313" y="1.10705" z="7.94418" />
+                        <normal x="-0.000447735" y="1.61807e-009" z="1" />
+                        <tangent x="-1" y="-1.03514e-020" z="-0.000447735" />
+                        <size>3.92632</size>
+                    </decal>
+                </decals>
+                <soundEmitters>
+                    <emitter>
+                        <profile>env_fire_medium</profile>
+                        <offset x="-1.30311" y="0.661908" z="8.44441" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </soundEmitters>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_gate/stone_wall4m_gate_inc.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2907" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Stone Inner Gatehouse-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="1" y="-2" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+            <cell x="1" y="1" />
+            <cell x="0" y="1" />
+            <cell x="0" y="-1" />
+            <cell x="0" y="-2" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape isDoor="1">
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_gate/Slav_stone_wall4m_gate_alternate.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_gate/Slav_stone_wall4m_gate_alternate_dmg.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+                <pointLights>
+                    <light>
+                        <prototype>FirePointLight</prototype>
+                        <offset x="-0.496299" y="0.661908" z="10.1302" />
+                        <radius>4</radius>
+                    </light>
+                </pointLights>
+                <particleEmitters>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_fire_big</emitter>
+                        <offset x="-1.04827" y="0.661908" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+
+
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_sparks_big</emitter>
+                        <offset x="-1.04827" y="0.661908" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_smoke_big</emitter>
+                        <offset x="-0.899379" y="0.914388" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </particleEmitters>
+                <decals>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="5.21498" y="3.6001" z="9.27544" />
+                        <normal x="1" y="0.000415202" z="0.000419161" />
+                        <tangent x="-0.000419161" y="7.95806e-015" z="1" />
+                        <size>5.03126</size>
+                    </decal>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="-1.04313" y="1.10705" z="7.94418" />
+                        <normal x="-0.000447735" y="1.61807e-009" z="1" />
+                        <tangent x="-1" y="-1.03514e-020" z="-0.000447735" />
+                        <size>3.92632</size>
+                    </decal>
+                </decals>
+                <soundEmitters>
+                    <emitter>
+                        <profile>env_fire_medium</profile>
+                        <offset x="-1.30311" y="0.661908" z="8.44441" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </soundEmitters>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_gate/stone_wall4m_gate_inc.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2908" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Castle Tower-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="1" y="1" />
+            <cell x="0" y="1" />
+            <cell x="-1" y="1" />
+            <cell x="-1" y="0" />
+            <cell x="-1" y="-1" />
+            <cell x="0" y="-1" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/tower/Slav_tower.dts</shapeName>
+                        <offset x="0.2" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/tower/Slav_tower_dmg.dts</shapeName>
+                        <offset x="0.2" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/tower/tower_inc.dts</shapeName>
+                        <offset x="0.2" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2909" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Castle Tower Angle-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="1" y="1" />
+            <cell x="0" y="1" />
+            <cell x="-1" y="1" />
+            <cell x="-1" y="0" />
+            <cell x="-1" y="-1" />
+            <cell x="0" y="-1" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/towerangle/Slav_towerangle.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/towerangle/Slav_towerangle_dmg.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/towerangle/towerangle_inc.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2910" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Castle Tower with transitions-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="-1" y="1" />
+            <cell x="0" y="1" />
+            <cell x="1" y="1" />
+            <cell x="1" y="0" />
+            <cell x="1" y="-1" />
+            <cell x="0" y="-1" />
+            <cell x="-1" y="-1" />
+            <cell x="-1" y="2" />
+            <cell x="0" y="2" />
+            <cell x="1" y="2" />
+            <cell x="2" y="2" />
+            <cell x="2" y="1" />
+            <cell x="2" y="0" />
+            <cell x="2" y="-1" />
+            <cell x="-1" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/towerthetransitiontostonewall/Slav_towerthetransitiontostonewall.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/towerthetransitiontostonewall/Slav_towerthetransitiontostonewall_dmg.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/towerthetransitiontostonewall/towerthetransitiontostonewall_inc.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2911" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Castle Gatehouse-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="2" y="5" />
+            <cell x="2" y="-4" />
+            <cell x="2" y="-3" />
+            <cell x="2" y="-2" />
+            <cell x="2" y="-1" />
+            <cell x="2" y="0" />
+            <cell x="2" y="1" />
+            <cell x="2" y="2" />
+            <cell x="2" y="3" />
+            <cell x="2" y="4" />
+            <cell x="1" y="4" />
+            <cell x="1" y="3" />
+            <cell x="1" y="2" />
+            <cell x="1" y="1" />
+            <cell x="1" y="0" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="-2" />
+            <cell x="1" y="-3" />
+            <cell x="1" y="-4" />
+            <cell x="1" y="5" />
+            <cell x="0" y="4" />
+            <cell x="0" y="3" />
+            <cell x="0" y="2" />
+            <cell x="0" y="1" />
+            <cell x="0" y="-1" />
+            <cell x="0" y="-2" />
+            <cell x="0" y="-3" />
+            <cell x="0" y="-4" />
+            <cell x="0" y="5" />
+            <cell x="-1" y="-1" />
+            <cell x="-1" y="0" />
+            <cell x="-1" y="2" />
+            <cell x="-1" y="1" />
+            <cell x="-2" y="-1" />
+            <cell x="-2" y="0" />
+            <cell x="-2" y="2" />
+            <cell x="-2" y="1" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape isDoor="1">
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/gate/Slav_gate.dts</shapeName>
+                        <offset x="4" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/gate/Slav_gate_dmg.dts</shapeName>
+                        <offset x="4" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/gate/gate_inc.dts</shapeName>
+                        <offset x="4" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2912" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Castle Gatehouse with Drawbridge-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="2" y="5" />
+            <cell x="2" y="-4" />
+            <cell x="2" y="-3" />
+            <cell x="2" y="-2" />
+            <cell x="2" y="-1" />
+            <cell x="2" y="0" />
+            <cell x="2" y="1" />
+            <cell x="2" y="2" />
+            <cell x="2" y="3" />
+            <cell x="2" y="4" />
+            <cell x="1" y="4" />
+            <cell x="1" y="3" />
+            <cell x="1" y="2" />
+            <cell x="1" y="1" />
+            <cell x="1" y="0" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="-2" />
+            <cell x="1" y="-3" />
+            <cell x="1" y="-4" />
+            <cell x="1" y="5" />
+            <cell x="0" y="4" />
+            <cell x="0" y="3" />
+            <cell x="0" y="2" />
+            <cell x="0" y="1" />
+            <cell x="0" y="-1" />
+            <cell x="0" y="-2" />
+            <cell x="0" y="-3" />
+            <cell x="0" y="-4" />
+            <cell x="0" y="5" />
+            <cell x="-1" y="-1" />
+            <cell x="-1" y="0" />
+            <cell x="-1" y="2" />
+            <cell x="-1" y="1" />
+            <cell x="-2" y="-1" />
+            <cell x="-2" y="0" />
+            <cell x="-2" y="2" />
+            <cell x="-2" y="1" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape isDoor="1">
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/gate/Slav_gatebridge.dts</shapeName>
+                        <offset x="4" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/gate/Slav_gatebridge_dmg.dts</shapeName>
+                        <offset x="4" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/gate/gate_inc.dts</shapeName>
+                        <offset x="4" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2913" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Castle Wall Hoarding (no buttress)-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="1" y="-1" />
+            <cell x="0" y="-1" />
+            <cell x="1" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/wallwithgalleryncf/Slav_wallwithgalleryncf_a.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/wallwithgalleryncf/Slav_wallwithgalleryncf_a_dmg.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/wallwithgalleryncf/wallwithgalleryncf_a_inc.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2913" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" slopeDir="left" StreamingGroup="3">
+        <!--name = Slavic Castle Wall Hoarding (no buttress)-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="1" y="-1" />
+            <cell x="0" y="-1" />
+            <cell x="1" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/wallwithgalleryslopencf/Slav_wallgalleryslopencfl.dts</shapeName>
+                        <offset x="2" y="-2" z="-0.5" />
+                        <rot x="0" y="0" z="0" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/wallwithgalleryslopencf/Slav_wallgalleryslopencfl_dmg.dts</shapeName>
+                        <offset x="2" y="-2" z="-0.5" />
+                        <rot x="0" y="0" z="0" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/wallwithgalleryncf/wallwithgalleryncf_a_inc.dts</shapeName>
+                        <offset x="2" y="-2" z="-0.5" />
+                        <rot x="0" y="0" z="0" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2913" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" slopeDir="right" StreamingGroup="3">
+        <!--name = Slavic Castle Wall Hoarding (no buttress)-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="-1" y="1" />
+            <cell x="-1" y="0" />
+            <cell x="0" y="1" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/wallwithgalleryslopencf/Slav_wallgalleryslopencfr.dts</shapeName>
+                        <offset x="-2" y="2" z="-0.5" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/wallwithgalleryslopencf/Slav_wallgalleryslopencfr_dmg.dts</shapeName>
+                        <offset x="-2" y="2" z="-0.5" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/castleconstructions/wallwithgalleryncf/wallwithgalleryncf_a_inc.dts</shapeName>
+                        <offset x="-2" y="2" z="-0.5" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2914" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Stone Wall Corner-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_corner/stone_wall4m_corner.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_corner/stone_wall4m_corner_dmg.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_corner/stone_wall4m_corner_inc.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2915" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Stone Wall Corner-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_corner/Slav_stone_wall4m_corner.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_corner/Slav_stone_wall4m_corner_dmg.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_corner/stone_wall4m_corner_inc.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2916" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Stone Wall (no merlon)-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_no_merlon/stone_wall4m_no_merlon.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_no_merlon/stone_wall4m_no_merlon_dmg.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_no_merlon/stone_wall4m_no_merlon_inc.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2917" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Stone Wall (no merlon)-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_no_merlon/Slav_stone_wall4m_no_merlon.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_no_merlon/Slav_stone_wall4m_no_merlon_dmg.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_wall4m_no_merlon/stone_wall4m_no_merlon_inc.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2918" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Stone Gatehouse with Drawbridge-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="1" y="-2" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+            <cell x="1" y="1" />
+            <cell x="0" y="1" />
+            <cell x="0" y="-1" />
+            <cell x="0" y="-2" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape isDoor="1">
+                        <shapeName>art/models/3d/construction/fortifications/stone_gatehouse_with_drawbridge/stone_wall4m_gate_db.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_gatehouse_with_drawbridge/stone_wall4m_gate_db_dmg.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+                <pointLights>
+                    <light>
+                        <prototype>FirePointLight</prototype>
+                        <offset x="-0.496299" y="0.661908" z="10.1302" />
+                        <radius>4</radius>
+                    </light>
+                </pointLights>
+                <particleEmitters>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_fire_big</emitter>
+                        <offset x="-1.04827" y="0.661908" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+
+
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_sparks_big</emitter>
+                        <offset x="-1.04827" y="0.661908" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_smoke_big</emitter>
+                        <offset x="-0.899379" y="0.914388" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </particleEmitters>
+                <decals>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="5.21498" y="3.6001" z="9.27544" />
+                        <normal x="1" y="0.000415202" z="0.000419161" />
+                        <tangent x="-0.000419161" y="7.95806e-015" z="1" />
+                        <size>5.03126</size>
+                    </decal>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="-1.04313" y="1.10705" z="7.94418" />
+                        <normal x="-0.000447735" y="1.61807e-009" z="1" />
+                        <tangent x="-1" y="-1.03514e-020" z="-0.000447735" />
+                        <size>3.92632</size>
+                    </decal>
+                </decals>
+                <soundEmitters>
+                    <emitter>
+                        <profile>env_fire_medium</profile>
+                        <offset x="-1.30311" y="0.661908" z="8.44441" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </soundEmitters>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_gatehouse_with_drawbridge/stone_wall4m_gate_db_inc.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2919" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Stone Gatehouse with Drawbridge-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="1" y="-2" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+            <cell x="1" y="1" />
+            <cell x="0" y="1" />
+            <cell x="0" y="-1" />
+            <cell x="0" y="-2" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape isDoor="1">
+                        <shapeName>art/models/3d/construction/fortifications/stone_gatehouse_with_drawbridge/Slav_stone_wall4m_gate_db.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_gatehouse_with_drawbridge/Slav_stone_wall4m_gate_db_dmg.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+                <pointLights>
+                    <light>
+                        <prototype>FirePointLight</prototype>
+                        <offset x="-0.496299" y="0.661908" z="10.1302" />
+                        <radius>4</radius>
+                    </light>
+                </pointLights>
+                <particleEmitters>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_fire_big</emitter>
+                        <offset x="-1.04827" y="0.661908" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+
+
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_sparks_big</emitter>
+                        <offset x="-1.04827" y="0.661908" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_smoke_big</emitter>
+                        <offset x="-0.899379" y="0.914388" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </particleEmitters>
+                <decals>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="5.21498" y="3.6001" z="9.27544" />
+                        <normal x="1" y="0.000415202" z="0.000419161" />
+                        <tangent x="-0.000419161" y="7.95806e-015" z="1" />
+                        <size>5.03126</size>
+                    </decal>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="-1.04313" y="1.10705" z="7.94418" />
+                        <normal x="-0.000447735" y="1.61807e-009" z="1" />
+                        <tangent x="-1" y="-1.03514e-020" z="-0.000447735" />
+                        <size>3.92632</size>
+                    </decal>
+                </decals>
+                <soundEmitters>
+                    <emitter>
+                        <profile>env_fire_medium</profile>
+                        <offset x="-1.30311" y="0.661908" z="8.44441" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </soundEmitters>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_gatehouse_with_drawbridge/stone_wall4m_gate_db_inc.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2920" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Stone Inner Gatehouse with Drawbridge-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="1" y="-2" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+            <cell x="1" y="1" />
+            <cell x="0" y="1" />
+            <cell x="0" y="-1" />
+            <cell x="0" y="-2" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape isDoor="1">
+                        <shapeName>art/models/3d/construction/fortifications/stone_inner_gatehouse_with_drawbridge/stone_wall4m_gate_inn_db.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_inner_gatehouse_with_drawbridge/stone_wall4m_gate_inn_db_dmg.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+                <pointLights>
+                    <light>
+                        <prototype>FirePointLight</prototype>
+                        <offset x="-0.496299" y="0.661908" z="10.1302" />
+                        <radius>4</radius>
+                    </light>
+                </pointLights>
+                <particleEmitters>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_fire_big</emitter>
+                        <offset x="-1.04827" y="0.661908" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+
+
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_sparks_big</emitter>
+                        <offset x="-1.04827" y="0.661908" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_smoke_big</emitter>
+                        <offset x="-0.899379" y="0.914388" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </particleEmitters>
+                <decals>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="5.21498" y="3.6001" z="9.27544" />
+                        <normal x="1" y="0.000415202" z="0.000419161" />
+                        <tangent x="-0.000419161" y="7.95806e-015" z="1" />
+                        <size>5.03126</size>
+                    </decal>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="-1.04313" y="1.10705" z="7.94418" />
+                        <normal x="-0.000447735" y="1.61807e-009" z="1" />
+                        <tangent x="-1" y="-1.03514e-020" z="-0.000447735" />
+                        <size>3.92632</size>
+                    </decal>
+                </decals>
+                <soundEmitters>
+                    <emitter>
+                        <profile>env_fire_medium</profile>
+                        <offset x="-1.30311" y="0.661908" z="8.44441" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </soundEmitters>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_inner_gatehouse_with_drawbridge/stone_wall4m_gate_inn_db_inc.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2921" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Slavic Stone Inner Gatehouse with Drawbridge-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="1" y="-2" />
+            <cell x="1" y="-1" />
+            <cell x="1" y="0" />
+            <cell x="1" y="1" />
+            <cell x="0" y="1" />
+            <cell x="0" y="-1" />
+            <cell x="0" y="-2" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape isDoor="1">
+                        <shapeName>art/models/3d/construction/fortifications/stone_inner_gatehouse_with_drawbridge/Slav_stone_wall4m_gate_inn_db.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_inner_gatehouse_with_drawbridge/Slav_stone_wall4m_gate_inn_db_dmg.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+                <pointLights>
+                    <light>
+                        <prototype>FirePointLight</prototype>
+                        <offset x="-0.496299" y="0.661908" z="10.1302" />
+                        <radius>4</radius>
+                    </light>
+                </pointLights>
+                <particleEmitters>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_fire_big</emitter>
+                        <offset x="-1.04827" y="0.661908" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+
+
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_sparks_big</emitter>
+                        <offset x="-1.04827" y="0.661908" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                    <emitter>
+                        <datablock>LiFEmitterNodeData</datablock>
+                        <emitter>Conflagration_smoke_big</emitter>
+                        <offset x="-0.899379" y="0.914388" z="8.05925" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </particleEmitters>
+                <decals>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="5.21498" y="3.6001" z="9.27544" />
+                        <normal x="1" y="0.000415202" z="0.000419161" />
+                        <tangent x="-0.000419161" y="7.95806e-015" z="1" />
+                        <size>5.03126</size>
+                    </decal>
+                    <decal>
+                        <datablock>ScorchRXDecal</datablock>
+                        <offset x="-1.04313" y="1.10705" z="7.94418" />
+                        <normal x="-0.000447735" y="1.61807e-009" z="1" />
+                        <tangent x="-1" y="-1.03514e-020" z="-0.000447735" />
+                        <size>3.92632</size>
+                    </decal>
+                </decals>
+                <soundEmitters>
+                    <emitter>
+                        <profile>env_fire_medium</profile>
+                        <offset x="-1.30311" y="0.661908" z="8.44441" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                    </emitter>
+                </soundEmitters>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/stone_inner_gatehouse_with_drawbridge/stone_wall4m_gate_inn_db_inc.dts</shapeName>
+                        <offset x="2" y="-2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2922" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Wooden Wall Corner-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/wooden_wall_cor/wooden_wall_cor.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/wooden_wall_cor/wooden_wall_cor_inc.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/wooden_wall_cor/wooden_wall_cor_dmg.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2923" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Wooden Wall Corner (loophole)-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/wooden_wall_cor_loophole/wooden_wall_cor_loophole.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/wooden_wall_cor_loophole/wooden_wall_cor_loophole_inc.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/fortifications/wooden_wall_cor_loophole/wooden_wall_cor_loophole_dmg.dts</shapeName>
+                        <offset x="2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="2480" defaultState="Complete" isUnflattenAllowed="0" noRuins="1" StreamingGroup="1" rotationStep="1"><!--name = Woodshed--><lockedCells><cell x="0" y="0" /><cell x="1" y="0" /></lockedCells><states><state type="Complete"><shapes><shape><shapeName>art/models/3d/construction/farming/woodshed/Woodshed.dts</shapeName><offset x="0" y="0" z="0" /><rot x="0" y="0" z="1" angle="0" /><scale x="1" y="1" z="1" /></shape></shapes></state><state type="Incomplete"><shapes><shape><shapeName>art/models/3d/construction/misc/site/Woodshed_inc.dts</shapeName><offset x="0" y="0" z="0" /><rot x="0" y="0" z="1" angle="0" /><scale x="1" y="1" z="1" /></shape></shapes></state><state type="Damaged"><shapes><shape><shapeName>art/models/3d/construction/farming/woodshed/Woodshed_dmg.dts</shapeName><offset x="0" y="0" z="0" /><rot x="0" y="0" z="1" angle="0" /><scale x="1" y="1" z="1" /></shape></shapes></state></states></object>
+<object id="2400" defaultState="Complete" isUnflattenAllowed="0" StreamingGroup="3" rotationStep="90"><!--name = Small Wooden Shed--><lockedCells><cell x="0" y="0" /><cell x="1" y="0" /></lockedCells><states><state type="Complete"><shapes><shape><shapeName>art/models/3d/construction/storage/small_wooden_shed/small_wooden_shed.dts</shapeName><offset x="0" y="0" z="0" /><rot x="0" y="0" z="0" angle="0" /><scale x="1" y="1" z="1" /></shape></shapes></state><state type="Damaged"><shapes><shape><shapeName>art/models/3d/construction/storage/small_wooden_shed/small_wooden_shed_dmg.dts</shapeName><offset x="0" y="0" z="0" /><rot x="0" y="0" z="0" angle="0" /><scale x="1" y="1" z="1" /></shape></shapes><particleEmitters><emitter><datablock>LiFEmitterNodeData</datablock><emitter>Conflagration_fire_medium</emitter><offset x="1" y="0" z="1.5571" /><rot x="0" y="0" z="1" angle="0" /></emitter><emitter><datablock>LiFEmitterNodeData</datablock><emitter>Conflagration_sparks_medium</emitter><offset x="1" y="0" z="1.5571" /><rot x="0" y="0" z="1" angle="0" /></emitter><emitter><datablock>LiFEmitterNodeData</datablock><emitter>Conflagration_smoke_medium</emitter><offset x="1" y="0" z="2.1455" /><rot x="0" y="0" z="1" angle="0" /></emitter></particleEmitters><soundEmitters><emitter><profile>env_fire</profile><offset x="1" y="0" z="2.1455" /><rot x="0" y="0" z="1" angle="0" /></emitter></soundEmitters></state><state type="Incomplete"><shapes><shape><shapeName>art/models/3d/construction/storage/small_wooden_shed/small_wooden_shed_inc.dts</shapeName><offset x="0" y="0" z="0" /><rot x="0" y="0" z="0" angle="0" /><scale x="1" y="1" z="1" /></shape></shapes></state></states></object>
+<object id="2830" defaultState="Complete" isUnflattenAllowed="0" StreamingGroup="3" rotationStep="1"><!--name = Ore Stockpile--><lockedCells><cell x="0" y="0" /><cell x="1" y="-1" /><cell x="0" y="-1" /><cell x="1" y="0" /></lockedCells><states><state type="Complete"><shapes><shape><shapeName>art/models/3d/construction/storage/stockpile_ore/ore_stockpile.dts</shapeName><offset x="2" y="-1.8" z="-0.05" /><rot x="1" y="1" z="1" angle="0" /><scale x="2" y="2" z="2" /></shape></shapes></state><state type="Incomplete"><shapes><shape><shapeName>art/models/3d/construction/storage/stockpile_ore/ore_stockpile_inc.dts</shapeName><offset x="2" y="-1.8" z="-0.05" /><rot x="1" y="1" z="1" angle="0" /><scale x="2" y="2" z="2" /></shape></shapes></state></states></object>
+<object id="2831" defaultState="Complete" isUnflattenAllowed="0" StreamingGroup="3" rotationStep="1"><!--name = Stone Stockpile--><lockedCells><cell x="0" y="0" /><cell x="1" y="-1" /><cell x="0" y="-1" /><cell x="1" y="0" /></lockedCells><states><state type="Complete"><shapes><shape><shapeName>art/models/3d/construction/storage/stockpile_stone/stone_stockpile.dts</shapeName><offset x="2" y="-1.8" z="-0.05" /><rot x="1" y="1" z="1" angle="0" /><scale x="2" y="2" z="2" /></shape></shapes></state><state type="Incomplete"><shapes><shape><shapeName>art/models/3d/construction/storage/stockpile_stone/stone_stockpile_inc.dts</shapeName><offset x="2" y="-1.8" z="-0.05" /><rot x="1" y="1" z="1" angle="0" /><scale x="2" y="2" z="2" /></shape></shapes></state></states></object>
+<object id="2832" defaultState="Complete" isUnflattenAllowed="0" StreamingGroup="2" rotationStep="1"><!--name = Grain Stockpile--><lockedCells><cell x="0" y="0" /><cell x="1" y="0" /><cell x="2" y="0" /><cell x="0" y="-1" /><cell x="1" y="-1" /><cell x="2" y="-1" /><cell x="0" y="1" /><cell x="1" y="1" /><cell x="2" y="1" /></lockedCells><states><state type="Complete"><shapes><shape><shapeName>art/models/3d/construction/storage/stockpile_grain/grain_stockpile.dts</shapeName><offset x="2" y="2" z="0" /><rot x="0" y="0" z="0" angle="0" /><scale x="1" y="1" z="1" /></shape></shapes></state><state type="Damaged"><shapes><shape><shapeName>art/models/3d/construction/storage/stockpile_grain/grain_stockpile_dmg.dts</shapeName><offset x="2" y="2" z="0" /><rot x="0" y="0" z="0" angle="0" /><scale x="1" y="1" z="1" /></shape></shapes></state><state type="Incomplete"><shapes><shape><shapeName>art/models/3d/construction/storage/stockpile_grain/grain_stockpile_inc.dts</shapeName><offset x="2" y="2" z="0" /><rot x="0" y="0" z="0" angle="0" /><scale x="1" y="1" z="1" /></shape></shapes></state></states></object>
+<object id="2833" defaultState="Complete" isUnflattenAllowed="0" StreamingGroup="3" rotationStep="1"><!--name = Compost Heap--><lockedCells><cell x="0" y="0" /><cell x="1" y="-1" /><cell x="0" y="-1" /><cell x="1" y="0" /></lockedCells><states><state type="Complete"><shapes><shape><shapeName>art/models/3d/construction/storage/compost_heap/compost_heap.dts</shapeName><offset x="3.5" y="-2" z="0" /><rot x="1" y="1" z="1" angle="0" /><scale x="1" y="1" z="1" /></shape></shapes></state><state type="Incomplete"><shapes><shape><shapeName>art/models/3d/construction/storage/compost_heap/compost_heap_inc.dts</shapeName><offset x="3.5" y="-2" z="0" /><rot x="1" y="1" z="1" angle="0" /><scale x="1" y="1" z="1" /></shape></shapes></state></states></object>
+<object id="2834" defaultState="Complete" isUnflattenAllowed="0" StreamingGroup="2" rotationStep="1">
+		<!--name = Rabbit Cage-->
+		<lockedCells>
+			<cell x="0" y="0" />
+		</lockedCells>
+		<states>
+			<state type="Complete">
+				<shapes>
+					<shape>
+						<shapeName>art/models/3d/construction/farming/rabbit_cage/rabbit_hutch_full.dts</shapeName>
+						<offset x="0" y="0" z="0" />
+						<rot x="0" y="0" z="0" angle="0" />
+						<scale x="1" y="1" z="1" />
+					</shape>
+				</shapes>
+			</state>
+			<state type="Damaged">
+				<shapes>
+					<shape>
+						<shapeName>art/models/3d/construction/farming/rabbit_cage/rabbit_hutch_dmg.dts</shapeName>
+						<offset x="0" y="0" z="0" />
+						<rot x="0" y="0" z="0" angle="0" />
+						<scale x="1" y="1" z="1" />
+					</shape>
+				</shapes>
+			</state>
+			<state type="Incomplete">
+				<shapes>
+					<shape>
+						<shapeName>art/models/3d/construction/farming/rabbit_cage/rabbit_hutch_inc.dts</shapeName>
+						<offset x="0" y="0" z="0" />
+						<rot x="0" y="0" z="0" angle="0" />
+						<scale x="1" y="1" z="1" />
+					</shape>
+				</shapes>
+			</state>
+		</states>
+	</object>
+<object id="2895" defaultState="Complete" isUnflattenAllowed="0" noRuins="1" StreamingGroup="1" rotationStep="1">
+		<!--name = Oil Press-->
+		<lockedCells>
+			<cell x="0" y="0" />
+		</lockedCells>
+		<states>
+			<state type="Complete">
+				<shapes>
+					<shape>
+						<shapeName>art/models/3d/construction/farming/oilpress/OilPress_notworking.dts</shapeName>
+						<offset x="0" y="0" z="0" />
+						<rot x="0" y="0" z="1" angle="0" />
+						<scale x="2" y="2" z="2" />
+					</shape>
+				</shapes>
+			</state>
+			<state type="Incomplete">
+				<shapes>
+					<shape>
+						<shapeName>art/models/3d/construction/farming/oilpress/OilPress_inc.dts</shapeName>
+						<offset x="0" y="0" z="0" />
+						<rot x="0" y="0" z="1" angle="0" />
+						<scale x="2" y="2" z="2" />
+					</shape>
+				</shapes>
+			</state>
+			<state type="Working">
+				<shapes>
+					<shape>
+						<shapeName>art/models/3d/construction/farming/oilpress/OilPress_working.dts</shapeName>
+						<animationName>rotate</animationName>
+						<offset x="0" y="0" z="0" />
+						<rot x="0" y="0" z="1" angle="0" />
+						<scale x="2" y="2" z="2" />
+					</shape>
+				</shapes>
+			</state>
+			<state type="Damaged">
+				<shapes>
+					<shape>
+						<shapeName>art/models/3d/construction/farming/oilpress/OilPress_dmg.dts</shapeName>
+						<offset x="0" y="0" z="0" />
+						<rot x="0" y="0" z="1" angle="0" />
+						<scale x="2" y="2" z="2" />
+					</shape>
+				</shapes>
+			</state>
+		</states>
+	</object>
+<object id="3100" isUnflattenAllowed="0" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Altar Ferryman -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/AltarsIdolsMod/art/models/3d/construction/altars/altar_ferryman.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3101" isUnflattenAllowed="0" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Altar Rob -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/AltarsIdolsMod/art/models/3d/construction/altars/altar_rob.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3102" isUnflattenAllowed="0" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Altar Sofapek -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/AltarsIdolsMod/art/models/3d/construction/altars/altar_sofapek.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3103" isUnflattenAllowed="0" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Altar Terskel -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/AltarsIdolsMod/art/models/3d/construction/altars/altar_terskel.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3104" isUnflattenAllowed="0" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+    <!--name = Idol Sofapek -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/AltarsIdolsMod/art/models/3d/construction/idols/idol_sofapek.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/AltarsIdolsMod/art/models/3d/construction/idols/idol_sofapek.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3105" isUnflattenAllowed="0" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+    <!--name = Idol Terskel -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/AltarsIdolsMod/art/models/3d/construction/idols/idol_terskel.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/AltarsIdolsMod/art/models/3d/construction/idols/idol_terskel.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3106" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="2" noRuins="1" noDecay="1">
+        <!--name = Sign_A-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SignsPillarsMod/art/models/3d/construction/decorations/sign/sign_a.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SignsPillarsMod/art/models/3d/construction/decorations/sign/sign_a.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3107" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="2" noRuins="1" noDecay="1">
+        <!--name = Sign_B-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SignsPillarsMod/art/models/3d/construction/decorations/sign/sign_b.dts</shapeName>
+                        <offset x="0" y="0" z="-0.2" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SignsPillarsMod/art/models/3d/construction/decorations/sign/sign_b.dts</shapeName>
+                        <offset x="0" y="0" z="-0.2" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3108" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="2" noRuins="1" noDecay="1">
+        <!--name = Sign_C-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SignsPillarsMod/art/models/3d/construction/decorations/sign/sign_c.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SignsPillarsMod/art/models/3d/construction/decorations/sign/sign_c.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3109" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="2" noRuins="1" noDecay="1">
+        <!--name = Sign_D-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SignsPillarsMod/art/models/3d/construction/decorations/sign/sign_d.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SignsPillarsMod/art/models/3d/construction/decorations/sign/sign_d.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3110" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="2" noRuins="1" noDecay="1">
+        <!--name = Sign_E-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SignsPillarsMod/art/models/3d/construction/decorations/sign/sign_e.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SignsPillarsMod/art/models/3d/construction/decorations/sign/sign_e.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3111" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Blade Stand -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/furniture/shelf/wallshelfb_01.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3112" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = shield_a1-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a1.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a1.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3113" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = shield_a2-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a2.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a2.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3114" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = shield_a3-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a3.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a3.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3115" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = shield_a5-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a5.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a5.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3116" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = shield_a6-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a6.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a6.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3117" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = shield_a7-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a7.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a7.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3118" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = shield_a8-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a8.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a8.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3119" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = shield_a1-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a9.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a9.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3120" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = shield_a1-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a10.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_a10.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3121" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = shield_b2-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_b2.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_b2.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3122" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = shield_b3-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_b3.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_b3.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3123" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+        <!--name = shield_b4-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_b4.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/shield_b4.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3124" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = DummyDoll a1-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a1.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a1.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3125" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = DummyDoll a2-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a2.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a2.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3126" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = DummyDoll a3-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a3.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a3.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3127" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = DummyDoll a4-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a4.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a4.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3128" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = DummyDoll a5-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a5.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a5.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3129" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = DummyDoll a6-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a6.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a6.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3130" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = DummyDoll a7-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a7.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a7.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3131" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = DummyDoll a8-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a8.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a8.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3132" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = DummyDoll a9-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a9.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a9.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3133" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = DummyDoll a10-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a10.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/dummydoll/dummydoll_a10.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3134" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = dummyhorsedoll_a1-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a1.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a1.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3135" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = dummyhorsedoll_a2-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a2.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a2.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3136" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = dummyhorsedoll_a3-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a3.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a3.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3137" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = dummyhorsedoll_a4-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a4.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a4.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3138" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = dummyhorsedoll_a5-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a5.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a5.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3139" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = dummyhorsedoll_a6-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a6.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a6.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3140" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+        <!--name = dummyhorsedoll_a7-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a7.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/DisplaysMod/art/models/3d/construction/decorations/trophy/dummyhorsedoll_a7.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3153" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Canopy Bed -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/FurnitureMod/art/models/3d/construction/furniture/decorablebed/decorablebed_01.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3154" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Carved Bench -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/FurnitureMod/art/models/3d/construction/furniture/expensivebench/expensivebench_01.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+				<mountPoints>
+                    <sittingPoint>
+                        <offset x="0" y="-0.7" z="0.7" />
+                        <rot x="0.0" y="0.0" z="1.0" angle="3.14" />
+                        <angle yaw="1.5" pitch="6.2831853072"/>
+                        <distance meters="2.0" />
+                    </sittingPoint>
+					<sittingPoint>
+                        <offset x="1.2" y="-0.7" z="0.7" />
+                        <rot x="0.0" y="0.0" z="1.0" angle="3.14" />
+                        <angle yaw="1.5" pitch="6.2831853072"/>
+                        <distance meters="2.0" />
+                    </sittingPoint>
+                    <sittingPoint>
+                        <offset x="-1.2" y="-0.7" z="0.7" />
+                        <rot x="0.0" y="0.0" z="1.0" angle="3.14" />
+                        <angle yaw="1.5" pitch="6.2831853072"/>
+                        <distance meters="2.0" />
+                    </sittingPoint>						
+                </mountPoints>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3155" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Carved Slavard Bench -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/FurnitureMod/art/models/3d/construction/furniture/bench/bench_v1.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+				<mountPoints>
+                    <sittingPoint>
+                        <offset x="0" y="-0.7" z="0.7" />
+                        <rot x="0.0" y="0.0" z="1.0" angle="3.14" />
+                        <angle yaw="1.5" pitch="6.2831853072"/>
+                        <distance meters="2.0" />
+                    </sittingPoint>
+					<sittingPoint>
+                        <offset x="1.2" y="-0.7" z="0.7" />
+                        <rot x="0.0" y="0.0" z="1.0" angle="3.14" />
+                        <angle yaw="1.5" pitch="6.2831853072"/>
+                        <distance meters="2.0" />
+                    </sittingPoint>
+                    <sittingPoint>
+                        <offset x="-1.2" y="-0.7" z="0.7" />
+                        <rot x="0.0" y="0.0" z="1.0" angle="3.14" />
+                        <angle yaw="1.5" pitch="6.2831853072"/>
+                        <distance meters="2.0" />
+                    </sittingPoint>						
+                </mountPoints>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3156" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Ornate Gottlung Bench -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/FurnitureMod/art/models/3d/construction/furniture/bench/bench_v2.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+				<mountPoints>
+                    <sittingPoint>
+                        <offset x="0" y="-0.7" z="0.7" />
+                        <rot x="0.0" y="0.0" z="1.0" angle="3.14" />
+                        <angle yaw="1.5" pitch="6.2831853072"/>
+                        <distance meters="2.0" />
+                    </sittingPoint>
+					<sittingPoint>
+                        <offset x="1.2" y="-0.7" z="0.7" />
+                        <rot x="0.0" y="0.0" z="1.0" angle="3.14" />
+                        <angle yaw="1.5" pitch="6.2831853072"/>
+                        <distance meters="2.0" />
+                    </sittingPoint>
+                    <sittingPoint>
+                        <offset x="-1.2" y="-0.7" z="0.7" />
+                        <rot x="0.0" y="0.0" z="1.0" angle="3.14" />
+                        <angle yaw="1.5" pitch="6.2831853072"/>
+                        <distance meters="2.0" />
+                    </sittingPoint>						
+                </mountPoints>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3157" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Ornate Slavard Table -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/FurnitureMod/art/models/3d/construction/furniture/expensivetable/expensivetable_04.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3158" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Ornate Slavard Throne -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/FurnitureMod/art/models/3d/construction/furniture/throne/throne_02.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+				<mountPoints>
+                    <sittingPoint>
+                        <offset x="0" y="-0.5" z="0.7" />
+                        <rot x="0.0" y="0.0" z="1.0" angle="3.14" />
+                        <angle yaw="1.5" pitch="6.2831853072"/>
+                        <distance meters="2.0" />
+                    </sittingPoint>
+                </mountPoints>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3159" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Simple Table -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/FurnitureMod/art/models/3d/construction/furniture/tables/table_02.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3169" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="2" noRuins="1" >
+    <!--name = statue_tusgaal-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/decorations/statues/statue_tusgaal.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3170" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="2" noRuins="1" >
+    <!--name = statue_mctir-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/decorations/statues/statue_mctir.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3171" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="2" noRuins="1" >
+    <!--name = statue_sovereign-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/decorations/statues/statue_sovereign.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3537" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Carved Chest 1 -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/ChestsMod/art/models/3d/construction/containers/chest/chest_v1.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3538" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Carved Chest 2 -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/ChestsMod/art/models/3d/construction/containers/chest/chest_v2.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3539" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Carved Chest 3 -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/ChestsMod/art/models/3d/construction/containers/chest/chest_v3.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3540" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1" noDecay="1">
+    <!--name = Carved Strongbox -->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/ChestsMod/art/models/3d/construction/containers/chest/chest_v4.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3602" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Watchtower)-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="-1" y="2" />
+            <cell x="0" y="2" />
+            <cell x="1" y="2" />
+            <cell x="-2" y="1" />
+            <cell x="-1" y="1" />
+            <cell x="0" y="1" />
+            <cell x="1" y="1" />
+            <cell x="2" y="1" />
+            <cell x="-2" y="0" />
+            <cell x="-1" y="0" />
+            <cell x="1" y="0" />
+            <cell x="2" y="0" />
+            <cell x="-2" y="-1" />
+            <cell x="-1" y="-1" />
+            <cell x="0" y="-1" />
+            <cell x="1" y="-1" />
+            <cell x="2" y="-1" />
+            <cell x="-1" y="-2" />
+            <cell x="0" y="-2" />
+            <cell x="1" y="-2" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/BuildingsMod/art/models/3d/construction/fortifications/watchtower/watchtower.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/BuildingsMod/art/models/3d/construction/fortifications/watchtower/watchtower_inc.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/BuildingsMod/art/models/3d/construction/fortifications/watchtower/watchtower_dmg.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3603" isUnflattenAllowed="0" rotationStep="90" defaultState="Complete" StreamingGroup="3">
+        <!--name = Castle wall with hoarding-->
+        <lockedCells>
+            <cell x="0" y="0" />
+            <cell x="-1" y="1" />
+            <cell x="-1" y="0" />
+            <cell x="0" y="1" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/BuildingsMod/art/models/3d/construction/fortifications/castleconstructions/wallwithgalleryangle/wallwithgalleryangle_a.dts</shapeName>
+                        <offset x="-2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.57088" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/BuildingsMod/art/models/3d/construction/fortifications/castleconstructions/wallwithgalleryangle/wallwithgalleryangle_a_dmg.dts</shapeName>
+                        <offset x="-2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.57088" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/BuildingsMod/art/models/3d/construction/fortifications/castleconstructions/wallwithgalleryangle/wallwithgalleryangle_a_inc.dts</shapeName>
+                        <offset x="-2" y="2" z="0" />
+                        <rot x="0" y="0" z="1" angle="1.5708" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3594" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="2" noRuins="1" fastDecay="1">
+        <!--name = Small Siege Ladder-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SiegeMod/art/models/3d/construction/combatrelated/siege/smallsiegeladder.dts</shapeName>
+                        <offset x="0" y="0" z="-0.0215446" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SiegeMod/art/models/3d/construction/combatrelated/siege/smallsiegeladder.dts</shapeName>
+                        <offset x="0" y="0" z="-0.0215446" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3595" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="2" noRuins="1" fastDecay="1">
+        <!--name = Large Siege Ladder-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SiegeMod/art/models/3d/construction/combatrelated/siege/largesiegeladder.dts</shapeName>
+                        <offset x="0" y="0" z="-0.0215446" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SiegeMod/art/models/3d/construction/combatrelated/siege/largesiegeladder.dts</shapeName>
+                        <offset x="0" y="0" z="-0.0215446" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3596" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="2" noRuins="1" fastDecay="1">
+        <!--name = Big Siege Ladder-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SiegeMod/art/models/3d/construction/combatrelated/siege/bigsiegeladder.dts</shapeName>
+                        <offset x="0" y="0" z="-0.0215446" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>mod/SiegeMod/art/models/3d/construction/combatrelated/siege/bigsiegeladder.dts</shapeName>
+                        <offset x="0" y="0" z="-0.0215446" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>
+<object id="3597" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="2" noRuins="1" fastDecay="1">
+        <!--name = Siege Platform-->
+        <lockedCells>
+            <cell x="0" y="0" />
+        </lockedCells>
+        <states>
+            <state type="Complete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/decorations/woodenplatform/woodenplatformaa.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+            <state type="Damaged">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/decorations/woodenplatform/woodenplatformaa.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+                <decals>
+                    <decal>
+                        <datablock>ScorchBigDecal</datablock>
+                        <offset x="0.520266" y="-0.0213146" z="2.00439" />
+                        <normal x="0" y="0" z="1" />
+                        <tangent x="-1" y="0" z="0" />
+                        <size>3</size>
+                    </decal>
+                    <decal>
+                        <datablock>ScorchBigDecal</datablock>
+                        <offset x="-1.60828" y="0.154434" z="2.03971" />
+                        <normal x="-0.638231" y="0" z="0.769845" />
+                        <tangent x="-0.769845" y="0" z="-0.638231" />
+                        <size>2</size>
+                    </decal>
+                </decals>
+            </state>
+            <state type="Incomplete">
+                <shapes>
+                    <shape>
+                        <shapeName>art/models/3d/construction/misc/site/site.dts</shapeName>
+                        <offset x="0" y="0" z="0" />
+                        <rot x="0" y="0" z="1" angle="0" />
+                        <scale x="1" y="1" z="1" />
+                    </shape>
+                </shapes>
+            </state>
+        </states>
+    </object>

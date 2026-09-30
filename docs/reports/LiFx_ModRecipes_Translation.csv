@@ -1,0 +1,934 @@
+﻿RecipeID;Name (EN);Pack;ResultID;Result name;SkillID;Skill;Level;In DB;Note;German name status;German name now
+1087;Small Wooden Shed;JorvikModPack;3000;?;18;;60;NOT IN DB;commented;OK;Kleiner Holzschuppen
+1088;Flag PvP;JorvikModPack;3001;Flag PvP;19;;100;yes;;OK;PvP-Banner
+1089;Flag PvE;JorvikModPack;3002;Flag PvE;19;;100;yes;;OK;PvE-Banner
+1090;Long house;JorvikModPack;3003;Long house;20;;60;yes;;OK;Langhaus
+1091;Stone Gate;JorvikModPack;3004;Stone Gate;19;;60;yes;;OK;Steintor
+1092;Small Wooden Bridge;JorvikModPack;3005;Small Wooden Bridge;18;;60;yes;;OK;Kleine Holzbrücke
+1093;Small Stone Bridge;JorvikModPack;3006;Small Stone Bridge;19;;60;yes;;OK;Kleine Steinbrücke
+1094;Large Wooden Bridge;JorvikModPack;3007;Large Wooden Bridge;18;;60;yes;;OK;Große Holzbrücke
+1095;Large Stone Bridge;JorvikModPack;3008;Large Stone Bridge;19;;60;yes;;OK;Große Steinbrücke
+1096;Large Stone Bridge End;JorvikModPack;3009;Large Stone Bridge End;19;;60;yes;;OK;Endstück große Steinbrücke
+1097;Small Stone Bridge End;JorvikModPack;3010;Small Stone Bridge End;19;;60;yes;;OK;Endstück kleine Steinbrücke
+1122;Small Wooden Stairs;JorvikModPack;3011;Small Wooden Stairs;18;;30;yes;;OK;Kleine Holztreppe
+1132;Wall Torch;JorvikModPack;3012;Wall Torch;53;;0;yes;;OK;Wandfackel
+1133;Small Candle;JorvikModPack;3014;Small Candle;53;;0;yes;;OK;Kleine Kerze
+1134;Aurochs Cow (stand);JorvikModPack;3016;Aurochs Cow (stand);14;;90;yes;;OK;Auerochsenkuh – stehend
+1135;Aurochs Cow (eat);JorvikModPack;3017;Aurochs Cow (eat);14;;90;yes;;OK;Auerochsenkuh – fressend
+1136;Aurochs Cow (sleep);JorvikModPack;3018;Aurochs Cow (sleep);14;;90;yes;;OK;Auerochsenkuh – schlafend
+1137;Sow (stand);JorvikModPack;3020;Sow (stand);14;;90;yes;;OK;Sau – stehend
+1138;Sow (eat);JorvikModPack;3021;Sow (eat);14;;90;yes;;OK;Sau – fressend
+1139;Sow (sleep);JorvikModPack;3022;Sow (sleep);14;;90;yes;;OK;Sau – schlafend
+1140;Horse (stand);JorvikModPack;3023;Horse (stand);14;;90;yes;;OK;Pferd – stehend
+1141;Horse (eat);JorvikModPack;3024;Horse (eat);14;;90;yes;;OK;Pferd – fressend
+1142;Horse (sleep);JorvikModPack;3025;Horse (sleep);14;;90;yes;;OK;Pferd – schlafend
+1143;Slave (working);JorvikModPack;3026;Slave (working);14;;90;yes;;OK;Sklave – arbeitend
+1144;Wranen the Hunter (stand);JorvikModPack;3027;Wranen the Hunter (stand);14;;90;yes;;OK;Wranen, der Jäger – stehend
+1145;Book Paper;JorvikModPack;3028;Book Paper;8;;90;yes;;OK;Papier
+1146;Health Book;JorvikModPack;3029;Health Book;8;;90;yes;;OK;Heilkundebuch
+1148;Wood Cart;JorvikModPack;3030;Wood Cart;8;;90;yes;;OK;Holzkarren
+1149;Siege Tower;JorvikModPack;3031;Siege Tower;10;;0;yes;;OK;Belagerungsturm
+1150;Aurochs Bull (stand);JorvikModPack;3032;Aurochs Bull (stand);14;;90;yes;;OK;Auerochsenbulle – stehend
+1151;Aurochs Bull (eat);JorvikModPack;3033;Aurochs Bull (eat);14;;90;yes;;OK;Auerochsenbulle – fressend
+1152;Aurochs Bull (sleep);JorvikModPack;3034;Aurochs Bull (sleep);14;;90;yes;;OK;Auerochsenbulle – schlafend
+1153;Small Wooden Pier;JorvikModPack;3035;Small Wooden Pier;18;;60;yes;;OK;Kleiner Holzsteg
+1154;Small Wooden Pier T;JorvikModPack;3036;Small Wooden Pier T;18;;60;yes;;OK;Kleiner Holzsteg T
+1155;Small Wooden Pier L;JorvikModPack;3037;Small Wooden Pier L;18;;60;yes;;OK;Kleiner Holzsteg L
+1156;Wattle Wicket;JorvikModPack;3038;Wattle Wicket;18;;0;yes;;OK;Flechtwerk-Türchen
+1157;Idol Cross;JorvikModPack;3039;Idol Cross;54;;0;yes;;OK;Holzkreuz
+1158;Wooden Church;JorvikModPack;3040;Wooden Church;20;;60;yes;;OK;Holzkirche
+1159;Sanctum of the Sleeper;JorvikModPack;3041;Sanctum of the Sleeper;20;;60;yes;;OK;Heiligtum des Schläfers
+1160;Novice Decorator Kit;JorvikModPack;3042;Novice Decorator Kit;8;;90;yes;;OK;Dekorationssatz des Lehrlings
+1161;Apprentice Decorator Kit;JorvikModPack;3043;Apprentice Decorator Kit;8;;90;yes;;OK;Dekorationssatz des Gesellen
+1162;Master Decorator Kit;JorvikModPack;3044;Master Decorator Kit;8;;90;yes;;OK;Dekorationssatz des Meisters
+1163;Wolf (stand);JorvikModPack;3045;Wolf (stand);14;;90;yes;;OK;Wolf – stehend
+1164;Gold Sheet;JorvikModPack;3046;Gold Sheet;4;;0;yes;;OK;Goldblech
+1165;Metal Scissors;JorvikModPack;3047;Metal Scissors;4;;0;yes;;OK;Metallschere
+1166;Metal Stamp;JorvikModPack;3048;Metal Stamp;4;;0;yes;;OK;Metallstempel
+1167;Gold Coins;JorvikModPack;1061;Gold Coins;4;;100;yes;;OK;Goldmünzen
+1168;Gold Blanks;JorvikModPack;3049;Gold Blanks;4;;90;yes;;OK;Goldrohlinge
+1169;Silver Sheet;JorvikModPack;3050;Silver Sheet;4;;0;yes;;OK;Silberblech
+1170;Copper Sheet;JorvikModPack;3051;Copper Sheet;4;;0;yes;;OK;Kupferblech
+1171;Silver Blanks;JorvikModPack;3052;Silver Blanks;4;;90;yes;;OK;Silberrohlinge
+1172;Copper Blanks;JorvikModPack;3053;Copper Blanks;4;;90;yes;;OK;Kupferrohlinge
+1173;Silver Coins;JorvikModPack;1060;Silver Coins;4;;100;yes;;OK;Silbermünzen
+1174;Copper Coins;JorvikModPack;1059;Copper Coins;4;;100;yes;;OK;Kupfermünzen
+1179;Stonemason's Workplace;StonemasonsWorkplace;2020;Stonemason's Workplace;18;;0;yes;;OK;Steinmetzwerkstatt
+1180;Ore Washer;OreWasher;2021;Ore Washer;18;;30;yes;;OK;Erzwaschtisch
+1189;Big Tanning Tub;BigTanningTub;2017;Big Tanning Tub;18;;60;yes;;OK;Große Gerbwanne
+1280;Woodshed;Woodshed;2480;Woodshed;18;;60;yes;;OK;Holzlager
+1618;Big Drying Frame;BigDryingFrame;2829;Big Drying Frame;18;;60;yes;;OK;Großes Trockengestell
+1619;Ore Stockpile;StorageBuildings;2830;Ore Stockpile;18;;30;yes;;OK;Erzlager
+1620;Stone Stockpile;StorageBuildings;2831;Stone Stockpile;18;;30;yes;;OK;Steinlager
+1621;Grain Stockpile;StorageBuildings;2832;Grain Stockpile;18;;60;yes;;OK;Kornspeicher
+1622;Compost Heap;StorageBuildings;2833;Compost Heap;18;;30;yes;;OK;Komposthaufen
+1623;Rabbit Cage;OilPressRabbitCage;2834;Rabbit Cage;18;;30;yes;;OK;Kaninchenstall
+1624;Large Herbal Garden;LargeHerbalGarden;2835;Large Herbal Garden;18;;90;yes;;OK;Großer Kräutergarten
+1625;Tailor's Workshop;TailorsWorkshop;2836;Tailors Workshop;19;;90;yes;;OK;Schneiderwerkstatt
+1686;Linen Oil;OilPressRabbitCage;2873;Linen oil;13;;30;yes;;OK;Leinöl
+1703;Oil Press;OilPressRabbitCage;2895;Oil Press;18;;60;yes;;OK;Ölpresse
+1704;Jeweler's Workshop;JewelersWorkshop;2894;Jeweler's Workshop;19;;60;yes;;OK;Goldschmiedewerkstatt
+5020;Shaped Rock (bulk);StonemasonsWorkplace;269;Shaped rock;17;;0;yes;;OK;Formstein (Großmenge)
+5021;Thick Leather (Big Tanning Tub);BigTanningTub;424;Thick Leather;23;;60;yes;;OK;Dickes Leder (Große Gerbwanne)
+5022;Leather Strips (Tailor's Workshop);TailorsWorkshop;1393;Leather strips;25;;0;yes;;MISSING;
+5024;Thick Dried Hide (Big Drying Frame);BigDryingFrame;474;Thick Dried Hide;23;;30;yes;;MISSING;
+5025;Silver Ring;JewelersWorkshop;479;Silver Ring;52;;0;yes;;OK;Silberring
+5026;Gold Ring;JewelersWorkshop;487;Gold ring;52;;0;yes;;OK;Goldring
+5027;Gold and Silver Ring;JewelersWorkshop;499;Gold and Silver Ring;52;;30;yes;;OK;Vergoldeter Silberring
+5028;Gold and Silver Amulet;JewelersWorkshop;488;Gold and Silver Amulet;52;;30;yes;;OK;Vergoldetes Silberamulett
+5029;Silver Jeweled Necklace;JewelersWorkshop;489;Silver Jeweled Necklace;52;;60;yes;;OK;Juwelenbesetzte Silberkette
+5030;Gold Jeweled Necklace;JewelersWorkshop;490;Gold Jeweled Necklace;52;;60;yes;;OK;Juwelenbesetzte Goldkette
+5031;Exceptional Gold and Silver Amulet;JewelersWorkshop;491;Exceptional Gold and Silver Amulet;52;;90;yes;;OK;Exklusives vergoldetes Silberamulett
+5032;Exceptional Gold and Silver Ring;JewelersWorkshop;498;Exceptional Gold and Silver Ring;52;;90;yes;;OK;Exklusiver vergoldeter Silberring
+5033;Silver Amethyst Ring;JewelersWorkshop;492;Silver Amethyst Ring;52;;60;yes;;OK;Amethyst-Silberring
+5034;Silver Garnet Ring;JewelersWorkshop;493;Silver Garnet Ring;52;;60;yes;;OK;Granat-Silberring
+5035;Silver Ruby Ring;JewelersWorkshop;494;Silver Ruby Ring;52;;60;yes;;OK;Rubin-Silberring
+5036;Gold Emerald Ring;JewelersWorkshop;495;Gold Emerald Ring;52;;60;yes;;OK;Smaragd-Goldring
+5037;Gold Sapphire Ring;JewelersWorkshop;496;Gold Sapphire Ring;52;;60;yes;;OK;Saphir-Goldring
+5038;Gold Diamond Ring;JewelersWorkshop;497;Gold Diamond Ring;52;;60;yes;;OK;Diamant-Goldring
+5100;Rags;TailorsWorkshop;297;Rags;25;;0;yes;;OK;Lumpen
+5101;Monk's outfit;TailorsWorkshop;298;Monk's Outfit;25;;60;yes;;OK;Mönchskutte
+5102;Simple Clothing;TailorsWorkshop;299;Simple Clothes;25;;30;yes;;OK;Einfache Kleidung
+5103;Decorated Clothing;TailorsWorkshop;301;Decorated Clothes;25;;60;yes;;OK;Edle Kleidung
+5104;Blacksmith's outfit;TailorsWorkshop;303;Blacksmith's Outfit;25;;60;yes;;OK;Schmiedekleidung
+5105;Carpenter's outfit;TailorsWorkshop;304;Carpenter's Outfit;25;;60;yes;;OK;Schreinerkleidung
+5106;Alchemist's Outfit;TailorsWorkshop;305;Alchemist's Outfit;25;;60;yes;;OK;Alchemistenkleidung
+5107;Engineer's outfit;TailorsWorkshop;306;Engineer's Outfit;25;;60;yes;;OK;Ingenieurkleidung
+5108;Cook's outfit;TailorsWorkshop;307;Cook's Outfit;25;;60;yes;;OK;Kochkleidung
+5109;Novice Padded Helm;TailorsWorkshop;885;Novice Padded Helm;25;;0;yes;;OK;Leichter gepolsterter Helm
+5110;Novice Padded Breastplate;TailorsWorkshop;886;Novice Padded Tunic;25;;0;yes;;OK;Leichter gepolsterter Gambeson
+5111;Novice Padded Vambraces;TailorsWorkshop;887;Novice Padded Vambraces;25;;0;yes;;OK;Leichte gepolsterte Armschienen
+5112;Novice Padded Gauntlets;TailorsWorkshop;888;Novice Padded Gauntlets;25;;0;yes;;OK;Leichte gepolsterte Handschuhe
+5113;Novice Padded Leggings;TailorsWorkshop;889;Novice Padded Leggings;25;;0;yes;;OK;Leichter gepolsterter Beinschutz
+5114;Novice Padded Greaves;TailorsWorkshop;890;Novice Padded Greaves;25;;0;yes;;OK;Leichte gepolsterte Stiefel
+5115;Regular Padded Helm;TailorsWorkshop;891;Regular Padded Helm;25;;30;yes;;OK;Normaler gepolsterter Helm
+5116;Regular Padded Tunic;TailorsWorkshop;892;Regular Padded Tunic;25;;30;yes;;OK;Normaler gepolsterter Gambeson
+5117;Regular Padded Vambraces;TailorsWorkshop;893;Regular Padded Vambraces;25;;30;yes;;OK;Normale gepolsterte Armschienen
+5118;Regular Padded Gauntlets;TailorsWorkshop;894;Regular Padded Gauntlets;25;;30;yes;;OK;Normale gepolsterte Handschuhe
+5119;Regular Padded Leggings;TailorsWorkshop;895;Regular Padded Leggings;25;;30;yes;;OK;Normaler gepolsterter Beinschutz
+5120;Regular Padded Greaves;TailorsWorkshop;896;Regular Padded Greaves;25;;30;yes;;OK;Normale gepolsterte Stiefel
+5121;Heavy Padded Helm;TailorsWorkshop;897;Heavy Padded Helm;25;;90;yes;;OK;Schwerer gepolsterter Helm
+5122;Heavy Padded Tunic;TailorsWorkshop;898;Heavy Padded Tunic;25;;90;yes;;OK;Schwerer gepolsterter Gambeson
+5123;Heavy Padded Vambraces;TailorsWorkshop;899;Heavy Padded Vambraces;25;;90;yes;;OK;Schwere gepolsterte Armschienen
+5124;Heavy Padded Gauntlets;TailorsWorkshop;900;Heavy Padded Gauntlets;25;;90;yes;;OK;Schwere gepolsterte Handschuhe
+5125;Heavy Padded Leggings;TailorsWorkshop;901;Heavy Padded Leggings;25;;90;yes;;OK;Schwerer gepolsterter Beinschutz
+5126;Heavy Padded Greaves;TailorsWorkshop;902;Heavy Padded Greaves;25;;90;yes;;OK;Schwere gepolsterte Stiefel
+5127;Royal Padded Helm;TailorsWorkshop;903;Royal Padded Helm;25;;100;yes;;OK;Edler gepolsterter Helm
+5128;Royal Padded Tunic;TailorsWorkshop;904;Royal Padded Tunic;25;;100;yes;;OK;Edler gepolsterter Gambeson
+5129;Royal Padded Vambraces;TailorsWorkshop;905;Royal Padded Vambraces;25;;100;yes;;OK;Edle gepolsterte Armschienen
+5130;Royal Padded Gauntlets;TailorsWorkshop;906;Royal Padded Gauntlets;25;;100;yes;;OK;Edle gepolsterte Handschuhe
+5131;Royal Padded Leggings;TailorsWorkshop;907;Royal Padded Leggings;25;;100;yes;;OK;Edler gepolsterter Beinschutz
+5132;Royal Padded Greaves;TailorsWorkshop;908;Royal Padded Greaves;25;;100;yes;;OK;Edle gepolsterte Stiefel
+5133;Novice Leather Helm;TailorsWorkshop;857;Novice Leather Helm;25;;30;yes;;OK;Leichter Lederhelm
+5134;Novice Leather Breastplate;TailorsWorkshop;858;Novice Leather Breastplate;25;;30;yes;;OK;Leichter Lederkürass
+5135;Novice Leather Vambraces;TailorsWorkshop;859;Novice Leather Vambraces;25;;30;yes;;OK;Leichte Lederarmschienen
+5136;Novice Leather Gauntlets;TailorsWorkshop;860;Novice Leather Gauntlets;25;;30;yes;;OK;Leichte Lederhandschuhe
+5137;Novice Leather Leggings;TailorsWorkshop;861;Novice Leather Leggings;25;;30;yes;;OK;Leichter Lederbeinschutz
+5138;Novice Leather Greaves;TailorsWorkshop;862;Novice Leather Greaves;25;;30;yes;;OK;Leichte Lederstiefel
+5139;Regular Leather Helm;TailorsWorkshop;863;Regular Leather Helm;25;;60;yes;;OK;Normaler Lederhelm
+5140;Regular Leather Breastplate;TailorsWorkshop;864;Regular Leather Breastplate;25;;60;yes;;OK;Normaler Lederkürass
+5141;Regular Leather Vambraces;TailorsWorkshop;865;Regular Leather Vambraces;25;;60;yes;;OK;Normale Lederarmschienen
+5142;Regular Leather Gauntlets;TailorsWorkshop;866;Regular Leather Gauntlets;25;;60;yes;;OK;Normale Lederhandschuhe
+5143;Regular Leather Leggings;TailorsWorkshop;867;Regular Leather Leggings;25;;60;yes;;OK;Normaler Lederbeinschutz
+5144;Regular Leather Greaves;TailorsWorkshop;868;Regular Leather Greaves;25;;60;yes;;OK;Normale Lederstiefel
+5145;Heavy Leather Helm;TailorsWorkshop;869;Heavy Leather Helm;25;;90;yes;;OK;Schwerer Lederhelm
+5146;Heavy Leather Breastplate;TailorsWorkshop;870;Heavy Leather Breastplate;25;;90;yes;;OK;Schwerer Lederkürass
+5147;Heavy Leather Vambraces;TailorsWorkshop;871;Heavy Leather Vambraces;25;;90;yes;;OK;Schwere Lederarmschienen
+5148;Heavy Leather Gauntlets;TailorsWorkshop;872;Heavy Leather Gauntlets;25;;90;yes;;OK;Schwere Lederhandschuhe
+5149;Heavy Leather Leggings;TailorsWorkshop;873;Heavy Leather Leggings;25;;90;yes;;OK;Schwerer Lederbeinschutz
+5150;Heavy Leather Greaves;TailorsWorkshop;874;Heavy Leather Greaves;25;;90;yes;;OK;Schwere Lederstiefel
+5151;Royal Leather Helm;TailorsWorkshop;875;Royal Leather Helm;25;;100;yes;;OK;Edler Lederhelm
+5152;Royal Leather Breastplate;TailorsWorkshop;876;Royal Leather Breastplate;25;;100;yes;;OK;Edler Lederkürass
+5153;Royal Leather Vambraces;TailorsWorkshop;877;Royal Leather Vambraces;25;;100;yes;;OK;Edle Lederarmschienen
+5154;Royal Leather Gauntlets;TailorsWorkshop;878;Royal Leather Gauntlets;25;;100;yes;;OK;Edle Lederhandschuhe
+5155;Royal Leather Leggings;TailorsWorkshop;879;Royal Leather Leggings;25;;100;yes;;OK;Edler Lederbeinschutz
+5156;Royal Leather Greaves;TailorsWorkshop;880;Royal Leather Greaves;25;;100;yes;;OK;Edle Lederstiefel
+5157;Backpack;TailorsWorkshop;458;Backpack;25;;90;yes;;OK;Rucksack
+5158;Sack;TailorsWorkshop;459;Sack;25;;60;yes;;same-as-English;Sack
+5159;Pouch;TailorsWorkshop;461;Pouch;25;;0;yes;;OK;Beutel
+5160;Bag;TailorsWorkshop;460;Bag;25;;30;yes;;OK;Tasche
+5161;Tabard;TailorsWorkshop;1376;Tabard;25;;0;yes;;OK;Wappenrock
+5162;Steppe Rags;TailorsWorkshop;1138;Steppe Rags;25;;0;yes;;OK;Steppenlumpen
+5163;North Rags;TailorsWorkshop;1137;North Rags;25;;0;yes;;OK;Wikingerlumpen
+5164;Banner;TailorsWorkshop;2004;Banner;25;;0;yes;;same-as-English;Banner
+5200;Grow Pitaku Koro;LargeHerbalGarden;684;Pitaku Koro;12;;0;yes;;OK;Pitaku Koro anpflanzen
+5201;Grow Albus Viduae;LargeHerbalGarden;685;Albus Viduae;12;;0;yes;;OK;Albus Viduae anpflanzen
+5202;Grow Aureus Magistrum;LargeHerbalGarden;686;Aureus Magistrum;12;;0;yes;;OK;Aureus Magistrum anpflanzen
+5203;Grow Sapienta Mantis;LargeHerbalGarden;687;Sapienta Mantis;12;;0;yes;;OK;Sapienta Mantis anpflanzen
+5204;Grow Nocte Lumen;LargeHerbalGarden;688;Nocte Lumen;12;;0;yes;;OK;Nocte Lumen anpflanzen
+5205;Grow Chorea Iram;LargeHerbalGarden;689;Chorea Iram;12;;0;yes;;OK;Chorea Iram anpflanzen
+5206;Grow Desertus Smilax;LargeHerbalGarden;690;Desertus Smilax;12;;0;yes;;OK;Desertus Smilax anpflanzen
+5207;Grow Pungentibus Chorea;LargeHerbalGarden;691;Pungentibus Chorea;12;;0;yes;;OK;Pungentibus Chorea anpflanzen
+5208;Grow Mons Bastardus;LargeHerbalGarden;692;Mons Bastardus;12;;0;yes;;OK;Mons Bastardus anpflanzen
+5209;Grow Filia Prati;LargeHerbalGarden;693;Filia Prati;12;;0;yes;;OK;Filia Prati anpflanzen
+5210;Grow Adipem Nebulo;LargeHerbalGarden;694;Adipem Nebulo;12;;0;yes;;OK;Adipem Nebulo anpflanzen
+5211;Grow Rosa Kingsa;LargeHerbalGarden;695;Rosa Kingsa;12;;0;yes;;OK;Rosa Kingsa anpflanzen
+5212;Grow Bacce Hamsa;LargeHerbalGarden;696;Bacce Hamsa;12;;0;yes;;OK;Bacce Hamsa anpflanzen
+5213;Grow Suryodaya bhagya;LargeHerbalGarden;697;Suryodaya bhagya;12;;0;yes;;OK;Suryodaya bhagya anpflanzen
+5214;Grow Saltare Diabolus;LargeHerbalGarden;698;Saltare Diabolus;12;;0;yes;;OK;Saltare Diabolus anpflanzen
+5215;Grow Kurupa Andhere;LargeHerbalGarden;699;Kurupa Andhere;12;;0;yes;;OK;Kurupa Andhere anpflanzen
+5216;Grow Topasa Maidana;LargeHerbalGarden;700;Topasa Maidana;12;;0;yes;;OK;Topasa Maidana anpflanzen
+5217;Grow Rakta Stema;LargeHerbalGarden;701;Rakta Stema;12;;0;yes;;OK;Rakta Stema anpflanzen
+5218;Grow Phlavar Pharest;LargeHerbalGarden;702;Phlavar Pharest;12;;0;yes;;OK;Phlavar Pharest anpflanzen
+5219;Grow Mauna Boba;LargeHerbalGarden;703;Mauna Boba;12;;0;yes;;OK;Mauna Boba anpflanzen
+5220;Grow Falcem Malleorum;LargeHerbalGarden;704;Falcem Malleorum;12;;0;yes;;OK;Falcem Malleorum anpflanzen
+5221;Grow Curaila Jangha;LargeHerbalGarden;705;Curaila Jangha;12;;0;yes;;OK;Curaila Jangha anpflanzen
+5222;Grow Aquila Peccatum;LargeHerbalGarden;706;Aquila Peccatum;12;;0;yes;;OK;Aquila Peccatum anpflanzen
+5223;Grow Nequissimum Propodium;LargeHerbalGarden;707;Nequissimum Propodium;12;;0;yes;;OK;Nequissimum Propodium anpflanzen
+5224;Grow Viridi ursae;LargeHerbalGarden;708;Viridi ursae;12;;0;yes;;OK;Viridi ursae anpflanzen
+5225;Grow Muncha Vana;LargeHerbalGarden;709;Muncha Vana;12;;0;yes;;OK;Muncha Vana anpflanzen
+5226;Grow Caeci Custos;LargeHerbalGarden;710;Caeci Custos;12;;0;yes;;OK;Caeci Custos anpflanzen
+5227;Grow Errantia Ludaeo;LargeHerbalGarden;711;Errantia Ludaeo;12;;0;yes;;OK;Errantia Ludaeo anpflanzen
+5228;Grow Oscularetur;LargeHerbalGarden;712;Oscularetur;12;;0;yes;;OK;Oscularetur anpflanzen
+5229;Grow Mala Fugam;LargeHerbalGarden;713;Mala Fugam;12;;0;yes;;OK;Mala Fugam anpflanzen
+5230;Grow Curva Manus;LargeHerbalGarden;714;Curva Manus;12;;0;yes;;OK;Curva Manus anpflanzen
+5231;Grow Pecuarius Ventus;LargeHerbalGarden;715;Pecuarius Ventus;12;;0;yes;;OK;Pecuarius Ventus anpflanzen
+5232;Grow Petra Stellam;LargeHerbalGarden;716;Petra Stellam;12;;0;yes;;OK;Petra Stellam anpflanzen
+5233;Grow Acerba Moretum;LargeHerbalGarden;717;Acerba Moretum;12;;0;yes;;OK;Acerba Moretum anpflanzen
+5234;Grow Dulcis Radix;LargeHerbalGarden;718;Dulcis Radix;12;;0;yes;;OK;Dulcis Radix anpflanzen
+5235;Grow Kromenta Salicia;LargeHerbalGarden;719;Kromenta Salicia;12;;0;yes;;OK;Kromenta Salicia anpflanzen
+5236;Grow Vertato Zonda;LargeHerbalGarden;720;Vertato Zonda;12;;0;yes;;OK;Vertato Zonda anpflanzen
+5237;Grow Khalari Gratsi;LargeHerbalGarden;721;Khalari Gratsi;12;;0;yes;;OK;Khalari Gratsi anpflanzen
+5238;Grow Remerta Poskot;LargeHerbalGarden;722;Remerta Poskot;12;;0;yes;;OK;Remerta Poskot anpflanzen
+5239;Grow Holmatu Stazo;LargeHerbalGarden;723;Holmatu Stazo;12;;0;yes;;OK;Holmatu Stazo anpflanzen
+5240;Grow Kaleda Mesgano;LargeHerbalGarden;724;Kaleda Mesgano;12;;0;yes;;OK;Kaleda Mesgano anpflanzen
+5241;Grow Fakha Rudob;LargeHerbalGarden;725;Fakha Rudob;12;;0;yes;;OK;Fakha Rudob anpflanzen
+5242;Grow Kacaro Vilko;LargeHerbalGarden;726;Kacaro Vilko;12;;0;yes;;OK;Kacaro Vilko anpflanzen
+5243;Grow Fassari Tolge;LargeHerbalGarden;727;Fassari Tolge;12;;0;yes;;OK;Fassari Tolge anpflanzen
+5244;Grow Sarmento Gaute;LargeHerbalGarden;728;Sarmento Gaute;12;;0;yes;;OK;Sarmento Gaute anpflanzen
+5245;Grow Persetu Hara;LargeHerbalGarden;729;Persetu Hara;12;;0;yes;;OK;Persetu Hara anpflanzen
+5246;Grow Hallatra Kronye;LargeHerbalGarden;730;Hallatra Kronye;12;;0;yes;;OK;Hallatra Kronye anpflanzen
+5247;Grow Laster Kutta;LargeHerbalGarden;731;Laster Kutta;12;;0;yes;;OK;Laster Kutta anpflanzen
+5248;Grow Utrokka Khuru;LargeHerbalGarden;732;Utrokka Khuru;12;;0;yes;;OK;Utrokka Khuru anpflanzen
+5249;Grow Kyasaga Sherl;LargeHerbalGarden;733;Kyasaga Sherl;12;;0;yes;;OK;Kyasaga Sherl anpflanzen
+5250;Grow Jukola Beshaar;LargeHerbalGarden;734;Jukola Beshaar;12;;0;yes;;OK;Jukola Beshaar anpflanzen
+5251;Grow Ripyote Quamisy;LargeHerbalGarden;735;Ripyote Quamisy;12;;0;yes;;OK;Ripyote Quamisy anpflanzen
+5252;Grow Fuskegtra Xelay;LargeHerbalGarden;736;Fuskegtra Xelay;12;;0;yes;;OK;Fuskegtra Xelay anpflanzen
+5253;Grow Burmenta Wallo;LargeHerbalGarden;737;Burmenta Wallo;12;;0;yes;;OK;Burmenta Wallo anpflanzen
+5254;Grow Fohatta Torn;LargeHerbalGarden;738;Fohatta Torn;12;;0;yes;;OK;Fohatta Torn anpflanzen
+5255;Grow Dustali Krabo;LargeHerbalGarden;739;Dustali Krabo;12;;0;yes;;OK;Dustali Krabo anpflanzen
+5256;Grow Gratias Sivara;LargeHerbalGarden;740;Gratias Sivara;12;;0;yes;;OK;Gratias Sivara anpflanzen
+5257;Grow Memen Anik;LargeHerbalGarden;741;Memen Anik;12;;0;yes;;OK;Memen Anik anpflanzen
+5258;Grow Gortaka Messen;LargeHerbalGarden;742;Gortaka Messen;12;;0;yes;;OK;Gortaka Messen anpflanzen
+5259;Grow Kalya Nori;LargeHerbalGarden;743;Kalya Nori;12;;0;yes;;OK;Kalya Nori anpflanzen
+5260;Grow Uliya Sundara;LargeHerbalGarden;744;Uliya Sundara;12;;0;yes;;OK;Uliya Sundara anpflanzen
+5261;Grow Jenaro Vannakam;LargeHerbalGarden;745;Jenaro Vannakam;12;;0;yes;;OK;Jenaro Vannakam anpflanzen
+5262;Grow Huryosa Gulla;LargeHerbalGarden;746;Huryosa Gulla;12;;0;yes;;OK;Huryosa Gulla anpflanzen
+5263;Grow Ital Iranta;LargeHerbalGarden;747;Ital Iranta;12;;0;yes;;OK;Ital Iranta anpflanzen
+5264;Grow Murkha Bola;LargeHerbalGarden;748;Murkha Bola;12;;0;yes;;OK;Murkha Bola anpflanzen
+5265;Grow Naraen Pandanomo;LargeHerbalGarden;750;Naraen Pandanomo;12;;0;yes;;OK;Naraen Pandanomo anpflanzen
+5299;Collect Herbs;LargeHerbalGarden;204;Salt Water;12;;0;yes;;OK;Kräuter sammeln
+5300;Collect Pitaku Koro;LargeHerbalGarden;684;Pitaku Koro;12;;0;yes;;MISSING;
+5301;Collect Albus Viduae;LargeHerbalGarden;685;Albus Viduae;12;;0;yes;;MISSING;
+5302;Collect Aureus Magistrum;LargeHerbalGarden;686;Aureus Magistrum;12;;0;yes;;MISSING;
+5303;Collect Sapienta Mantis;LargeHerbalGarden;687;Sapienta Mantis;12;;0;yes;;MISSING;
+5304;Collect Nocte Lumen;LargeHerbalGarden;688;Nocte Lumen;12;;0;yes;;MISSING;
+5305;Collect Chorea Iram;LargeHerbalGarden;689;Chorea Iram;12;;0;yes;;MISSING;
+5306;Collect Desertus Smilax;LargeHerbalGarden;690;Desertus Smilax;12;;0;yes;;MISSING;
+5307;Collect Pungentibus Chorea;LargeHerbalGarden;691;Pungentibus Chorea;12;;0;yes;;MISSING;
+5308;Collect Mons Bastardus;LargeHerbalGarden;692;Mons Bastardus;12;;0;yes;;MISSING;
+5309;Collect Filia Prati;LargeHerbalGarden;693;Filia Prati;12;;0;yes;;MISSING;
+5310;Collect Adipem Nebulo;LargeHerbalGarden;694;Adipem Nebulo;12;;0;yes;;MISSING;
+5311;Collect Rosa Kingsa;LargeHerbalGarden;695;Rosa Kingsa;12;;0;yes;;MISSING;
+5312;Collect Bacce Hamsa;LargeHerbalGarden;696;Bacce Hamsa;12;;0;yes;;MISSING;
+5313;Collect Suryodaya bhagya;LargeHerbalGarden;697;Suryodaya bhagya;12;;0;yes;;MISSING;
+5314;Collect Saltare Diabolus;LargeHerbalGarden;698;Saltare Diabolus;12;;0;yes;;MISSING;
+5315;Collect Kurupa Andhere;LargeHerbalGarden;699;Kurupa Andhere;12;;0;yes;;MISSING;
+5316;Collect Topasa Maidana;LargeHerbalGarden;700;Topasa Maidana;12;;0;yes;;MISSING;
+5317;Collect Rakta Stema;LargeHerbalGarden;701;Rakta Stema;12;;0;yes;;MISSING;
+5318;Collect Phlavar Pharest;LargeHerbalGarden;702;Phlavar Pharest;12;;0;yes;;MISSING;
+5319;Collect Mauna Boba;LargeHerbalGarden;703;Mauna Boba;12;;0;yes;;MISSING;
+5320;Collect Falcem Malleorum;LargeHerbalGarden;704;Falcem Malleorum;12;;0;yes;;MISSING;
+5321;Collect Curaila Jangha;LargeHerbalGarden;705;Curaila Jangha;12;;0;yes;;MISSING;
+5322;Collect Aquila Peccatum;LargeHerbalGarden;706;Aquila Peccatum;12;;0;yes;;MISSING;
+5323;Collect Nequissimum Propodium;LargeHerbalGarden;707;Nequissimum Propodium;12;;0;yes;;MISSING;
+5324;Collect Viridi ursae;LargeHerbalGarden;708;Viridi ursae;12;;0;yes;;MISSING;
+5325;Collect Muncha Vana;LargeHerbalGarden;709;Muncha Vana;12;;0;yes;;MISSING;
+5326;Collect Caeci Custos;LargeHerbalGarden;710;Caeci Custos;12;;0;yes;;MISSING;
+5327;Collect Errantia Ludaeo;LargeHerbalGarden;711;Errantia Ludaeo;12;;0;yes;;MISSING;
+5328;Collect Oscularetur;LargeHerbalGarden;712;Oscularetur;12;;0;yes;;MISSING;
+5329;Collect Mala Fugam;LargeHerbalGarden;713;Mala Fugam;12;;0;yes;;MISSING;
+5330;Collect Curva Manus;LargeHerbalGarden;714;Curva Manus;12;;0;yes;;MISSING;
+5331;Collect Pecuarius Ventus;LargeHerbalGarden;715;Pecuarius Ventus;12;;0;yes;;MISSING;
+5332;Collect Petra Stellam;LargeHerbalGarden;716;Petra Stellam;12;;0;yes;;MISSING;
+5333;Collect Acerba Moretum;LargeHerbalGarden;717;Acerba Moretum;12;;0;yes;;MISSING;
+5334;Collect Dulcis Radix;LargeHerbalGarden;718;Dulcis Radix;12;;0;yes;;MISSING;
+5335;Collect Kromenta Salicia;LargeHerbalGarden;719;Kromenta Salicia;12;;0;yes;;MISSING;
+5336;Collect Vertato Zonda;LargeHerbalGarden;720;Vertato Zonda;12;;0;yes;;MISSING;
+5337;Collect Khalari Gratsi;LargeHerbalGarden;721;Khalari Gratsi;12;;0;yes;;MISSING;
+5338;Collect Remerta Poskot;LargeHerbalGarden;722;Remerta Poskot;12;;0;yes;;MISSING;
+5339;Collect Holmatu Stazo;LargeHerbalGarden;723;Holmatu Stazo;12;;0;yes;;MISSING;
+5340;Collect Kaleda Mesgano;LargeHerbalGarden;724;Kaleda Mesgano;12;;0;yes;;MISSING;
+5341;Collect Fakha Rudob;LargeHerbalGarden;725;Fakha Rudob;12;;0;yes;;MISSING;
+5342;Collect Kacaro Vilko;LargeHerbalGarden;726;Kacaro Vilko;12;;0;yes;;MISSING;
+5343;Collect Fassari Tolge;LargeHerbalGarden;727;Fassari Tolge;12;;0;yes;;MISSING;
+5344;Collect Sarmento Gaute;LargeHerbalGarden;728;Sarmento Gaute;12;;0;yes;;MISSING;
+5345;Collect Persetu Hara;LargeHerbalGarden;729;Persetu Hara;12;;0;yes;;MISSING;
+5346;Collect Hallatra Kronye;LargeHerbalGarden;730;Hallatra Kronye;12;;0;yes;;MISSING;
+5347;Collect Laster Kutta;LargeHerbalGarden;731;Laster Kutta;12;;0;yes;;MISSING;
+5348;Collect Utrokka Khuru;LargeHerbalGarden;732;Utrokka Khuru;12;;0;yes;;MISSING;
+5349;Collect Kyasaga Sherl;LargeHerbalGarden;733;Kyasaga Sherl;12;;0;yes;;MISSING;
+5350;Collect Jukola Beshaar;LargeHerbalGarden;734;Jukola Beshaar;12;;0;yes;;MISSING;
+5351;Collect Ripyote Quamisy;LargeHerbalGarden;735;Ripyote Quamisy;12;;0;yes;;MISSING;
+5352;Collect Fuskegtra Xelay;LargeHerbalGarden;736;Fuskegtra Xelay;12;;0;yes;;MISSING;
+5353;Collect Burmenta Wallo;LargeHerbalGarden;737;Burmenta Wallo;12;;0;yes;;MISSING;
+5354;Collect Fohatta Torn;LargeHerbalGarden;738;Fohatta Torn;12;;0;yes;;MISSING;
+5355;Collect Dustali Krabo;LargeHerbalGarden;739;Dustali Krabo;12;;0;yes;;MISSING;
+5356;Collect Gratias Sivara;LargeHerbalGarden;740;Gratias Sivara;12;;0;yes;;MISSING;
+5357;Collect Memen Anik;LargeHerbalGarden;741;Memen Anik;12;;0;yes;;MISSING;
+5358;Collect Gortaka Messen;LargeHerbalGarden;742;Gortaka Messen;12;;0;yes;;MISSING;
+5359;Collect Kalya Nori;LargeHerbalGarden;743;Kalya Nori;12;;0;yes;;MISSING;
+5360;Collect Uliya Sundara;LargeHerbalGarden;744;Uliya Sundara;12;;0;yes;;MISSING;
+5361;Collect Jenaro Vannakam;LargeHerbalGarden;745;Jenaro Vannakam;12;;0;yes;;MISSING;
+5362;Collect Huryosa Gulla;LargeHerbalGarden;746;Huryosa Gulla;12;;0;yes;;MISSING;
+5363;Collect Ital Iranta;LargeHerbalGarden;747;Ital Iranta;12;;0;yes;;MISSING;
+5364;Collect Murkha Bola;LargeHerbalGarden;748;Murkha Bola;12;;0;yes;;MISSING;
+5365;Collect Naraen Pandanomo;LargeHerbalGarden;750;Naraen Pandanomo;12;;0;yes;;MISSING;
+5400;Shaped Rock;StonemasonsWorkplace;269;Shaped rock;17;;0;yes;;OK;Formstein
+5401;Shaped Granite;StonemasonsWorkplace;271;Shaped Granite;17;;0;yes;;OK;Granitstein
+5402;Marble Plate;StonemasonsWorkplace;270;Marble Plate;17;;0;yes;;OK;Marmorplatte
+5403;Stone Ammo;StonemasonsWorkplace;1107;Stone Ammo;17;;0;yes;;OK;Steinmunition
+5404;Shaped Granite (bulk);StonemasonsWorkplace;271;Shaped Granite;17;;0;yes;;OK;Granitstein (Großmenge)
+5405;Marble Plate (bulk);StonemasonsWorkplace;270;Marble Plate;17;;0;yes;;OK;Marmorplatte (Großmenge)
+5500;Slavic Stone Wall;SlavicFortifications;2900;Slavic Stone Wall;19;;0;yes;;OK;Fürstliche Steinmauer
+5501;Slavic Stone Wall with Stairs;SlavicFortifications;2901;Slavic Stone Wall with Stairs;19;;0;yes;;OK;Fürstliche Steinmauer mit Treppenaufgang
+5502;Slavic Stone Wall with Inverted Stairs;SlavicFortifications;2902;Slavic Stone Wall with Inverted Stairs;19;;0;yes;;OK;Fürstliche Steinmauer mit abwärtsführender Treppe
+5503;Slavic Stone Tower;SlavicFortifications;2903;Slavic Stone Tower;19;;30;yes;;OK;Fürstlicher Steinturm
+5504;Slavic Stone Inner Tower;SlavicFortifications;2904;Slavic Stone Inner Tower;19;;30;yes;;OK;Fürstlicher innerer Steinturm
+5505;Slavic Stone Angular Tower;SlavicFortifications;2905;Slavic Stone Angular Tower;19;;30;yes;;OK;Fürstlicher Eckturm
+5506;Slavic Stone Gatehouse;SlavicFortifications;2906;Slavic Stone Gatehouse;19;;60;yes;;OK;Fürstliches Steintorhaus
+5507;Slavic Stone Inner Gatehouse;SlavicFortifications;2907;Slavic Stone Inner Gatehouse;19;;60;yes;;OK;Fürstliches inneres Steintorhaus
+5508;Slavic Castle Tower;SlavicFortifications;2908;Slavic Castle Tower;20;;30;yes;;OK;Fürstlicher Burgturm
+5509;Slavic Castle Tower Angle;SlavicFortifications;2909;Slavic Castle Tower Angle;20;;60;yes;;OK;Fürstlicher Burgeckturm
+5510;Slavic Castle Tower with transitions;SlavicFortifications;2910;Slavic Castle Tower with transitions;20;;30;yes;;OK;Fürstlicher Burgturm mit Übergängen
+5511;Slavic Castle Gatehouse;SlavicFortifications;2911;Slavic Castle Gatehouse;20;;60;yes;;OK;Fürstliches Burgtorhaus
+5512;Slavic Castle Gatehouse with Drawbridge;SlavicFortifications;2912;Slavic Castle Gatehouse with Drawbridge;20;;60;yes;;OK;Fürstliches Burgtorhaus mit Zugbrücke
+5513;Slavic Castle Wall Hoarding (no buttress);SlavicFortifications;2913;Slavic Castle Wall Hoarding (no buttress);20;;30;yes;;OK;Fürstlicher Wehrgang ohne Stützpfeiler
+5514;Stone Wall Corner;SlavicFortifications;2914;Stone Wall Corner;19;;0;yes;;OK;Steinmauerecke
+5515;Slavic Stone Wall Corner;SlavicFortifications;2915;Slavic Stone Wall Corner;19;;0;yes;;OK;Fürstliche Steinmauerecke
+5516;Stone Wall (no merlon);SlavicFortifications;2916;Stone Wall (no merlon);19;;0;yes;;OK;Steinmauer ohne Zinnen
+5517;Slavic Stone Wall (no merlon);SlavicFortifications;2917;Slavic Stone Wall (no merlon);19;;0;yes;;OK;Fürstliche Steinmauer ohne Zinnen
+5518;Stone Gatehouse with Drawbridge;SlavicFortifications;2918;Stone Gatehouse with Drawbridge;19;;60;yes;;OK;Steintorhaus mit Zugbrücke
+5519;Slavic Stone Gatehouse with Drawbridge;SlavicFortifications;2919;Slavic Stone Gatehouse with Drawbridge;19;;60;yes;;OK;Fürstliches Steintorhaus mit Zugbrücke
+5520;Stone Inner Gatehouse with Drawbridge;SlavicFortifications;2920;Stone Inner Gatehouse with Drawbridge;19;;60;yes;;OK;Inneres Steintorhaus mit Zugbrücke
+5521;Slavic Stone Inner Gatehouse with Drawbridge;SlavicFortifications;2921;Slavic Stone Inner Gatehouse with Drawbridge;19;;60;yes;;OK;Fürstliches inneres Steintorhaus mit Zugbrücke
+5522;Wooden Wall Corner;SlavicFortifications;2922;Wooden Wall Corner;18;;0;yes;;OK;Holzmauerecke
+5523;Wooden Wall Corner (loophole);SlavicFortifications;2923;Wooden Wall Corner (loophole);18;;30;yes;;OK;Holzmauerecke mit Schießscharte
+5600;Thin Leather (Big Tanning Tub);BigTanningTub;425;Thin Leather;23;;60;yes;;OK;Dünnes Leder (Große Gerbwanne)
+5601;Flax Fibers (Big Tanning Tub);BigTanningTub;377;Flax Fibers;23;;0;yes;;OK;Flachsfasern (Große Gerbwanne)
+5610;Wash Iron Ore;OreWasher;328;Iron Ore;17;;0;yes;;OK;Eisenerz waschen
+5611;Wash Copper Ore;OreWasher;329;Copper Ore;17;;0;yes;;OK;Kupfererz waschen
+5612;Wash Silver Ore;OreWasher;331;Silver Ore;17;;0;yes;;OK;Silbererz waschen
+5613;Wash Gold Ore;OreWasher;330;Gold Ore;17;;0;yes;;OK;Golderz waschen
+5720;Small Wooden Shed;StorageBuildings;2400;Small Wooden Shed;18;;30;yes;;OK;Kleiner Holzschuppen
+5800;Tribe Camp Torch I;TribeCampDecorations;2940;?;62;;0;NOT IN DB;commented;OK;Stammesfackel I
+5801;Tribe Camp Torch II;TribeCampDecorations;2941;?;62;;0;NOT IN DB;commented;OK;Stammesfackel II
+5802;Tribe Camp Torch III;TribeCampDecorations;2942;?;62;;0;NOT IN DB;commented;OK;Stammesfackel III
+5803;Tribe Camp Torch IV;TribeCampDecorations;2943;?;62;;0;NOT IN DB;commented;OK;Stammesfackel IV
+5804;Tribe Camp Torch V;TribeCampDecorations;2944;?;62;;0;NOT IN DB;commented;OK;Stammesfackel V
+5805;Tribe Camp Totem I;TribeCampDecorations;2945;?;62;;0;NOT IN DB;commented;OK;Stammespfahl I
+5806;Tribe Camp Totem II;TribeCampDecorations;2946;?;62;;0;NOT IN DB;commented;OK;Stammespfahl II
+5807;Tribe Camp Shield I;TribeCampDecorations;2947;?;62;;0;NOT IN DB;commented;OK;Stammesschild I
+5808;Tribe Camp Shield II;TribeCampDecorations;2948;?;62;;0;NOT IN DB;commented;OK;Stammesschild II
+5809;Tribe Camp Shield III;TribeCampDecorations;2949;?;62;;0;NOT IN DB;commented;OK;Stammesschild III
+5810;Tribe Camp Shield IV;TribeCampDecorations;2950;?;62;;0;NOT IN DB;commented;OK;Stammesschild IV
+5811;Tribe Camp Shield V;TribeCampDecorations;2951;?;62;;0;NOT IN DB;commented;OK;Stammesschild V
+5812;Tribe Camp Big Shield I;TribeCampDecorations;2952;?;62;;0;NOT IN DB;commented;OK;Großer Stammesschild I
+5813;Tribe Camp Big Shield II;TribeCampDecorations;2953;?;62;;0;NOT IN DB;commented;OK;Großer Stammesschild II
+5814;Tribe Camp Big Shield III;TribeCampDecorations;2954;?;62;;0;NOT IN DB;commented;OK;Großer Stammesschild III
+5815;Tribe Camp Tree I;TribeCampDecorations;2955;?;62;;0;NOT IN DB;commented;OK;Knorriger Baum I
+5816;Tribe Camp Tree II;TribeCampDecorations;2956;?;62;;0;NOT IN DB;commented;OK;Knorriger Baum II
+5817;Tribe Camp Tree III;TribeCampDecorations;2957;?;62;;0;NOT IN DB;commented;OK;Knorriger Baum III
+5818;Tribe Camp Tree IV;TribeCampDecorations;2958;?;62;;0;NOT IN DB;commented;OK;Knorriger Baum IV
+5819;Tribe Camp Tree V;TribeCampDecorations;2959;?;62;;0;NOT IN DB;commented;OK;Knorriger Baum V
+5820;Tribe Camp Tree VI;TribeCampDecorations;2960;?;62;;0;NOT IN DB;commented;OK;Knorriger Baum VI
+5821;Tribe Camp Tree VII;TribeCampDecorations;2961;?;62;;0;NOT IN DB;commented;OK;Knorriger Baum VII
+5830;Witch Sickle;KnoolMod-Pack;2461;Witch Sickle;4;;30;NOT IN DB;commented;OK;Hexensichel
+5831;Bear Axe;KnoolMod-Pack;2462;Bear Axe;4;;30;NOT IN DB;commented;OK;Bärenaxt
+5832;Chieftain Sword;KnoolMod-Pack;2463;Chieftain Sword;4;;30;NOT IN DB;commented;OK;Häuptlingsschwert
+5833;Hunter Axe;KnoolMod-Pack;2464;Hunter Axe;4;;30;NOT IN DB;commented;OK;Jägeraxt
+5834;Mole Pickaxe;KnoolMod-Pack;2465;Mole Pickaxe;4;;60;NOT IN DB;commented;OK;Maulwurfspitzhacke
+5835;Hunter Bow;KnoolMod-Pack;2466;Hunter Bow;9;;90;NOT IN DB;commented;OK;Jägerbogen
+5900;Altar Ferryman;AltarsIdolsPack;3100;Altar Ferryman;62;;0;yes;;MISSING;
+5901;Altar Rob;AltarsIdolsPack;3101;Altar Rob;62;;0;yes;;MISSING;
+5902;Altar Sofapek;AltarsIdolsPack;3102;Altar Sofapek;62;;0;yes;;MISSING;
+5903;Altar Terskel;AltarsIdolsPack;3103;Altar Terskel;62;;0;yes;;MISSING;
+5904;Idol Sofapek;AltarsIdolsPack;3104;Idol Sofapek;54;;0;yes;;MISSING;
+5905;Idol Terskel;AltarsIdolsPack;3105;Idol Terskel;54;;0;yes;;MISSING;
+5906;Owls' Pillar;SignsPillarsPack;3106;Owls' Pillar;53;;0;yes;;MISSING;
+5907;Gavran's Soul;SignsPillarsPack;3107;Gavran's Soul;53;;0;yes;;MISSING;
+5908;Horse Head Pillar;SignsPillarsPack;3108;Horse Head Pillar;53;;0;yes;;MISSING;
+5909;Sign of Hidden Paths;SignsPillarsPack;3109;Sign of Hidden Paths;53;;0;yes;;MISSING;
+5910;Sleeper's Sign;SignsPillarsPack;3110;Sleeper's Sign;53;;0;yes;;MISSING;
+5911;Blade Stand;DisplaysPack;3111;Blade Stand;53;;0;yes;;MISSING;
+5912;Derelict's Shield;DisplaysPack;3112;Derelict's Shield;53;;0;yes;;MISSING;
+5913;Vanguard Shield;DisplaysPack;3113;Vanguard Shield;53;;0;yes;;MISSING;
+5914;Spearman Guard Shield;DisplaysPack;3114;Spearman Guard Shield;53;;0;yes;;MISSING;
+5915;Swordsman Set Shield;DisplaysPack;3115;Swordsman Set Shield;53;;0;yes;;MISSING;
+5916;Graceful Shield;DisplaysPack;3116;Graceful Shield;53;;0;yes;;MISSING;
+5917;Iron Head Shield;DisplaysPack;3117;Iron Head Shield;53;;0;yes;;MISSING;
+5918;Footman Shield;DisplaysPack;3118;Footman Shield;53;;0;yes;;MISSING;
+5919;Heavy Shield;DisplaysPack;3119;Heavy Shield;53;;0;yes;;MISSING;
+5920;Light Shield;DisplaysPack;3120;Light Shield;53;;0;yes;;MISSING;
+5921;Guard Shield;DisplaysPack;3121;Guard Shield;53;;0;yes;;MISSING;
+5922;Royal Shield;DisplaysPack;3122;Royal Shield;53;;0;yes;;MISSING;
+5923;Grand Shield;DisplaysPack;3123;Grand Shield;53;;0;yes;;MISSING;
+5924;Heavy Padded Armor Stand;DisplaysPack;3124;Heavy Padded Armor Stand;53;;0;yes;;MISSING;
+5925;Half Plate Armor Stand;DisplaysPack;3125;Half Plate Armor Stand;53;;0;yes;;MISSING;
+5926;Full Plate Armor Stand;DisplaysPack;3126;Full Plate Armor Stand;53;;0;yes;;MISSING;
+5927;Royal Full Plate Armor Stand;DisplaysPack;3127;Royal Full Plate Armor Stand;53;;0;yes;;MISSING;
+5928;Regular Scale Armor Stand;DisplaysPack;3128;Regular Scale Armor Stand;53;;0;yes;;MISSING;
+5929;Regular Chainmail Armor Stand;DisplaysPack;3129;Regular Chainmail Armor Stand;53;;0;yes;;MISSING;
+5930;Heavy Chainmail Armor Stand;DisplaysPack;3130;Heavy Chainmail Armor Stand;53;;0;yes;;MISSING;
+5931;Heavy Leather Armor Stand;DisplaysPack;3131;Heavy Leather Armor Stand;53;;0;yes;;MISSING;
+5932;Royal Leather Armor Stand;DisplaysPack;3132;Royal Leather Armor Stand;53;;0;yes;;MISSING;
+5933;Heavy Scale Armor Stand;DisplaysPack;3133;Heavy Scale Armor Stand;53;;0;yes;;MISSING;
+5934;Rider in Regular Chain Armor;DisplaysPack;3134;Rider in Regular Chain Armor;53;;0;yes;;MISSING;
+5935;Rider in Regular Padded Armor;DisplaysPack;3135;Rider in Regular Padded Armor;53;;0;yes;;MISSING;
+5936;Rider in Heavy Padded Armor;DisplaysPack;3136;Rider in Heavy Padded Armor;53;;0;yes;;MISSING;
+5937;Rider in Royal Padded Armor;DisplaysPack;3137;Rider in Royal Padded Armor;53;;0;yes;;MISSING;
+5938;Jousting Half Plate Set;DisplaysPack;3138;Jousting Half Plate Set;53;;0;yes;;MISSING;
+5939;Jousting Full Plate Set;DisplaysPack;3139;Jousting Full Plate Set;53;;0;yes;;MISSING;
+5940;Jousting Royal Full Plate Set;DisplaysPack;3140;Jousting Royal Full Plate Set;53;;0;yes;;MISSING;
+5941;Canopy Bed;FurniturePack;3153;Canopy Bed;8;;100;yes;;MISSING;
+5942;Carved Bench;FurniturePack;3154;Carved Bench;8;;100;yes;;MISSING;
+5943;Carved Slavard Bench;FurniturePack;3155;Carved Slavard Bench;8;;100;yes;;MISSING;
+5944;Ornate Gottlung Bench;FurniturePack;3156;Ornate Gottlung Bench;8;;100;yes;;MISSING;
+5945;Ornate Slavard Table;FurniturePack;3157;Ornate Slavard Table;8;;100;yes;;MISSING;
+5946;Ornate Slavard Throne;FurniturePack;3158;Ornate Slavard Throne;8;;100;yes;;MISSING;
+5947;Simple Table;FurniturePack;3159;Simple Table;8;;0;yes;;MISSING;
+5948;Primitive Bed;FurniturePack;3160;?;8;;0;NOT IN DB;commented;MISSING;
+5949;Statue Tusgaal;StatuesPack;3169;Statue Tusgaal;62;;0;yes;;MISSING;
+5950;Statue McTir;StatuesPack;3170;Statue McTir;62;;0;yes;;MISSING;
+5951;Statue Sovereign;StatuesPack;3171;Statue Sovereign;62;;0;yes;;MISSING;
+5952;White Beer;FoodDrinksPack;3186;White Beer;24;;60;yes;;MISSING;
+5953;Oat Stout;FoodDrinksPack;3187;Oat Stout;24;;60;yes;;MISSING;
+5954;South Fish Soup;FoodDrinksPack;3188;South Fish Soup;24;;60;yes;;MISSING;
+5955;Red Ale;FoodDrinksPack;3189;Red Ale;24;;60;yes;;MISSING;
+5956;West Fish Soup;FoodDrinksPack;3190;West Fish Soup;24;;60;yes;;MISSING;
+5957;Fish Soup;FoodDrinksPack;3191;Fish Soup;24;;60;yes;;MISSING;
+5958;East Fish Soup;FoodDrinksPack;3192;East Fish Soup;24;;60;yes;;MISSING;
+5959;Baguette;FoodDrinksPack;3193;Baguette;24;;60;yes;;MISSING;
+5960;Case-hardened Metal Band;TierGearPack;3194;?;3;;60;NOT IN DB;commented;MISSING;
+5961;Toughened Metal Band;TierGearPack;3195;?;3;;60;NOT IN DB;commented;MISSING;
+5962;Case-hardened Metal Sheet;TierGearPack;3196;?;3;;60;NOT IN DB;commented;MISSING;
+5963;Toughened Metal Sheet;TierGearPack;3197;?;3;;60;NOT IN DB;commented;MISSING;
+5964;Case-hardened Chainmail;TierGearPack;3198;?;3;;60;NOT IN DB;commented;MISSING;
+5965;Toughened Chainmail;TierGearPack;3199;?;3;;60;NOT IN DB;commented;MISSING;
+5966;Case-hardened Small metal plate;TierGearPack;3200;?;3;;60;NOT IN DB;commented;MISSING;
+5967;Toughened Small metal plate;TierGearPack;3201;?;3;;60;NOT IN DB;commented;MISSING;
+5968;Case-hardened Metal plate;TierGearPack;3202;?;3;;60;NOT IN DB;commented;MISSING;
+5969;Toughened Metal plate;TierGearPack;3203;?;3;;60;NOT IN DB;commented;MISSING;
+5970;Case-hardened Scale strip;TierGearPack;3204;?;3;;60;NOT IN DB;commented;MISSING;
+5971;Toughened Scale strip;TierGearPack;3205;?;3;;60;NOT IN DB;commented;MISSING;
+5972;Sharpened Falchion;TierGearPack;3206;?;4;;30;NOT IN DB;commented;MISSING;
+5973;Perfect Falchion;TierGearPack;3207;?;4;;30;NOT IN DB;commented;MISSING;
+5974;Sharpened Light Saber;TierGearPack;3208;?;4;;30;NOT IN DB;commented;MISSING;
+5975;Perfect Light Saber;TierGearPack;3209;?;4;;30;NOT IN DB;commented;MISSING;
+5976;Sharpened Nordic Sword;TierGearPack;3210;?;4;;30;NOT IN DB;commented;MISSING;
+5977;Perfect Nordic Sword;TierGearPack;3211;?;4;;30;NOT IN DB;commented;MISSING;
+5978;Sharpened Scimitar;TierGearPack;3212;?;4;;60;NOT IN DB;commented;MISSING;
+5979;Perfect Scimitar;TierGearPack;3213;?;4;;60;NOT IN DB;commented;MISSING;
+5980;Sharpened Gross Messer;TierGearPack;3214;?;4;;60;NOT IN DB;commented;MISSING;
+5981;Perfect Gross Messer;TierGearPack;3215;?;4;;60;NOT IN DB;commented;MISSING;
+5982;Sharpened War Axe;TierGearPack;3216;?;4;;30;NOT IN DB;commented;MISSING;
+5983;Perfect War Axe;TierGearPack;3217;?;4;;30;NOT IN DB;commented;MISSING;
+5984;Sharpened Nordic Axe;TierGearPack;3218;?;4;;60;NOT IN DB;commented;MISSING;
+5985;Perfect Nordic Axe;TierGearPack;3219;?;4;;60;NOT IN DB;commented;MISSING;
+5986;Sharpened Battle Axe;TierGearPack;3220;?;4;;60;NOT IN DB;commented;MISSING;
+5987;Perfect Battle Axe;TierGearPack;3221;?;4;;60;NOT IN DB;commented;MISSING;
+5988;Sharpened Cudgel;TierGearPack;3222;?;8;;30;NOT IN DB;commented;MISSING;
+5989;Perfect Cudgel;TierGearPack;3223;?;8;;30;NOT IN DB;commented;MISSING;
+5990;Sharpened Flanged Mace;TierGearPack;3224;?;4;;30;NOT IN DB;commented;MISSING;
+5991;Perfect Flanged Mace;TierGearPack;3225;?;4;;30;NOT IN DB;commented;MISSING;
+5992;Sharpened Morning Star;TierGearPack;3226;?;4;;60;NOT IN DB;commented;MISSING;
+5993;Perfect Morning Star;TierGearPack;3227;?;4;;60;NOT IN DB;commented;MISSING;
+5994;Sharpened War Pick;TierGearPack;3228;?;4;;60;NOT IN DB;commented;MISSING;
+5995;Perfect War Pick;TierGearPack;3229;?;4;;60;NOT IN DB;commented;MISSING;
+5996;Sharpened Bastard Sword;TierGearPack;3230;?;4;;60;NOT IN DB;commented;MISSING;
+5997;Perfect Bastard Sword;TierGearPack;3231;?;4;;60;NOT IN DB;commented;MISSING;
+5998;Sharpened Big Falchion;TierGearPack;3232;?;4;;30;NOT IN DB;commented;MISSING;
+5999;Perfect Big Falchion;TierGearPack;3233;?;4;;30;NOT IN DB;commented;MISSING;
+6000;Sharpened Estoc;TierGearPack;3234;?;4;;30;NOT IN DB;commented;MISSING;
+6001;Perfect Estoc;TierGearPack;3235;?;4;;30;NOT IN DB;commented;MISSING;
+6002;Sharpened Knight Sword;TierGearPack;3236;?;4;;30;NOT IN DB;commented;MISSING;
+6003;Perfect Knight Sword;TierGearPack;3237;?;4;;30;NOT IN DB;commented;MISSING;
+6004;Sharpened Claymore;TierGearPack;3238;?;4;;30;NOT IN DB;commented;MISSING;
+6005;Perfect Claymore;TierGearPack;3239;?;4;;30;NOT IN DB;commented;MISSING;
+6006;Sharpened Flamberge;TierGearPack;3240;?;4;;60;NOT IN DB;commented;MISSING;
+6007;Perfect Flamberge;TierGearPack;3241;?;4;;60;NOT IN DB;commented;MISSING;
+6008;Sharpened Zweihaender;TierGearPack;3242;?;4;;60;NOT IN DB;commented;MISSING;
+6009;Perfect Zweihaender;TierGearPack;3243;?;4;;60;NOT IN DB;commented;MISSING;
+6010;Sharpened Bardiche;TierGearPack;3244;?;4;;30;NOT IN DB;commented;MISSING;
+6011;Perfect Bardiche;TierGearPack;3245;?;4;;30;NOT IN DB;commented;MISSING;
+6012;Sharpened Broad Axe;TierGearPack;3246;?;4;;60;NOT IN DB;commented;MISSING;
+6013;Perfect Broad Axe;TierGearPack;3247;?;4;;60;NOT IN DB;commented;MISSING;
+6014;Sharpened War Scythe;TierGearPack;3248;?;4;;30;NOT IN DB;commented;MISSING;
+6015;Perfect War Scythe;TierGearPack;3249;?;4;;30;NOT IN DB;commented;MISSING;
+6016;Sharpened Sledge Hammer;TierGearPack;3250;?;4;;30;NOT IN DB;commented;MISSING;
+6017;Perfect Sledge Hammer;TierGearPack;3251;?;4;;30;NOT IN DB;commented;MISSING;
+6018;Sharpened Maul;TierGearPack;3252;?;4;;60;NOT IN DB;commented;MISSING;
+6019;Perfect Maul;TierGearPack;3253;?;4;;60;NOT IN DB;commented;MISSING;
+6020;Sharpened Pitchfork;TierGearPack;3254;?;4;;0;NOT IN DB;commented;MISSING;
+6021;Perfect Pitchfork;TierGearPack;3255;?;4;;0;NOT IN DB;commented;MISSING;
+6022;Sharpened Spear;TierGearPack;3256;?;4;;30;NOT IN DB;commented;MISSING;
+6023;Perfect Spear;TierGearPack;3257;?;4;;30;NOT IN DB;commented;MISSING;
+6024;Sharpened Boar Spear;TierGearPack;3258;?;4;;30;NOT IN DB;commented;MISSING;
+6025;Perfect Boar Spear;TierGearPack;3259;?;4;;30;NOT IN DB;commented;MISSING;
+6026;Sharpened Awl Pike;TierGearPack;3260;?;4;;30;NOT IN DB;commented;MISSING;
+6027;Perfect Awl Pike;TierGearPack;3261;?;4;;30;NOT IN DB;commented;MISSING;
+6028;Sharpened Bec de Corbin;TierGearPack;3262;?;4;;60;NOT IN DB;commented;MISSING;
+6029;Perfect Bec de Corbin;TierGearPack;3263;?;4;;60;NOT IN DB;commented;MISSING;
+6030;Sharpened Jousting Lance;TierGearPack;3264;?;4;;30;NOT IN DB;commented;MISSING;
+6031;Perfect Jousting Lance;TierGearPack;3265;?;4;;30;NOT IN DB;commented;MISSING;
+6032;Sharpened Lance;TierGearPack;3266;?;4;;60;NOT IN DB;commented;MISSING;
+6033;Perfect Lance;TierGearPack;3267;?;4;;60;NOT IN DB;commented;MISSING;
+6034;Sharpened Decorated Jousting Lance;TierGearPack;3268;?;4;;90;NOT IN DB;commented;MISSING;
+6035;Perfect Decorated Jousting Lance;TierGearPack;3269;?;4;;90;NOT IN DB;commented;MISSING;
+6036;Sharpened Short Pike;TierGearPack;3270;?;4;;30;NOT IN DB;commented;MISSING;
+6037;Perfect Short Pike;TierGearPack;3271;?;4;;30;NOT IN DB;commented;MISSING;
+6038;Sharpened Medium Pike;TierGearPack;3272;?;4;;60;NOT IN DB;commented;MISSING;
+6039;Perfect Medium Pike;TierGearPack;3273;?;4;;60;NOT IN DB;commented;MISSING;
+6040;Sharpened Long Pike;TierGearPack;3274;?;4;;60;NOT IN DB;commented;MISSING;
+6041;Perfect Long Pike;TierGearPack;3275;?;4;;60;NOT IN DB;commented;MISSING;
+6042;Sharpened Staff;TierGearPack;3276;?;8;;30;NOT IN DB;commented;MISSING;
+6043;Perfect Staff;TierGearPack;3277;?;8;;30;NOT IN DB;commented;MISSING;
+6044;Sharpened Glaive;TierGearPack;3278;?;4;;30;NOT IN DB;commented;MISSING;
+6045;Perfect Glaive;TierGearPack;3279;?;4;;30;NOT IN DB;commented;MISSING;
+6046;Sharpened Guisarme;TierGearPack;3280;?;4;;60;NOT IN DB;commented;MISSING;
+6047;Perfect Guisarme;TierGearPack;3281;?;4;;60;NOT IN DB;commented;MISSING;
+6048;Sharpened Pollaxe;TierGearPack;3282;?;4;;60;NOT IN DB;commented;MISSING;
+6049;Perfect Pollaxe;TierGearPack;3283;?;4;;60;NOT IN DB;commented;MISSING;
+6050;Sharpened Partisan;TierGearPack;3284;?;4;;30;NOT IN DB;commented;MISSING;
+6051;Perfect Partisan;TierGearPack;3285;?;4;;30;NOT IN DB;commented;MISSING;
+6052;Sharpened Balanced Staff;TierGearPack;3286;?;8;;30;NOT IN DB;commented;MISSING;
+6053;Perfect Balanced Staff;TierGearPack;3287;?;8;;30;NOT IN DB;commented;MISSING;
+6054;Reinforced Novice Padded Helm;TierGearPack;3288;?;25;;30;NOT IN DB;commented;MISSING;
+6055;Masterwork Novice Padded Helm;TierGearPack;3289;?;25;;30;NOT IN DB;commented;MISSING;
+6056;Reinforced Novice Padded Tunic;TierGearPack;3290;?;25;;30;NOT IN DB;commented;MISSING;
+6057;Masterwork Novice Padded Tunic;TierGearPack;3291;?;25;;30;NOT IN DB;commented;MISSING;
+6058;Reinforced Novice Padded Vambraces;TierGearPack;3292;?;25;;30;NOT IN DB;commented;MISSING;
+6059;Masterwork Novice Padded Vambraces;TierGearPack;3293;?;25;;30;NOT IN DB;commented;MISSING;
+6060;Reinforced Novice Padded Gauntlets;TierGearPack;3294;?;25;;30;NOT IN DB;commented;MISSING;
+6061;Masterwork Novice Padded Gauntlets;TierGearPack;3295;?;25;;30;NOT IN DB;commented;MISSING;
+6062;Reinforced Novice Padded Leggings;TierGearPack;3296;?;25;;30;NOT IN DB;commented;MISSING;
+6063;Masterwork Novice Padded Leggings;TierGearPack;3297;?;25;;30;NOT IN DB;commented;MISSING;
+6064;Reinforced Novice Padded Greaves;TierGearPack;3298;?;25;;30;NOT IN DB;commented;MISSING;
+6065;Masterwork Novice Padded Greaves;TierGearPack;3299;?;25;;30;NOT IN DB;commented;MISSING;
+6066;Reinforced Regular Padded Helm;TierGearPack;3300;?;25;;60;NOT IN DB;commented;MISSING;
+6067;Masterwork Regular Padded Helm;TierGearPack;3301;?;25;;60;NOT IN DB;commented;MISSING;
+6068;Reinforced Regular Padded Tunic;TierGearPack;3302;?;25;;60;NOT IN DB;commented;MISSING;
+6069;Masterwork Regular Padded Tunic;TierGearPack;3303;?;25;;60;NOT IN DB;commented;MISSING;
+6070;Reinforced Regular Padded Vambraces;TierGearPack;3304;?;25;;60;NOT IN DB;commented;MISSING;
+6071;Masterwork Regular Padded Vambraces;TierGearPack;3305;?;25;;60;NOT IN DB;commented;MISSING;
+6072;Reinforced Regular Padded Gauntlets;TierGearPack;3306;?;25;;60;NOT IN DB;commented;MISSING;
+6073;Masterwork Regular Padded Gauntlets;TierGearPack;3307;?;25;;60;NOT IN DB;commented;MISSING;
+6074;Reinforced Regular Padded Leggings;TierGearPack;3308;?;25;;60;NOT IN DB;commented;MISSING;
+6075;Masterwork Regular Padded Leggings;TierGearPack;3309;?;25;;60;NOT IN DB;commented;MISSING;
+6076;Reinforced Regular Padded Greaves;TierGearPack;3310;?;25;;60;NOT IN DB;commented;MISSING;
+6077;Masterwork Regular Padded Greaves;TierGearPack;3311;?;25;;60;NOT IN DB;commented;MISSING;
+6078;Reinforced Heavy Padded Helm;TierGearPack;3312;?;25;;90;NOT IN DB;commented;MISSING;
+6079;Masterwork Heavy Padded Helm;TierGearPack;3313;?;25;;90;NOT IN DB;commented;MISSING;
+6080;Reinforced Heavy Padded Tunic;TierGearPack;3314;?;25;;90;NOT IN DB;commented;MISSING;
+6081;Masterwork Heavy Padded Tunic;TierGearPack;3315;?;25;;90;NOT IN DB;commented;MISSING;
+6082;Reinforced Heavy Padded Vambraces;TierGearPack;3316;?;25;;90;NOT IN DB;commented;MISSING;
+6083;Masterwork Heavy Padded Vambraces;TierGearPack;3317;?;25;;90;NOT IN DB;commented;MISSING;
+6084;Reinforced Heavy Padded Gauntlets;TierGearPack;3318;?;25;;90;NOT IN DB;commented;MISSING;
+6085;Masterwork Heavy Padded Gauntlets;TierGearPack;3319;?;25;;90;NOT IN DB;commented;MISSING;
+6086;Reinforced Heavy Padded Leggings;TierGearPack;3320;?;25;;90;NOT IN DB;commented;MISSING;
+6087;Masterwork Heavy Padded Leggings;TierGearPack;3321;?;25;;90;NOT IN DB;commented;MISSING;
+6088;Reinforced Heavy Padded Greaves;TierGearPack;3322;?;25;;90;NOT IN DB;commented;MISSING;
+6089;Masterwork Heavy Padded Greaves;TierGearPack;3323;?;25;;90;NOT IN DB;commented;MISSING;
+6090;Reinforced Royal Padded Helm;TierGearPack;3324;?;25;;100;NOT IN DB;commented;MISSING;
+6091;Masterwork Royal Padded Helm;TierGearPack;3325;?;25;;100;NOT IN DB;commented;MISSING;
+6092;Reinforced Royal Padded Tunic;TierGearPack;3326;?;25;;100;NOT IN DB;commented;MISSING;
+6093;Masterwork Royal Padded Tunic;TierGearPack;3327;?;25;;100;NOT IN DB;commented;MISSING;
+6094;Reinforced Royal Padded Vambraces;TierGearPack;3328;?;25;;100;NOT IN DB;commented;MISSING;
+6095;Masterwork Royal Padded Vambraces;TierGearPack;3329;?;25;;100;NOT IN DB;commented;MISSING;
+6096;Reinforced Royal Padded Gauntlets;TierGearPack;3330;?;25;;100;NOT IN DB;commented;MISSING;
+6097;Masterwork Royal Padded Gauntlets;TierGearPack;3331;?;25;;100;NOT IN DB;commented;MISSING;
+6098;Reinforced Royal Padded Leggings;TierGearPack;3332;?;25;;100;NOT IN DB;commented;MISSING;
+6099;Masterwork Royal Padded Leggings;TierGearPack;3333;?;25;;100;NOT IN DB;commented;MISSING;
+6100;Reinforced Royal Padded Greaves;TierGearPack;3334;?;25;;100;NOT IN DB;commented;MISSING;
+6101;Masterwork Royal Padded Greaves;TierGearPack;3335;?;25;;100;NOT IN DB;commented;MISSING;
+6102;Reinforced Novice Leather Helm;TierGearPack;3336;?;25;;30;NOT IN DB;commented;MISSING;
+6103;Masterwork Novice Leather Helm;TierGearPack;3337;?;25;;30;NOT IN DB;commented;MISSING;
+6104;Reinforced Novice Leather Breastplate;TierGearPack;3338;?;25;;30;NOT IN DB;commented;MISSING;
+6105;Masterwork Novice Leather Breastplate;TierGearPack;3339;?;25;;30;NOT IN DB;commented;MISSING;
+6106;Reinforced Novice Leather Vambraces;TierGearPack;3340;?;25;;30;NOT IN DB;commented;MISSING;
+6107;Masterwork Novice Leather Vambraces;TierGearPack;3341;?;25;;30;NOT IN DB;commented;MISSING;
+6108;Reinforced Novice Leather Gauntlets;TierGearPack;3342;?;25;;30;NOT IN DB;commented;MISSING;
+6109;Masterwork Novice Leather Gauntlets;TierGearPack;3343;?;25;;30;NOT IN DB;commented;MISSING;
+6110;Reinforced Novice Leather Leggings;TierGearPack;3344;?;25;;30;NOT IN DB;commented;MISSING;
+6111;Masterwork Novice Leather Leggings;TierGearPack;3345;?;25;;30;NOT IN DB;commented;MISSING;
+6112;Reinforced Novice Leather Greaves;TierGearPack;3346;?;25;;30;NOT IN DB;commented;MISSING;
+6113;Masterwork Novice Leather Greaves;TierGearPack;3347;?;25;;30;NOT IN DB;commented;MISSING;
+6114;Reinforced Regular Leather Helm;TierGearPack;3348;?;25;;60;NOT IN DB;commented;MISSING;
+6115;Masterwork Regular Leather Helm;TierGearPack;3349;?;25;;60;NOT IN DB;commented;MISSING;
+6116;Reinforced Regular Leather Breastplate;TierGearPack;3350;?;25;;60;NOT IN DB;commented;MISSING;
+6117;Masterwork Regular Leather Breastplate;TierGearPack;3351;?;25;;60;NOT IN DB;commented;MISSING;
+6118;Reinforced Regular Leather Vambraces;TierGearPack;3352;?;25;;60;NOT IN DB;commented;MISSING;
+6119;Masterwork Regular Leather Vambraces;TierGearPack;3353;?;25;;60;NOT IN DB;commented;MISSING;
+6120;Reinforced Regular Leather Gauntlets;TierGearPack;3354;?;25;;60;NOT IN DB;commented;MISSING;
+6121;Masterwork Regular Leather Gauntlets;TierGearPack;3355;?;25;;60;NOT IN DB;commented;MISSING;
+6122;Reinforced Regular Leather Leggings;TierGearPack;3356;?;25;;60;NOT IN DB;commented;MISSING;
+6123;Masterwork Regular Leather Leggings;TierGearPack;3357;?;25;;60;NOT IN DB;commented;MISSING;
+6124;Reinforced Regular Leather Greaves;TierGearPack;3358;?;25;;60;NOT IN DB;commented;MISSING;
+6125;Masterwork Regular Leather Greaves;TierGearPack;3359;?;25;;60;NOT IN DB;commented;MISSING;
+6126;Reinforced Heavy Leather Helm;TierGearPack;3360;?;25;;90;NOT IN DB;commented;MISSING;
+6127;Masterwork Heavy Leather Helm;TierGearPack;3361;?;25;;90;NOT IN DB;commented;MISSING;
+6128;Reinforced Heavy Leather Breastplate;TierGearPack;3362;?;25;;90;NOT IN DB;commented;MISSING;
+6129;Masterwork Heavy Leather Breastplate;TierGearPack;3363;?;25;;90;NOT IN DB;commented;MISSING;
+6130;Reinforced Heavy Leather Vambraces;TierGearPack;3364;?;25;;90;NOT IN DB;commented;MISSING;
+6131;Masterwork Heavy Leather Vambraces;TierGearPack;3365;?;25;;90;NOT IN DB;commented;MISSING;
+6132;Reinforced Heavy Leather Gauntlets;TierGearPack;3366;?;25;;90;NOT IN DB;commented;MISSING;
+6133;Masterwork Heavy Leather Gauntlets;TierGearPack;3367;?;25;;90;NOT IN DB;commented;MISSING;
+6134;Reinforced Heavy Leather Leggings;TierGearPack;3368;?;25;;90;NOT IN DB;commented;MISSING;
+6135;Masterwork Heavy Leather Leggings;TierGearPack;3369;?;25;;90;NOT IN DB;commented;MISSING;
+6136;Reinforced Heavy Leather Greaves;TierGearPack;3370;?;25;;90;NOT IN DB;commented;MISSING;
+6137;Masterwork Heavy Leather Greaves;TierGearPack;3371;?;25;;90;NOT IN DB;commented;MISSING;
+6138;Reinforced Royal Leather Helm;TierGearPack;3372;?;25;;100;NOT IN DB;commented;MISSING;
+6139;Masterwork Royal Leather Helm;TierGearPack;3373;?;25;;100;NOT IN DB;commented;MISSING;
+6140;Reinforced Royal Leather Breastplate;TierGearPack;3374;?;25;;100;NOT IN DB;commented;MISSING;
+6141;Masterwork Royal Leather Breastplate;TierGearPack;3375;?;25;;100;NOT IN DB;commented;MISSING;
+6142;Reinforced Royal Leather Vambraces;TierGearPack;3376;?;25;;100;NOT IN DB;commented;MISSING;
+6143;Masterwork Royal Leather Vambraces;TierGearPack;3377;?;25;;100;NOT IN DB;commented;MISSING;
+6144;Reinforced Royal Leather Gauntlets;TierGearPack;3378;?;25;;100;NOT IN DB;commented;MISSING;
+6145;Masterwork Royal Leather Gauntlets;TierGearPack;3379;?;25;;100;NOT IN DB;commented;MISSING;
+6146;Reinforced Royal Leather Leggings;TierGearPack;3380;?;25;;100;NOT IN DB;commented;MISSING;
+6147;Masterwork Royal Leather Leggings;TierGearPack;3381;?;25;;100;NOT IN DB;commented;MISSING;
+6148;Reinforced Royal Leather Greaves;TierGearPack;3382;?;25;;100;NOT IN DB;commented;MISSING;
+6149;Masterwork Royal Leather Greaves;TierGearPack;3383;?;25;;100;NOT IN DB;commented;MISSING;
+6150;Reinforced Light Chainmail Helm;TierGearPack;3384;?;5;;30;NOT IN DB;commented;MISSING;
+6151;Masterwork Light Chainmail Helm;TierGearPack;3385;?;5;;30;NOT IN DB;commented;MISSING;
+6152;Reinforced Light Chainmail Tunic;TierGearPack;3386;?;5;;30;NOT IN DB;commented;MISSING;
+6153;Masterwork Light Chainmail Tunic;TierGearPack;3387;?;5;;30;NOT IN DB;commented;MISSING;
+6154;Reinforced Light Chainmail Vambraces;TierGearPack;3388;?;5;;30;NOT IN DB;commented;MISSING;
+6155;Masterwork Light Chainmail Vambraces;TierGearPack;3389;?;5;;30;NOT IN DB;commented;MISSING;
+6156;Reinforced Light Chainmail Gauntlets;TierGearPack;3390;?;5;;30;NOT IN DB;commented;MISSING;
+6157;Masterwork Light Chainmail Gauntlets;TierGearPack;3391;?;5;;30;NOT IN DB;commented;MISSING;
+6158;Reinforced Light Chainmail Leggings;TierGearPack;3392;?;5;;30;NOT IN DB;commented;MISSING;
+6159;Masterwork Light Chainmail Leggings;TierGearPack;3393;?;5;;30;NOT IN DB;commented;MISSING;
+6160;Reinforced Light Chainmail Greaves;TierGearPack;3394;?;5;;30;NOT IN DB;commented;MISSING;
+6161;Masterwork Light Chainmail Greaves;TierGearPack;3395;?;5;;30;NOT IN DB;commented;MISSING;
+6162;Reinforced Regular Chainmail Helm;TierGearPack;3396;?;5;;60;NOT IN DB;commented;MISSING;
+6163;Masterwork Regular Chainmail Helm;TierGearPack;3397;?;5;;60;NOT IN DB;commented;MISSING;
+6164;Reinforced Regular Chainmail Tunic;TierGearPack;3398;?;5;;60;NOT IN DB;commented;MISSING;
+6165;Masterwork Regular Chainmail Tunic;TierGearPack;3399;?;5;;60;NOT IN DB;commented;MISSING;
+6166;Reinforced Regular Chainmail Vambraces;TierGearPack;3400;?;5;;60;NOT IN DB;commented;MISSING;
+6167;Masterwork Regular Chainmail Vambraces;TierGearPack;3401;?;5;;60;NOT IN DB;commented;MISSING;
+6168;Reinforced Regular Chainmail Gauntlets;TierGearPack;3402;?;5;;60;NOT IN DB;commented;MISSING;
+6169;Masterwork Regular Chainmail Gauntlets;TierGearPack;3403;?;5;;60;NOT IN DB;commented;MISSING;
+6170;Reinforced Regular Chainmail Leggings;TierGearPack;3404;?;5;;60;NOT IN DB;commented;MISSING;
+6171;Masterwork Regular Chainmail Leggings;TierGearPack;3405;?;5;;60;NOT IN DB;commented;MISSING;
+6172;Reinforced Regular Chainmail Greaves;TierGearPack;3406;?;5;;60;NOT IN DB;commented;MISSING;
+6173;Masterwork Regular Chainmail Greaves;TierGearPack;3407;?;5;;60;NOT IN DB;commented;MISSING;
+6174;Reinforced Heavy Chainmail Helm;TierGearPack;3408;?;5;;90;NOT IN DB;commented;MISSING;
+6175;Masterwork Heavy Chainmail Helm;TierGearPack;3409;?;5;;90;NOT IN DB;commented;MISSING;
+6176;Reinforced Heavy Chainmail Tunic;TierGearPack;3410;?;5;;90;NOT IN DB;commented;MISSING;
+6177;Masterwork Heavy Chainmail Tunic;TierGearPack;3411;?;5;;90;NOT IN DB;commented;MISSING;
+6178;Reinforced Heavy Chainmail Vambraces;TierGearPack;3412;?;5;;90;NOT IN DB;commented;MISSING;
+6179;Masterwork Heavy Chainmail Vambraces;TierGearPack;3413;?;5;;90;NOT IN DB;commented;MISSING;
+6180;Reinforced Heavy Chainmail Gauntlets;TierGearPack;3414;?;5;;90;NOT IN DB;commented;MISSING;
+6181;Masterwork Heavy Chainmail Gauntlets;TierGearPack;3415;?;5;;90;NOT IN DB;commented;MISSING;
+6182;Reinforced Heavy Chainmail Leggings;TierGearPack;3416;?;5;;90;NOT IN DB;commented;MISSING;
+6183;Masterwork Heavy Chainmail Leggings;TierGearPack;3417;?;5;;90;NOT IN DB;commented;MISSING;
+6184;Reinforced Heavy Chainmail Greaves;TierGearPack;3418;?;5;;90;NOT IN DB;commented;MISSING;
+6185;Masterwork Heavy Chainmail Greaves;TierGearPack;3419;?;5;;90;NOT IN DB;commented;MISSING;
+6186;Reinforced Royal Chainmail Helm;TierGearPack;3420;?;5;;100;NOT IN DB;commented;MISSING;
+6187;Masterwork Royal Chainmail Helm;TierGearPack;3421;?;5;;100;NOT IN DB;commented;MISSING;
+6188;Reinforced Royal Chainmail Tunic;TierGearPack;3422;?;5;;100;NOT IN DB;commented;MISSING;
+6189;Masterwork Royal Chainmail Tunic;TierGearPack;3423;?;5;;100;NOT IN DB;commented;MISSING;
+6190;Reinforced Royal Chainmail Vambraces;TierGearPack;3424;?;5;;100;NOT IN DB;commented;MISSING;
+6191;Masterwork Royal Chainmail Vambraces;TierGearPack;3425;?;5;;100;NOT IN DB;commented;MISSING;
+6192;Reinforced Royal Chainmail Gauntlets;TierGearPack;3426;?;5;;100;NOT IN DB;commented;MISSING;
+6193;Masterwork Royal Chainmail Gauntlets;TierGearPack;3427;?;5;;100;NOT IN DB;commented;MISSING;
+6194;Reinforced Royal Chainmail Leggings;TierGearPack;3428;?;5;;100;NOT IN DB;commented;MISSING;
+6195;Masterwork Royal Chainmail Leggings;TierGearPack;3429;?;5;;100;NOT IN DB;commented;MISSING;
+6196;Reinforced Royal Chainmail Greaves;TierGearPack;3430;?;5;;100;NOT IN DB;commented;MISSING;
+6197;Masterwork Royal Chainmail Greaves;TierGearPack;3431;?;5;;100;NOT IN DB;commented;MISSING;
+6198;Reinforced Light Scale Helm;TierGearPack;3432;?;5;;30;NOT IN DB;commented;MISSING;
+6199;Masterwork Light Scale Helm;TierGearPack;3433;?;5;;30;NOT IN DB;commented;MISSING;
+6200;Reinforced Light Scale Tunic;TierGearPack;3434;?;5;;30;NOT IN DB;commented;MISSING;
+6201;Masterwork Light Scale Tunic;TierGearPack;3435;?;5;;30;NOT IN DB;commented;MISSING;
+6202;Reinforced Light Scale Vambraces;TierGearPack;3436;?;5;;30;NOT IN DB;commented;MISSING;
+6203;Masterwork Light Scale Vambraces;TierGearPack;3437;?;5;;30;NOT IN DB;commented;MISSING;
+6204;Reinforced Light Scale Gauntlets;TierGearPack;3438;?;5;;30;NOT IN DB;commented;MISSING;
+6205;Masterwork Light Scale Gauntlets;TierGearPack;3439;?;5;;30;NOT IN DB;commented;MISSING;
+6206;Reinforced Light Scale Leggings;TierGearPack;3440;?;5;;30;NOT IN DB;commented;MISSING;
+6207;Masterwork Light Scale Leggings;TierGearPack;3441;?;5;;30;NOT IN DB;commented;MISSING;
+6208;Reinforced Light Scale Greaves;TierGearPack;3442;?;5;;30;NOT IN DB;commented;MISSING;
+6209;Masterwork Light Scale Greaves;TierGearPack;3443;?;5;;30;NOT IN DB;commented;MISSING;
+6210;Reinforced Regular Scale Helm;TierGearPack;3444;?;5;;60;NOT IN DB;commented;MISSING;
+6211;Masterwork Regular Scale Helm;TierGearPack;3445;?;5;;60;NOT IN DB;commented;MISSING;
+6212;Reinforced Regular Scale Tunic;TierGearPack;3446;?;5;;60;NOT IN DB;commented;MISSING;
+6213;Masterwork Regular Scale Tunic;TierGearPack;3447;?;5;;60;NOT IN DB;commented;MISSING;
+6214;Reinforced Regular Scale Vambraces;TierGearPack;3448;?;5;;60;NOT IN DB;commented;MISSING;
+6215;Masterwork Regular Scale Vambraces;TierGearPack;3449;?;5;;60;NOT IN DB;commented;MISSING;
+6216;Reinforced Regular Scale Gauntlets;TierGearPack;3450;?;5;;60;NOT IN DB;commented;MISSING;
+6217;Masterwork Regular Scale Gauntlets;TierGearPack;3451;?;5;;60;NOT IN DB;commented;MISSING;
+6218;Reinforced Regular Scale Leggings;TierGearPack;3452;?;5;;60;NOT IN DB;commented;MISSING;
+6219;Masterwork Regular Scale Leggings;TierGearPack;3453;?;5;;60;NOT IN DB;commented;MISSING;
+6220;Reinforced Regular Scale Greaves;TierGearPack;3454;?;5;;60;NOT IN DB;commented;MISSING;
+6221;Masterwork Regular Scale Greaves;TierGearPack;3455;?;5;;60;NOT IN DB;commented;MISSING;
+6222;Reinforced Heavy Scale Helm;TierGearPack;3456;?;5;;90;NOT IN DB;commented;MISSING;
+6223;Masterwork Heavy Scale Helm;TierGearPack;3457;?;5;;90;NOT IN DB;commented;MISSING;
+6224;Reinforced Heavy Scale Tunic;TierGearPack;3458;?;5;;90;NOT IN DB;commented;MISSING;
+6225;Masterwork Heavy Scale Tunic;TierGearPack;3459;?;5;;90;NOT IN DB;commented;MISSING;
+6226;Reinforced Heavy Scale Vambraces;TierGearPack;3460;?;5;;90;NOT IN DB;commented;MISSING;
+6227;Masterwork Heavy Scale Vambraces;TierGearPack;3461;?;5;;90;NOT IN DB;commented;MISSING;
+6228;Reinforced Heavy Scale Gauntlets;TierGearPack;3462;?;5;;90;NOT IN DB;commented;MISSING;
+6229;Masterwork Heavy Scale Gauntlets;TierGearPack;3463;?;5;;90;NOT IN DB;commented;MISSING;
+6230;Reinforced Heavy Scale Leggings;TierGearPack;3464;?;5;;90;NOT IN DB;commented;MISSING;
+6231;Masterwork Heavy Scale Leggings;TierGearPack;3465;?;5;;90;NOT IN DB;commented;MISSING;
+6232;Reinforced Heavy Scale Greaves;TierGearPack;3466;?;5;;90;NOT IN DB;commented;MISSING;
+6233;Masterwork Heavy Scale Greaves;TierGearPack;3467;?;5;;90;NOT IN DB;commented;MISSING;
+6234;Reinforced Royal Scale Helm;TierGearPack;3468;?;5;;100;NOT IN DB;commented;MISSING;
+6235;Masterwork Royal Scale Helm;TierGearPack;3469;?;5;;100;NOT IN DB;commented;MISSING;
+6236;Reinforced Royal Scale Tunic;TierGearPack;3470;?;5;;100;NOT IN DB;commented;MISSING;
+6237;Masterwork Royal Scale Tunic;TierGearPack;3471;?;5;;100;NOT IN DB;commented;MISSING;
+6238;Reinforced Royal Scale Vambraces;TierGearPack;3472;?;5;;100;NOT IN DB;commented;MISSING;
+6239;Masterwork Royal Scale Vambraces;TierGearPack;3473;?;5;;100;NOT IN DB;commented;MISSING;
+6240;Reinforced Royal Scale Gauntlets;TierGearPack;3474;?;5;;100;NOT IN DB;commented;MISSING;
+6241;Masterwork Royal Scale Gauntlets;TierGearPack;3475;?;5;;100;NOT IN DB;commented;MISSING;
+6242;Reinforced Royal Scale Leggings;TierGearPack;3476;?;5;;100;NOT IN DB;commented;MISSING;
+6243;Masterwork Royal Scale Leggings;TierGearPack;3477;?;5;;100;NOT IN DB;commented;MISSING;
+6244;Reinforced Royal Scale Greaves;TierGearPack;3478;?;5;;100;NOT IN DB;commented;MISSING;
+6245;Masterwork Royal Scale Greaves;TierGearPack;3479;?;5;;100;NOT IN DB;commented;MISSING;
+6246;Reinforced Half Plate Helm;TierGearPack;3480;?;5;;60;NOT IN DB;commented;MISSING;
+6247;Masterwork Half Plate Helm;TierGearPack;3481;?;5;;60;NOT IN DB;commented;MISSING;
+6248;Reinforced Half Plate Breastplate;TierGearPack;3482;?;5;;60;NOT IN DB;commented;MISSING;
+6249;Masterwork Half Plate Breastplate;TierGearPack;3483;?;5;;60;NOT IN DB;commented;MISSING;
+6250;Reinforced Half Plate Vambraces;TierGearPack;3484;?;5;;60;NOT IN DB;commented;MISSING;
+6251;Masterwork Half Plate Vambraces;TierGearPack;3485;?;5;;60;NOT IN DB;commented;MISSING;
+6252;Reinforced Half Plate Gauntlets;TierGearPack;3486;?;5;;60;NOT IN DB;commented;MISSING;
+6253;Masterwork Half Plate Gauntlets;TierGearPack;3487;?;5;;60;NOT IN DB;commented;MISSING;
+6254;Reinforced Half Plate Leggings;TierGearPack;3488;?;5;;60;NOT IN DB;commented;MISSING;
+6255;Masterwork Half Plate Leggings;TierGearPack;3489;?;5;;60;NOT IN DB;commented;MISSING;
+6256;Reinforced Half Plate Greaves;TierGearPack;3490;?;5;;60;NOT IN DB;commented;MISSING;
+6257;Masterwork Half Plate Greaves;TierGearPack;3491;?;5;;60;NOT IN DB;commented;MISSING;
+6258;Reinforced Iron Plate Helm;TierGearPack;3492;?;5;;30;NOT IN DB;commented;MISSING;
+6259;Masterwork Iron Plate Helm;TierGearPack;3493;?;5;;30;NOT IN DB;commented;MISSING;
+6260;Reinforced Iron Plate Breastplate;TierGearPack;3494;?;5;;30;NOT IN DB;commented;MISSING;
+6261;Masterwork Iron Plate Breastplate;TierGearPack;3495;?;5;;30;NOT IN DB;commented;MISSING;
+6262;Reinforced Iron Plate Vambraces;TierGearPack;3496;?;5;;30;NOT IN DB;commented;MISSING;
+6263;Masterwork Iron Plate Vambraces;TierGearPack;3497;?;5;;30;NOT IN DB;commented;MISSING;
+6264;Reinforced Iron Plate Gauntlets;TierGearPack;3498;?;5;;30;NOT IN DB;commented;MISSING;
+6265;Masterwork Iron Plate Gauntlets;TierGearPack;3499;?;5;;30;NOT IN DB;commented;MISSING;
+6266;Reinforced Iron Plate Leggings;TierGearPack;3500;?;5;;30;NOT IN DB;commented;MISSING;
+6267;Masterwork Iron Plate Leggings;TierGearPack;3501;?;5;;30;NOT IN DB;commented;MISSING;
+6268;Reinforced Iron Plate Greaves;TierGearPack;3502;?;5;;30;NOT IN DB;commented;MISSING;
+6269;Masterwork Iron Plate Greaves;TierGearPack;3503;?;5;;30;NOT IN DB;commented;MISSING;
+6270;Reinforced Full Plate Helm;TierGearPack;3504;?;5;;90;NOT IN DB;commented;MISSING;
+6271;Masterwork Full Plate Helm;TierGearPack;3505;?;5;;90;NOT IN DB;commented;MISSING;
+6272;Reinforced Full Plate Breastplate;TierGearPack;3506;?;5;;90;NOT IN DB;commented;MISSING;
+6273;Masterwork Full Plate Breastplate;TierGearPack;3507;?;5;;90;NOT IN DB;commented;MISSING;
+6274;Reinforced Full Plate Vambraces;TierGearPack;3508;?;5;;90;NOT IN DB;commented;MISSING;
+6275;Masterwork Full Plate Vambraces;TierGearPack;3509;?;5;;90;NOT IN DB;commented;MISSING;
+6276;Reinforced Full Plate Gauntlets;TierGearPack;3510;?;5;;90;NOT IN DB;commented;MISSING;
+6277;Masterwork Full Plate Gauntlets;TierGearPack;3511;?;5;;90;NOT IN DB;commented;MISSING;
+6278;Reinforced Full Plate Leggings;TierGearPack;3512;?;5;;90;NOT IN DB;commented;MISSING;
+6279;Masterwork Full Plate Leggings;TierGearPack;3513;?;5;;90;NOT IN DB;commented;MISSING;
+6280;Reinforced Full Plate Greaves;TierGearPack;3514;?;5;;90;NOT IN DB;commented;MISSING;
+6281;Masterwork Full Plate Greaves;TierGearPack;3515;?;5;;90;NOT IN DB;commented;MISSING;
+6282;Reinforced Royal Full Plate Helm;TierGearPack;3516;?;5;;100;NOT IN DB;commented;MISSING;
+6283;Masterwork Royal Full Plate Helm;TierGearPack;3517;?;5;;100;NOT IN DB;commented;MISSING;
+6284;Reinforced Royal Full Plate Breastplate;TierGearPack;3518;?;5;;100;NOT IN DB;commented;MISSING;
+6285;Masterwork Royal Full Plate Breastplate;TierGearPack;3519;?;5;;100;NOT IN DB;commented;MISSING;
+6286;Reinforced Royal Full Plate Vambraces;TierGearPack;3520;?;5;;100;NOT IN DB;commented;MISSING;
+6287;Masterwork Royal Full Plate Vambraces;TierGearPack;3521;?;5;;100;NOT IN DB;commented;MISSING;
+6288;Reinforced Royal Full Plate Gauntlets;TierGearPack;3522;?;5;;100;NOT IN DB;commented;MISSING;
+6289;Masterwork Royal Full Plate Gauntlets;TierGearPack;3523;?;5;;100;NOT IN DB;commented;MISSING;
+6290;Reinforced Royal Full Plate Leggings;TierGearPack;3524;?;5;;100;NOT IN DB;commented;MISSING;
+6291;Masterwork Royal Full Plate Leggings;TierGearPack;3525;?;5;;100;NOT IN DB;commented;MISSING;
+6292;Reinforced Royal Full Plate Greaves;TierGearPack;3526;?;5;;100;NOT IN DB;commented;MISSING;
+6293;Masterwork Royal Full Plate Greaves;TierGearPack;3527;?;5;;100;NOT IN DB;commented;MISSING;
+6294;Carved Chest 1;ChestsPack;3537;Carved Chest 1;8;;100;yes;;MISSING;
+6295;Carved Chest 2;ChestsPack;3538;Carved Chest 2;8;;100;yes;;MISSING;
+6296;Carved Chest 3;ChestsPack;3539;Carved Chest 3;8;;100;yes;;MISSING;
+6297;Carved Strongbox;ChestsPack;3540;Carved Strongbox;8;;100;yes;;MISSING;
+6298;Lump of silver from bar;MaterialsChainPack;417;Lump of Silver;3;;60;NOT IN DB;commented;MISSING;
+6299;Lump of silver from ingot;MaterialsChainPack;417;Lump of Silver;3;;60;NOT IN DB;commented;MISSING;
+6300;Lump of gold from bar;MaterialsChainPack;418;Lump of Gold;3;;60;NOT IN DB;commented;MISSING;
+6301;Lump of gold from ingot;MaterialsChainPack;418;Lump of Gold;3;;60;NOT IN DB;commented;MISSING;
+6302;Case-hardened Steel Bar;MaterialsChainPack;3562;Case-hardened Steel Bar;3;;60;NOT IN DB;commented;MISSING;
+6303;Toughened Steel Bar;MaterialsChainPack;3563;Toughened Steel Bar;3;;60;NOT IN DB;commented;MISSING;
+6304;Case-hardened Iron Bar;MaterialsChainPack;3564;Case-hardened Iron Bar;3;;60;NOT IN DB;commented;MISSING;
+6305;Toughened Iron Bar;MaterialsChainPack;3565;Toughened Iron Bar;3;;60;NOT IN DB;commented;MISSING;
+6306;Case-hardened Vostaskus Bar;MaterialsChainPack;3566;Case-hardened Vostaskus Bar;3;;90;NOT IN DB;commented;MISSING;
+6307;Toughened Vostaskus Bar;MaterialsChainPack;3567;Toughened Vostaskus Bar;3;;90;NOT IN DB;commented;MISSING;
+6308;Case-hardened Steel Ingot;MaterialsChainPack;3568;Case-hardened Steel Ingot;3;;60;NOT IN DB;commented;MISSING;
+6309;Toughened Steel Ingot;MaterialsChainPack;3569;Toughened Steel Ingot;3;;60;NOT IN DB;commented;MISSING;
+6310;Case-hardened Iron Ingot;MaterialsChainPack;3570;Case-hardened Iron Ingot;3;;60;NOT IN DB;commented;MISSING;
+6311;Toughened Iron Ingot;MaterialsChainPack;3571;Toughened Iron Ingot;3;;60;NOT IN DB;commented;MISSING;
+6312;Case-hardened Vostaskus Ingot;MaterialsChainPack;3572;Case-hardened Vostaskus Ingot;3;;90;NOT IN DB;commented;MISSING;
+6313;Toughened Vostaskus Ingot;MaterialsChainPack;3573;Toughened Vostaskus Ingot;3;;90;NOT IN DB;commented;MISSING;
+6314;Lime Mortar;MaterialsChainPack;3560;Lime Mortar;16;;60;yes;;MISSING;
+6315;Gypsum Mortar;MaterialsChainPack;3561;Gypsum Mortar;16;;60;yes;;MISSING;
+6316;Hank of Coarse Wool;MaterialsChainPack;3574;Hank of Coarse Wool;25;;60;yes;;MISSING;
+6317;Hank of Soft Wool;MaterialsChainPack;3575;Hank of Soft Wool;25;;60;yes;;MISSING;
+6318;Coarse Wool Cloth;MaterialsChainPack;3558;Coarse Wool Cloth;25;;60;yes;;MISSING;
+6319;Soft Wool Cloth;MaterialsChainPack;3559;Soft Wool Cloth;25;;60;yes;;MISSING;
+6320;Rough Thick Dried Hide;MaterialsChainPack;3578;Rough Thick Dried Hide;23;;30;yes;;MISSING;
+6321;Soft Thick Dried Hide;MaterialsChainPack;3579;Soft Thick Dried Hide;23;;30;yes;;MISSING;
+6322;Rough Thin Dried Hide;MaterialsChainPack;3576;Rough Thin Dried Hide;23;;30;yes;;MISSING;
+6323;Soft Thin Dried Hide;MaterialsChainPack;3577;Soft Thin Dried Hide;23;;30;yes;;MISSING;
+6324;Rough Thick Dried Hide;MaterialsChainPack;3578;Rough Thick Dried Hide;23;;30;yes;;MISSING;
+6325;Soft Thick Dried Hide;MaterialsChainPack;3579;Soft Thick Dried Hide;23;;30;yes;;MISSING;
+6326;Rough Thick Leather;MaterialsChainPack;3554;Rough Thick Leather;23;;60;yes;;MISSING;
+6327;Soft Thick Leather;MaterialsChainPack;3555;Soft Thick Leather;23;;60;yes;;MISSING;
+6328;Rough Thin Leather;MaterialsChainPack;3556;Rough Thin Leather;23;;60;yes;;MISSING;
+6329;Soft Thin Leather;MaterialsChainPack;3557;Soft Thin Leather;23;;60;yes;;MISSING;
+6330;Pack of Rough Thick Leather;MaterialsChainPack;3554;Rough Thick Leather;23;;90;yes;;MISSING;
+6331;Pack of Soft Thick Leather;MaterialsChainPack;3555;Soft Thick Leather;23;;90;yes;;MISSING;
+6332;Pack of Rough Thin Leather;MaterialsChainPack;3556;Rough Thin Leather;23;;90;yes;;MISSING;
+6333;Pack of Soft Thin Leather;MaterialsChainPack;3557;Soft Thin Leather;23;;90;yes;;MISSING;
+6334;Case-hardened Steel Bar from ingot;MaterialsChainPack;3562;Case-hardened Steel Bar;3;;60;NOT IN DB;commented;MISSING;
+6335;Toughened Steel Bar from ingot;MaterialsChainPack;3563;Toughened Steel Bar;3;;60;NOT IN DB;commented;MISSING;
+6336;Case-hardened Iron Bar from ingot;MaterialsChainPack;3564;Case-hardened Iron Bar;3;;60;NOT IN DB;commented;MISSING;
+6337;Toughened Iron Bar from ingot;MaterialsChainPack;3565;Toughened Iron Bar;3;;60;NOT IN DB;commented;MISSING;
+6338;Case-hardened Vostaskus Bar from ingot;MaterialsChainPack;3566;Case-hardened Vostaskus Bar;3;;90;NOT IN DB;commented;MISSING;
+6339;Toughened Vostaskus Bar from ingot;MaterialsChainPack;3567;Toughened Vostaskus Bar;3;;90;NOT IN DB;commented;MISSING;
+6340;Case-hardened Steel Ingot from bars;MaterialsChainPack;3568;Case-hardened Steel Ingot;3;;60;NOT IN DB;commented;MISSING;
+6341;Toughened Steel Ingot from bars;MaterialsChainPack;3569;Toughened Steel Ingot;3;;60;NOT IN DB;commented;MISSING;
+6342;Case-hardened Iron Ingot from bars;MaterialsChainPack;3570;Case-hardened Iron Ingot;3;;60;NOT IN DB;commented;MISSING;
+6343;Toughened Iron Ingot from bars;MaterialsChainPack;3571;Toughened Iron Ingot;3;;60;NOT IN DB;commented;MISSING;
+6344;Case-hardened Vostaskus Ingot from bars;MaterialsChainPack;3572;Case-hardened Vostaskus Ingot;3;;90;NOT IN DB;commented;MISSING;
+6345;Toughened Vostaskus Ingot from bars;MaterialsChainPack;3573;Toughened Vostaskus Ingot;3;;90;NOT IN DB;commented;MISSING;
+6346;Stonecutter's Outfit;OutfitsPack;3591;Stonecutter's Outfit;25;;60;yes;;MISSING;
+6347;Breeder's Outfit;OutfitsPack;3592;Breeder's Outfit;25;;60;yes;;MISSING;
+6348;Siege Ladder Kit;SiegePack;3593;Siege Ladder Kit;10;;30;yes;;MISSING;
+6349;Small Siege Ladder;SiegePack;3594;Small Siege Ladder;10;;30;yes;;MISSING;
+6350;Large Siege Ladder;SiegePack;3595;Large Siege Ladder;10;;60;yes;;MISSING;
+6351;Big Siege Ladder;SiegePack;3596;Big Siege Ladder;10;;60;yes;;MISSING;
+6352;Siege Platform;SiegePack;3597;Siege Platform;10;;30;yes;;MISSING;
+6353;Watchtower;BuildingsPack;3602;Watchtower;19;;90;yes;;MISSING;
+6354;Castle Wall Hoarding (angle, no buttress);BuildingsPack;3603;Castle Wall Hoarding (angle, no buttress);20;;30;yes;;MISSING;
+6355;Mantle Red Capelet;KingOutfitsPack;3611;Mantle Red Capelet;25;;70;yes;;MISSING;
+6356;Checker Capelet Mantle;KingOutfitsPack;3612;Checker Capelet Mantle;25;;70;yes;;MISSING;
+6357;Mantle Gold and White Capelet;KingOutfitsPack;3613;Mantle Gold and White Capelet;25;;70;yes;;MISSING;
+6358;Royal Outfit;KingOutfitsPack;3614;Royal Outfit;25;;80;yes;;MISSING;
+6359;Monarch's Dress;KingOutfitsPack;3615;Monarch's Dress;25;;80;yes;;MISSING;
+6360;Liege's Garb;KingOutfitsPack;3616;Liege's Garb;25;;80;yes;;MISSING;
+6361;Tiara of the Sleepless Eye;KingOutfitsPack;3617;Tiara of the Sleepless Eye;52;;70;yes;;MISSING;
+6362;Svefnibrann;KingOutfitsPack;3618;Svefnibrann;52;;70;yes;;MISSING;
+6363;Crown of the Eternal Watchman;KingOutfitsPack;3619;Crown of the Eternal Watchman;52;;70;yes;;MISSING;
+6364;Golden Mark;KingOutfitsPack;3620;Golden Mark;52;;75;yes;;MISSING;
+6365;Tiara of the Sleepless Eye (red);KingOutfitsPack;3621;Tiara of the Sleepless Eye (red);52;;75;yes;;MISSING;
+6366;Thousand-Strong Host;KingOutfitsPack;3622;Thousand-Strong Host;52;;75;yes;;MISSING;
+6367;Dyed Gottlung Rags;KingOutfitsPack;3623;Dyed Gottlung Rags;25;;30;yes;;MISSING;
+6368;Dyed Northern Rags;KingOutfitsPack;3624;Dyed Northern Rags;25;;30;yes;;MISSING;
+6369;Dyed Steppe Rags;KingOutfitsPack;3625;Dyed Steppe Rags;25;;30;yes;;MISSING;
+6370;Elegant Purple Cloak;CloakFlagPack;3626;Elegant Purple Cloak;25;;60;yes;;MISSING;
+6371;Elegant Red Cloak;CloakFlagPack;3627;Elegant Red Cloak;25;;60;yes;;MISSING;
+6372;Elegant Blue Cloak;CloakFlagPack;3628;Elegant Blue Cloak;25;;60;yes;;MISSING;
+6373;Elegant Orange Cloak;CloakFlagPack;3629;Elegant Orange Cloak;25;;60;yes;;MISSING;
+6374;Captain of the Light Cavalry Banner;CloakFlagPack;3630;Captain of the Light Cavalry Banner;25;;40;yes;;MISSING;
+6375;Captain of the Heavy Cavalry Banner;CloakFlagPack;3631;Captain of the Heavy Cavalry Banner;25;;40;yes;;MISSING;
+6376;Banner of the Pikemen's Commander;CloakFlagPack;3632;Banner of the Pikemen's Commander;25;;40;yes;;MISSING;
+6377;Banner of the Halberdier Commander;CloakFlagPack;3633;Banner of the Halberdier Commander;25;;40;yes;;MISSING;
+6378;Captain of the Shieldbearers Banner;CloakFlagPack;3634;Captain of the Shieldbearers Banner;25;;40;yes;;MISSING;
+6379;Captain of the Heavy Infantry Banner;CloakFlagPack;3635;Captain of the Heavy Infantry Banner;25;;40;yes;;MISSING;
+6380;Captain of the Berserkers Banner;CloakFlagPack;3636;Captain of the Berserkers Banner;25;;40;yes;;MISSING;
+6381;Captain of the Swordsmen Banner;CloakFlagPack;3637;Captain of the Swordsmen Banner;25;;40;yes;;MISSING;
+6382;Captain of the Archers Banner;CloakFlagPack;3638;Captain of the Archers Banner;25;;40;yes;;MISSING;
+6383;Captain of the Crossbowmen Banner;CloakFlagPack;3639;Captain of the Crossbowmen Banner;25;;40;yes;;MISSING;
+6384;Siege Engine Master Banner;CloakFlagPack;3640;Siege Engine Master Banner;25;;40;yes;;MISSING;
+6385;Healer's Standard;CloakFlagPack;3641;Healer's Standard;25;;40;yes;;MISSING;
+6386;General's Standard;CloakFlagPack;3642;General's Standard;25;;40;yes;;MISSING;
+6387;Half Plate Gottlung Helm with Deer Antlers;HornSkinPack;3643;Half Plate Gottlung Helm with Deer Antlers;5;;60;yes;;MISSING;
+6388;Heavy Full Plate Helm with Deer Antlers;HornSkinPack;3644;Heavy Full Plate Helm with Deer Antlers;5;;90;yes;;MISSING;
+6389;Royal Full Plate Helm with Moose Antlers;HornSkinPack;3645;Royal Full Plate Helm with Moose Antlers;5;;100;yes;;MISSING;
+6390;Khoorsian Horned Helm;HornSkinPack;3646;Khoorsian Horned Helm;5;;30;yes;;MISSING;
+6391;Heavy Khoorsian Horned Helm;HornSkinPack;3647;Heavy Khoorsian Horned Helm;5;;90;yes;;MISSING;
+6392;Royal Khoorsian Horned Helm;HornSkinPack;3648;Royal Khoorsian Horned Helm;5;;100;yes;;MISSING;
+6393;Heavy Chainmail Helm with Bull Horns;HornSkinPack;3649;Heavy Chainmail Helm with Bull Horns;5;;90;yes;;MISSING;
+6394;Leather Gottlung Helm with Deer Antlers;HornSkinPack;3650;Leather Gottlung Helm with Deer Antlers;25;;30;yes;;MISSING;
+6395;Heavy Leather Helm with Deer Antlers;HornSkinPack;3651;Heavy Leather Helm with Deer Antlers;25;;90;yes;;MISSING;
+6396;Heavy Quilted Helm with Cow Horns;HornSkinPack;3652;Heavy Quilted Helm with Cow Horns;25;;90;yes;;MISSING;
+6397;Fancy Stonecutter's Outfit;HornSkinPack;3653;Fancy Stonecutter's Outfit;25;;60;yes;;MISSING;
+6398;Fancy Breeder's Outfit;HornSkinPack;3654;Fancy Breeder's Outfit;25;;60;yes;;MISSING;
+6399;Wheat Malt;FreshWaterPack;3184;Wheat Malt;24;;60;yes;;MISSING;
+6400;Oat Malt;FreshWaterPack;3182;Oat Malt;24;;60;yes;;MISSING;
+6401;Rye Malt;FreshWaterPack;3183;Rye Malt;24;;60;yes;;MISSING;
+6402;White Flour;FreshWaterPack;3181;White Flour;32;;30;yes;;MISSING;
+6403;Butter;FreshWaterPack;3185;Butter;24;;30;yes;;MISSING;
+6404;Taverne;EkrBuildingsPack;3655;Taverne;19;;90;yes;;MISSING;
+6405;Tuer;EkrBuildingsPack;3656;Tuer;8;;30;yes;;MISSING;
+6406;Badezuber;EkrBuildingsPack;3658;Badezuber;8;;60;yes;;MISSING;
+6407;Hase;EkrBuildingsPack;3660;Hase;53;;0;yes;;MISSING;
+6408;Huhn;EkrBuildingsPack;3661;Huhn;53;;0;yes;;MISSING;
+6409;Bock;EkrBuildingsPack;3662;Bock;53;;0;yes;;MISSING;
+6410;Kuh;EkrBuildingsPack;3663;Kuh;53;;0;yes;;MISSING;
+6411;Bulle;EkrBuildingsPack;3664;Bulle;53;;0;yes;;MISSING;
+6412;Pferd;EkrBuildingsPack;3665;Pferd;53;;0;yes;;MISSING;
+6413;Blumengarten;EkrBuildingsPack;3666;Blumengarten;18;;0;yes;;MISSING;
+6414;Kamin;EkrBuildingsPack;3668;Kamin;19;;30;yes;;MISSING;
+6415;Wachhaus;EkrBuildingsPack;3670;?;19;;60;NOT IN DB;commented;MISSING;
+6416;Engelsstatue;EkrBuildingsPack;3671;?;19;;90;NOT IN DB;commented;MISSING;
+6417;Lehmsteinvilla;EkrBuildingsPack;3672;?;18;;60;NOT IN DB;commented;MISSING;
+6418;Lehmhuette;EkrBuildingsPack;3673;Lehmhuette;18;;30;yes;;MISSING;
+6419;Einfacher Unterstand;EkrBuildingsPack;3674;Einfacher Unterstand;18;;30;yes;;MISSING;
+6420;Gewoehnlicheshaus;EkrBuildingsPack;3675;Gewoehnlicheshaus;18;;30;yes;;MISSING;
+6421;Kleines Lehmhaus;EkrBuildingsPack;3676;Kleines Lehmhaus;18;;30;yes;;MISSING;
+6422;Lehmbarracke;EkrBuildingsPack;3677;?;18;;30;NOT IN DB;commented;MISSING;
+6423;Lehmdoppelhaus;EkrBuildingsPack;3678;?;18;;60;NOT IN DB;commented;MISSING;
+6424;Stabile Lehmhuette;EkrBuildingsPack;3679;Stabile Lehmhuette;18;;30;yes;;MISSING;
+6425;Steinkreuz;EkrBuildingsPack;3680;Steinkreuz;19;;30;yes;;MISSING;
+6426;Reiterstatue;EkrBuildingsPack;3681;?;62;;0;NOT IN DB;commented;MISSING;
+6427;SkandinavischesHaus2;EkrBuildingsPack;3682;SkandinavischesHaus2;18;;60;yes;;MISSING;
+6428;SkandinavischesHaus3;EkrBuildingsPack;3683;SkandinavischesHaus3;18;;60;yes;;MISSING;
+6429;SkandinavischesHaus4;EkrBuildingsPack;3684;SkandinavischesHaus4;18;;60;yes;;MISSING;
+6430;SkandinavischesHaus5;EkrBuildingsPack;3685;SkandinavischesHaus5;18;;60;yes;;MISSING;
+6431;SkandinavischesHaus6;EkrBuildingsPack;3686;?;18;;60;NOT IN DB;commented;MISSING;
+6432;SkandinavischerTempel;EkrBuildingsPack;3687;?;18;;90;NOT IN DB;commented;MISSING;
+6433;Mordgangsteinmauer;EkrBuildingsPack;3688;Mordgangsteinmauer;19;;90;yes;;MISSING;
+6434;MordgangsteinmauerMitZaun;EkrBuildingsPack;3689;MordgangsteinmauerMitZaun;19;;90;yes;;MISSING;
+6435;Mordgangsteintorhaus;EkrBuildingsPack;3690;Mordgangsteintorhaus;19;;90;yes;;MISSING;
+6436;Mordgangsteinmauereckturm;EkrBuildingsPack;3691;Mordgangsteinmauereckturm;19;;90;yes;;MISSING;
+6437;Einsiedlerheim;EkrBuildingsPack;3692;Einsiedlerheim;18;;30;yes;;MISSING;
+6438;Steinkirche;EkrBuildingsPack;3693;Steinkirche;20;;60;yes;;MISSING;
+6439;Holzkran;EkrBuildingsPack;3694;Holzkran;8;;100;yes;;MISSING;
+6440;HohesSteinmauerchen;EkrBuildingsPack;3696;HohesSteinmauerchen;19;;30;yes;;MISSING;
+6441;HohesSteinmauerchentor;EkrBuildingsPack;3697;HohesSteinmauerchentor;19;;30;yes;;MISSING;
+6442;Marktstand1;EkrBuildingsPack;3698;Marktstand1;18;;30;yes;;MISSING;
+6443;Marktstand2;EkrBuildingsPack;3699;Marktstand2;18;;30;yes;;MISSING;
+6444;Marktstand3;EkrBuildingsPack;3700;Marktstand3;18;;30;yes;;MISSING;
+6445;BeweglicheLaterne;EkrBuildingsPack;3701;BeweglicheLaterne;53;;0;yes;;MISSING;
+6446;DiagonalesHohesSteinmauerchen;EkrBuildingsPack;3703;DiagonalesHohesSteinmauerchen;19;;30;yes;;MISSING;
+6447;HohesSteinmauerchenOhneZinnen;EkrBuildingsPack;3704;HohesSteinmauerchenOhneZinnen;19;;30;yes;;MISSING;
+6448;Bewegliches Wasser;EkrBuildingsPack;3705;Bewegliches Wasser;18;;0;yes;;MISSING;
+6449;Metal Cage;EkrBuildingsPack;3707;Metal Cage;19;;60;yes;;MISSING;
+6450;Wooden Barricade;EkrBuildingsPack;3708;Wooden Barricade;18;;0;yes;;MISSING;
+6451;Stone Altar;EkrBuildingsPack;3710;Stone Altar;19;;60;yes;;MISSING;
+6452;Wooden House with Tower;EkrBuildingsPack;3711;Wooden House with Tower;18;;0;yes;;MISSING;
+6453;Stone tomb with cross;EkrBuildingsPack;3712;Stone tomb with cross;19;;60;yes;;MISSING;
+6454;KleinerBergfried2;EkrBuildingsPack;3713;KleinerBergfried2;19;;60;yes;;MISSING;
+6455;Bergfried2;EkrBuildingsPack;3714;?;19;;90;NOT IN DB;commented;MISSING;
+6456;GrosserBergfried2;EkrBuildingsPack;3715;?;19;;90;NOT IN DB;commented;MISSING;
+6457;Karte;EkrBuildingsPack;3716;Karte;53;;60;yes;;MISSING;
+6458;Mahlzeit;EkrBuildingsPack;3718;Mahlzeit;53;;0;yes;;MISSING;
+6459;Hirschfell_aufrecht;EkrBuildingsPack;3720;Hirschfell_aufrecht;53;;30;yes;;MISSING;
+6460;Buch;EkrBuildingsPack;3722;Buch;53;;60;yes;;MISSING;
+6461;Krug;EkrBuildingsPack;3724;Krug;53;;0;yes;;MISSING;
+6462;Netz;EkrBuildingsPack;3726;Netz;18;;0;yes;;MISSING;
+6463;Schaffell_liegend;EkrBuildingsPack;3728;Schaffell_liegend;53;;30;yes;;MISSING;
+6464;Sack;EkrBuildingsPack;3730;Sack;53;;0;yes;;MISSING;
+6465;TischOH;EkrBuildingsPack;3732;TischOH;8;;60;yes;;MISSING;
+6466;Waldhuette;EkrBuildingsPack;3734;Waldhuette;18;;30;yes;;MISSING;
+6467;Erkerhaus;EkrBuildingsPack;3735;?;19;;60;NOT IN DB;commented;MISSING;
+6468;Gasthaus;EkrBuildingsPack;3736;?;19;;60;NOT IN DB;commented;MISSING;
+6469;Burgtuer;EkrBuildingsPack;3737;Burgtuer;8;;60;yes;;MISSING;
+6470;Bauernhaus;EkrBuildingsPack;3739;Bauernhaus;18;;30;yes;;MISSING;
+6471;Haendlerhaus;EkrBuildingsPack;3740;?;19;;60;NOT IN DB;commented;MISSING;
+6472;Herrenhaus;EkrBuildingsPack;3741;Herrenhaus;19;;90;yes;;MISSING;
+6473;HolzKueche;EkrBuildingsPack;3742;HolzKueche;19;;30;yes;;MISSING;
+6474;HolzSchmiede;EkrBuildingsPack;3743;HolzSchmiede;19;;30;yes;;MISSING;
+6475;FachwerkhausErkertuer;EkrBuildingsPack;3744;FachwerkhausErkertuer;18;;60;yes;;MISSING;
+6476;Holzeckhaus;EkrBuildingsPack;3745;Holzeckhaus;18;;30;yes;;MISSING;
+6477;KeltischesHaus1;EkrBuildingsPack;3746;KeltischesHaus1;19;;0;yes;;MISSING;
+6478;KeltischesHaus2;EkrBuildingsPack;3747;KeltischesHaus2;19;;0;yes;;MISSING;
+6479;Spitzdachhaus;EkrBuildingsPack;3748;Spitzdachhaus;18;;60;yes;;MISSING;
+6480;Stegwohnhaus;EkrBuildingsPack;3749;Stegwohnhaus;18;;60;yes;;MISSING;
+6481;Werkstatt;EkrBuildingsPack;3750;Werkstatt;19;;30;yes;;MISSING;
+6482;Steintreppe;EkrBuildingsPack;3753;Steintreppe;19;;60;yes;;MISSING;

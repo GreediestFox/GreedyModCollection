@@ -11,7 +11,7 @@ $reqLines = Get-Content "E:\ClaudeScratch\jorvik\requirements_remapped.sql"
 
 $out = New-Object System.Collections.Generic.List[string]
 $out.Add('/**')
-$out.Add('* <author>Warped ibun (Jorvik Mod), ported by Michael/Claude</author>')
+$out.Add('* <author>Warped ibun (Jorvik Mod), ported by GreedyFox</author>')
 $out.Add('* <description>Jorvik Mod 2.1.0 content (modular log cabin system excluded), ids remapped to 3000-3053 to avoid collisions with existing custom content (2400/2461-2466/2480 were already used by Small Wooden Shed/Knool weapons/Woodshed).</description>')
 $out.Add('* <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>')
 $out.Add('*/')
