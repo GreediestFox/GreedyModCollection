@@ -71,3 +71,12 @@ Everything below was observed in the server log (`INSERT INTO character_effects 
 | The same event stored under an existing id (597) | Never fired. |
 
 Conclusion: with data alone, the engine gives every one of these drinks only "Full". Per-drink buff and drawback needs engine work (a hook on the function that writes `character_effects`, which the Plus docs say has not been located) or a control test with a vanilla cocktail to see what the cocktail path does differently.
+
+
+---
+
+# Resolution (2026-10-01): it works, with data only
+
+Decompiling `Drink::_onDoPerform` showed that the engine reads the effect list of the **item instance** (`features.has_effects` + `item_effects` rows) and adds Full afterwards; an item without a list gets only Full. Items created with that list applied both effects and Full in the first test (effects 92 and 19 for a Thin Beer, 8 and 20 for a Strong Beer, magnitude = row value x 1000, duration 666 s at quality 100). The pack therefore uses two database triggers that attach the list to every new item of the six drink types. See `server/mods/LiFx/BeveragesPack/README.md`.
+
+Corrections to the earlier sections: the `effects` table link and random events are not used for drinks; custom effect ids are limited to the vanilla range; the brief's Plan B (custom combined effects) is not needed.
