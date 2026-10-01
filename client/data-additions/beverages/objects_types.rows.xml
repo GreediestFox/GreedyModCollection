@@ -1,7 +1,7 @@
 <!-- Append before </table> in the client data\objects_types.xml. -->
 <row>
 		<ID>3920</ID>
-		<ParentID>1117</ParentID>
+		<ParentID>1091</ParentID>
 		<Name>Thin Beer</Name>
 		<IsContainer>0</IsContainer>
 		<IsMovableObject>0</IsMovableObject>
@@ -20,7 +20,7 @@
 	</row>
 	<row>
 		<ID>3921</ID>
-		<ParentID>1117</ParentID>
+		<ParentID>1091</ParentID>
 		<Name>Strong Beer</Name>
 		<IsContainer>0</IsContainer>
 		<IsMovableObject>0</IsMovableObject>

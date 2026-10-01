@@ -51,3 +51,23 @@ New drinks therefore need a parent from the 205 list (Beer 1117, Wine 962, Mead 
 3. Add descriptions, translations and client rows as in the brief only after the test.
 
 Nothing was edited, no branch was created and the server was not restarted.
+
+
+---
+
+# Test results (2026-10-01, live server, items 3920 Thin Beer / 3921 Strong Beer)
+
+Everything below was observed in the server log (`INSERT INTO character_effects ...`) after drinking the items.
+
+| Attempt | Result |
+|---|---|
+| Items as children of Beer (1117) | Boot refused: "ObjectTypeID=1117 is parent type and has non-zero weight" (a type with children must have weight 0). |
+| Gems with weight 0 | Boot refused: "ObjectTypeID=3830 has zero weight". All item types need a non-zero weight. |
+| Custom effect ids 94, 95, 100, 101 in `cm_effects.xml` | "CmObjEffectsInit - bad id" for each; the engine accepts only ids up to the vanilla range. Only **92** is free. (The Plus doc says ids from 100 up are free: not true for the effect parser.) |
+| Items under Alcohol (37), listed in Drink ability 205 | Drinking inserts only effect **25 (Full, 666 s, magnitude 1000000)**. The `effects` table link is ignored. |
+| Items under Cocktails (1091), `effects` row with `ResultPotionID` | Same: only Full. |
+| `effects` row with `ResultPreparationID` = `ResultPotionID` = item id | Same: only Full. |
+| Random event on ability 205 with two `addeffect` elements (new event id 598) | Never fired. |
+| The same event stored under an existing id (597) | Never fired. |
+
+Conclusion: with data alone, the engine gives every one of these drinks only "Full". Per-drink buff and drawback needs engine work (a hook on the function that writes `character_effects`, which the Plus docs say has not been located) or a control test with a vanilla cocktail to see what the cocktail path does differently.
