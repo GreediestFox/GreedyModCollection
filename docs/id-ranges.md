@@ -6,6 +6,7 @@
 | 2394-2398 | tribal NPC objects |
 | 2461-2466 | custom weapon objects |
 | 3000-3053 | objects merged from a second mod pack, renumbered to avoid collisions |
+| 3920-3923 | beverage items (Thin Beer, Strong Beer, Wheat Beer, Strong Spirits); `effects` rows 41-45 |
 | 5500-5523, 5830-5835 | recipes for custom buildings and weapons |
 
 When merging a pack, remap any ids that collide with used ids to open ones, then update every cross reference (recipes, requirements, skill_types.xml object lists, tool ids).

@@ -5219,7 +5219,7 @@
 		<MaxContSize>0</MaxContSize>
 		<Length>2</Length>
 		<MaxStackSize>10000</MaxStackSize>
-		<UnitWeight>0</UnitWeight>
+		<UnitWeight>100</UnitWeight>
 		<BackgndImage></BackgndImage>
 		<FaceImage>art\2D\Items\raw_gem.png</FaceImage>
 		<Description>An uncut gem.</Description>
@@ -5238,7 +5238,7 @@
 		<MaxContSize>0</MaxContSize>
 		<Length>2</Length>
 		<MaxStackSize>10000</MaxStackSize>
-		<UnitWeight>0</UnitWeight>
+		<UnitWeight>100</UnitWeight>
 		<BackgndImage></BackgndImage>
 		<FaceImage>art\2D\Items\rough_gem.png</FaceImage>
 		<Description>A roughly cut gem.</Description>
@@ -5257,7 +5257,7 @@
 		<MaxContSize>0</MaxContSize>
 		<Length>2</Length>
 		<MaxStackSize>10000</MaxStackSize>
-		<UnitWeight>0</UnitWeight>
+		<UnitWeight>100</UnitWeight>
 		<BackgndImage></BackgndImage>
 		<FaceImage>art\2D\Items\cracked_gem.png</FaceImage>
 		<Description>A cracked gem.</Description>
@@ -5276,7 +5276,7 @@
 		<MaxContSize>0</MaxContSize>
 		<Length>2</Length>
 		<MaxStackSize>10000</MaxStackSize>
-		<UnitWeight>0</UnitWeight>
+		<UnitWeight>100</UnitWeight>
 		<BackgndImage></BackgndImage>
 		<FaceImage>art\2D\Items\aquamarine.png</FaceImage>
 		<Description>A gem.</Description>
@@ -5295,7 +5295,7 @@
 		<MaxContSize>0</MaxContSize>
 		<Length>2</Length>
 		<MaxStackSize>10000</MaxStackSize>
-		<UnitWeight>0</UnitWeight>
+		<UnitWeight>100</UnitWeight>
 		<BackgndImage></BackgndImage>
 		<FaceImage>art\2D\Items\carnelian.png</FaceImage>
 		<Description>A gem.</Description>
@@ -5314,7 +5314,7 @@
 		<MaxContSize>0</MaxContSize>
 		<Length>2</Length>
 		<MaxStackSize>10000</MaxStackSize>
-		<UnitWeight>0</UnitWeight>
+		<UnitWeight>100</UnitWeight>
 		<BackgndImage></BackgndImage>
 		<FaceImage>art\2D\Items\jasper.png</FaceImage>
 		<Description>A gem.</Description>
@@ -5333,7 +5333,7 @@
 		<MaxContSize>0</MaxContSize>
 		<Length>2</Length>
 		<MaxStackSize>10000</MaxStackSize>
-		<UnitWeight>0</UnitWeight>
+		<UnitWeight>100</UnitWeight>
 		<BackgndImage></BackgndImage>
 		<FaceImage>art\2D\Items\onyx.png</FaceImage>
 		<Description>A gem.</Description>
@@ -5352,7 +5352,7 @@
 		<MaxContSize>0</MaxContSize>
 		<Length>2</Length>
 		<MaxStackSize>10000</MaxStackSize>
-		<UnitWeight>0</UnitWeight>
+		<UnitWeight>100</UnitWeight>
 		<BackgndImage></BackgndImage>
 		<FaceImage>art\2D\Items\topaz.png</FaceImage>
 		<Description>A gem.</Description>

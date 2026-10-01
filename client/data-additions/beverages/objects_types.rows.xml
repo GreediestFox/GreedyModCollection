@@ -1,0 +1,77 @@
+<!-- Append before </table> in the client data\objects_types.xml. -->
+<row>
+		<ID>3920</ID>
+		<ParentID>37</ParentID>
+		<Name>Thin Beer</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>2</Length>
+		<MaxStackSize>10000</MaxStackSize>
+		<UnitWeight>750</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Items\beer.png</FaceImage>
+		<Description>A light beer. Your steps quicken, but your sword arm slows.</Description>
+	</row>
+	<row>
+		<ID>3921</ID>
+		<ParentID>37</ParentID>
+		<Name>Strong Beer</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>2</Length>
+		<MaxStackSize>10000</MaxStackSize>
+		<UnitWeight>750</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Items\beer.png</FaceImage>
+		<Description>A heavy beer. Your sword arm quickens, but your steps slow.</Description>
+	</row>
+	<row>
+		<ID>3922</ID>
+		<ParentID>37</ParentID>
+		<Name>Wheat Beer</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>2</Length>
+		<MaxStackSize>10000</MaxStackSize>
+		<UnitWeight>750</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Items\beer.png</FaceImage>
+		<Description>A cloudy wheat beer. It makes you stronger, but your hands shake.</Description>
+	</row>
+	<row>
+		<ID>3923</ID>
+		<ParentID>37</ParentID>
+		<Name>Strong Spirits</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>2</Length>
+		<MaxStackSize>10000</MaxStackSize>
+		<UnitWeight>750</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Items\beer.png</FaceImage>
+		<Description>A burning spirit. It makes you tougher, but clumsy.</Description>
+	</row>

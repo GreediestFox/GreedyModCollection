@@ -1,0 +1,13 @@
+client data\loc\de\data\objects_types_Name.xml:
+  <string id="3920">Dünnbier</string>
+  <string id="3921">Starkbier</string>
+  <string id="3922">Weißbier</string>
+  <string id="3923">Starker Branntwein</string>
+
+client data\loc\de\data\objects_types_Description.xml:
+  <string id="3920">Ein leichtes Bier. Du läufst schneller, schlägst aber langsamer zu.</string>
+  <string id="3921">Ein schweres Bier. Du schlägst schneller zu, läufst aber langsamer.</string>
+  <string id="3922">Ein trübes Weißbier. Es macht dich stärker, aber deine Hände zittern.</string>
+  <string id="3923">Ein scharfer Branntwein. Er macht dich zäher, aber ungeschickt.</string>
+
+client + server data\skill_types.xml, ability 205 "Drink": append " 3920 3921 3922 3923" to the object_type_id list (1091 962 1117 1118 1119 1532).
