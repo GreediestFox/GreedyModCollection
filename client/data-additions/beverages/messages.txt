@@ -1,0 +1,10 @@
+cm_messages.xml (client and server): fill the empty placeholders
+  <string id="5170">Your movement speed is increased and your attack speed is decreased.</string>
+  <string id="5171">Your attack speed is increased and your movement speed is decreased.</string>
+
+client data\loc\de\data\cm_messages.xml: add
+  <string id="5170">Deine Bewegungsgeschwindigkeit ist erhöht, deine Angriffsgeschwindigkeit ist verringert.</string>
+  <string id="5171">Deine Angriffsgeschwindigkeit ist erhöht, deine Bewegungsgeschwindigkeit ist verringert.</string>
+
+client data\loc\de\data\objects_types_Name.xml: <string id="3920">Dünnbier</string>, <string id="3921">Starkbier</string>
+client data\loc\de\data\objects_types_Description.xml: <string id="3920">Ein leichtes Bier.</string>, <string id="3921">Ein schweres, starkes Bier.</string>

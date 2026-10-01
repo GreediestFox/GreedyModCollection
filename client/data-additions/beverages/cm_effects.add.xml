@@ -1,0 +1,15 @@
+<!-- Add inside <effects> in data\cm_effects.xml of the CLIENT and the SERVER (identical). -->
+    <effect id="100" name="Thin Beer">
+        <flags CanMove="TRUE" CanRun="TRUE" CanJump="TRUE" CanRotate="TRUE" CanRotateHead="TRUE" CanOperate="TRUE" CanBeCanceled="FALSE" RemovedOnDeath="TRUE" />
+        <description>5170</description>
+        <parameter type="SPEED" applytype="MULTIPLY" value="1.15" ignore_magnitude="1" />
+        <parameter type="ATTACK_SPEED" applytype="MULTIPLY" value="0.85" ignore_magnitude="1" />
+        <icon>art/2D/Effects/Accelerated.png</icon>
+    </effect>
+    <effect id="101" name="Strong Beer">
+        <flags CanMove="TRUE" CanRun="TRUE" CanJump="TRUE" CanRotate="TRUE" CanRotateHead="TRUE" CanOperate="TRUE" CanBeCanceled="FALSE" RemovedOnDeath="TRUE" />
+        <description>5171</description>
+        <parameter type="SPEED" applytype="MULTIPLY" value="0.85" ignore_magnitude="1" />
+        <parameter type="ATTACK_SPEED" applytype="MULTIPLY" value="1.15" ignore_magnitude="1" />
+        <icon>art/2D/Effects/Swiftness.png</icon>
+    </effect>
