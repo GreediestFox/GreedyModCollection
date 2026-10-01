@@ -84,10 +84,12 @@ Confirmed by the owner: each drink adds blur, and the third drink applies "Full"
 
 Things that no longer apply: a custom hangover effect, a counter, chaining effects, and any claim that blur is impossible. Do not add them.
 
-Open points to confirm with the owner:
-- Should the buff and drawback of a drink apply together with the blur, and should they stay after "Full" ends, or end earlier?
-- Should an Antidote (Double Blood) cocktail clear the blur? (Earlier recommendation: no.)
-- Does the "Full" cap also block normal cocktails after three alcoholic drinks? That is probably intended, but ask.
+Decisions made by the owner (do not ask again):
+- **Blur lasts exactly as long as the buff.** While a drink's buff is running, the blurry view must be active, and it ends when the buff ends. Find out how the game ties blur to the effect (the blur may be its own effect applied with the drink, a flag on the effect, or a property of the drink item) and make each new drink behave the same way. Check that the drawback effect ends together with the buff and the blur.
+- **An Antidote (Double Blood) cocktail never clears the blur.** If the Antidote or any POISON_IMMUNE effect would remove it, find out why and stop that for the new drinks.
+- The "Full" debuff after three drinks stays as the game already does it.
+
+Still to confirm only if you find a conflict: whether "Full" should also block normal cocktails after three alcoholic drinks. It probably already does, since it blocks all potions.
 
 ## 6. Test checklist (dev server only)
 
@@ -96,8 +98,9 @@ Open points to confirm with the owner:
 - [ ] Accelerated and Slowed on one player: which one wins
 - [ ] Two attribute buffs from different drinks: do they stack
 - [ ] Each new drink adds blur like a cocktail, and the third drink applies "Full"
-- [ ] "Full" ends after its normal time and the blur fades
-- [ ] Does an Antidote cocktail clear the blur
+- [ ] The blur is active the whole time the buff runs and ends when the buff ends
+- [ ] "Full" ends after its normal time
+- [ ] An Antidote cocktail does not clear the blur
 - [ ] Effects survive relog or death as intended
 - [ ] The existing cocktails and poisons still work
 
