@@ -10,7 +10,7 @@ Implements the beverage brief with **existing effects only** (Plan A), no engine
 * each `EffectID` is a row id of the table `effects`, whose `PlayerEffectID` is the effect in `cm_effects.xml`; `Magnitude / 1000` is the strength; the duration comes from the item quality (about 666 s at quality 100);
 * after the listed effects the engine adds **Full** (25). An item without a list gets only Full, which is what every earlier attempt produced.
 
-The GM give and the engine's item creation use `has_effects = 0`, so two database triggers on `items` attach the list to every new item of the listed types, however it was created (GM give, crafting, loot). The triggers and the `effects` mapping rows are created by `mod.cs` at every boot; the item type rows and the effect rows are also baked into `art/dump.sql` (the boot foreign-key check runs before mods).
+The GM give and the engine's item creation use `has_effects = 0`, and the in-memory item has no list until the inventory is reloaded (relog), so database triggers only help after a relog. The working solution is the **Plus hook `drinkEffects`** (see the Plus repository, `docs/YO_SERVER_HOOKS.md`): it wraps `applyPotionItemEffect` and, for an item type configured in `lifxpluss.xml` that has no list of its own, applies the configured player effects first and lets the engine add Full. `mod.cs` registers the item types and drops the old triggers at boot; the item type rows are baked into `art/dump.sql` (the boot foreign-key check runs before mods).
 
 ## Drinks
 
@@ -23,7 +23,7 @@ The GM give and the engine's item creation use `has_effects = 0`, so two databas
 | 3921 Strong Beer (Starkbier) | Swiftness | Slowed | 3 |
 | 3923 Strong Spirits | Tougher | Clumsiness | 3 |
 
-Magnitudes (in the trigger): speed effects 0.10 / 0.15 / 0.20, attribute buffs 3.0 / 5.0, Shaky Hands 0.15. They are first guesses to be tuned in game. Duration cannot be set per drink (it follows the quality).
+Magnitudes (in the `<drinkEffects>` section of `lifxpluss.xml`, see `server/config/lifxpluss.example.xml`): speed effects 0.10 / 0.15 / 0.20, attribute buffs 3.0 / 5.0, Shaky Hands 0.15. They are first guesses to be tuned in game. Duration cannot be set per drink (it follows the quality).
 
 Effect mapping rows (`effects.ID` -> player effect): 41 -> 6 Accelerated, 42 -> 5 Slowed, 43 -> 7 Clumsiness, 44 -> 8 Swiftness, 45 -> 79 Shaky Hands; vanilla rows 7 -> 19 Stronger, 9 -> 21 Harder, 10 -> 22 Clever, 11 -> 23 Tougher.
 
@@ -45,3 +45,19 @@ Effect mapping rows (`effects.ID` -> player effect): 41 -> 6 Accelerated, 42 -> 
 ## Status
 
 Confirmed in game on 2026-10-01 (after a relog, so the inventory reloads from the database): each drink applied exactly its two effects plus Full in the server log. Open: items created in memory by the GM give or by crafting only give Full until the inventory is reloaded; a Plus hook on the apply function (RVA 0x1C4A40) that applies configured effects by item type would remove that gap. Magnitudes are first guesses.
+
+## Hook configuration (server/config/lifxpluss.example.xml)
+
+```xml
+<drinkEffects enabled="1" verbose="1" dump="0">
+    <db host="127.0.0.1" port="3306" user="root" password="CHANGE_ME" name="lif_1" />
+    <drink objectTypeId="3920"> <effect id="6" magnitude="0.10" /> <effect id="7" magnitude="0.10" /> </drink>
+    ...
+</drinkEffects>
+```
+
+`effect id` is the PLAYER effect id of `cm_effects.xml` (1..93). The hook looks the item type up in the database by item id. Install the Plus DLL built from the `yo-engine-hooks` branch, add the section, restart the server.
+
+## Bug found on the way
+
+The third argument of `applyPotionItemEffect` is a **float** (the magnitude of Full, passed in xmm2). Declared as an integer in a hook it arrives as 0: Full is then added with magnitude 0, the drunk blur disappears and drinks stop counting towards the drink limit.

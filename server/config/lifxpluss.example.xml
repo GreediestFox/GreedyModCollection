@@ -212,4 +212,32 @@
     <crop abilityId="363" seedItemId="3751" fertileSmallSubstance="221" nonFertileSmallSubstance="222" aliasBase="161" name="Hops" />
     <crop abilityId="364" seedItemId="3752" fertileSmallSubstance="231" nonFertileSmallSubstance="232" aliasBase="141" name="Sugar Beet" />
 </cropTypes>
+    <!-- Drink effects: buff + drawback per drink type (player effect ids of cm_effects.xml). Items that carry their own DB effect list are left alone. -->
+    <drinkEffects enabled="1" verbose="1" dump="1">
+        <db host="127.0.0.1" port="3306" user="root" password="CHANGE_ME" name="lif_1" />
+        <drink objectTypeId="3920">   <!-- Thin Beer: Accelerated + Clumsiness -->
+            <effect id="6" magnitude="0.10" />
+            <effect id="7" magnitude="0.10" />
+        </drink>
+        <drink objectTypeId="3921">   <!-- Strong Beer: Swiftness + Slowed -->
+            <effect id="8" magnitude="0.20" />
+            <effect id="5" magnitude="0.20" />
+        </drink>
+        <drink objectTypeId="3922">   <!-- Wheat Beer: Stronger + Shaky Hands -->
+            <effect id="19" magnitude="3.0" />
+            <effect id="79" magnitude="0.15" />
+        </drink>
+        <drink objectTypeId="3923">   <!-- Strong Spirits: Tougher + Clumsiness -->
+            <effect id="23" magnitude="5.0" />
+            <effect id="7" magnitude="0.20" />
+        </drink>
+        <drink objectTypeId="962">   <!-- Wine: Clever + Slowed -->
+            <effect id="22" magnitude="3.0" />
+            <effect id="5" magnitude="0.15" />
+        </drink>
+        <drink objectTypeId="1119">   <!-- Mead: Harder (Will) + Shaky Hands -->
+            <effect id="21" magnitude="3.0" />
+            <effect id="79" magnitude="0.15" />
+        </drink>
+    </drinkEffects>
 </cm_config>
