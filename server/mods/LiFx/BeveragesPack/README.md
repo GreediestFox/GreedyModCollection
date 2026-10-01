@@ -41,3 +41,7 @@ Effect mapping rows (`effects.ID` -> player effect): 41 -> 6 Accelerated, 42 -> 
 * The engine rejects player effect ids above the vanilla range ("CmObjEffectsInit - bad id"); only 92 is free. The Plus doc's "ids from 100 up are free" does not hold.
 * The `effects` table link `ResultPotionID`, random events on the Drink ability and parent categories do not give a drink its effects; only the per-item list does.
 * Items of the same type with and without a list do not stack; items created before the triggers existed (or by GM before a restart) only give Full.
+
+## Status
+
+Confirmed in game on 2026-10-01 (after a relog, so the inventory reloads from the database): each drink applied exactly its two effects plus Full in the server log. Open: items created in memory by the GM give or by crafting only give Full until the inventory is reloaded; a Plus hook on the apply function (RVA 0x1C4A40) that applies configured effects by item type would remove that gap. Magnitudes are first guesses.
