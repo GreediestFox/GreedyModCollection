@@ -44,7 +44,7 @@ Effect mapping rows (`effects.ID` -> player effect): 41 -> 6 Accelerated, 42 -> 
 
 ## Status
 
-Confirmed in game on 2026-10-01 (after a relog, so the inventory reloads from the database): each drink applied exactly its two effects plus Full in the server log. Open: items created in memory by the GM give or by crafting only give Full until the inventory is reloaded; a Plus hook on the apply function (RVA 0x1C4A40) that applies configured effects by item type would remove that gap. Magnitudes are first guesses.
+Confirmed in game (2026-10-01/02) with the Plus hook `drinkEffects`: each drink applies its two effects plus Full right away, also for items from the GM give or crafting (no relog needed); the drunk blur appears and the third drink in a row is refused like vanilla (Full accumulates). Magnitudes are first guesses and will be tuned after PvP tests.
 
 ## Hook configuration (server/config/lifxpluss.example.xml)
 
