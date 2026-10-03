@@ -6820,3 +6820,98 @@
 		<FaceImage>art\2D\Items\chest_pendulum.png</FaceImage>
 		<Description>A pendulum.</Description>
 	</row>
+<row>
+		<ID>3925</ID>
+		<ParentID>225</ParentID>
+		<Name>Master Blacksmith's Outfit</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>4</Length>
+		<MaxStackSize>1</MaxStackSize>
+		<UnitWeight>1200</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\equipIcons\Outfits\Male_Craft_Blacksmith_SkinA.png</FaceImage>
+		<Description>A black shirt with a leather apron covering the smith's body and legs. One's gaze becomes lost in the crimson patterns and symbols, the secret nature of which is known only to Accurs and the smiths themselves. The interwoven symbols frame a ruby Eye of the Sleeper with a sheen of metal dust. The apron is belted with a thin woven belt on which tongs and small hammers are hung in strict order to make sure that every tool is available and in the right place.</Description>
+	</row>
+<row>
+		<ID>3926</ID>
+		<ParentID>225</ParentID>
+		<Name>Master Carpenter's Outfit</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>4</Length>
+		<MaxStackSize>1</MaxStackSize>
+		<UnitWeight>1200</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\equipIcons\Outfits\Male_Craft_Carpenter_SkinA.png</FaceImage>
+		<Description>A foppish getup worn by city-dwelling carpenters and joiners. Apparently this kind of clothing is, to a large extent, a sign of mastery and a symbol of belonging to the profession, but it is also especially good for work — convenient pockets sewn onto the apron and jacket, sturdy, dirt-resistant pants made of boiled leather, and loops on the straps for tools.</Description>
+	</row>
+<row>
+		<ID>3927</ID>
+		<ParentID>225</ParentID>
+		<Name>Master Alchemist's Outfit</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>4</Length>
+		<MaxStackSize>1</MaxStackSize>
+		<UnitWeight>1200</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\equipIcons\Outfits\Male_Craft_Alchemist_SkinA.png</FaceImage>
+		<Description>A decorated potion-brewer's cloak made of magenta linen. It is light and spacious, but fits very well, with sleeves with strings for greater comfort. This outfit has a special feature: a belt not unlike a sword belt on which hang countless chubby flasks of smoky glass.</Description>
+	</row>
+<row>
+		<ID>3928</ID>
+		<ParentID>225</ParentID>
+		<Name>Master Engineer's Outfit</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>4</Length>
+		<MaxStackSize>1</MaxStackSize>
+		<UnitWeight>1200</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\equipIcons\Outfits\Male_Craft_Engineer_SkinA.png</FaceImage>
+		<Description>A crimson shirt adorned with dull golden patterns. From the outfit's countless tassels hang bronze tools whose names are known only to the engineers themselves... if they are known to anyone at all. Measurements and angles, which are absolutely necessary for various drafting and engineering projects, are sewn into the leather jacket, which is belted with a broad belt.</Description>
+	</row>
+<row>
+		<ID>3929</ID>
+		<ParentID>225</ParentID>
+		<Name>Master Cook's Outfit</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>4</Length>
+		<MaxStackSize>1</MaxStackSize>
+		<UnitWeight>1200</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\equipIcons\Outfits\Male_Craft_Cook_SkinA.png</FaceImage>
+		<Description>A cook's outfit — a blue cotton vest, a shirt of light-colored linen, and, most importantly, a broad apron made of white fabric with pockets for salt and spices, as well as countless straps. A handy thing for attaching knives, spoon, ladles, and other crucial cooking utensils to.</Description>
+	</row>

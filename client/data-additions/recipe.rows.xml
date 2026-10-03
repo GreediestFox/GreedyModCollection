@@ -4607,13 +4607,13 @@
 	</row>
 	<row>
 		<ID>6397</ID>
-		<Name>Fancy Stonecutter's Outfit</Name>
+		<Name>Fancy Stonecutter&apos;s Outfit</Name>
 		<Description></Description>
-		<StartingToolsID>0</StartingToolsID>
+		<StartingToolsID>2836</StartingToolsID>
 		<SkillTypeID>25</SkillTypeID>
-		<SkillLvl>60</SkillLvl>
+		<SkillLvl>90</SkillLvl>
 		<ResultObjectTypeID>3653</ResultObjectTypeID>
-		<SkillDepends>50</SkillDepends>
+		<SkillDepends>60</SkillDepends>
 		<Quantity>1</Quantity>
 		<Autorepeat>0</Autorepeat>
 		<IsBlueprint>0</IsBlueprint>
@@ -4621,13 +4621,13 @@
 	</row>
 	<row>
 		<ID>6398</ID>
-		<Name>Fancy Breeder's Outfit</Name>
+		<Name>Fancy Breeder&apos;s Outfit</Name>
 		<Description></Description>
-		<StartingToolsID>0</StartingToolsID>
+		<StartingToolsID>2836</StartingToolsID>
 		<SkillTypeID>25</SkillTypeID>
-		<SkillLvl>60</SkillLvl>
+		<SkillLvl>90</SkillLvl>
 		<ResultObjectTypeID>3654</ResultObjectTypeID>
-		<SkillDepends>50</SkillDepends>
+		<SkillDepends>60</SkillDepends>
 		<Quantity>1</Quantity>
 		<Autorepeat>0</Autorepeat>
 		<IsBlueprint>0</IsBlueprint>
@@ -4772,4 +4772,74 @@
 		<Autorepeat>0</Autorepeat>
 		<IsBlueprint>0</IsBlueprint>
 		<ImagePath>art\2D\Items\eggnog.png</ImagePath>
+	</row>
+<row>
+		<ID>6483</ID>
+		<Name>Master Blacksmith&apos;s Outfit</Name>
+		<Description></Description>
+		<StartingToolsID>2836</StartingToolsID>
+		<SkillTypeID>25</SkillTypeID>
+		<SkillLvl>90</SkillLvl>
+		<ResultObjectTypeID>3925</ResultObjectTypeID>
+		<SkillDepends>60</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>0</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\equipIcons\Outfits\Male_Craft_Blacksmith_SkinA.png</ImagePath>
+	</row>
+<row>
+		<ID>6484</ID>
+		<Name>Master Carpenter&apos;s Outfit</Name>
+		<Description></Description>
+		<StartingToolsID>2836</StartingToolsID>
+		<SkillTypeID>25</SkillTypeID>
+		<SkillLvl>90</SkillLvl>
+		<ResultObjectTypeID>3926</ResultObjectTypeID>
+		<SkillDepends>60</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>0</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\equipIcons\Outfits\Male_Craft_Carpenter_SkinA.png</ImagePath>
+	</row>
+<row>
+		<ID>6485</ID>
+		<Name>Master Alchemist&apos;s Outfit</Name>
+		<Description></Description>
+		<StartingToolsID>2836</StartingToolsID>
+		<SkillTypeID>25</SkillTypeID>
+		<SkillLvl>90</SkillLvl>
+		<ResultObjectTypeID>3927</ResultObjectTypeID>
+		<SkillDepends>60</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>0</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\equipIcons\Outfits\Male_Craft_Alchemist_SkinA.png</ImagePath>
+	</row>
+<row>
+		<ID>6486</ID>
+		<Name>Master Engineer&apos;s Outfit</Name>
+		<Description></Description>
+		<StartingToolsID>2836</StartingToolsID>
+		<SkillTypeID>25</SkillTypeID>
+		<SkillLvl>90</SkillLvl>
+		<ResultObjectTypeID>3928</ResultObjectTypeID>
+		<SkillDepends>60</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>0</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\equipIcons\Outfits\Male_Craft_Engineer_SkinA.png</ImagePath>
+	</row>
+<row>
+		<ID>6487</ID>
+		<Name>Master Cook&apos;s Outfit</Name>
+		<Description></Description>
+		<StartingToolsID>2836</StartingToolsID>
+		<SkillTypeID>25</SkillTypeID>
+		<SkillLvl>90</SkillLvl>
+		<ResultObjectTypeID>3929</ResultObjectTypeID>
+		<SkillDepends>60</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>0</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\equipIcons\Outfits\Male_Craft_Cook_SkinA.png</ImagePath>
 	</row>

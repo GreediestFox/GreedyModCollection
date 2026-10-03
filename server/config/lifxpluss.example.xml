@@ -202,6 +202,7 @@
         <swap from="392" to="3179" chance="35" />
     </wellWater>
 <datablockRange enabled="1" verbose="1" />
+    <craftEffectsRange enabled="1" />
 <cropTypes enabled="1" verbose="1" maxSubstanceWidth="136" maxGatherableType="224">
     <!-- Wild Rye/Barley/Oat reuse Wheat's own terrain visuals+friction for now (aliasBase defaults to Wheat/101);
          Hops reuses Grape's (aliasBase="161"); Sugar Beet reuses Carrot's (aliasBase="141").
@@ -213,7 +214,7 @@
     <crop abilityId="364" seedItemId="3752" fertileSmallSubstance="231" nonFertileSmallSubstance="232" aliasBase="141" name="Sugar Beet" />
 </cropTypes>
     <!-- Drink effects: buff + drawback per drink type (player effect ids of cm_effects.xml). Items that carry their own DB effect list are left alone. -->
-    <drinkEffects enabled="1" verbose="1" dump="1">
+    <drinkEffects enabled="1" verbose="1" dump="0">
         <db host="127.0.0.1" port="3306" user="root" password="CHANGE_ME" name="lif_1" />
         <drink objectTypeId="3920">   <!-- Thin Beer: Accelerated + Clumsiness -->
             <effect id="6" magnitude="0.10" />

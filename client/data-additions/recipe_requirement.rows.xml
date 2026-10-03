@@ -1,4 +1,4 @@
-<!-- Rows to append before </table> in the client data\recipe_requirement.xml. 1145 rows. -->
+<!-- Rows to append before </table> in the client data\recipe_requirement.xml. 1179 rows. -->
 <row>
 		<ID>90010</ID>
 		<RecipeID>1179</RecipeID>
@@ -4188,78 +4188,6 @@
 		<IsRegionItemRequired>0</IsRegionItemRequired>
 	</row>
 	<row>
-		<ID>96745</ID>
-		<RecipeID>6397</RecipeID>
-		<MaterialObjectTypeID>261</MaterialObjectTypeID>
-		<Quality>0</Quality>
-		<Influence>10</Influence>
-		<Quantity>4</Quantity>
-		<IsRegionItemRequired>0</IsRegionItemRequired>
-	</row>
-	<row>
-		<ID>96746</ID>
-		<RecipeID>6397</RecipeID>
-		<MaterialObjectTypeID>260</MaterialObjectTypeID>
-		<Quality>0</Quality>
-		<Influence>10</Influence>
-		<Quantity>3</Quantity>
-		<IsRegionItemRequired>0</IsRegionItemRequired>
-	</row>
-	<row>
-		<ID>96747</ID>
-		<RecipeID>6397</RecipeID>
-		<MaterialObjectTypeID>3554</MaterialObjectTypeID>
-		<Quality>0</Quality>
-		<Influence>20</Influence>
-		<Quantity>5</Quantity>
-		<IsRegionItemRequired>0</IsRegionItemRequired>
-	</row>
-	<row>
-		<ID>96748</ID>
-		<RecipeID>6397</RecipeID>
-		<MaterialObjectTypeID>295</MaterialObjectTypeID>
-		<Quality>0</Quality>
-		<Influence>10</Influence>
-		<Quantity>40</Quantity>
-		<IsRegionItemRequired>0</IsRegionItemRequired>
-	</row>
-	<row>
-		<ID>96749</ID>
-		<RecipeID>6398</RecipeID>
-		<MaterialObjectTypeID>261</MaterialObjectTypeID>
-		<Quality>0</Quality>
-		<Influence>15</Influence>
-		<Quantity>6</Quantity>
-		<IsRegionItemRequired>0</IsRegionItemRequired>
-	</row>
-	<row>
-		<ID>96750</ID>
-		<RecipeID>6398</RecipeID>
-		<MaterialObjectTypeID>260</MaterialObjectTypeID>
-		<Quality>0</Quality>
-		<Influence>15</Influence>
-		<Quantity>6</Quantity>
-		<IsRegionItemRequired>0</IsRegionItemRequired>
-	</row>
-	<row>
-		<ID>96751</ID>
-		<RecipeID>6398</RecipeID>
-		<MaterialObjectTypeID>3556</MaterialObjectTypeID>
-		<Quality>0</Quality>
-		<Influence>10</Influence>
-		<Quantity>3</Quantity>
-		<IsRegionItemRequired>0</IsRegionItemRequired>
-	</row>
-	<row>
-		<ID>96752</ID>
-		<RecipeID>6398</RecipeID>
-		<MaterialObjectTypeID>295</MaterialObjectTypeID>
-		<Quality>0</Quality>
-		<Influence>10</Influence>
-		<Quantity>40</Quantity>
-		<IsRegionItemRequired>0</IsRegionItemRequired>
-	</row>
-	<row>
 		<ID>96901</ID>
 		<RecipeID>6348</RecipeID>
 		<MaterialObjectTypeID>1413</MaterialObjectTypeID>
@@ -4520,3 +4448,45 @@
 		<Quantity>15</Quantity>
 		<IsRegionItemRequired>0</IsRegionItemRequired>
 	</row>
+<row><ID>97604</ID><RecipeID>6483</RecipeID><MaterialObjectTypeID>303</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97605</ID><RecipeID>6483</RecipeID><MaterialObjectTypeID>261</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>4</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97606</ID><RecipeID>6483</RecipeID><MaterialObjectTypeID>266</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>4</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97607</ID><RecipeID>6483</RecipeID><MaterialObjectTypeID>424</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>4</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97608</ID><RecipeID>6483</RecipeID><MaterialObjectTypeID>3049</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>5</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97609</ID><RecipeID>6483</RecipeID><MaterialObjectTypeID>2836</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>40</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97610</ID><RecipeID>6484</RecipeID><MaterialObjectTypeID>304</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97611</ID><RecipeID>6484</RecipeID><MaterialObjectTypeID>261</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>4</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97612</ID><RecipeID>6484</RecipeID><MaterialObjectTypeID>266</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>4</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97613</ID><RecipeID>6484</RecipeID><MaterialObjectTypeID>424</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>3</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97614</ID><RecipeID>6484</RecipeID><MaterialObjectTypeID>3052</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>5</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97615</ID><RecipeID>6484</RecipeID><MaterialObjectTypeID>2836</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>40</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97616</ID><RecipeID>6485</RecipeID><MaterialObjectTypeID>305</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97617</ID><RecipeID>6485</RecipeID><MaterialObjectTypeID>261</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>5</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97618</ID><RecipeID>6485</RecipeID><MaterialObjectTypeID>266</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>3</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97619</ID><RecipeID>6485</RecipeID><MaterialObjectTypeID>425</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>3</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97620</ID><RecipeID>6485</RecipeID><MaterialObjectTypeID>3052</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>5</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97621</ID><RecipeID>6485</RecipeID><MaterialObjectTypeID>2836</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>40</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97622</ID><RecipeID>6486</RecipeID><MaterialObjectTypeID>306</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97623</ID><RecipeID>6486</RecipeID><MaterialObjectTypeID>261</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>4</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97624</ID><RecipeID>6486</RecipeID><MaterialObjectTypeID>266</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>4</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97625</ID><RecipeID>6486</RecipeID><MaterialObjectTypeID>424</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>3</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97626</ID><RecipeID>6486</RecipeID><MaterialObjectTypeID>3049</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>5</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97627</ID><RecipeID>6486</RecipeID><MaterialObjectTypeID>2836</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>40</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97628</ID><RecipeID>6487</RecipeID><MaterialObjectTypeID>307</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97629</ID><RecipeID>6487</RecipeID><MaterialObjectTypeID>261</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>5</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97630</ID><RecipeID>6487</RecipeID><MaterialObjectTypeID>266</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>3</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97631</ID><RecipeID>6487</RecipeID><MaterialObjectTypeID>424</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>3</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97632</ID><RecipeID>6487</RecipeID><MaterialObjectTypeID>3052</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>5</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97633</ID><RecipeID>6487</RecipeID><MaterialObjectTypeID>2836</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>40</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97634</ID><RecipeID>6397</RecipeID><MaterialObjectTypeID>3591</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97635</ID><RecipeID>6397</RecipeID><MaterialObjectTypeID>261</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>4</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97636</ID><RecipeID>6397</RecipeID><MaterialObjectTypeID>266</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>4</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97637</ID><RecipeID>6397</RecipeID><MaterialObjectTypeID>3554</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>4</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97638</ID><RecipeID>6397</RecipeID><MaterialObjectTypeID>3049</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>5</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97639</ID><RecipeID>6397</RecipeID><MaterialObjectTypeID>2836</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>40</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97640</ID><RecipeID>6398</RecipeID><MaterialObjectTypeID>3592</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97641</ID><RecipeID>6398</RecipeID><MaterialObjectTypeID>261</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>5</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97642</ID><RecipeID>6398</RecipeID><MaterialObjectTypeID>266</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>3</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97643</ID><RecipeID>6398</RecipeID><MaterialObjectTypeID>3556</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>3</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97644</ID><RecipeID>6398</RecipeID><MaterialObjectTypeID>3052</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>5</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97645</ID><RecipeID>6398</RecipeID><MaterialObjectTypeID>2836</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>40</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>

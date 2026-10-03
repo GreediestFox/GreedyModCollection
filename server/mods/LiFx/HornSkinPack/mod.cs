@@ -38,8 +38,20 @@ package LiFxHornSkinPack
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6394,'Leather Gottlung Helm with Deer Antlers','',NULL,25,30,3650,30,1,0,0,'mod/HornSkinMod/art/2D/Items/Regular_Leather_Gothlung_HornHelmet.png')");
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6395,'Heavy Leather Helm with Deer Antlers','',NULL,25,90,3651,30,1,0,1,'mod/HornSkinMod/art/2D/Items/Heavy_Leather_Gothlung_HornHelmet.png')");
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6396,'Heavy Quilted Helm with Cow Horns','',NULL,25,90,3652,30,1,0,1,'mod/HornSkinMod/art/2D/Items/Heavy_Padded_Slavard_HornHelmet.png')");
-        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6397,'Fancy Stonecutter''s Outfit','',NULL,25,60,3653,50,1,0,0,'mod/HornSkinMod/art/2D/Items/miner_skinA.png')");
-        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6398,'Fancy Breeder''s Outfit','',NULL,25,60,3654,50,1,0,0,'mod/HornSkinMod/art/2D/Items/breeder_skinA.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6397,'Fancy Stonecutter''s Outfit','',2836,25,90,3653,60,1,0,0,'mod/HornSkinMod/art/2D/Items/miner_skinA.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6397,3591,0,20,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6397,261,0,10,4,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6397,266,0,10,4,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6397,3554,0,10,4,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6397,3049,0,20,5,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6397,2836,0,20,40,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6398,'Fancy Breeder''s Outfit','',2836,25,90,3654,60,1,0,0,'mod/HornSkinMod/art/2D/Items/breeder_skinA.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6398,3592,0,20,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6398,261,0,10,5,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6398,266,0,10,3,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6398,3556,0,10,3,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6398,3052,0,20,5,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6398,2836,0,20,40,0)");
         dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6387,293,0,10,15,0)");
         dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6387,261,0,10,1,0)");
         dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6387,1388,0,5,1,0)");
@@ -84,14 +96,6 @@ package LiFxHornSkinPack
         dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6396,261,0,25,1,1)");
         dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6396,265,0,10,1,0)");
         dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6396,1390,0,25,1,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6397,261,0,10,4,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6397,260,0,10,3,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6397,3554,0,20,5,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6397,295,0,10,40,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6398,261,0,15,6,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6398,260,0,15,6,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6398,3556,0,10,3,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6398,295,0,10,40,0)");
     }
 };
 activatePackage(LiFxHornSkinPack);

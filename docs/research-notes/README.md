@@ -1,4 +1,4 @@
-﻿# Research notes
+# Research notes
 
 Condensed write-ups of the reverse engineering and porting work, one topic per file. Each has the same shape: the idea (what the server owner wanted), what was done or tried, what ended up in the server, and the technical notes that are worth keeping.
 
@@ -15,5 +15,6 @@ Condensed write-ups of the reverse engineering and porting work, one topic per f
 | [09-gm-tools-chat-and-sounds.md](09-gm-tools-chat-and-sounds.md) | GM tools, chat colours, sounds |
 | [10-movement-and-ability-research.md](10-movement-and-ability-research.md) | Checksum/plough research, light activation, RE methodology |
 | [11-beverages-and-drink-effects.md](11-beverages-and-drink-effects.md) | Drinks with buff and drawback, drink effect list, the Plus hook |
+| [12-effects-and-outfit-tiers.md](12-effects-and-outfit-tiers.md) | Free effect slots, MMO effect ports, Geselle/Meister outfits, craft effect id limit |
 
 Offsets (RVAs) refer to one specific Steam build of the YO dedicated server and client and must be re-verified after any game update.
