@@ -16,5 +16,6 @@ Condensed write-ups of the reverse engineering and porting work, one topic per f
 | [10-movement-and-ability-research.md](10-movement-and-ability-research.md) | Checksum/plough research, light activation, RE methodology |
 | [11-beverages-and-drink-effects.md](11-beverages-and-drink-effects.md) | Drinks with buff and drawback, drink effect list, the Plus hook |
 | [12-effects-and-outfit-tiers.md](12-effects-and-outfit-tiers.md) | Free effect slots, MMO effect ports, Geselle/Meister outfits, craft effect id limit |
+| [13-daniels-mods.md](13-daniels-mods.md) | Daniel's mods: agriculture, food spoilage, tree felling, client extras, demo quest |
 
 Offsets (RVAs) refer to one specific Steam build of the YO dedicated server and client and must be re-verified after any game update.

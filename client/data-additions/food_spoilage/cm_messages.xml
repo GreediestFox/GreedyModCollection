@@ -1,0 +1,9 @@
+<!-- Shelf-life texts: EN in client+server data\cm_messages.xml, DE in loc\de\data\cm_messages.xml -->
+<string id="5195">Remaining shelf life</string>
+<string id="5196"> months</string>
+<string id="5197"> weeks</string>
+<string id="5198"> days</string>
+<string id="5195">Verbleibende Haltbarkeit</string>
+<string id="5196"> Monate</string>
+<string id="5197"> Wochen</string>
+<string id="5198"> Tage</string>

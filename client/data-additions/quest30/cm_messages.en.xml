@@ -1,0 +1,13 @@
+<!-- EN messages for quest 30 (client + server data\cm_messages.xml) -->
+<string id="5201">Greetings, traveler! I need a branch for one of my traps. Could you bring me one?</string>
+<string id="5202">Of course! I will find one for you.</string>
+<string id="5203">Sorry, not right now.</string>
+<string id="5204">Ah, it's you! Have you found a branch for me?</string>
+<string id="5205">Here you go. One branch, as requested.</string>
+<string id="5206">Not yet. I'm still looking.</string>
+<string id="5207">Splendid! This is exactly what I needed. Here, take this copper coin as thanks.</string>
+<string id="5208">Happy to help. Farewell.</string>
+<string id="5209">Wranen's Request</string>
+<string id="5210">Wranen the Hunter needs a branch for his trap. Find one and bring it to him.</string>
+<string id="5211">Find a Branch</string>
+<string id="5212">Bring a branch to Wranen the Hunter.</string>

@@ -1,0 +1,326 @@
+--- a/gui/scripts/craft.cs
++++ b/gui/scripts/craft.cs
+@@ -1,5 +1,21 @@
+ //-----------------------------------------------------------------------------
+ // Craftsman & Marksman: Life is feudal
++//-----------------------------------------------------------------------------
++// Mod-Aenderungen (siehe Kommentare weiter unten):
++//   1. Vor der bestehenden Mengen-IST/SOLL-Anzeige wird das "QantityIcon"
++//      (so, mit diesem Tippfehler, heisst es im Originalspiel) angezeigt.
++//      Die bestehende Fuellstand-Faerbung (setValues/setBuildingValues)
++//      bleibt unveraendert.
++//   2. Neu: Anzeige der von "recipe_requirement.xml" geforderten
++//      Mindestqualitaet je Zutat, mit vorangestelltem "QualityIcon".
++//      - Leerer Zutat-Slot -> "-", Standardfarbe.
++//      - Keine Mindestqualitaet gefordert (0) -> "0", Standardfarbe.
++//      - Mindestqualitaet > 0 gefordert -> Zahl in Gelb hervorgehoben.
++//      Eine Anzeige der tatsaechlich verfuegbaren (IST-)Qualitaet ist
++//      bewusst nicht enthalten - dafuer gibt es keine Skript-Schnittstelle
++//      (siehe Rueckmeldung an Daniel vom 2026-07-06).
++//   3. Reihenfolge im Zutaten-Panel von oben nach unten: Item-Name,
++//      Menge IST/SOLL, benoetigte Mindestqualitaet, Regionsname.
+ //-----------------------------------------------------------------------------
+ 
+ $GuiCraftComponentRedColor = "159 66 20";
+@@ -20,14 +36,134 @@
+ 	justify = "center";
+ };
+ 
++// Neu: Profile fuer die Mindestqualitaets-Anzeige.
++// "Erfuellt/keine Anforderung" -> gleiche Optik wie der Item-Name.
++// "Anforderung > 0" -> gelb hervorgehoben (gleicher Gelbton wie in den
++// Rezept-Tooltips, siehe GuiYellowTextTooltipProfile in tooltipManager.cs).
++singleton GuiControlProfile( GuiCraftRecipeComponentQualityProfile : GuiCraftRecipeComponentNameProfile ) {};
++
++singleton GuiControlProfile( GuiCraftRecipeComponentQualityReqProfile : GuiCraftRecipeComponentNameProfile ) {
++	fontColor = "195 129 0";
++};
++
++//-----------------------------------------------------------------------------
++// Mindestqualitaet je Rezept-Zutat (aus recipe_requirement.xml)
++//
++// Die Engine uebergibt GuiCraftingComponentSlot::setInfo() nur itemTypeId,
++// itemName, optionallyRegional und regionName - keine Qualitaetsangabe.
++// recipe_requirement.xml liegt aber als normale Datendatei vor und wird
++// hier einmalig selbst eingelesen (SimXMLDocument), um pro
++// (RecipeID, MaterialObjectTypeID) die geforderte Mindestqualitaet
++// nachschlagen zu koennen.
++//-----------------------------------------------------------------------------
++
++$CraftReq::Loaded = false;
++
++// Liest den Text eines Kindelements (%childName) des aktuellen <row>-Elements.
++//
++// Testergebnis vom 2026-07-07: elementValue() liefert in dieser Engine
++// (fälschlich) den Namen des Elements selbst zurück (z.B. "Quality" statt
++// "60"), waehrend getText() korrekt den eigentlichen Textinhalt liefert
++// (bestaetigt per Debug-Log: elementValue=[Quality] getText=[0]).
++// Deshalb wird ausschliesslich getText() verwendet.
++function CraftReq_ReadElementText(%xml, %childName, %debugLog)
++{
++	%value = "";
++
++	if (%xml.pushFirstChildElement(%childName))
++	{
++		%value = %xml.getText();
++
++		if (%debugLog)
++		{
++			echo("CraftReq_EnsureLoaded DEBUG <" @ %childName @ ">: getText=[" @ %value @ "]");
++		}
++
++		%xml.popElement();
++	}
++	else if (%debugLog)
++	{
++		echo("CraftReq_EnsureLoaded DEBUG <" @ %childName @ ">: Kindelement nicht gefunden");
++	}
++
++	return %value;
++}
++
++function CraftReq_EnsureLoaded()
++{
++	if ($CraftReq::Loaded)
++		return;
++
++	// Nur einmal versuchen - auch wenn das Laden fehlschlaegt, nicht bei
++	// jedem Oeffnen des Craftingfensters erneut probieren.
++	$CraftReq::Loaded = true;
++
++	%path = "data/recipe_requirement.xml";
++	if (!isFile(%path))
++	{
++		warn("CraftReq_EnsureLoaded: Datei nicht gefunden: " @ %path);
++		return;
++	}
++
++	%xml = new SimXMLDocument();
++	if (!%xml.loadFile(%path))
++	{
++		warn("CraftReq_EnsureLoaded: konnte " @ %path @ " nicht laden");
++		%xml.delete();
++		return;
++	}
++
++	%rowCount = 0;
++	%withQuality = 0;
++
++	// Wichtig: pushFirstChildElement("table") statt pushChildElement(0) -
++	// entspricht dem offiziellen SimXMLDocument-Beispiel (Wurzelelement wird
++	// direkt ueber seinen Namen angesprochen). Die urspruengliche Variante
++	// mit pushChildElement(0) hat beim Test keine einzige Zeile gefunden
++	// (0 Eintraege geladen, obwohl die Testdatei einen Wert > 0 enthielt).
++	if (%xml.pushFirstChildElement("table"))
++	{
++		%hasRow = %xml.pushFirstChildElement("row");
++		while (%hasRow)
++		{
++			%rowCount++;
++			%debugThisRow = (%rowCount == 1);
++
++			%recipeId = CraftReq_ReadElementText(%xml, "RecipeID", %debugThisRow);
++			%materialId = CraftReq_ReadElementText(%xml, "MaterialObjectTypeID", %debugThisRow);
++			%quality = CraftReq_ReadElementText(%xml, "Quality", %debugThisRow);
++			if (%quality $= "")
++				%quality = 0;
++
++			if (%recipeId !$= "" && %materialId !$= "" && %quality > 0)
++			{
++				$CraftReq::Quality[%recipeId, %materialId] = %quality;
++				%withQuality++;
++			}
++
++			%hasRow = %xml.nextSiblingElement("row");
++		}
++
++		%xml.popElement(); // zurueck auf <table>
++	}
++	else
++	{
++		warn("CraftReq_EnsureLoaded: <table>-Wurzelelement nicht gefunden in " @ %path);
++	}
++
++	%xml.delete();
++
++	echo("CraftReq_EnsureLoaded: " @ %rowCount @ " <row>-Eintraege gelesen, davon " @ %withQuality @ " mit Mindestqualitaet > 0 (" @ %path @ ")");
++}
++
+ function createCraftingComponentPanel(%name)
+ {
+ 	%gui = new GuiControl() {
+-		extent = "172 188";
++		extent = "172 208";
+ 		internalName = %name;
+ 		canHit = true;
+ 		class = GuiCraftingComponentSlot;
+-		
++
+ 		new GuiBitmapCtrl() {
+ 			position = "27 6";
+ 			extent = "118 118";
+@@ -44,26 +180,67 @@
+ 			centered = true;
+ 			internalName = "image";
+ 		};
+-		
+-		new CmGuiDoubleValTextCtrl() {
++
++		// Reihenfolge von oben nach unten (wie gewuenscht):
++		// 1. Item-Name (direkt unter dem Icon)
++		// 2. Menge IST/SOLL, mit vorangestelltem QantityIcon
++		//    (Original-Schreibweise des Spiels)
++		// 3. Benoetigte Mindestqualitaet, mit vorangestelltem QualityIcon
++		// 4. Regionsname (nur sichtbar/gefuellt, wenn zutreffend)
++		new GuiTextCtrl() {
+ 			position = "0 124";
+ 			extent = "172 20";
+-			profile = "GuiCraftRecipeComponentDoubleValProfile";
+-			canHit = false;
+-			internalName = "doubleVal";
+-		};
+-
+-		new GuiTextCtrl() {
++			profile = "GuiCraftRecipeComponentNameProfile";
++			canHit = false;
++			internalName = "itemName";
++			text = "---";
++		};
++
++		// Menge: Der Wertecontrol behaelt Name/Position/Klasse bei, damit
++		// die bestehenden Aufrufe (setValues/setBuildingValues) unveraendert
++		// weiterfunktionieren - inklusive ihrer Fuellstand-Faerbung.
++		new GuiBitmapCtrl() {
++			position = "38 146";
++			extent = "16 16";
++			canHit = false;
++			visible = "true";
++			resize = "true";
++			profile = "GuiAtlas3ImageProfile";
++			imageIndex = "QantityIcon";
++			internalName = "quantityIcon";
++		};
++
++		new CmGuiDoubleValTextCtrl() {
+ 			position = "0 144";
+ 			extent = "172 20";
+-			profile = "GuiCraftRecipeComponentNameProfile";
+-			canHit = false;
+-			internalName = "itemName";
+-			text = "---";
++			profile = "GuiCraftRecipeComponentDoubleValProfile";
++			canHit = false;
++			internalName = "doubleVal";
++		};
++
++		// Neu: Mindestqualitaet der Zutat, mit vorangestelltem QualityIcon.
++		new GuiBitmapCtrl() {
++			position = "38 166";
++			extent = "16 16";
++			canHit = false;
++			visible = "true";
++			resize = "true";
++			profile = "GuiAtlas3ImageProfile";
++			imageIndex = "QualityIcon";
++			internalName = "qualityIcon";
+ 		};
+ 
+ 		new GuiTextCtrl() {
+ 			position = "0 164";
++			extent = "172 20";
++			profile = "GuiCraftRecipeComponentQualityProfile";
++			canHit = false;
++			internalName = "qualityReq";
++			text = "-";
++		};
++
++		new GuiTextCtrl() {
++			position = "0 184";
+ 			extent = "172 20";
+ 			profile = "GuiCraftRecipeComponentRegionProfile";
+ 			canHit = false;
+@@ -89,16 +266,18 @@
+ function createCraftingComponentsPanel()
+ {
+ 	%panel = new GuiControl() {
+-		extent = "516 376";
++		extent = "516 416";
+ 		internalName = "components";
+ 	};
+ 
+ 	// wtb non-retarded arrays
++	// Zeilenhoehe an die um die Qualitaetszeile vergroesserten Slots
++	// angepasst (188 -> 208), zweite Reihe entsprechend nach unten verschoben.
+ 	%itemPosition[0] = "0 0";
+ 	%itemPosition[1] = "172 0";
+ 	%itemPosition[2] = "344 0";
+-	%itemPosition[3] = "86 188";
+-	%itemPosition[4] = "258 188";
++	%itemPosition[3] = "86 208";
++	%itemPosition[4] = "258 208";
+ 
+ 	for (%i = 0; %i < 5; %i++)
+ 	{
+@@ -123,6 +302,8 @@
+ 	%this-->optionallyRegional.setVisible(%optionallyRegional);
+ 	%this-->regionName.setText(%regionName);
+ 	%this.setValues(0, 0);
++
++	%this.updateQualityRequirement(%itemTypeId);
+ }
+ 
+ function GuiCraftingComponentSlot::setValues(%this, %first, %second)
+@@ -160,6 +341,45 @@
+ 	%this-->doubleVal.setFirstColor(%color);
+ }
+ 
++// Neu: ermittelt und zeigt die vom aktuell gewaehlten Rezept geforderte
++// Mindestqualitaet fuer diese Zutat an.
++//
++// %itemTypeId == 0 bedeutet "Slot ist leer" (kein Zutat-Platz fuer dieses
++// Rezept vorgesehen bzw. clearInfo() wurde aufgerufen) -> "-", nicht gelb.
++// Sonst: 0 = keine Mindestqualitaet gefordert (Standardfarbe),
++//        > 0 = Mindestqualitaet gefordert (gelb hervorgehoben).
++function GuiCraftingComponentSlot::updateQualityRequirement(%this, %itemTypeId)
++{
++	CraftReq_EnsureLoaded();
++
++	if (%itemTypeId == 0)
++	{
++		%this-->qualityReq.setText("-");
++		%this-->qualityReq.setProfile(GuiCraftRecipeComponentQualityProfile);
++		return;
++	}
++
++	%reqQuality = 0;
++	%recipeId = GuiCraftWindows.selectedRecipeId;
++	if (%recipeId !$= "")
++	{
++		%lookup = $CraftReq::Quality[%recipeId, %itemTypeId];
++		if (%lookup !$= "")
++			%reqQuality = %lookup;
++	}
++
++	if (%reqQuality == 0)
++	{
++		%this-->qualityReq.setText("0");
++		%this-->qualityReq.setProfile(GuiCraftRecipeComponentQualityProfile);
++	}
++	else
++	{
++		%this-->qualityReq.setText(%reqQuality);
++		%this-->qualityReq.setProfile(GuiCraftRecipeComponentQualityReqProfile);
++	}
++}
++
+ function GuiCraftingComponentSlot::clearInfo(%this)
+ {
+ 	%this-->image.setObjectTypeId(0);
+@@ -167,4 +387,6 @@
+ 	%this-->optionallyRegional.setVisible(false);
+ 	%this-->regionName.setText("");
+ 	%this.setValues(0, 0);
+-}
++
++	%this.updateQualityRequirement(0);
++}

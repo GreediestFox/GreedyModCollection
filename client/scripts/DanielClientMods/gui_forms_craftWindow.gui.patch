@@ -1,0 +1,63 @@
+--- a/gui/forms/craftWindow.gui
++++ b/gui/forms/craftWindow.gui
+@@ -1,5 +1,11 @@
+ //-----------------------------------------------------------------------------
+ // Craftsman & Marksman: Life is feudal
++//-----------------------------------------------------------------------------
++// Mod-Aenderung: GuiCraftWindows::addRecipeListItem() merkt sich beim Klick
++// auf ein Rezept dessen RecipeID (GuiCraftWindows.selectedRecipeId), bevor
++// die native Methode selectRecipe() aufgerufen wird. craft.cs braucht diese
++// RecipeID, um in recipe_requirement.xml die Mindestqualitaet je Zutat
++// nachzuschlagen (siehe GuiCraftingComponentSlot::updateQualityRequirement).
+ //-----------------------------------------------------------------------------
+ 
+ singleton GuiControlProfile( GuiCraftWindowBlacknessProfile : GuiBaseTextProfile ) {
+@@ -267,9 +273,27 @@
+ 				};
+ 
+ 				new GuiControl() {
+-					extent = "516 564";
+-					horizSizing = "center";
+-					vertSizing = "center";
++					// Mod: Box wird jetzt mit fester Position/Groesse
++					// platziert (statt automatischer horizSizing/vertSizing
++					// "center"-Zentrierung), weil der tatsaechliche Inhalt
++					// durch die neue Qualitaetszeile im Zutaten-Panel jetzt
++					// 604px hoch ist (188px Ergebnis-Icon/Name + 416px
++					// Zutaten-Gitter) statt der urspruenglichen 564px.
++					//
++					// Verfuegbare Hoehe im Elternbereich: 690px, also
++					// insgesamt 690 - 604 = 86px Spielraum fuer den
++					// Abstand oben+unten zusammen.
++					//   - 63px oben (rein rechnerisch mittig fuer die ALTE
++					//     Hoehe 564) war noch zu nah an der Werkzeugleiste.
++					//   - Jetzt 78px oben, macht 690 - 78 - 604 = 8px Rand
++					//     unten - noch sicher, keine erneute Abschneidung.
++					// Falls weiterhin zu nah an der Werkzeugleiste: Wert
++					// vorsichtig weiter erhoehen, aber nicht ueber 86 (sonst
++					// wird unten wieder abgeschnitten).
++					extent = "516 604";
++					position = "38 78";
++					horizSizing = "left";
++					vertSizing = "top";
+ 					internalName = "componentsPnl";
+ 
+ 					new GuiBitmapCtrl() {
+@@ -362,7 +386,11 @@
+ 		groupNum = 1;
+ 		profile = "GuiCraftRecipeListItemProfile";
+ 		class = GuiCraftRecipeListItem;
+-		command = %this.getId() @ ".selectRecipe(" @ %recipeId @ "," @ %abilityId @ ");";
++		// Mod: RecipeID zusaetzlich auf dem Fenster ablegen, bevor die
++		// native selectRecipe()-Methode laeuft. craft.cs liest
++		// GuiCraftWindows.selectedRecipeId aus, um die je Zutat geforderte
++		// Mindestqualitaet nachzuschlagen.
++		command = %this.getId() @ ".selectedRecipeId=" @ %recipeId @ ";" @ %this.getId() @ ".selectRecipe(" @ %recipeId @ "," @ %abilityId @ ");";
+ 
+ 		new GuiTilingBitmapOverlap() {
+ 			position = "0 15";
+@@ -539,4 +567,4 @@
+ 			CreateCraftToolWindow();
+ 		}
+ 	}
+-}+}

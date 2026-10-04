@@ -26,11 +26,11 @@ package LiFxSignsPillarsPack
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5908,'Horse Head Pillar','Ported from Life is Feudal MMO',NULL,53,0,3108,10,1,0,0,'mod/SignsPillarsMod/art/2D/Recipes/sign_c.png')");
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5909,'Sign of Hidden Paths','Ported from Life is Feudal MMO',NULL,53,0,3109,10,1,0,0,'mod/SignsPillarsMod/art/2D/Recipes/sign_d.png')");
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5910,'Sleeper''s Sign','Ported from Life is Feudal MMO',NULL,53,0,3110,10,1,0,0,'mod/SignsPillarsMod/art/2D/Recipes/sign_e.png')");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5906,1636,0,90,1,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5907,1636,0,90,1,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5908,1636,0,90,1,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5909,1636,0,90,1,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5910,1636,0,90,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5906,233,0,90,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5907,233,0,90,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5908,233,0,90,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5909,233,0,90,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,5910,233,0,90,1,0)");
     }
 };
 activatePackage(LiFxSignsPillarsPack);

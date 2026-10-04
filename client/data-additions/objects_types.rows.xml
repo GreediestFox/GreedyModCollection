@@ -6915,3 +6915,117 @@
 		<FaceImage>art\2D\equipIcons\Outfits\Male_Craft_Cook_SkinA.png</FaceImage>
 		<Description>A cook's outfit — a blue cotton vest, a shirt of light-colored linen, and, most importantly, a broad apron made of white fabric with pockets for salt and spices, as well as countless straps. A handy thing for attaching knives, spoon, ladles, and other crucial cooking utensils to.</Description>
 	</row>
+<row>
+		<ID>3930</ID>
+		<ParentID>622</ParentID>
+		<Name>Amberwood Log</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>1</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>2</Length>
+		<MaxStackSize>0</MaxStackSize>
+		<UnitWeight>5</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Items\soft_log.png</FaceImage>
+		<Description>A log of amberwood, felled from a pine or spruce.</Description>
+	</row>
+<row>
+		<ID>3931</ID>
+		<ParentID>1902</ParentID>
+		<Name>Amberwood Log</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>2</Length>
+		<MaxStackSize>1</MaxStackSize>
+		<UnitWeight>5000</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Objects\softwood_log.png</FaceImage>
+		<Description></Description>
+	</row>
+<row>
+		<ID>3932</ID>
+		<ParentID>622</ParentID>
+		<Name>Whitewood Log</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>1</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>2</Length>
+		<MaxStackSize>0</MaxStackSize>
+		<UnitWeight>5</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Items\hard_log.png</FaceImage>
+		<Description>A log of whitewood, felled from a birch or aspen.</Description>
+	</row>
+<row>
+		<ID>3933</ID>
+		<ParentID>1902</ParentID>
+		<Name>Whitewood Log</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>2</Length>
+		<MaxStackSize>1</MaxStackSize>
+		<UnitWeight>5000</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Objects\hardwood_log.png</FaceImage>
+		<Description></Description>
+	</row>
+<row>
+		<ID>3934</ID>
+		<ParentID>234</ParentID>
+		<Name>Amberwood Billet</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>3</Length>
+		<MaxStackSize>10000</MaxStackSize>
+		<UnitWeight>10000</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Items\Amberwood_billet.png</FaceImage>
+		<Description>Sawed off of amberwood logs. Can be used as fuel.</Description>
+	</row>
+<row>
+		<ID>3935</ID>
+		<ParentID>234</ParentID>
+		<Name>Whitewood Billet</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>3</Length>
+		<MaxStackSize>10000</MaxStackSize>
+		<UnitWeight>10000</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Items\Whitewood_billet.png</FaceImage>
+		<Description>Sawed off of whitewood logs. Can be used as fuel.</Description>
+	</row>

@@ -2959,7 +2959,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>30</SkillLvl>
 		<ResultObjectTypeID>3111</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -2973,7 +2973,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>30</SkillLvl>
 		<ResultObjectTypeID>3112</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -2987,7 +2987,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>30</SkillLvl>
 		<ResultObjectTypeID>3113</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3001,7 +3001,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>30</SkillLvl>
 		<ResultObjectTypeID>3114</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3015,7 +3015,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>30</SkillLvl>
 		<ResultObjectTypeID>3115</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3029,7 +3029,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>30</SkillLvl>
 		<ResultObjectTypeID>3116</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3043,7 +3043,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>30</SkillLvl>
 		<ResultObjectTypeID>3117</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3057,7 +3057,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>30</SkillLvl>
 		<ResultObjectTypeID>3118</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3071,7 +3071,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>60</SkillLvl>
 		<ResultObjectTypeID>3119</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3085,7 +3085,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>60</SkillLvl>
 		<ResultObjectTypeID>3120</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3099,7 +3099,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>60</SkillLvl>
 		<ResultObjectTypeID>3121</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3113,7 +3113,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>60</SkillLvl>
 		<ResultObjectTypeID>3122</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3127,7 +3127,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>60</SkillLvl>
 		<ResultObjectTypeID>3123</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3141,7 +3141,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>60</SkillLvl>
 		<ResultObjectTypeID>3124</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3155,7 +3155,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>60</SkillLvl>
 		<ResultObjectTypeID>3125</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3169,7 +3169,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>60</SkillLvl>
 		<ResultObjectTypeID>3126</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3183,7 +3183,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>90</SkillLvl>
 		<ResultObjectTypeID>3127</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3197,7 +3197,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>90</SkillLvl>
 		<ResultObjectTypeID>3128</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3211,7 +3211,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>90</SkillLvl>
 		<ResultObjectTypeID>3129</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3225,7 +3225,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>90</SkillLvl>
 		<ResultObjectTypeID>3130</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3239,7 +3239,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>90</SkillLvl>
 		<ResultObjectTypeID>3131</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3253,7 +3253,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>90</SkillLvl>
 		<ResultObjectTypeID>3132</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3267,7 +3267,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>90</SkillLvl>
 		<ResultObjectTypeID>3133</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3281,7 +3281,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>100</SkillLvl>
 		<ResultObjectTypeID>3134</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3295,7 +3295,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>100</SkillLvl>
 		<ResultObjectTypeID>3135</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3309,7 +3309,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>53</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>100</SkillLvl>
 		<ResultObjectTypeID>3136</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>
@@ -3463,7 +3463,7 @@
 		<Description></Description>
 		<StartingToolsID>0</StartingToolsID>
 		<SkillTypeID>8</SkillTypeID>
-		<SkillLvl>0</SkillLvl>
+		<SkillLvl>30</SkillLvl>
 		<ResultObjectTypeID>3159</ResultObjectTypeID>
 		<SkillDepends>10</SkillDepends>
 		<Quantity>1</Quantity>

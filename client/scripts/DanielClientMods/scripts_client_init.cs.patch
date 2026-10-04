@@ -1,0 +1,22 @@
+--- a/scripts/client/init.cs
++++ b/scripts/client/init.cs
+@@ -56,6 +56,9 @@
+    // datablocks... at client!
+    exec("core/art/datablocks/datablockExec.cs");
+    exec("art/datablocks/datablockExec.cs");
++
++   // LiFx 2026-10-04 (from Daniel's mod, experimental): preload tree/groundcover textures at client start so they do not pop in after joining the world.
++   exec("scripts/client/preloadZoneTextures.cs");
+ 
+ 	// init of substances
+ 	SubstanceManager_init();
+@@ -177,6 +180,9 @@
+ 	// load light prototypes
+ 	exec("./cm_lightProto.cs");
+ 	//exec("./cm_environment.cs");
++
++	// LiFx 2026-10-04 (from Daniel's mod): switch the lamp post light/fire/motes off in daylight, on at dusk.
++	exec("./cm_lampEffectsDayNightLOD.cs");
+ 
+   	// load forest data
+ 	exec("art/forest/treeDatablocks.cs");

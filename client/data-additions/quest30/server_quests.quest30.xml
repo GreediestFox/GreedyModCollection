@@ -1,0 +1,118 @@
+<!-- Append inside <quests> of the SERVER data\quests.xml; point quests_subjects.xml subject 5 (Wranen, type 1513) to <init quest="30" conversation="1" /> on server AND client. -->
+	<quest id="30">
+		<!-- Wranen the Hunter - Branch Quest (ported 2026-10-04 from Daniel's demo) -->
+		<answers>
+			<answer id="1">
+				<!-- Accept quest -->
+				<msg>5202</msg>
+				<type>attention</type>
+				<actions>
+					<action type="addTask">
+						<quest>30</quest>
+						<task>1</task>
+					</action>
+					<action type="changeInitNode">
+						<node>2</node>
+					</action>
+					<action type="close" />
+				</actions>
+			</answer>
+			<answer id="2">
+				<!-- Decline -->
+				<msg>5203</msg>
+				<type>close</type>
+				<actions>
+					<action type="close" />
+				</actions>
+			</answer>
+			<answer id="3">
+				<!-- Turn in branch (requires hasItem 237) -->
+				<msg>5205</msg>
+				<type>attention</type>
+				<conditions>
+					<condition type="hasItem">
+						<itemType>237</itemType>
+						<quantity>1</quantity>
+					</condition>
+				</conditions>
+				<actions>
+					<action type="takeItem">
+						<itemType>237</itemType>
+						<quantity>1</quantity>
+					</action>
+					<action type="giveItem">
+						<itemType>1059</itemType>
+						<quantity>1</quantity>
+						<quality>10</quality>
+					</action>
+					<action type="closeTask">
+						<quest>30</quest>
+						<task>1</task>
+					</action>
+					<action type="changeInitNode">
+						<node>3</node>
+					</action>
+					<action type="close" />
+				</actions>
+			</answer>
+			<answer id="4">
+				<!-- Still looking -->
+				<msg>5206</msg>
+				<type>close</type>
+				<actions>
+					<action type="close" />
+				</actions>
+			</answer>
+			<answer id="5">
+				<!-- Farewell after completion -->
+				<msg>5208</msg>
+				<type>close</type>
+				<actions>
+					<action type="close" />
+				</actions>
+			</answer>
+		</answers>
+		<nodes>
+			<node id="1" default="1">
+				<options>
+					<option id="1">
+						<msg>5201</msg>
+					</option>
+				</options>
+				<answers>
+					<answer>1</answer>
+					<answer>2</answer>
+				</answers>
+			</node>
+			<node id="2">
+				<options>
+					<option id="1">
+						<msg>5204</msg>
+					</option>
+				</options>
+				<answers>
+					<answer>3</answer>
+					<answer>4</answer>
+				</answers>
+			</node>
+			<node id="3">
+				<options>
+					<option id="1">
+						<msg>5207</msg>
+					</option>
+				</options>
+				<answers>
+					<answer>5</answer>
+				</answers>
+			</node>
+		</nodes>
+		<conversations>
+			<conversation id="1" initID="1">
+				<nodes>
+					<node>1</node>
+					<node>2</node>
+					<node>3</node>
+				</nodes>
+			</conversation>
+		</conversations>
+	</quest>

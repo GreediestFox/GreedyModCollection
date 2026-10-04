@@ -176,9 +176,13 @@
          (apple, birch, elm, spruce, pine, maple, mulberry, oak, aspen, hazel,
          juniper, spinny) or a raw TreeType 0..255.
          See docs/offsets.md "Tree felling and movable-log creation". -->
-    <treeDrops enabled="0">
-        <!-- <drop tree="oak" itemId="626" /> -->
-    </treeDrops>
+    <treeDrops enabled="1">
+    <!-- Tree felling (2026-10-04): pine/spruce -> Amberwood Log 3930, birch/aspen -> Whitewood Log 3932 -->
+    <drop tree="pine" itemId="3930" />
+    <drop tree="spruce" itemId="3930" />
+    <drop tree="birch" itemId="3932" />
+    <drop tree="aspen" itemId="3932" />
+</treeDrops>
 
     <!-- Logging configuration -->
     <log>
@@ -203,6 +207,23 @@
     </wellWater>
 <datablockRange enabled="1" verbose="1" />
     <craftEffectsRange enabled="1" />
+    <!-- Ported from Daniel's Agriculture_mod (2026-10-04). plowCartParity must only be enabled together with the matching client exe patch (RVA 0x154F1D, 74 07 -> 90 90); harvestSoil: harvested tiles go back to settled soil; plowArea: plowing loosens 3x3 tiles. -->
+    <plowCartParity enabled="1" />
+    <harvestSoil enabled="1" />
+    <plowArea enabled="1" />
+    <!-- Tree felling hooks ported from Daniel (2026-10-04): new logs get the log examine text, can be sawn, and saw into their own billet/board. -->
+    <logDescription enabled="1">
+        <objectTypeId>3930</objectTypeId>
+        <objectTypeId>3932</objectTypeId>
+    </logDescription>
+    <sawOutput enabled="1">
+        <mapping objectTypeId="3930" billetObjectTypeId="3934" boardObjectTypeId="3800" />
+        <mapping objectTypeId="3932" billetObjectTypeId="3935" boardObjectTypeId="3802" />
+    </sawOutput>
+    <abilityEntityCheck enabled="1">
+        <objectTypeId>3930</objectTypeId>
+        <objectTypeId>3932</objectTypeId>
+    </abilityEntityCheck>
 <cropTypes enabled="1" verbose="1" maxSubstanceWidth="136" maxGatherableType="224">
     <!-- Wild Rye/Barley/Oat reuse Wheat's own terrain visuals+friction for now (aliasBase defaults to Wheat/101);
          Hops reuses Grape's (aliasBase="161"); Sugar Beet reuses Carrot's (aliasBase="141").

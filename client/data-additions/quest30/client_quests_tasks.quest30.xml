@@ -1,0 +1,13 @@
+<!-- Append inside <quests> of the CLIENT data\quests_tasks.xml (id 21 is taken there by vanilla "Mining"). -->
+	<quest id="30">
+		<!-- Wranen the Hunter - Branch Quest (ported 2026-10-04 from Daniel's demo) -->
+		<name>5209</name>
+		<description>5210</description>
+		<icon>gui/images/quest/icons/wranen_the_hunter.png</icon>
+		<tasks>
+			<task id="1">
+				<name>5211</name>
+				<description>5212</description>
+			</task>
+		</tasks>
+	</quest>
