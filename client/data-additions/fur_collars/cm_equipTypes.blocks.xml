@@ -1,0 +1,52 @@
+<!-- Add inside <equipment_types> of BOTH server and client data\cm_equipTypes.xml (slot 17 = the new fur slot) -->
+<object id="3936">
+   <!--name = Boar Fur Collar (EKR, cosmetic, own slot 17) -->
+   <skillID>33</skillID>
+   <skillAmount>0</skillAmount>
+   <slots>
+      <slot>17</slot>
+   </slots>
+   <meshes>
+      <mesh>Padded90_Vik_Helmet_Add_Dw</mesh>
+   </meshes>
+   <cutoffs>
+      <cutoff type="ears" action="on" />
+      <cutoff type="hair" action="on" />
+      <cutoff type="beard" action="on" />
+      <cutoff type="head" action="on" />
+   </cutoffs>
+</object>
+<object id="3937">
+   <!--name = Bear Fur Collar (EKR, cosmetic, own slot 17) -->
+   <skillID>33</skillID>
+   <skillAmount>0</skillAmount>
+   <slots>
+      <slot>17</slot>
+   </slots>
+   <meshes>
+      <mesh>Chain90_Vik_Helmet_Add_Dw</mesh>
+   </meshes>
+   <cutoffs>
+      <cutoff type="ears" action="on" />
+      <cutoff type="hair" action="on" />
+      <cutoff type="beard" action="on" />
+      <cutoff type="head" action="on" />
+   </cutoffs>
+</object>
+<object id="3938">
+   <!--name = Small Boar Fur Collar (EKR, cosmetic, own slot 17) -->
+   <skillID>33</skillID>
+   <skillAmount>0</skillAmount>
+   <slots>
+      <slot>17</slot>
+   </slots>
+   <meshes>
+      <mesh>Padded60_Vik_Helmet_Add_Dw</mesh>
+   </meshes>
+   <cutoffs>
+      <cutoff type="ears" action="on" />
+      <cutoff type="hair" action="on" />
+      <cutoff type="beard" action="on" />
+      <cutoff type="head" action="on" />
+   </cutoffs>
+</object>

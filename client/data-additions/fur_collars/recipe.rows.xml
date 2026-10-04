@@ -1,0 +1,43 @@
+<!-- Append before </table> in client data\recipe.xml -->
+<row>
+		<ID>6488</ID>
+		<Name>Boar Fur Collar</Name>
+		<Description></Description>
+		<StartingToolsID>295</StartingToolsID>
+		<SkillTypeID>25</SkillTypeID>
+		<SkillLvl>90</SkillLvl>
+		<ResultObjectTypeID>3936</ResultObjectTypeID>
+		<SkillDepends>50</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>0</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\Items\boar_fur_collar.png</ImagePath>
+	</row>
+<row>
+		<ID>6489</ID>
+		<Name>Bear Fur Collar</Name>
+		<Description></Description>
+		<StartingToolsID>295</StartingToolsID>
+		<SkillTypeID>25</SkillTypeID>
+		<SkillLvl>90</SkillLvl>
+		<ResultObjectTypeID>3937</ResultObjectTypeID>
+		<SkillDepends>50</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>0</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\Items\bear_fur_collar.png</ImagePath>
+	</row>
+<row>
+		<ID>6490</ID>
+		<Name>Small Boar Fur Collar</Name>
+		<Description></Description>
+		<StartingToolsID>295</StartingToolsID>
+		<SkillTypeID>25</SkillTypeID>
+		<SkillLvl>90</SkillLvl>
+		<ResultObjectTypeID>3938</ResultObjectTypeID>
+		<SkillDepends>50</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>0</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\Items\small_boar_fur_collar.png</ImagePath>
+	</row>

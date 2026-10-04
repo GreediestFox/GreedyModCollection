@@ -1,0 +1,37 @@
+--- a/gui/forms/equipmentWindow.gui
++++ b/gui/forms/equipmentWindow.gui
+@@ -406,6 +406,34 @@
+ 			};
+ 		};
+ 
++		//SlotFurPnl (LiFx 2026-10-04: equipment slot 17, fur collars only; bound by the patched client exe)
++		new GuiBitmapCtrl()
++		{
++			position = "590 64";
++			extent = "62 62";
++			visible = "true";
++			profile = "EquipmentBaseProfile";
++			imageIndex = SmallSlot;
++			internalName = "SlotFurPnl";
++			resize = true;
++			checkAlpha = true;
++			alpha = 1;
++			canHit = "false";
++
++			new GuiBitmapCtrl()
++			{
++				position = "0 0";
++				extent = "32 26";
++				resize = true;
++				visible = "true";
++				profile = "GuiBaseTextProfile";
++				bitmap = "gui/images/equip/cole.png";
++				internalName = "SlotFurIcon";
++				horizSizing = "center";
++				vertSizing = "center";
++				canHit = "false";
++			};
++		};
+ 		//SlotLegsPnl
+ 		new GuiBitmapCtrl()
+ 		{

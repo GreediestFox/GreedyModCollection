@@ -1,0 +1,58 @@
+<!-- Append before </table> in client data\objects_types.xml -->
+<row>
+		<ID>3936</ID>
+		<ParentID>478</ParentID>
+		<Name>Boar Fur Collar</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>2</Length>
+		<MaxStackSize>1</MaxStackSize>
+		<UnitWeight>500</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Items\boar_fur_collar.png</FaceImage>
+		<Description>A fur collar from a Viking helmet, worn on its own. Cosmetic, takes a ring slot.</Description>
+	</row>
+<row>
+		<ID>3937</ID>
+		<ParentID>478</ParentID>
+		<Name>Bear Fur Collar</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>2</Length>
+		<MaxStackSize>1</MaxStackSize>
+		<UnitWeight>500</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Items\bear_fur_collar.png</FaceImage>
+		<Description>A fur collar from a Viking helmet, worn on its own. Cosmetic, takes a ring slot.</Description>
+	</row>
+<row>
+		<ID>3938</ID>
+		<ParentID>478</ParentID>
+		<Name>Small Boar Fur Collar</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>2</Length>
+		<MaxStackSize>1</MaxStackSize>
+		<UnitWeight>500</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Items\small_boar_fur_collar.png</FaceImage>
+		<Description>A fur collar from a Viking helmet, worn on its own. Cosmetic, takes a ring slot.</Description>
+	</row>

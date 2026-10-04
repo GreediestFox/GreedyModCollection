@@ -16,10 +16,10 @@ package LiFxBeveragesPack
         return "0.2.0";
     }
     function LiFxBeveragesPack::dbChanges() {
-        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3920,37,'Thin Beer',0,0,0,0,0,0,0,0,2,10000,750,'',0,0,0,0,0,0,'art/2D/Items/beer.png','A light beer. Your steps quicken, but your sword arm slows.',3000,NULL,1,1)");
-        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3921,37,'Strong Beer',0,0,0,0,0,0,0,0,2,10000,750,'',0,0,0,0,0,0,'art/2D/Items/beer.png','A heavy beer. Your sword arm quickens, but your steps slow.',3000,NULL,1,1)");
-        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3922,37,'Wheat Beer',0,0,0,0,0,0,0,0,2,10000,750,'',0,0,0,0,0,0,'art/2D/Items/beer.png','A cloudy wheat beer. It makes you stronger, but your hands shake.',3000,NULL,1,1)");
-        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3923,37,'Strong Spirits',0,0,0,0,0,0,0,0,2,10000,750,'',0,0,0,0,0,0,'art/2D/Items/beer.png','A burning spirit. It makes you tougher, but clumsy.',3000,NULL,1,1)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3920,37,'Thin Beer',0,0,0,0,0,0,0,0,2,10000,750,'',0,0,0,0,0,0,'art/2D/Items/thin_beer.png','A light beer. Your steps quicken, but your sword arm slows.',3000,NULL,1,1)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3921,37,'Strong Beer',0,0,0,0,0,0,0,0,2,10000,750,'',0,0,0,0,0,0,'art/2D/Items/strong_beer.png','A heavy beer. Your sword arm quickens, but your steps slow.',3000,NULL,1,1)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3922,37,'Wheat Beer',0,0,0,0,0,0,0,0,2,10000,750,'',0,0,0,0,0,0,'art/2D/Items/wheat_beer.png','A cloudy wheat beer. It makes you stronger, but your hands shake.',3000,NULL,1,1)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3923,37,'Strong Spirits',0,0,0,0,0,0,0,0,2,10000,750,'',0,0,0,0,0,0,'art/2D/Items/strong_spirits.png','A burning spirit. It makes you tougher, but clumsy.',3000,NULL,1,1)");
         dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (41,'Drink: Accelerated',NULL,NULL,6)");
         dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (42,'Drink: Slowed',NULL,NULL,5)");
         dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (43,'Drink: Clumsiness',NULL,NULL,7)");

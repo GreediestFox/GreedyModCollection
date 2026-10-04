@@ -15,7 +15,7 @@
 		<MaxStackSize>10000</MaxStackSize>
 		<UnitWeight>750</UnitWeight>
 		<BackgndImage></BackgndImage>
-		<FaceImage>art\2D\Items\beer.png</FaceImage>
+		<FaceImage>art\2D\Items\thin_beer.png</FaceImage>
 		<Description>A light beer. Your steps quicken, but your sword arm slows.</Description>
 	</row>
 	<row>
@@ -34,7 +34,7 @@
 		<MaxStackSize>10000</MaxStackSize>
 		<UnitWeight>750</UnitWeight>
 		<BackgndImage></BackgndImage>
-		<FaceImage>art\2D\Items\beer.png</FaceImage>
+		<FaceImage>art\2D\Items\strong_beer.png</FaceImage>
 		<Description>A heavy beer. Your sword arm quickens, but your steps slow.</Description>
 	</row>
 	<row>
@@ -53,7 +53,7 @@
 		<MaxStackSize>10000</MaxStackSize>
 		<UnitWeight>750</UnitWeight>
 		<BackgndImage></BackgndImage>
-		<FaceImage>art\2D\Items\beer.png</FaceImage>
+		<FaceImage>art\2D\Items\wheat_beer.png</FaceImage>
 		<Description>A cloudy wheat beer. It makes you stronger, but your hands shake.</Description>
 	</row>
 	<row>
@@ -72,6 +72,6 @@
 		<MaxStackSize>10000</MaxStackSize>
 		<UnitWeight>750</UnitWeight>
 		<BackgndImage></BackgndImage>
-		<FaceImage>art\2D\Items\beer.png</FaceImage>
+		<FaceImage>art\2D\Items\strong_spirits.png</FaceImage>
 		<Description>A burning spirit. It makes you tougher, but clumsy.</Description>
 	</row>
