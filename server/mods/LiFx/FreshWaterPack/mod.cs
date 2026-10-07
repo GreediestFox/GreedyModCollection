@@ -1,5 +1,5 @@
 // Fresh water / salt water: item 204 (Water from rivers, lakes, ...) is renamed Salt Water, wells give Fresh Water (3180, see config\lifxpluss.xml wellWater itemTypeId),
-// Mead, Beer and Dough use Fresh Water. New recipes 6399-6403: Wheat/Oat/Rye Malt, White Flour, Butter (ingredients of the ported food & drinks).
+// Mead, Beer, Dough and Bone glue (188, since 2026-10-02) use Fresh Water. New recipes 6399-6403: Wheat/Oat/Rye Malt, White Flour, Butter (ingredients of the ported food & drinks).
 
 if (!isObject(LiFxFreshWaterPack))
 {
@@ -18,7 +18,7 @@ package LiFxFreshWaterPack
     }
     function LiFxFreshWaterPack::dbChanges() {
         dbi.Update("UPDATE `objects_types` SET Name='Salt Water' WHERE ID=204");
-        dbi.Update("UPDATE `recipe_requirement` SET MaterialObjectTypeID=3180 WHERE RecipeID IN (641,642,871) AND MaterialObjectTypeID=204");
+        dbi.Update("UPDATE `recipe_requirement` SET MaterialObjectTypeID=3180 WHERE RecipeID IN (188,641,642,871) AND MaterialObjectTypeID=204");
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6399,'Wheat Malt','',NULL,24,60,3184,20,1,0,0,'art/2D/Items/Malt.png')");
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6400,'Oat Malt','',NULL,24,60,3182,20,1,0,0,'art/2D/Items/Malt.png')");
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6401,'Rye Malt','',NULL,24,60,3183,20,1,0,0,'art/2D/Items/Malt.png')");

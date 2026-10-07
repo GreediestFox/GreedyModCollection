@@ -1,4 +1,4 @@
-<!-- Rows to append before </table> in the client data\objects_types.xml. 359 rows. -->
+<!-- Rows to append before </table> in the client data\objects_types.xml. 371 rows. -->
 <row>
 		<ID>2017</ID>
 		<ParentID>64</ParentID>
@@ -2238,7 +2238,7 @@
 		<MaxStackSize>10000</MaxStackSize>
 		<UnitWeight>230</UnitWeight>
 		<BackgndImage></BackgndImage>
-		<FaceImage>art\2D\Items\Sugar_Carrot.png</FaceImage>
+		<FaceImage>art\2D\Items\SugarBeet.png</FaceImage>
 		<Description>A crop that can be grown by Farmers. Used for various cooking recipes.</Description>
 	</row>
 	<row>
@@ -6932,7 +6932,7 @@
 		<UnitWeight>5</UnitWeight>
 		<BackgndImage></BackgndImage>
 		<FaceImage>art\2D\Items\soft_log.png</FaceImage>
-		<Description>A log of amberwood, felled from a pine or spruce.</Description>
+		<Description>A log of amberwood, felled from a spruce.</Description>
 	</row>
 <row>
 		<ID>3931</ID>
@@ -6970,7 +6970,7 @@
 		<UnitWeight>5</UnitWeight>
 		<BackgndImage></BackgndImage>
 		<FaceImage>art\2D\Items\hard_log.png</FaceImage>
-		<Description>A log of whitewood, felled from a birch or aspen.</Description>
+		<Description>A log of whitewood, felled from a maple.</Description>
 	</row>
 <row>
 		<ID>3933</ID>
@@ -7028,4 +7028,23 @@
 		<BackgndImage></BackgndImage>
 		<FaceImage>art\2D\Items\Whitewood_billet.png</FaceImage>
 		<Description>Sawed off of whitewood logs. Can be used as fuel.</Description>
+	</row>
+<row>
+		<ID>3924</ID>
+		<ParentID>213</ParentID>
+		<Name>Schilling</Name>
+		<IsContainer>0</IsContainer>
+		<IsMovableObject>0</IsMovableObject>
+		<IsUnmovableobject>0</IsUnmovableobject>
+		<IsTool>0</IsTool>
+		<IsDevice>0</IsDevice>
+		<IsDoor>0</IsDoor>
+		<IsPremium>0</IsPremium>
+		<MaxContSize>0</MaxContSize>
+		<Length>2</Length>
+		<MaxStackSize>10000</MaxStackSize>
+		<UnitWeight>100</UnitWeight>
+		<BackgndImage></BackgndImage>
+		<FaceImage>art\2D\Items\silver_coins.png</FaceImage>
+		<Description>A copper coin with a silver coating. Looks like silver money, but it is not accepted as currency.</Description>
 	</row>

@@ -1,0 +1,22 @@
+<!-- Append before </table> in client data\recipe_requirement.xml -->
+<row><ID>97800</ID><RecipeID>6491</RecipeID><MaterialObjectTypeID>1110</MaterialObjectTypeID><Quality>0</Quality><Influence>15</Influence><Quantity>10</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97801</ID><RecipeID>6491</RecipeID><MaterialObjectTypeID>285</MaterialObjectTypeID><Quality>0</Quality><Influence>5</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97802</ID><RecipeID>6491</RecipeID><MaterialObjectTypeID>3180</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>2</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97803</ID><RecipeID>6491</RecipeID><MaterialObjectTypeID>1112</MaterialObjectTypeID><Quality>0</Quality><Influence>40</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97804</ID><RecipeID>6491</RecipeID><MaterialObjectTypeID>3751</MaterialObjectTypeID><Quality>0</Quality><Influence>30</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97805</ID><RecipeID>6492</RecipeID><MaterialObjectTypeID>1110</MaterialObjectTypeID><Quality>0</Quality><Influence>15</Influence><Quantity>10</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97806</ID><RecipeID>6492</RecipeID><MaterialObjectTypeID>285</MaterialObjectTypeID><Quality>0</Quality><Influence>5</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97807</ID><RecipeID>6492</RecipeID><MaterialObjectTypeID>3180</MaterialObjectTypeID><Quality>0</Quality><Influence>5</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97808</ID><RecipeID>6492</RecipeID><MaterialObjectTypeID>3184</MaterialObjectTypeID><Quality>0</Quality><Influence>45</Influence><Quantity>2</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97809</ID><RecipeID>6492</RecipeID><MaterialObjectTypeID>3751</MaterialObjectTypeID><Quality>0</Quality><Influence>30</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97810</ID><RecipeID>6493</RecipeID><MaterialObjectTypeID>1110</MaterialObjectTypeID><Quality>0</Quality><Influence>15</Influence><Quantity>10</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97811</ID><RecipeID>6493</RecipeID><MaterialObjectTypeID>285</MaterialObjectTypeID><Quality>0</Quality><Influence>5</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97812</ID><RecipeID>6493</RecipeID><MaterialObjectTypeID>3180</MaterialObjectTypeID><Quality>0</Quality><Influence>5</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97813</ID><RecipeID>6493</RecipeID><MaterialObjectTypeID>1112</MaterialObjectTypeID><Quality>0</Quality><Influence>30</Influence><Quantity>3</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97814</ID><RecipeID>6493</RecipeID><MaterialObjectTypeID>3183</MaterialObjectTypeID><Quality>0</Quality><Influence>20</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97815</ID><RecipeID>6493</RecipeID><MaterialObjectTypeID>3751</MaterialObjectTypeID><Quality>0</Quality><Influence>25</Influence><Quantity>2</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97816</ID><RecipeID>6494</RecipeID><MaterialObjectTypeID>1110</MaterialObjectTypeID><Quality>0</Quality><Influence>15</Influence><Quantity>10</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97817</ID><RecipeID>6494</RecipeID><MaterialObjectTypeID>285</MaterialObjectTypeID><Quality>0</Quality><Influence>5</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97818</ID><RecipeID>6494</RecipeID><MaterialObjectTypeID>3180</MaterialObjectTypeID><Quality>0</Quality><Influence>10</Influence><Quantity>1</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97819</ID><RecipeID>6494</RecipeID><MaterialObjectTypeID>3752</MaterialObjectTypeID><Quality>0</Quality><Influence>40</Influence><Quantity>4</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>
+<row><ID>97820</ID><RecipeID>6494</RecipeID><MaterialObjectTypeID>1115</MaterialObjectTypeID><Quality>0</Quality><Influence>30</Influence><Quantity>2</Quantity><IsRegionItemRequired>0</IsRegionItemRequired></row>

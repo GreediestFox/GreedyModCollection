@@ -184,7 +184,7 @@ package LiFxJewelersWorkshop
         // row count) the first time this ran after art/dump.sql started carrying the same data. Deleting
         // first makes this function safe to run any number of times, regardless of what dump.sql already
         // restored.
-        dbi.Update("DELETE FROM `recipe_requirement` WHERE `RecipeID` IN (1704,5025,5026,5027,5028,5029,5030,5031,5032,5033,5034,5035,5036,5037,5038)");
+        dbi.Update("DELETE FROM `recipe_requirement` WHERE `RecipeID` IN (1704,5025,5026,5027,5028,5029,5030,5031,5032,5033,5034,5035,5036,5037,5038,5039,5041,5042)");
 
         //////////////////////////////////////// Object ////////////////////////////////////////
         // (ID, ParentID, Name, IsContainer, IsMovableObject, IsUnmovableobject, IsTool, IsDevice, IsDoor,
@@ -223,6 +223,24 @@ package LiFxJewelersWorkshop
         // tool's own Influence doubled from 10 to 20 in the matching recipe_requirement row. Everything else
         // (materials, gems, Quantity, SkillLvl, SkillDepends, Autorepeat, ResultObjectTypeID) unchanged from
         // the original recipe it clones.
+
+        //////////////////////////////////// Gold/Silver Leaf + Silver Penny (GreedyFox 2026-10-02) ////////////////////////////////////
+        // Gold/Silver Leaf (Jorvik items 3049/3052, formerly Gold/Silver Blanks): cut a sheet with Metal Scissors (3047, tool wear 40)
+        // at the workshop, 5 leaves per sheet, for decorative clothing. Schilling 3924 = fake silver coin (not in the
+        // currency category 1057): 10 Copper Coins + 1 Lump of Silver -> 10 pennies. Jewelry (52) level 30.
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3924,213,'Schilling',0,0,0,0,0,0,0,0,2,10000,100,'',0,0,0,0,0,0,'art/2D/Items/silver_coins.png','A copper coin with a silver coating. Looks like silver money, but it is not accepted as currency.',200,NULL,1,1)");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5039,'Gold Leaf','',2894,52,30,3049,30,5,1,0,'mod/JorvikMod/art/2D/Items/gold_blanks.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL, 5039, 2894, 0, 20, 30, 0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL, 5039, 3046, 0, 60, 1, 0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL, 5039, 3047, 0, 20, 40, 0)");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5041,'Silver Leaf','',2894,52,0,3052,30,5,1,0,'mod/JorvikMod/art/2D/Items/silver_blanks.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL, 5041, 2894, 0, 20, 30, 0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL, 5041, 3050, 0, 60, 1, 0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL, 5041, 3047, 0, 20, 40, 0)");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5042,'Schilling','',2894,52,60,3924,30,10,1,0,'art/2D/Items/silver_coins.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL, 5042, 2894, 0, 20, 30, 0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL, 5042, 1059, 0, 40, 10, 0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL, 5042, 417, 0, 40, 1, 0)");
 
         // 5025 <- 245 Silver ring
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (5025,'Silver Ring','',2894,52,0,479,30,1,1,0,'art/2D/Items/silver_ring.png')");

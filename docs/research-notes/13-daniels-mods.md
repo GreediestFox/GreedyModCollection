@@ -24,7 +24,7 @@ A friend's mod bundle (8 mods) ported onto this server. His mods were built agai
   * Bookkeeping lives in its own tables (`food_perish_*`), not in extra `items` columns.
   * The tooltip shows the remaining shelf life (messages 5195-5198).
 * **Tree felling** (`TreeFellingPack`):
-  * Pine/spruce drop an Amberwood Log 3930 and birch/aspen a Whitewood Log 3932 (carried twins 3931/3933), via the existing `treeDrops` hook.
+  * Spruce drops an Amberwood Log 3930 (German: Rotholz) and maple a Whitewood Log 3932 (Weißholz), carried twins 3931/3933, via the existing `treeDrops` hook; pine, birch and aspen give vanilla logs. (Originally pine/spruce and birch/aspen; changed 2026-10-07.)
   * They saw into billets 3934/3935 and boards 3800/3802 via the ported `logDescription`/`sawOutput`/`abilityEntityCheck` hooks.
   * The client saw menu is patched with `tools/patch_client_saw_menu.py`.
 * **Demo quest:** Wranen the Hunter (subject 5, type 1513) gives quest 30 (bring a Branch, get a copper coin). Snippets are in `client/data-additions/quest30/`.

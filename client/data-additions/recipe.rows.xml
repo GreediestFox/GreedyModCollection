@@ -1,4 +1,4 @@
-<!-- Rows to append before </table> in the client data\recipe.xml. 341 rows. -->
+<!-- Rows to append before </table> in the client data\recipe.xml. 349 rows. -->
 <row>
 		<ID>1189</ID>
 		<Name>Big Tanning Tub</Name>
@@ -4842,4 +4842,46 @@
 		<Autorepeat>0</Autorepeat>
 		<IsBlueprint>0</IsBlueprint>
 		<ImagePath>art\2D\equipIcons\Outfits\Male_Craft_Cook_SkinA.png</ImagePath>
+	</row>
+<row>
+		<ID>5039</ID>
+		<Name>Gold Leaf</Name>
+		<Description></Description>
+		<StartingToolsID>2894</StartingToolsID>
+		<SkillTypeID>52</SkillTypeID>
+		<SkillLvl>30</SkillLvl>
+		<ResultObjectTypeID>3049</ResultObjectTypeID>
+		<SkillDepends>30</SkillDepends>
+		<Quantity>5</Quantity>
+		<Autorepeat>1</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>mod\JorvikMod\art\2D\Items\gold_blanks.png</ImagePath>
+	</row>
+<row>
+		<ID>5041</ID>
+		<Name>Silver Leaf</Name>
+		<Description></Description>
+		<StartingToolsID>2894</StartingToolsID>
+		<SkillTypeID>52</SkillTypeID>
+		<SkillLvl>0</SkillLvl>
+		<ResultObjectTypeID>3052</ResultObjectTypeID>
+		<SkillDepends>30</SkillDepends>
+		<Quantity>5</Quantity>
+		<Autorepeat>1</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>mod\JorvikMod\art\2D\Items\silver_blanks.png</ImagePath>
+	</row>
+<row>
+		<ID>5042</ID>
+		<Name>Schilling</Name>
+		<Description></Description>
+		<StartingToolsID>2894</StartingToolsID>
+		<SkillTypeID>52</SkillTypeID>
+		<SkillLvl>60</SkillLvl>
+		<ResultObjectTypeID>3924</ResultObjectTypeID>
+		<SkillDepends>30</SkillDepends>
+		<Quantity>10</Quantity>
+		<Autorepeat>1</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\Items\silver_coins.png</ImagePath>
 	</row>

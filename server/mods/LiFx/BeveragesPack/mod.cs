@@ -16,6 +16,32 @@ package LiFxBeveragesPack
         return "0.2.0";
     }
     function LiFxBeveragesPack::dbChanges() {
+        // Brewing recipes (2026-10-04): Duennbier 30, Weissbier 60, Starkbier + Branntwein 90; vanilla Beer recipe 642 is commented out in art/dump.sql.
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6491,'Thin Beer','',1110,13,30,3920,30,1,1,0,'art/2D/Items/thin_beer.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6491,1110,0,15,10,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6491,285,0,5,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6491,3180,0,10,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6491,1112,0,40,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6491,3751,0,30,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6492,'Wheat Beer','',1110,13,60,3922,30,1,1,0,'art/2D/Items/wheat_beer.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6492,1110,0,15,10,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6492,285,0,5,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6492,3180,0,5,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6492,3184,0,45,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6492,3751,0,30,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6493,'Strong Beer','',1110,13,90,3921,30,1,1,0,'art/2D/Items/strong_beer.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6493,1110,0,15,10,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6493,285,0,5,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6493,3180,0,5,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6493,1112,0,30,3,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6493,3183,0,20,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6493,3751,0,25,2,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6494,'Strong Spirits','',1110,13,90,3923,30,1,1,0,'art/2D/Items/strong_spirits.png')");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6494,1110,0,15,10,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6494,285,0,5,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6494,3180,0,10,1,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6494,3752,0,40,4,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6494,1115,0,30,2,0)");
         dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3920,37,'Thin Beer',0,0,0,0,0,0,0,0,2,10000,750,'',0,0,0,0,0,0,'art/2D/Items/thin_beer.png','A light beer. Your steps quicken, but your sword arm slows.',3000,NULL,1,1)");
         dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3921,37,'Strong Beer',0,0,0,0,0,0,0,0,2,10000,750,'',0,0,0,0,0,0,'art/2D/Items/strong_beer.png','A heavy beer. Your sword arm quickens, but your steps slow.',3000,NULL,1,1)");
         dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3922,37,'Wheat Beer',0,0,0,0,0,0,0,0,2,10000,750,'',0,0,0,0,0,0,'art/2D/Items/wheat_beer.png','A cloudy wheat beer. It makes you stronger, but your hands shake.',3000,NULL,1,1)");

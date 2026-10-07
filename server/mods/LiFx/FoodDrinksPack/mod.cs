@@ -15,7 +15,7 @@ package LiFxFoodDrinksPack
         dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3176,250,'Barley',0,0,0,0,0,0,0,0,2,100000,250,'',0,0,0,0,0,0,'art/2D/Items/Barley.png','A grain. Ingredient for soups.',50,NULL,0,0)");
         dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3177,250,'Oat',0,0,0,0,0,0,0,0,2,100000,250,'',0,0,0,0,0,0,'art/2D/Items/Oat.png','A grain. Ingredient for soups.',50,NULL,0,0)");
         dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3751,232,'Hops',0,0,0,0,0,0,0,0,2,10000,400,'',0,0,0,0,0,0,'art/2D/Items/Hops.png','A crop that can be grown by Farmers. Used for brewing.',50,NULL,0,0)");
-        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3752,232,'Sugar Beet',0,0,0,0,0,0,0,0,2,10000,230,'',0,0,0,0,0,0,'art/2D/Items/Sugar_Carrot.png','A crop that can be grown by Farmers. Used for various cooking recipes.',50,NULL,0,0)");
+        dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3752,232,'Sugar Beet',0,0,0,0,0,0,0,0,2,10000,230,'',0,0,0,0,0,0,'art/2D/Items/SugarBeet.png','A crop that can be grown by Farmers. Used for various cooking recipes.',50,NULL,0,0)");
         dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3178,340,'Sardine',0,0,0,0,0,0,0,0,2,10000,400,'',0,0,0,0,0,0,'mod/FoodDrinksMod/art/2D/Items/sardine.png','A small fish.',50,NULL,0,0)");
         dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3179,340,'Pike',0,0,0,0,0,0,0,0,2,10000,800,'',0,0,0,0,0,0,'mod/FoodDrinksMod/art/2D/Items/pike.png','A freshwater fish.',50,NULL,0,0)");
         dbi.Update("INSERT IGNORE INTO `objects_types` VALUES (3180,16,'Fresh Water',0,0,0,0,0,0,0,0,2,1000,1000,'',0,0,0,0,0,0,'art/2D/Items/water.png','A raw material used for cooking and brewing.',50,NULL,0,0)");

@@ -28,13 +28,13 @@ package LiFxChestsPack
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6295,'Carved Chest 2','Ported from Life is Feudal MMO',NULL,8,100,3538,10,1,0,0,'mod/ChestsMod/art/2D/Recipes/chest_vII.png')");
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6296,'Carved Chest 3','Ported from Life is Feudal MMO',NULL,8,100,3539,10,1,0,0,'mod/ChestsMod/art/2D/Recipes/chest_vIII.png')");
         dbi.Update("INSERT IGNORE INTO `recipe` VALUES (6297,'Carved Strongbox','Ported from Life is Feudal MMO',NULL,8,100,3540,10,1,0,0,'mod/ChestsMod/art/2D/Recipes/chest_vIV.png')");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6294,327,0,45,10,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6294,3802,0,45,10,0)");
         dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6294,281,0,45,100,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6295,327,0,45,10,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6295,3802,0,45,10,0)");
         dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6295,281,0,45,100,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6296,327,0,45,10,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6296,3802,0,45,10,0)");
         dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6296,281,0,45,100,0)");
-        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6297,327,0,30,20,0)");
+        dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6297,3802,0,30,20,0)");
         dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6297,281,0,30,160,0)");
         dbi.Update("INSERT IGNORE INTO `recipe_requirement` VALUES (NULL,6297,1131,0,30,20,0)");
         dbi.Update("INSERT IGNORE INTO `objects_conversions` (ObjectTypeID1,ObjectTypeID2) VALUES (3537,3541)");

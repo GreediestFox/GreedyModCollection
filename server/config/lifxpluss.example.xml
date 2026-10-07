@@ -177,12 +177,10 @@
          juniper, spinny) or a raw TreeType 0..255.
          See docs/offsets.md "Tree felling and movable-log creation". -->
     <treeDrops enabled="1">
-    <!-- Tree felling (2026-10-04): pine/spruce -> Amberwood Log 3930, birch/aspen -> Whitewood Log 3932 -->
-    <drop tree="pine" itemId="3930" />
+    <!-- Tree felling: spruce -> Amberwood Log 3930 (Rotholz), maple -> Whitewood Log 3932 (Weissholz); pine = vanilla softwood (2026-10-07) -->
     <drop tree="spruce" itemId="3930" />
-    <drop tree="birch" itemId="3932" />
-    <drop tree="aspen" itemId="3932" />
-</treeDrops>
+    <drop tree="maple" itemId="3932" />
+  </treeDrops>
 
     <!-- Logging configuration -->
     <log>

@@ -1,0 +1,58 @@
+<!-- Append before </table> in client data\recipe.xml (Brewing: Duennbier 30, Weissbier 60, Starkbier 90, Starker Branntwein 90).
+     The vanilla Beer recipe 642 is disabled: comment out its <row> in recipe.xml and its rows in recipe_requirement.xml. -->
+<row>
+		<ID>6491</ID>
+		<Name>Thin Beer</Name>
+		<Description></Description>
+		<StartingToolsID>1110</StartingToolsID>
+		<SkillTypeID>13</SkillTypeID>
+		<SkillLvl>30</SkillLvl>
+		<ResultObjectTypeID>3920</ResultObjectTypeID>
+		<SkillDepends>30</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>1</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\Items\thin_beer.png</ImagePath>
+	</row>
+<row>
+		<ID>6492</ID>
+		<Name>Wheat Beer</Name>
+		<Description></Description>
+		<StartingToolsID>1110</StartingToolsID>
+		<SkillTypeID>13</SkillTypeID>
+		<SkillLvl>60</SkillLvl>
+		<ResultObjectTypeID>3922</ResultObjectTypeID>
+		<SkillDepends>30</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>1</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\Items\wheat_beer.png</ImagePath>
+	</row>
+<row>
+		<ID>6493</ID>
+		<Name>Strong Beer</Name>
+		<Description></Description>
+		<StartingToolsID>1110</StartingToolsID>
+		<SkillTypeID>13</SkillTypeID>
+		<SkillLvl>90</SkillLvl>
+		<ResultObjectTypeID>3921</ResultObjectTypeID>
+		<SkillDepends>30</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>1</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\Items\strong_beer.png</ImagePath>
+	</row>
+<row>
+		<ID>6494</ID>
+		<Name>Strong Spirits</Name>
+		<Description></Description>
+		<StartingToolsID>1110</StartingToolsID>
+		<SkillTypeID>13</SkillTypeID>
+		<SkillLvl>90</SkillLvl>
+		<ResultObjectTypeID>3923</ResultObjectTypeID>
+		<SkillDepends>30</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>1</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>art\2D\Items\strong_spirits.png</ImagePath>
+	</row>
