@@ -29,12 +29,12 @@ $LiFxGM::substance["rock"] = 3;
 $LiFxGM::substance["riverrock"] = 27;
 $LiFxGM::substance["swamp"] = 26;
 
-// GM password: only a salted hash is kept, in gm_password.cs (written by "!setpass" from the GM panel, never contains the password itself).
+// GM password: it comes ONLY from the server files (2026-10-07). gm_password.cs keeps a salted hash, never the password itself.
+// To set or change it, the admin writes the new password (6+ characters) into gm_setpass.txt; the server hashes it into
+// gm_password.cs and empties gm_setpass.txt. Both files are read again on every login, so no restart is needed.
+// The in-game "!setpass" is disabled.
 $LiFxGM::passwordHash = "";
 $LiFxGM::passwordSalt = "";
-if (isFile("mods/LiFx/GMCommands/gm_password.cs")) {
-    exec("mods/LiFx/GMCommands/gm_password.cs");
-}
 
 // !spawn / !build place the object this many map tiles (4 world units each) in front of the GM.
 $LiFxGM::spawnOffsetTiles = 1;
@@ -142,6 +142,67 @@ package LiFxGMCommands
         }
         %fo.delete();
         return 1;
+    }
+
+    // Value between the first and the last quote of a line like  $LiFxGM::passwordHash = "...";
+    function LiFxGMCommands::quoted(%line) {
+        %a = strpos(%line, "\"");
+        if (%a < 0) {
+            return "";
+        }
+        %rest = getSubStr(%line, %a + 1, 1000);
+        %b = strpos(%rest, "\"");
+        if (%b < 0) {
+            return "";
+        }
+        return getSubStr(%rest, 0, %b);
+    }
+
+    // (Re)loads the GM password from the server files: first applies a new password from gm_setpass.txt (then empties it),
+    // then reads salt + hash from gm_password.cs. Called at boot and before every login check.
+    function LiFxGMCommands::loadPassword() {
+        %setFile = "mods/LiFx/GMCommands/gm_setpass.txt";
+        if (isFile(%setFile)) {
+            %fo = new FileObject();
+            %newPw = "";
+            if (%fo.openForRead(%setFile)) {
+                if (!%fo.isEOF()) {
+                    %newPw = trim(%fo.readLine());
+                }
+                %fo.close();
+            }
+            %fo.delete();
+            if (strlen(%newPw) >= 6) {
+                if (LiFxGMCommands::savePassword(%newPw)) {
+                    echo("[GM] GM password set from gm_setpass.txt");
+                } else {
+                    echo("[GM] gm_setpass.txt found but the password could not be saved");
+                }
+                %fw = new FileObject();
+                if (%fw.openForWrite(%setFile)) {
+                    %fw.writeLine("");
+                    %fw.close();
+                }
+                %fw.delete();
+            } else if (%newPw !$= "") {
+                echo("[GM] gm_setpass.txt ignored: the password must be at least 6 characters");
+            }
+        }
+        $LiFxGM::passwordSalt = "";
+        $LiFxGM::passwordHash = "";
+        %fo = new FileObject();
+        if (%fo.openForRead("mods/LiFx/GMCommands/gm_password.cs")) {
+            while (!%fo.isEOF()) {
+                %line = trim(%fo.readLine());
+                if (strpos(%line, "$LiFxGM::passwordSalt") == 0) {
+                    $LiFxGM::passwordSalt = LiFxGMCommands::quoted(%line);
+                } else if (strpos(%line, "$LiFxGM::passwordHash") == 0) {
+                    $LiFxGM::passwordHash = LiFxGMCommands::quoted(%line);
+                }
+            }
+            %fo.close();
+        }
+        %fo.delete();
     }
 
     function LiFxGMCommands::activateGM(%client) {
@@ -574,8 +635,9 @@ package LiFxGMCommands
 
         if (%cmd $= "login") {
             %pw = getWords(%message, 1);
+            LiFxGMCommands::loadPassword();   // always the current password from the server files
             if ($LiFxGM::passwordHash $= "") {
-                LiFxGMCommands::reply(%client, "No GM password is set yet. Enter a new password in the login window and press Set password.");
+                LiFxGMCommands::reply(%client, "No GM password is set on the server. The admin writes it into mods/LiFx/GMCommands/gm_setpass.txt (6+ characters).");
                 commandToClient(%client, 'GMLoginResult', 2);
                 return 1;
             }
@@ -605,27 +667,10 @@ package LiFxGMCommands
         }
 
         if (%cmd $= "setpass") {
-            %pw = getWords(%message, 1);
-            if ($LiFxGM::passwordHash !$= "" && %client.gmLogin != 1) {
-                LiFxGMCommands::reply(%client, "Log in with the current password first.");
-                commandToClient(%client, 'GMLoginResult', 0);
-                return 1;
-            }
-            if (strlen(%pw) < 6) {
-                LiFxGMCommands::reply(%client, "The password must be at least 6 characters.");
-                commandToClient(%client, 'GMLoginResult', 3);
-                return 1;
-            }
-            if (!LiFxGMCommands::savePassword(%pw)) {
-                LiFxGMCommands::reply(%client, "Could not save the password (hashing unavailable on the server).");
-                commandToClient(%client, 'GMLoginResult', 0);
-                return 1;
-            }
-            %client.gmLogin = 1;
-            LiFxGMCommands::activateGM(%client);
-            echo("[GM] account" SPC %account SPC "set a new GM password");
-            LiFxGMCommands::reply(%client, "GM password saved. You are logged in, GM mode is on.");
-            commandToClient(%client, 'GMLoginResult', 1);
+            // disabled 2026-10-07: the GM password comes only from the server files (gm_setpass.txt -> gm_password.cs)
+            echo("[GM] account" SPC %account SPC "tried !setpass (disabled)");
+            LiFxGMCommands::reply(%client, "The GM password can only be set in the server files: write it into mods/LiFx/GMCommands/gm_setpass.txt (6+ characters). It is used from the next login on.");
+            commandToClient(%client, 'GMLoginResult', 4);
             return 1;
         }
 
@@ -1006,29 +1051,7 @@ if (isPackage(LiFxSHA256)) {
 
 activatePackage(LiFxGMCommands);
 
-// One-time password bootstrap: if gm_setpass.txt holds a password (6+ characters), the server hashes and saves it itself, then blanks the file.
-// (Lets an admin set the GM password without going through the login window; the file is emptied right after use.)
-if (isFile("mods/LiFx/GMCommands/gm_setpass.txt")) {
-    %fo = new FileObject();
-    %bootPw = "";
-    if (%fo.openForRead("mods/LiFx/GMCommands/gm_setpass.txt")) {
-        if (!%fo.isEOF()) {
-            %bootPw = trim(%fo.readLine());
-        }
-        %fo.close();
-    }
-    %fo.delete();
-    if (strlen(%bootPw) >= 6) {
-        if (LiFxGMCommands::savePassword(%bootPw)) {
-            echo("[GM] GM password set from gm_setpass.txt");
-        } else {
-            echo("[GM] gm_setpass.txt found but the password could not be saved");
-        }
-        %fw = new FileObject();
-        if (%fw.openForWrite("mods/LiFx/GMCommands/gm_setpass.txt")) {
-            %fw.writeLine("");
-            %fw.close();
-        }
-        %fw.delete();
-    }
-}
+// Load the GM password from the server files at boot (applies a new one from gm_setpass.txt first).
+LiFxGMCommands::loadPassword();
+echo("[GM] GM password " @ ($LiFxGM::passwordHash $= "" ? "NOT set (write it into mods/LiFx/GMCommands/gm_setpass.txt)" : "loaded from gm_password.cs")
+     @ " (salt " @ strlen($LiFxGM::passwordSalt) @ " chars, hash " @ strlen($LiFxGM::passwordHash) @ " chars)");

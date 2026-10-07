@@ -632,8 +632,9 @@ function GMPanel_announce()
 }
 
 // ------------------------------------------------------------------------------------------------
-// GM login: F6 asks for the GM password first. The server checks it (!login), switches GM mode on for you and answers with
-// clientCmdGMLoginResult: 1 = ok, 0 = wrong / login needed, 2 = no password set yet, 3 = new password too short.
+// GM login: F6 asks for the GM password first. The server checks it (!login) against the password in its own files
+// (gm_password.cs, set by the admin via gm_setpass.txt), switches GM mode on for you and answers with
+// clientCmdGMLoginResult: 1 = ok, 0 = wrong / login needed, 2 = no password set on the server, 4 = password can only be set in the server files.
 $GMPanel::loggedIn = 0;
 $GMLogin::pending = 0;
 $GMLogin::loggingOut = 0;
@@ -735,18 +736,6 @@ function GMLogin_submit()
    gm("login" SPC %pw);
 }
 
-function GMLogin_setPass()
-{
-   %pw = GMLogin_pw.getText();
-   if (strlen(%pw) < 6) {
-      GMLogin_status("New password: at least 6 characters", "ff5050");
-      return;
-   }
-   $GMLogin::pending = 1;
-   GMLogin_status("saving...", "d8d8d8");
-   gm("setpass" SPC %pw);
-}
-
 function clientCmdGMLoginResult(%code)
 {
    if (%code == 1) {
@@ -773,9 +762,9 @@ function clientCmdGMLoginResult(%code)
    $GMPanel::loggedIn = 0;
    GMLogin_build();
    if (%code == 2) {
-      GMLogin_status("No GM password is set on the server", "ffd060");
-   } else if (%code == 3) {
-      GMLogin_status("Password too short (6+ characters)", "ff5050");
+      GMLogin_status("No GM password set on the server (admin: gm_setpass.txt)", "ffd060");
+   } else if (%code == 4) {
+      GMLogin_status("The GM password is set in the server files only", "ffd060");
    } else if ($GMLogin::pending) {
       GMLogin_status("Wrong Login", "ff5050");
    } else {
