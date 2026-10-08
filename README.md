@@ -1,4 +1,4 @@
-# LIF-PROJECT: Life is Feudal: Your Own - server + client modding work
+# GreedyModCollection: Life is Feudal: Your Own - server + client modding work
 
 A complete, documented record of a modded **Life is Feudal: Your Own (LiF:YO)** dedicated server and client: ~500 custom objects and ~500 recipes (buildings, furniture, decorations, items, workshops, crops, outfits, siege), the engine hooks that make them work, the client patches, and the tools used to build and maintain it all.
 
