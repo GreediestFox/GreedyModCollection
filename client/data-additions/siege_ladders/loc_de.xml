@@ -1,0 +1,22 @@
+<!-- German names for the siege ladder port (SiegePack: kit 3593, ladders 3594-3596, carried twins 3598-3600, recipes 6348-6351).
+     Add the <string> lines to the client files under data\loc\de\data\ (the vanilla ladder 160 is "Sturmleiter"). -->
+
+<!-- objects_types_Name.xml -->
+<string id="3593">Sturmleiter-Bausatz</string>
+<string id="3594">Kleine Sturmleiter</string>
+<string id="3595">Große Sturmleiter</string>
+<string id="3596">Riesige Sturmleiter</string>
+<string id="3598">Kleine Sturmleiter</string>
+<string id="3599">Große Sturmleiter</string>
+<string id="3600">Riesige Sturmleiter</string>
+
+<!-- recipe_Name.xml -->
+<string id="6348">Sturmleiter-Bausatz</string>
+<string id="6349">Kleine Sturmleiter</string>
+<string id="6350">Große Sturmleiter</string>
+<string id="6351">Riesige Sturmleiter</string>
+
+<!-- recipe_Description.xml -->
+<string id="6349">Aus Life is Feudal MMO portiert</string>
+<string id="6350">Aus Life is Feudal MMO portiert</string>
+<string id="6351">Aus Life is Feudal MMO portiert</string>
