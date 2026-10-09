@@ -18,14 +18,14 @@ package LiFxOutfitsPack
     function LiFxOutfitsPack::dbChanges() {
         //////////////// Geselle/Meister tiers (2026-10-03) ////////////////
         // DB effects 46-56 -> merged Skill-Raised player effects (cm_effects.xml); item mapping in data\item_effects.xml.
-        dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (46,'Skill Raised: Alchemy, Herbalism',NULL,NULL,31)");
+        dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (46,'Skill Raised: Healing, Herbalism',NULL,NULL,31)");
         dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (47,'Skill Raised: Construction, Building Maintain',NULL,NULL,77)");
         dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (48,'Skill Raised: Procuration',NULL,NULL,35)");
         dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (49,'Skill Raised: Materials Preparation',NULL,NULL,78)");
         dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (50,'Skill Raised: Carpentry, Bowcraft, Warfare engineering',NULL,NULL,29)");
         dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (51,'Skill Raised: Forging, Armorsmithing',NULL,NULL,27)");
         dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (52,'Skill Raised: Cooking, Brewing',NULL,NULL,80)");
-        dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (53,'Skill Raised: Alchemy, Herbalism, Healing',NULL,NULL,32)");
+        dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (53,'Skill Raised: Herbalism, Healing',NULL,NULL,32)");
         dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (54,'Skill Raised: Construction, Building Maintain, Masonry, Architecture',NULL,NULL,34)");
         dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (55,'Skill Raised: Procuration, Tailoring, Warhorse training',NULL,NULL,81)");
         dbi.Update("INSERT IGNORE INTO `effects` (`ID`,`Effect_name`,`ResultPreparationID`,`ResultPotionID`,`PlayerEffectID`) VALUES (56,'Skill Raised: Materials Preparation, Mining',NULL,NULL,85)");

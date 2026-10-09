@@ -1,0 +1,20 @@
+--- a/gui/scripts/skills.cs
++++ b/gui/scripts/skills.cs
+@@ -214,8 +214,6 @@
+ 		return "210 361";
+ 	else if (%skill_type_id == 14) //Healing
+ 		return "330 361";
+-	else if (%skill_type_id == 15) //Alchemy
+-		return "453 361";
+ 
+ 	else if (%skill_type_id == 51) //Hunting
+ 		return "42 451";
+@@ -397,7 +395,7 @@
+ 		%knowSelIndex = BigKnownSkillBorderMouseOver;
+ 		%unknowSelIndex = BigUnknownSkillBorderMouseOver;
+ 		if (%skillTypeId == 8 || %skillTypeId == 9 || %skillTypeId == 16 || %skillTypeId == 17 || %skillTypeId == 18
+-			|| %skillTypeId == 12 || %skillTypeId == 14 || %skillTypeId == 22 || %skillTypeId == 29 || %skillTypeId == 34
++			|| %skillTypeId == 12 || %skillTypeId == 22 || %skillTypeId == 29 || %skillTypeId == 34
+ 			|| %skillTypeId == 38 || %skillTypeId == 48 || %skillTypeId == 44)
+ 		{
+ 			%linePos = %pos;

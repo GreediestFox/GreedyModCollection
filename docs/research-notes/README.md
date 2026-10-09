@@ -20,5 +20,6 @@ Condensed write-ups of the reverse engineering and porting work, one topic per f
 | [14-equipment-slot-17-fur-collars.md](14-equipment-slot-17-fur-collars.md) | Equipment slot 17 for cosmetic fur collars (client exe patch) |
 | [15-engine-reference-player-stance-stamina.md](15-engine-reference-player-stance-stamina.md) | Engine reference: stance, object states, effects, soft stamina, movement, action animations |
 | [16-tunnel-supports.md](16-tunnel-supports.md) | Permanent mine supports (tunnel timber decay) and the "will not collapse" inspect text |
+| [17-alchemy-fused-into-healing.md](17-alchemy-fused-into-healing.md) | Alchemy merged into Healing: abilities, skill tab, effects, descriptions |
 
 Offsets (RVAs) refer to one specific Steam build of the YO dedicated server and client and must be re-verified after any game update.
