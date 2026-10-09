@@ -178,6 +178,10 @@
          See docs/offsets.md "Tree felling and movable-log creation". -->
     <!-- Inspect on a supported tunnel tile (boards/column) shows message 5213 "will not collapse" instead of the days (2026-10-09). -->
     <tunnelInspect enabled="1" messageId="5213" />
+    <!-- Random gather amount per gatherable type (data/gatherables.xml type id); plant fiber 10-20 per bush (2026-10-09) -->
+    <gatherQuantity enabled="1">
+        <range type="14" min="10" max="20" />
+    </gatherQuantity>
     <treeDrops enabled="1">
     <!-- Tree felling: spruce -> Amberwood Log 3930 (Rotholz), maple -> Whitewood Log 3932 (Weissholz); pine = vanilla softwood (2026-10-07) -->
     <drop tree="spruce" itemId="3930" />
