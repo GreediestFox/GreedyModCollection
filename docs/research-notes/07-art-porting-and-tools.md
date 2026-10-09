@@ -14,6 +14,9 @@ Bring buildings, furniture, icons, outfits and character skins from the MMO buil
 * Helpers: `dts_clone.py`, `verify_clone.py`, `make_dxt1.py`, `port_icons.py`, `hops_icon.py` (see the README tool list).
 
 ## Technical notes
+* **Material definitions:** all materials added for ported models are in `client/data-additions/materials/materials.lifx.cs` (names start with `LiFx_`).
+  * The original MMO/Arden `materials.tscript` is the reference for their flags.
+  * Example, the Big Tanning Tub: its DXT5 diffuse has alpha cut-outs and the hides are single planes, so the material needs `doubleSided = 1`, `alphaTest = 1`, `alphaRef = 111` (as in the original). Without them, edges render as solid dark areas and the hides vanish from behind.
 * **Orange / untextured models:** the client needs a `singleton Material(...)` with `mapTo = "<material name in the dts>"` and `diffuseMap[0..2]` (diffuse, normal, spec), `materialTag0 = "LiF"` in `art/materials.cs`; missing definitions render orange, and a stale `.dso` next to the script hides edits. The MMO "Devices" texture atlas can be reused by several device models.
 * **DDS files:** this client needs DXT1/DXT5-compressed DDS with a full mip chain; uncompressed DDS shows flat grey. `make_dxt1.py` writes a header identical to the vanilla files.
 * **TSShape v24 facts (validated byte-exact):** three streams (32/16/8-bit), guard values (one element in every stream, no alignment padding), meshes after the header arrays, names at the end of the 8-bit stream, sequences and the material list in the tail (material list = U8 version 1, S32 count, names, six arrays). After inserting object rows every later 32-bit index shifts (`subShapeNumObjects` must be set at the shifted index); a stale count crashed the server with a null map lookup.
