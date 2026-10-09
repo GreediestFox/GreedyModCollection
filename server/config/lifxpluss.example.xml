@@ -176,6 +176,8 @@
          (apple, birch, elm, spruce, pine, maple, mulberry, oak, aspen, hazel,
          juniper, spinny) or a raw TreeType 0..255.
          See docs/offsets.md "Tree felling and movable-log creation". -->
+    <!-- Inspect on a supported tunnel tile (boards/column) shows message 5213 "will not collapse" instead of the days (2026-10-09). -->
+    <tunnelInspect enabled="1" messageId="5213" />
     <treeDrops enabled="1">
     <!-- Tree felling: spruce -> Amberwood Log 3930 (Rotholz), maple -> Whitewood Log 3932 (Weissholz); pine = vanilla softwood (2026-10-07) -->
     <drop tree="spruce" itemId="3930" />

@@ -1,0 +1,5 @@
+﻿<!-- Message 5213 for the tunnelInspect Plus hook (supported tunnel tile). Add next to id 5212. -->
+<!-- server data\cm_messages.xml and client data\cm_messages.xml (English): -->
+<string id="5213" important="1">You see a tunnel tile. It is supported and will not collapse.</string>
+<!-- client data\loc\de\data\cm_messages.xml (German): -->
+<string id="5213">Du siehst eine Stollenkachel. Sie ist abgestützt und stürzt nicht ein.</string>
