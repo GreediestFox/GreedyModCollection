@@ -516,24 +516,35 @@ package LiFxGMCommands
         dbi.select(%req, "onInflExport", "SELECT SnapshotDate, Copper, Silver, Gold, CoinValue, Players, PerPlayer, InflationPct, Baseline FROM `lifx_inflation_log` ORDER BY SnapshotDate ASC");
     }
 
+    // The rows go to the GM's client (GMEconomyBegin / GMEconomyRow / GMEconomyEnd, 2026-10-07): the client writes them next to
+    // its own copy of the dashboard page and opens it, so the dashboard works from any PC, not only on the server machine.
+    // A copy is still written on the server (mods/LiFx/GMCommands/economy/economy_data.js) for local use.
     function LiFxGMReq::onInflExport(%this, %rs) {
         %n = 0;
+        %c = %this.caller;
+        commandToClient(%c, 'GMEconomyBegin');
         %fo = new FileObject();
-        if (%fo.openForWrite("mods/LiFx/GMCommands/economy/economy_data.js")) {
+        %ok = %fo.openForWrite("mods/LiFx/GMCommands/economy/economy_data.js");
+        if (%ok) {
             %fo.writeLine("window.LIFX_ECONOMY_ROWS = [");
-            if (%rs.Ok()) {
-                while (%rs.nextRecord()) {
-                    %fo.writeLine("\"" @ %rs.getFieldValue("SnapshotDate") @ "," @ %rs.getFieldValue("Copper") @ "," @ %rs.getFieldValue("Silver") @ "," @ %rs.getFieldValue("Gold") @ "," @ %rs.getFieldValue("CoinValue") @ "," @ %rs.getFieldValue("Players") @ "," @ %rs.getFieldValue("PerPlayer") @ "," @ %rs.getFieldValue("InflationPct") @ "," @ %rs.getFieldValue("Baseline") @ "\",");
-                    %n++;
+        }
+        if (%rs.Ok()) {
+            while (%rs.nextRecord()) {
+                %row = %rs.getFieldValue("SnapshotDate") @ "," @ %rs.getFieldValue("Copper") @ "," @ %rs.getFieldValue("Silver") @ "," @ %rs.getFieldValue("Gold") @ "," @ %rs.getFieldValue("CoinValue") @ "," @ %rs.getFieldValue("Players") @ "," @ %rs.getFieldValue("PerPlayer") @ "," @ %rs.getFieldValue("InflationPct") @ "," @ %rs.getFieldValue("Baseline");
+                commandToClient(%c, 'GMEconomyRow', %row);
+                if (%ok) {
+                    %fo.writeLine("\"" @ %row @ "\",");
                 }
+                %n++;
             }
+        }
+        if (%ok) {
             %fo.writeLine("];");
             %fo.close();
-            LiFxGMCommands::reply(%this.caller, "Economy dashboard data written (" @ %n @ " snapshot(s)).");
-        } else {
-            LiFxGMCommands::reply(%this.caller, "Could not write the economy dashboard data file.");
         }
         %fo.delete();
+        commandToClient(%c, 'GMEconomyEnd', %n);
+        LiFxGMCommands::reply(%c, "Economy dashboard data sent (" @ %n @ " snapshot(s)).");
         dbi.remove(%rs);
         %rs.delete();
         %this.delete();

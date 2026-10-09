@@ -482,20 +482,49 @@ function GMPanel_logout()
    gm("logout");
 }
 
-// Asks the server to refresh the dashboard data file, then opens the dashboard page (same PC as the server) in the default browser.
-$GMPanel::dashboardDir = "F:/SteamLibrary/steamapps/common/Life is Feudal Your Own Dedicated Server/mods/LiFx/GMCommands/economy";
-$GMPanel::dashboardFile = "F:/SteamLibrary/steamapps/common/Life is Feudal Your Own Dedicated Server/mods/LiFx/GMCommands/economy/GMEconomyDashboard.html";
+// Economy dashboard: the server sends the snapshot rows to this client (GMEconomyBegin / GMEconomyRow / GMEconomyEnd).
+// The client writes them as economy_data.js next to its own copy of the dashboard page (mod/GMHelper/economy) and opens it.
+// This works on any PC, not only on the server machine; the path comes from the game folder, not a fixed drive.
+$GMPanel::dashboardRel = "mod/GMHelper/economy";
 
 function GMPanel_dashboard()
 {
    gm("inflation export");
-   schedule(1500, 0, GMPanel_openDashboard);
+}
+
+function clientCmdGMEconomyBegin()
+{
+   $GMPanel::econRows = 0;
+}
+
+function clientCmdGMEconomyRow(%row)
+{
+   $GMPanel::econRow[$GMPanel::econRows] = %row;
+   $GMPanel::econRows++;
+}
+
+function clientCmdGMEconomyEnd(%n)
+{
+   %fo = new FileObject();
+   if (%fo.openForWrite($GMPanel::dashboardRel @ "/economy_data.js")) {
+      %fo.writeLine("window.LIFX_ECONOMY_ROWS = [");
+      for (%i = 0; %i < $GMPanel::econRows; %i++) {
+         %fo.writeLine("\"" @ $GMPanel::econRow[%i] @ "\",");
+      }
+      %fo.writeLine("];");
+      %fo.close();
+   } else {
+      echo("[GMPanel] could not write " @ $GMPanel::dashboardRel @ "/economy_data.js");
+   }
+   %fo.delete();
+   GMPanel_openDashboard();
 }
 
 function GMPanel_openDashboard()
 {
    // gotoWebPage fails here (the engine cannot find the default browser in the registry); shellExecute lets Windows open the file with its default program.
-   shellExecute($GMPanel::dashboardFile, "", $GMPanel::dashboardDir);
+   %dir = getMainDotCsDir() @ "/" @ $GMPanel::dashboardRel;
+   shellExecute(%dir @ "/GMEconomyDashboard.html", "", %dir);
 }
 
 function GMPanel_baseline()

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LiF:YO — GM Economy Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  /* ── Tokens ── */
+  :root {
+    --bg:       #0e0c09;
+    --surface:  #1a1710;
+    --border:   #3a3320;
+    --gold:     #c8a84b;
+    --silver:   #9eaab5;
+    --copper:   #b5673a;
+    --green:    #4caf76;
+    --red:      #c0392b;
+    --yellow:   #e0b840;
+    --text:     #d4c9a8;
+    --muted:    #7a7060;
+    --font-hd:  'Palatino Linotype', Palatino, Georgia, serif;
+    --font-ui:  'Segoe UI', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 14px;
+    min-height: 100vh;
+  }
+
+  /* ── Layout ── */
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  header h1 {
+    font-family: var(--font-hd);
+    font-size: 1.4rem;
+    color: var(--gold);
+    letter-spacing: 1px;
+  }
+  header .subtitle { color: var(--muted); font-size: 0.82rem; }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 0;
+    height: calc(100vh - 53px);
+  }
+
+  .main   { padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 18px; }
+  .sidebar{ background: var(--surface); border-left: 1px solid var(--border);
+            padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 18px; }
+
+  /* ── Cards ── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px 18px;
+  }
+  .card-title {
+    font-family: var(--font-hd);
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  /* ── Stat row ── */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .stat {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 12px 14px;
+  }
+  .stat-label { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+  .stat-value { font-size: 1.5rem; font-family: var(--font-hd); margin-top: 4px; }
+  .stat-sub   { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
+  .stat.copper .stat-value { color: var(--copper); }
+  .stat.silver .stat-value { color: var(--silver); }
+  .stat.gold   .stat-value { color: var(--gold);   }
+  .stat.infl   .stat-value { font-size: 2rem; }
+
+  /* ── Inflation badge ── */
+  .infl-positive { color: var(--red); }
+  .infl-negative { color: var(--green); }
+  .infl-neutral  { color: var(--yellow); }
+
+  /* ── Chart area ── */
+  .chart-wrap { position: relative; height: 280px; }
+
+  /* ── Buttons ── */
+  .btn-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  button {
+    background: var(--border);
+    border: 1px solid var(--gold);
+    border-radius: 3px;
+    color: var(--gold);
+    font-family: var(--font-ui);
+    font-size: 0.82rem;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: background .15s;
+  }
+  button:hover { background: #2e2a1a; }
+  button.active { background: #3a2f0a; }
+
+  /* ── Price calculator ── */
+  .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  label { font-size: 0.78rem; color: var(--muted); display: block; margin-bottom: 4px; }
+  input, select {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--text);
+    font-size: 0.88rem;
+    padding: 6px 10px;
+  }
+  input:focus, select:focus { outline: none; border-color: var(--gold); }
+
+  .result-box {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 12px 14px;
+    margin-top: 10px;
+  }
+  .result-original { font-size: 0.78rem; color: var(--muted); }
+  .result-adjusted { font-size: 1.4rem; font-family: var(--font-hd); color: var(--gold); margin-top: 4px; }
+  .result-diff     { font-size: 0.8rem; margin-top: 2px; }
+
+  /* ── Import area ── */
+  textarea {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--text);
+    font-family: monospace;
+    font-size: 0.75rem;
+    padding: 8px;
+    resize: vertical;
+    min-height: 80px;
+  }
+  textarea:focus { outline: none; border-color: var(--gold); }
+
+  .import-hint { font-size: 0.72rem; color: var(--muted); margin-top: 6px; }
+
+  /* ── Trend arrow ── */
+  .trend-up   { color: var(--red);    font-size: 1.1rem; }
+  .trend-down { color: var(--green);  font-size: 1.1rem; }
+  .trend-flat { color: var(--yellow); font-size: 1.1rem; }
+
+  /* ── Table ── */
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th { color: var(--muted); font-size: 0.7rem; text-transform: uppercase;
+       letter-spacing: 1px; padding: 4px 8px; text-align: left; border-bottom: 1px solid var(--border); }
+  td { padding: 5px 8px; border-bottom: 1px solid #1e1c14; }
+  tr:last-child td { border-bottom: none; }
+  .td-pos { color: var(--red); }
+  .td-neg { color: var(--green); }
+
+  .empty { color: var(--muted); font-size: 0.82rem; text-align: center; padding: 20px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>⚖ Economy Dashboard</h1>
+    <div class="subtitle">Life is Feudal: Your Own — GM Inflation Monitor &nbsp;·&nbsp; <span id="dataSource">demo data</span></div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ═══ MAIN ═══ -->
+  <div class="main">
+
+    <!-- Summary stats -->
+    <div class="card">
+      <div class="card-title">Current Snapshot</div>
+      <div class="stats">
+        <div class="stat copper">
+          <div class="stat-label">Copper Coins</div>
+          <div class="stat-value" id="valCopper">—</div>
+          <div class="stat-sub">ID 1059 · value ×1 copper</div>
+        </div>
+        <div class="stat silver">
+          <div class="stat-label">Silver Coins</div>
+          <div class="stat-value" id="valSilver">—</div>
+          <div class="stat-sub">ID 1060 · value ×100 copper</div>
+        </div>
+        <div class="stat gold">
+          <div class="stat-label">Gold Coins</div>
+          <div class="stat-value" id="valGold">—</div>
+          <div class="stat-sub">ID 1061 · value ×10,000 copper</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Total Coin Value (copper)</div>
+          <div class="stat-value" id="valWeight">—</div>
+          <div class="stat-sub">Cu×1 + Si×100 + Au×10,000 (game base prices)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Non-GM Players</div>
+          <div class="stat-value" id="valPlayers">—</div>
+          <div class="stat-sub">active characters, GM accounts excluded</div>
+        </div>
+        <div class="stat infl">
+          <div class="stat-label">Inflation Index</div>
+          <div class="stat-value" id="valInfl">—</div>
+          <div class="stat-sub" id="valInflSub">—</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart -->
+    <div class="card">
+      <div class="card-title" style="display:flex;justify-content:space-between;align-items:center;">
+        <span>Inflation History</span>
+        <div class="btn-row">
+          <button onclick="setRange(7)"  id="btn7"  class="active">7 days</button>
+          <button onclick="setRange(30)" id="btn30">30 days</button>
+          <button onclick="setRange(0)"  id="btnAll">All</button>
+        </div>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="inflChart"></canvas>
+      </div>
+    </div>
+
+    <!-- History table -->
+    <div class="card">
+      <div class="card-title">Snapshot History</div>
+      <div id="histTable"><div class="empty">No data loaded yet. Press "Economy dashboard" in the GM panel, or import a CSV below.</div></div>
+    </div>
+
+  </div>
+
+  <!-- ═══ SIDEBAR ═══ -->
+  <div class="sidebar">
+
+    <!-- Price calculator -->
+    <div class="card">
+      <div class="card-title">Price Calculator</div>
+      <div class="calc-grid">
+        <div>
+          <label>Base price</label>
+          <input type="number" id="calcBase" value="100" min="0" step="1">
+        </div>
+        <div>
+          <label>Currency</label>
+          <select id="calcCurrency">
+            <option value="copper">Copper</option>
+            <option value="silver">Silver</option>
+            <option value="gold">Gold</option>
+          </select>
+        </div>
+      </div>
+      <div style="margin-top:10px;">
+        <label>Inflation override % (leave blank = use current)</label>
+        <input type="number" id="calcInflOverride" placeholder="auto" step="0.1">
+      </div>
+      <button onclick="calcPrice()" style="margin-top:10px;width:100%;">Calculate Adjusted Price</button>
+      <div class="result-box" id="calcResult" style="display:none;">
+        <div class="result-original" id="calcOrigLine">—</div>
+        <div class="result-adjusted" id="calcAdjLine">—</div>
+        <div class="result-diff" id="calcDiffLine">—</div>
+      </div>
+    </div>
+
+    <!-- Bulk price list -->
+    <div class="card">
+      <div class="card-title">Bulk Price List</div>
+      <div style="margin-bottom:8px;font-size:0.78rem;color:var(--muted);">
+        Enter items as <code>Name,BasePrice</code> per line. Dashboard applies current inflation to all.
+      </div>
+      <textarea id="bulkInput" placeholder="Iron Sword,200&#10;Leather Armor,350&#10;Bread,5"></textarea>
+      <button onclick="calcBulk()" style="margin-top:8px;width:100%;">Apply Inflation to All</button>
+      <div id="bulkResult" style="margin-top:10px;"></div>
+    </div>
+
+    <!-- Import CSV -->
+    <div class="card">
+      <div class="card-title">Import Data</div>
+      <div style="margin-bottom:6px;font-size:0.78rem;color:var(--muted);">
+        Paste the CSV exported from the GM Tools in-game panel, or load from file.
+      </div>
+      <textarea id="csvInput" placeholder="date,copper,silver,gold,weight,players,index,inflation&#10;2024-06-01,5000,1200,300,..."></textarea>
+      <div class="btn-row" style="margin-top:8px;">
+        <button onclick="importCSV()">Import CSV</button>
+        <button onclick="loadDemo()">Load Demo Data</button>
+      </div>
+      <input type="file" id="fileInput" accept=".csv,.txt" style="display:none" onchange="loadFile(event)">
+      <button onclick="document.getElementById('fileInput').click()" style="width:100%;margin-top:8px;">
+        Load from File…
+      </button>
+      <div class="import-hint" id="importStatus">No data imported.</div>
+    </div>
+
+  </div>
+</div>
+
+<script src="economy_data.js"></script>
+<script>
+// ── State ──────────────────────────────────────────────────
+let allRows     = [];   // [{date, copper, silver, gold, weight, players, index, inflation}]
+let currentInfl = 0;
+let rangeLimit  = 7;
+let chart       = null;
+let   BASELINE  = 1000;   // replaced by the baseline stored with the latest snapshot (copper per player)
+
+// ── Chart setup ────────────────────────────────────────────
+const ctx = document.getElementById('inflChart').getContext('2d');
+
+function buildChart(rows) {
+  const labels  = rows.map(r => r.date);
+  const inflPct = rows.map(r => r.inflation);
+
+  const gradient = ctx.createLinearGradient(0, 0, 0, 280);
+  gradient.addColorStop(0,   'rgba(200,168,75,0.4)');
+  gradient.addColorStop(1,   'rgba(200,168,75,0.02)');
+
+  if (chart) chart.destroy();
+  chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Inflation %',
+        data:  inflPct,
+        fill:  true,
+        backgroundColor: gradient,
+        borderColor: '#c8a84b',
+        borderWidth: 2,
+        pointBackgroundColor: inflPct.map(v =>
+          v > 50 ? '#c0392b' : v > 0 ? '#e0b840' : '#4caf76'),
+        pointRadius: 4,
+        tension: 0.35,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => ` ${ctx.parsed.y.toFixed(1)}%`,
+            afterLabel: (ctx) => {
+              const r = rows[ctx.dataIndex];
+              return [
+                `  Gold: ${fmt(r.gold)}  Silver: ${fmt(r.silver)}  Copper: ${fmt(r.copper)}`,
+                `  Coin value: ${fmt(r.weight)} copper  Players: ${r.players}`,
+                `  Per player: ${fmt(Math.round(r.index))}  Baseline: ${fmt(Math.round(r.baseline))}`
+              ];
+            }
+          },
+          backgroundColor: '#1a1710',
+          borderColor: '#3a3320',
+          borderWidth: 1,
+          titleColor: '#c8a84b',
+          bodyColor: '#d4c9a8',
+        }
+      },
+      scales: {
+        x: {
+          ticks: { color: '#7a7060', maxRotation: 45 },
+          grid:  { color: '#1e1c14' }
+        },
+        y: {
+          ticks: {
+            color: '#7a7060',
+            callback: v => v.toFixed(0) + '%'
+          },
+          grid: { color: '#1e1c14' },
+        }
+      }
+    }
+  });
+}
+
+// ── Range selector ──────────────────────────────────────────
+function setRange(n) {
+  rangeLimit = n;
+  ['btn7','btn30','btnAll'].forEach(id => document.getElementById(id).classList.remove('active'));
+  if (n === 7)  document.getElementById('btn7').classList.add('active');
+  if (n === 30) document.getElementById('btn30').classList.add('active');
+  if (n === 0)  document.getElementById('btnAll').classList.add('active');
+  refreshDisplay();
+}
+
+// ── Refresh display ─────────────────────────────────────────
+function refreshDisplay() {
+  if (!allRows.length) return;
+
+  const sorted = [...allRows].sort((a,b) => a.date.localeCompare(b.date));
+  const slice  = rangeLimit > 0 ? sorted.slice(-rangeLimit) : sorted;
+  const latest = sorted[sorted.length - 1];
+
+  // Stats
+  currentInfl = latest.inflation;
+  BASELINE    = latest.baseline || BASELINE;
+  document.getElementById('valCopper').textContent  = fmt(latest.copper);
+  document.getElementById('valSilver').textContent  = fmt(latest.silver);
+  document.getElementById('valGold').textContent    = fmt(latest.gold);
+  document.getElementById('valWeight').textContent  = fmt(latest.weight);
+  document.getElementById('valPlayers').textContent = latest.players;
+
+  const sign  = latest.inflation >= 0 ? '+' : '';
+  const cls   = latest.inflation > 10 ? 'infl-positive' : latest.inflation < -5 ? 'infl-negative' : 'infl-neutral';
+  document.getElementById('valInfl').innerHTML =
+    `<span class="${cls}">${sign}${latest.inflation.toFixed(1)}%</span>`;
+  document.getElementById('valInflSub').textContent =
+    `per player: ${fmt(Math.round(latest.index))} copper / baseline: ${fmt(Math.round(latest.baseline))} copper`;
+
+  // Chart
+  buildChart(slice);
+
+  // Table
+  renderTable(sorted.slice().reverse().slice(0, 20));
+}
+
+// ── Table ───────────────────────────────────────────────────
+function renderTable(rows) {
+  if (!rows.length) { document.getElementById('histTable').innerHTML = '<div class="empty">No data.</div>'; return; }
+  let html = `<table>
+    <tr><th>Date</th><th>Inflation</th><th>Δ Day</th><th>Coin value</th><th>Players</th><th>Per player</th></tr>`;
+  for (let i = 0; i < rows.length; i++) {
+    const r    = rows[i];
+    const prev = rows[i+1];
+    let delta  = '—';
+    let dcls   = '';
+    if (prev) {
+      const d = r.inflation - prev.inflation;
+      delta   = (d >= 0 ? '+' : '') + d.toFixed(1) + '%';
+      dcls    = d > 0 ? 'td-pos' : d < 0 ? 'td-neg' : '';
+    }
+    const sign = r.inflation >= 0 ? '+' : '';
+    const icls = r.inflation > 10 ? 'td-pos' : r.inflation < -5 ? 'td-neg' : '';
+    html += `<tr>
+      <td>${r.date}</td>
+      <td class="${icls}">${sign}${r.inflation.toFixed(1)}%</td>
+      <td class="${dcls}">${delta}</td>
+      <td>${fmt(r.weight)}</td>
+      <td>${r.players}</td>
+      <td>${fmt(Math.round(r.index))}</td>
+    </tr>`;
+  }
+  html += '</table>';
+  document.getElementById('histTable').innerHTML = html;
+}
+
+// ── Price calculator ────────────────────────────────────────
+function calcPrice() {
+  const base = parseFloat(document.getElementById('calcBase').value) || 0;
+  const cur  = document.getElementById('calcCurrency').value;
+  const ovr  = document.getElementById('calcInflOverride').value;
+  const infl = ovr !== '' ? parseFloat(ovr) : currentInfl;
+  const adj  = Math.round(base * (1 + infl / 100));
+  const diff = adj - base;
+  const sign = diff >= 0 ? '+' : '';
+
+  document.getElementById('calcResult').style.display = 'block';
+  document.getElementById('calcOrigLine').textContent = `Base: ${base} ${cur}  ·  Inflation: ${infl >= 0 ? '+' : ''}${infl.toFixed(1)}%`;
+  document.getElementById('calcAdjLine').textContent  = `${adj} ${cur}`;
+  const dcls = diff > 0 ? 'td-pos' : diff < 0 ? 'td-neg' : '';
+  document.getElementById('calcDiffLine').innerHTML =
+    `<span class="${dcls}">${sign}${diff} ${cur} vs base price</span>`;
+}
+
+// ── Bulk price list ─────────────────────────────────────────
+function calcBulk() {
+  const lines = document.getElementById('bulkInput').value.trim().split('\n');
+  const cur   = document.getElementById('calcCurrency').value;
+  const infl  = currentInfl;
+  let html    = '<table><tr><th>Item</th><th>Base</th><th>Adjusted</th><th>Δ</th></tr>';
+  for (const line of lines) {
+    const parts = line.split(',');
+    if (parts.length < 2) continue;
+    const name = parts[0].trim();
+    const base = parseFloat(parts[1]) || 0;
+    const adj  = Math.round(base * (1 + infl / 100));
+    const diff = adj - base;
+    const sign = diff >= 0 ? '+' : '';
+    const dcls = diff > 0 ? 'td-pos' : diff < 0 ? 'td-neg' : '';
+    html += `<tr><td>${name}</td><td>${base} ${cur}</td>
+      <td>${adj} ${cur}</td>
+      <td class="${dcls}">${sign}${diff}</td></tr>`;
+  }
+  html += '</table>';
+  document.getElementById('bulkResult').innerHTML = html;
+}
+
+// ── CSV import ───────────────────────────────────────────────
+function importCSV() {
+  const raw = document.getElementById('csvInput').value.trim();
+  parseCSV(raw);
+}
+
+function loadFile(evt) {
+  const file = evt.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => { document.getElementById('csvInput').value = e.target.result; importCSV(); };
+  reader.readAsText(file);
+}
+
+function parseCSV(raw) {
+  const lines = raw.split('\n').filter(l => l.trim());
+  if (!lines.length) { document.getElementById('importStatus').textContent = 'Empty input.'; return; }
+  const start = lines[0].startsWith('date') ? 1 : 0;
+  allRows = [];
+  for (let i = start; i < lines.length; i++) {
+    const p = lines[i].split(',');
+    if (p.length < 8) continue;
+    allRows.push({
+      date:      p[0].trim(),
+      copper:    parseInt(p[1])   || 0,
+      silver:    parseInt(p[2])   || 0,
+      gold:      parseInt(p[3])   || 0,
+      weight:    parseInt(p[4])   || 0,
+      players:   parseInt(p[5])   || 1,
+      index:     parseFloat(p[6]) || 0,
+      inflation: parseFloat(p[7]) || 0,
+      baseline:  p.length > 8 ? (parseFloat(p[8]) || 0) : BASELINE,
+    });
+  }
+  document.getElementById('importStatus').textContent =
+    `Loaded ${allRows.length} snapshot(s).`;
+  refreshDisplay();
+}
+
+// ── Demo data ────────────────────────────────────────────────
+function loadDemo() {
+  const today   = new Date();
+  const rows    = [];
+  let   weight  = 3000;
+  let   players = 20;
+  for (let i = 29; i >= 0; i--) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - i);
+    const date    = d.toISOString().slice(0,10);
+    weight       += Math.round((Math.random() - 0.35) * 600);
+    if (weight < 500) weight = 500;
+    players      += Math.round((Math.random() - 0.4) * 2);
+    if (players < 5) players = 5;
+    const index   = weight / players;
+    const infl    = ((index / BASELINE) - 1) * 100;
+    const copper  = Math.round(weight * 0.3);
+    const silver  = Math.round(weight * 0.05);
+    const gold    = Math.round(weight * 0.005);
+    rows.push(`${date},${copper},${silver},${gold},${weight},${players},${index.toFixed(2)},${infl.toFixed(2)},${BASELINE}`);
+  }
+  const csv = 'date,copper,silver,gold,weight,players,index,inflation\n' + rows.join('\n');
+  document.getElementById('csvInput').value = csv;
+  parseCSV(csv);
+}
+
+// ── Helpers ──────────────────────────────────────────────────
+function fmt(n) { return Number(n).toLocaleString(); }
+
+// Auto-load demo on first visit so the dashboard isn't blank
+// Live data written by the GM panel (!inflation export -> economy_data.js next to this file); demo data only as a fallback.
+if (window.LIFX_ECONOMY_ROWS && window.LIFX_ECONOMY_ROWS.length) {
+  const csv = 'date,copper,silver,gold,weight,players,index,inflation,baseline\n' + window.LIFX_ECONOMY_ROWS.join('\n');
+  document.getElementById('csvInput').value = csv;
+  parseCSV(csv);
+  document.getElementById('dataSource').textContent = 'live server data (' + window.LIFX_ECONOMY_ROWS.length + ' snapshot(s))';
+} else {
+  loadDemo();
+}
+</script>
+</body>
+</html>
