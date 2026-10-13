@@ -134,13 +134,12 @@
         <warehouse objectTypeId="2831" />
         <warehouse objectTypeId="2832" />
         <warehouse objectTypeId="2833" />
-        <warehouse objectTypeId="2834" />
     </greenhouseAlias>
 
-    <!-- Species rules: the Coop (144) accepts only chickens (item 1052); the Rabbit Cage (2834) is a plain storage container that accepts ONLY rabbits (item 1053, strict = every other item is refused too). A real Coop-style rabbit stable (breeding UI) was tried and reverted - the client has an unidentified compiled-in gate on Manage/Harvest/Clean/Slaughter for non-vanilla types; see project memory for the RE trail. -->
+    <!-- Animal husbandry: the Rabbit Cage (2834) behaves as a Coop (144): max 30 rabbits (item 1053), nothing to harvest. The Coop keeps chickens only (item 1052). Other items (feed, water) are never restricted. A behavesLike="144" type also gets the Manage gate patch automatically; client side: tools/patch_client_stablegate.py, patch_client_stablewindow.py, patch_client_stabletable.py (see docs/research-notes/20). -->
     <stableAlias enabled="1" verbose="1">
         <stable objectTypeId="144" allowAnimals="1052" />
-        <stable objectTypeId="2834" allowAnimals="1053" strict="1" />
+        <stable objectTypeId="2834" behavesLike="144" maxAnimals="30" product="0" allowAnimals="1053" />
     </stableAlias>
     <!-- Animal fodder (AnimalFodderPack): items 370 (stables), 371 (barns), 372 (coops) count as feed and give every newborn animal +newbornBonus quality while they are in the building.
          disableFeedGrowth="1": ordinary feed no longer raises animal quality. Slaughter products get +slaughterBonus quality in the in-game months slaughterMonths (10 11 12 1 2 = October to February).

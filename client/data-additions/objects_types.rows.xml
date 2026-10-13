@@ -197,14 +197,14 @@
 		<IsMovableObject>0</IsMovableObject>
 		<IsUnmovableobject>1</IsUnmovableobject>
 		<IsTool>0</IsTool>
-		<IsDevice>0</IsDevice>
+		<IsDevice>1</IsDevice>
 		<IsDoor>0</IsDoor>
 		<IsPremium>0</IsPremium>
 		<MaxContSize>110000</MaxContSize>
 		<Length>7</Length>
 		<MaxStackSize>0</MaxStackSize>
 		<UnitWeight>20000</UnitWeight>
-		<BackgndImage>art\images\universal</BackgndImage>
+		<BackgndImage>art\images\stable_bg</BackgndImage>
 		<FaceImage>art\2D\Objects\rabbit_cage.png</FaceImage>
 		<Description></Description>
 	</row>

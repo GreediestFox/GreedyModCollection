@@ -209,7 +209,7 @@ INSERT IGNORE INTO `objects_types` VALUES (3751,232,'Hops',0,0,0,0,0,0,0,0,2,100
 INSERT IGNORE INTO `objects_types` VALUES (3752,232,'Sugar Beet',0,0,0,0,0,0,0,0,2,10000,230,'',0,0,0,0,0,0,'art/2D/Items/carrot.png','A crop that can be grown by Farmers. Used for various cooking recipes.',50,NULL,0,0);
 INSERT IGNORE INTO `objects_types` VALUES (2894,454,'Jeweler\'s Workshop',0,0,1,0,1,1,0,100000,6,0,200000,'',0,0,0,0,0,0,'art/2D/Objects/jeweler_workshop.png','',0,0,0,0);
 INSERT IGNORE INTO `objects_types` VALUES (2835,64,'Large Herbal Garden',1,0,1,0,1,0,0,1000000,6,0,50000,'',0,0,0,0,0,0,'art/2D/Objects/large_herbal_garden.png','',0,0,0,0);
-INSERT IGNORE INTO `objects_types` VALUES (2834,64,'Rabbit Cage',1,0,1,0,0,0,0,110000,7,0,20000,'art/images/universal',0,0,0,0,0,0,'art/2D/Objects/rabbit_cage.png','',0,0,0,0);
+INSERT IGNORE INTO `objects_types` VALUES (2834,64,'Rabbit Cage',1,0,1,0,1,0,0,110000,7,0,20000,'art/images/stable_bg',0,0,0,0,0,0,'art/2D/Objects/rabbit_cage.png','',0,0,0,0);
 INSERT IGNORE INTO `objects_types` VALUES (2895,64,'Oil Press',1,0,1,0,1,0,0,5000,3,0,5000,'',0,0,0,0,0,0,'art/2D/Objects/linen_press.png','',0,0,0,0);
 INSERT IGNORE INTO `objects_types` VALUES (2873,279,'Linen oil',0,0,0,0,0,0,0,0,2,10000,700,'',0,0,0,0,0,0,'art/2D/Items/linen_oil.png','',0,0,0,0);
 INSERT IGNORE INTO `objects_types` VALUES (2021,64,'Ore Washer',1,0,1,0,1,0,0,500000,10,0,10000,'',0,0,0,0,0,0,'art/2D/Objects/ore_washer.png','',0,0,0,0);
