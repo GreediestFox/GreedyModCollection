@@ -142,6 +142,14 @@
         <stable objectTypeId="144" allowAnimals="1052" />
         <stable objectTypeId="2834" allowAnimals="1053" strict="1" />
     </stableAlias>
+    <!-- Animal fodder (AnimalFodderPack): items 370 (stables), 371 (barns), 372 (coops) count as feed and give every newborn animal +newbornBonus quality while they are in the building.
+         disableFeedGrowth="1": ordinary feed no longer raises animal quality. Slaughter products get +slaughterBonus quality in the in-game months slaughterMonths (10 11 12 1 2 = October to February).
+         Needs the client exe patch tools/patch_client_feedmask.py and the three item types baked into art/dump.sql. -->
+    <animalFodder enabled="1" verbose="1" disableFeedGrowth="1" newbornBonus="2" slaughterBonus="5" slaughterMonths="10 11 12 1 2">
+        <fodder itemTypeId="370" animals="1039 1040 1042 1043 1044 1045 1140 1685 1663" />
+        <fodder itemTypeId="371" animals="1046 1047 1048 1049 1050 1051" />
+        <fodder itemTypeId="372" animals="1052 1053" />
+    </animalFodder>
 
 
 
