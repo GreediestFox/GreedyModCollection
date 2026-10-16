@@ -4,9 +4,9 @@ A complete, documented record of a modded **Life is Feudal: Your Own (LiF:YO)** 
 
 It builds on the **LiFx / Plus** framework: <https://github.com/LiF-x/Plus>. The engine-hook source code lives there (see "Plus hooks" below); this repo contains everything around it.
 
-> **No game art is included.** Models (`.dts`), textures (`.dds`), icons (`.png`) and sounds that come from the MMO build, Arden, EKR, Jorvik or the base game are copyrighted by their owners and are not distributed here. The mod packs reference them by path; you must supply your own copies (see "Art").
+> **No game art is included.** Models (`.dts`), textures (`.dds`), icons (`.png`) and sounds that come from Life is Feudal, EKR or Jorvik are copyrighted by their owners and are not distributed here. The mod packs reference them by path; you must supply your own copies (see "Art").
 
-> **Third-party mod packs are not included.** The Jorvik mod, the Knool pack and the EKR buildings pack belong to their authors; their `mod.cs` files and data rows are left out of this repository (the docs and reports still list what the ids were used for). Install those packs from their authors, then use the notes here to merge them. All other packs here are our own code that registers content ported from the MMO/Arden builds; the art is not included.
+> **Third-party mod packs are not included.** The Jorvik mod, the Knool pack and the EKR buildings pack belong to their authors; their `mod.cs` files and data rows are left out of this repository (the docs and reports still list what the ids were used for). Install those packs from their authors, then use the notes here to merge them. All other packs here are our own code that registers content ported from Life is Feudal; the art is not included.
 
 ## Earlier material in this repository
 
@@ -83,7 +83,7 @@ The tools contain absolute Windows paths at the top (server, client, scratch fol
 
 ## Art
 
-Packs reference their art under `mod/<Name>/art/...` (client) and the same relative path on the server. Expected folders: `AltarsIdolsMod`, `BuildingsMod`, `ChestsMod`, `CloakFlagMod`, `DisplaysMod`, `EKRBuildingsMod`, `FoodDrinksMod`, `FurnitureMod`, `HornSkinMod`, `JorvikMod`, `KingOutfitsMod`, `MaterialsChainMod`, `OutfitsMod`, `SiegeMod`, `SignsPillarsMod`, `StatuesMod`, `TierGearMod`. Source builds: the LiF MMO client, Arden, the EKR modpack and the Jorvik mod; obtain those from their authors.
+Packs reference their art under `mod/<Name>/art/...` (client) and the same relative path on the server. Expected folders: `AltarsIdolsMod`, `BuildingsMod`, `ChestsMod`, `CloakFlagMod`, `DisplaysMod`, `EKRBuildingsMod`, `FoodDrinksMod`, `FurnitureMod`, `HornSkinMod`, `JorvikMod`, `KingOutfitsMod`, `MaterialsChainMod`, `OutfitsMod`, `SiegeMod`, `SignsPillarsMod`, `StatuesMod`, `TierGearMod`. Sources: the Life is Feudal client, the EKR modpack and the Jorvik mod; obtain those from their authors.
 
 ### Packs, id ranges and recipe status
 
