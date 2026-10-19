@@ -2,7 +2,7 @@
 // Food loses quality once per day of real time, applied at server start only (the server holds loaded items in memory,
 // so item quality is never changed while it runs). At 0 quality the stack turns into Dung (1032, q10).
 // Rates by the item's ParentID chain: 250/279 = 2 Q/d, 227-231 = 4 Q/d, 248 (meat/fish) = 8 Q/d; Honey (376) never spoils.
-// Items inside a Barrel (106), also nested, do not spoil.
+// Only items inside a Salt Barrel / Salzfass (3984), also nested, do not spoil. The normal Barrel (106) gives no protection.
 // Differences to Daniel's version: bookkeeping lives in its own table `food_perish_items` instead of extra columns on the
 // game's `items` table, and the 24h gate is evaluated in SQL so everything is queued in one go during the DB-changes phase.
 // Client part: gui\scripts\tooltipManager.cs (shelf-life row) + messages 5195-5198.
@@ -39,7 +39,7 @@ package LiFxFoodSpoilagePack
             "IF inContainerID IS NULL THEN RETURN 0; END IF; SET curID = inContainerID; " @
             "WHILE steps < 32 AND curID IS NOT NULL DO SET curType = NULL; SET curParent = NULL; " @
             "SELECT ObjectTypeID, ParentID INTO curType, curParent FROM containers WHERE ID = curID LIMIT 1; " @
-            "IF curType IS NULL THEN RETURN 0; END IF; IF curType = 106 THEN RETURN 1; END IF; " @
+            "IF curType IS NULL THEN RETURN 0; END IF; IF curType = 3984 THEN RETURN 1; END IF; " @
             "SET curID = curParent; SET steps = steps + 1; END WHILE; RETURN 0; END");
 
         // ---- tables ----

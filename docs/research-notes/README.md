@@ -24,5 +24,6 @@ Condensed write-ups of the reverse engineering and porting work, one topic per f
 | [18-books-registry-and-tradepost.md](18-books-registry-and-tradepost.md) | Where item names live, the FeudalTools Tradepost (install, how it moves items), book key design |
 | [19-animal-fodder-and-quality.md](19-animal-fodder-and-quality.md) | Animal fodder: +2 quality for newborns, no quality gain from ordinary feed, slaughter bonus in a month window |
 | [20-rabbit-cage-as-coop.md](20-rabbit-cage-as-coop.md) | Rabbit Cage as a real Coop: the compiled-in building-type gates (client + server), three client exe patches |
+| [21-books-write-flow-craft-tab-salt-barrel.md](21-books-write-flow-craft-tab-salt-barrel.md) | Books in game: right-click Schreiben/Lesen, ticket write flow, craft tab for a tool, building recipes vs the recipe manager, Salt Barrel, datablock id race |
 
 Offsets (RVAs) refer to one specific Steam build of the YO dedicated server and client and must be re-verified after any game update.
