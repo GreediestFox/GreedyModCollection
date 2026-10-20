@@ -1,0 +1,6 @@
+# 22 Recipe update 2, comment-outs, icon size standard
+
+- `ZZ_RecipeRevisionPack` and `ZZ_RecipeUpdate2Pack` (run last on purpose) apply the recipe sheets: new placeholder items 3970-3992 / 3994, recipes 6510-6570, Blacksmith's Shop gets the Nordmar Whetstone (3994). Outfits are made at the Tailors Workshop only (Weaver's Toolkit copies deleted).
+- Switched off by commenting out (server SQL and client rows): banners and standards (3630-3642, recipes 6374-6386, vanilla banner recipes 1086/5164), plain MMO items 3801-3913, MMO leather/wool chain (3545-3590, recipes 6316-6333), Pilgrim's / Fancy Decorated Clothes (3991/3992).
+- Late mods run after `CmRecipesManager` has read the recipe tables (~2 s after boot); check that late recipe edits actually craft, otherwise bake them into `art/dump.sql`.
+- Inventory icon standard: the game draws an icon at its file size, so item icons use a longest side of 50 px (the health book is 49x50 inside a 64 canvas). Resize with a box filter on premultiplied alpha; Lanczos rings and leaves dark/white edge pixels.

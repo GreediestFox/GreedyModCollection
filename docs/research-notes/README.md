@@ -27,3 +27,4 @@ Condensed write-ups of the reverse engineering and porting work, one topic per f
 | [21-books-write-flow-craft-tab-salt-barrel.md](21-books-write-flow-craft-tab-salt-barrel.md) | Books in game: right-click Schreiben/Lesen, ticket write flow, craft tab for a tool, building recipes vs the recipe manager, Salt Barrel, datablock id race |
 
 Offsets (RVAs) refer to one specific Steam build of the YO dedicated server and client and must be re-verified after any game update.
+- [22 Recipe update 2, comment-outs, icon size standard](22-recipe-update2-comment-outs-icons.md)
