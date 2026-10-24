@@ -1,5 +1,6 @@
 @echo off
 setlocal
+set "AUTO=%~1"
 rem ============================================================================
 rem  Start the LiF dedicated server on a Windows VPS.
 rem
@@ -16,14 +17,19 @@ set "SRV=%SRV:~0,-1%"
 set "WORLD=1"
 cd /d "%SRV%"
 if not exist "%SRV%\logs" mkdir "%SRV%\logs"
+tasklist /FI "IMAGENAME eq ddctd_cm_yo_server.exe" 2>nul | find /I "ddctd_cm_yo_server.exe" >nul
+if not errorlevel 1 (if "%AUTO%"=="auto" exit /b 0)
 echo.
 echo === LiF server start ===
 echo Folder: %SRV%
 
+if exist "%SRV%\.setup_done" goto skipsetup
 rem ---- 1) Defender exclusion + firewall rules (need admin; silently skipped otherwise)
 powershell -NoProfile -Command "try { Add-MpPreference -ExclusionPath '%SRV%' -ErrorAction Stop; Add-MpPreference -ExclusionProcess 'ddctd_cm_yo_server.exe' -ErrorAction Stop; Write-Host 'Defender exclusion OK' } catch { Write-Host 'Defender exclusion NOT set (run as Administrator?)' }"
 netsh advfirewall firewall show rule name="LiF Server UDP" >nul 2>&1 || netsh advfirewall firewall add rule name="LiF Server UDP" dir=in action=allow protocol=UDP localport=28000-28002 >nul 2>&1
 netsh advfirewall firewall show rule name="LiF Server TCP" >nul 2>&1 || netsh advfirewall firewall add rule name="LiF Server TCP" dir=in action=allow protocol=TCP localport=28000-28002 >nul 2>&1
+echo done>"%SRV%\.setup_done"
+:skipsetup
 
 rem ---- 2) Are all important files there? (a missing one = Defender quarantined it or the copy was incomplete)
 set "MISSING="
@@ -38,7 +44,7 @@ if defined MISSING (
   echo Files are missing. Check Windows Security - Protection history for quarantined files
   echo ^(restore them, "Allow on device"^) and copy the server folder again after the exclusion.
   powershell -NoProfile -Command "Get-MpThreatDetection -ErrorAction SilentlyContinue | Where-Object { $_.Resources -like '*%SRV%*' } | ForEach-Object { $_.Resources }"
-  pause
+  if not "%AUTO%"=="auto" pause
   exit /b 1
 )
 
@@ -47,7 +53,7 @@ set "MDB="
 for /d %%D in ("%ProgramFiles%\MariaDB*" "%ProgramFiles(x86)%\MariaDB*") do if exist "%%D\bin\mysqld.exe" set "MDB=%%D"
 if not defined MDB (
   echo MariaDB was not found under Program Files. Install MariaDB first ^(see instructions^).
-  pause
+  if not "%AUTO%"=="auto" pause
   exit /b 1
 )
 echo MariaDB: %MDB%
@@ -56,7 +62,7 @@ rem ---- 4) DB password from config_local.cs (used by mysql.exe through MYSQL_PW
 for /f "usebackq delims=" %%P in (`powershell -NoProfile -Command "[regex]::Match([IO.File]::ReadAllText('%SRV%\config_local.cs'),'Connect::password\s*=\s*\x22([^\x22]*)\x22').Groups[1].Value"`) do set "MYSQL_PWD=%%P"
 if not defined MYSQL_PWD (
   echo Could not read the database password from config_local.cs.
-  pause
+  if not "%AUTO%"=="auto" pause
   exit /b 1
 )
 
@@ -79,10 +85,10 @@ set /a TRIES+=1
 if %TRIES% GEQ 40 (
   echo MariaDB does not answer with the password from config_local.cs ^(user root, 127.0.0.1^).
   echo Check that MariaDB runs and that the root password matches config_local.cs.
-  pause
+  if not "%AUTO%"=="auto" pause
   exit /b 1
 )
-timeout /t 2 /nobreak >nul
+ping -n 3 127.0.0.1 >nul
 goto waitdb
 :dbok
 echo MariaDB is up.
@@ -91,7 +97,7 @@ rem ---- 6) Do not start twice
 tasklist /FI "IMAGENAME eq ddctd_cm_yo_server.exe" 2>nul | find /I "ddctd_cm_yo_server.exe" >nul
 if not errorlevel 1 (
   echo Server is already running. Close it first if you want to restart it.
-  pause
+  if not "%AUTO%"=="auto" pause
   exit /b 1
 )
 
@@ -101,15 +107,17 @@ rem ---- 7) Stale-link cleanup before boot (harmless if the database is still em
 "%MDB%\bin\mysql.exe" --user=root --host=127.0.0.1 --database=lif_1 -e "DELETE wc FROM working_containers wc JOIN unmovable_objects uo ON uo.ID=wc.UnmovableObjectID LEFT JOIN items i ON i.ContainerID=uo.RootContainerID WHERE i.ID IS NULL AND uo.ObjectTypeID IN (2829,2017);" 2>nul
 
 rem ---- 8) Start the server (Steam variables cleared, steam_appid.txt supplies the AppID)
-set SteamAppId=
-set SteamGameId=
-set SteamOverlayGameId=
+rem Players hold tickets for the game (290080), not for the server tool (320850): force the right AppID, also in steam_appid.txt (Steam updates/validation put 320850 back)
+<nul set /p="290080">"%SRV%\steam_appid.txt"
+set SteamAppId=290080
+set SteamGameId=290080
+set SteamOverlayGameId=290080
 set "MARIADB_PLUGIN_DIR=%MDB%\lib\plugin"
 start "LiF Dedicated Server" /D "%SRV%" ddctd_cm_yo_server.exe -worldID %WORLD%
 echo Server starting. It is ready when the log says "ready to accept connections" ^(about 90 seconds^).
 
 rem ---- 9) If it dies within 25 seconds, say why
-timeout /t 25 /nobreak >nul
+ping -n 26 127.0.0.1 >nul
 tasklist /FI "IMAGENAME eq ddctd_cm_yo_server.exe" 2>nul | find /I "ddctd_cm_yo_server.exe" >nul
 if errorlevel 1 (
   echo.
@@ -118,8 +126,8 @@ if errorlevel 1 (
   echo 2. Visual C++ 2015-2022 Redistributable x64 and x86 installed?
   echo 3. Last lines of the newest log:
   powershell -NoProfile -Command "$f = Get-ChildItem '%SRV%\logs' -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -ne 'stale_uor_removed.log' } | Sort-Object LastWriteTime -Descending | Select-Object -First 1; if ($f) { Write-Host $f.FullName; Get-Content $f.FullName -Tail 30 } else { Write-Host 'no log file found' }"
-  pause
+  if not "%AUTO%"=="auto" pause
   exit /b 1
 )
 echo Server process is running. You can close this window.
-pause
+if not "%AUTO%"=="auto" pause

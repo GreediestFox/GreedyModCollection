@@ -1,4 +1,4 @@
-// GM panel (client side, GreedyFox). F6 opens/closes it. Every button sends the same commands you can type in chat ("!give ...") through gm(...)
+// GM panel (client side, Michael). F6 opens/closes it. Every button sends the same commands you can type in chat ("!give ...") through gm(...)
 // or calls the game's own GM slash commands (/DELOBJ, /COMPLETE, /ANIMAL) with doSlashCommand(...). Replies show in the System chat tab.
 // Only accounts that are GMs on the server get answers; others are ignored by the server.
 
