@@ -1,0 +1,1 @@
+﻿README: add exec("mod/QuickJoin/quickjoin.cs"); to the end of the client's art/materials.cs (like the other client mods) and put the file into mod/QuickJoin/. Set the address and password at the top.
