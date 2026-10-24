@@ -31,3 +31,4 @@ Offsets (RVAs) refer to one specific Steam build of the YO dedicated server and 
 - [23 Running the server on a Windows VPS](23-running-on-a-windows-vps.md)
 - [24 Skriptorium on Cloudflare, icon variants](24-skriptorium-cloudflare-icon-variants.md)
 - [25 VPS operation: auto-start, Steam AppID, GM login, GM spawn lists](25-vps-operation-gm-lists.md)
+- [26 VIP slots](26-vip-slots.md)

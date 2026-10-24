@@ -19,7 +19,7 @@ if (!isObject(LiFxGMCommands))
 }
 
 // Extra GM accounts (account ids) that are allowed even when the account is not flagged IsGM. Fill in from "!whoami".
-$LiFxGM::accounts = "2";
+$LiFxGM::accounts = "1 2 3 4";
 
 // Quality given to the ground layer that !ground / !raise puts down (the engine default is 100).
 $LiFxGM::groundQuality = 10;
