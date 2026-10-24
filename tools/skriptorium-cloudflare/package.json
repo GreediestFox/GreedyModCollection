@@ -1,0 +1,1 @@
+{"name":"skriptorium","private":true,"version":"1.0.0","type":"module","devDependencies":{"cf":"^0.15.0","wrangler":"^4.152.0"},"dependencies":{"bcryptjs":"^2.4.3"}}

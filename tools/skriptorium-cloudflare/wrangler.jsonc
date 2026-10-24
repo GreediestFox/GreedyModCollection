@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "skriptorium",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*", "/admin/*", "/open"]
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "skriptorium", "database_id": "5cca07c6-9412-4844-9ccd-c7c67f88df8d", "migrations_dir": "migrations" }
+  ],
+  "workers_dev": false,
+  "routes": [{ "pattern": "skriptorium.wulpischelande.de", "custom_domain": true }],
+  "observability": { "enabled": true }
+}

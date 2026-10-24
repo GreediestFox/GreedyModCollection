@@ -29,3 +29,4 @@ Condensed write-ups of the reverse engineering and porting work, one topic per f
 Offsets (RVAs) refer to one specific Steam build of the YO dedicated server and client and must be re-verified after any game update.
 - [22 Recipe update 2, comment-outs, icon size standard](22-recipe-update2-comment-outs-icons.md)
 - [23 Running the server on a Windows VPS](23-running-on-a-windows-vps.md)
+- [24 Skriptorium on Cloudflare, icon variants](24-skriptorium-cloudflare-icon-variants.md)
