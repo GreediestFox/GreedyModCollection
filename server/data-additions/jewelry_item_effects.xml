@@ -1,0 +1,40 @@
+﻿<!-- Replace the matching <item> blocks in server data\item_effects.xml (ids are DB effects.ID: 7 Str, 8 Agi, 9 Will, 10 Int, 11 Con, 26 Luck; two numbers = quality 1..100 range) -->
+<item id="489"> <!-- Silver Jeweled Necklace -->
+        <effect id="26">4 20</effect>
+        <effect id="7">1 4</effect>
+    </item>
+<item id="490"> <!-- Gold Jeweled Necklace -->
+        <effect id="11">1 4</effect>
+        <effect id="8">1 4</effect>
+    </item>
+<item id="491"> <!-- Exceptional Gold and Silver Amulet -->
+        <effect id="10">5 20</effect>
+        <effect id="9">2 5</effect>
+        <effect id="8">2 7</effect>
+    </item>
+<item id="492"> <!-- Silver Amethyst Ring -->
+        <effect id="7">0.5 2.5</effect>
+    </item>
+<item id="493"> <!-- Silver Garnet Ring -->
+        <effect id="26">3 18</effect>
+    </item>
+<item id="494"> <!-- Silver Ruby Ring -->
+        <effect id="11">0.5 2.5</effect>
+    </item>
+<item id="495"> <!-- Gold Emerald Ring -->
+        <effect id="8">0.5 2.5</effect>
+    </item>
+<item id="496"> <!-- Gold Sapphire Ring -->
+        <effect id="10">1 10</effect>
+    </item>
+<item id="497"> <!-- Gold Diamond Ring -->
+        <effect id="9">0.5 2.5</effect>
+    </item>
+<item id="498"> <!-- Exceptional Gold and Silver Ring -->
+        <effect id="10">4 15</effect>
+        <effect id="9">1 3</effect>
+        <effect id="11">1 5</effect>
+    </item>
+<item id="499"> <!-- Gold and Silver Ring -->
+        <effect id="26">2.2 11.0</effect>
+    </item>

@@ -1,0 +1,5 @@
+# 30 Jewelry stat buffs, GM spawn list, start bats kill a running server
+
+- **Jewelry buffs** (`server/data-additions/jewelry_item_effects.xml`, replace the matching blocks in the server's `data/item_effects.xml`, restart): items 489-498 give attribute effects as quality ranges (`<effect id="X">min max</effect>`). Again the DB-id trap: `item_effects.xml` takes `effects.ID`, not the cm_effects id. Stats are DB effects 7 Str, 8 Agi, 9 Will, 10 Int, 11 Con (cm 19-23); 26 = Luck. Using 19-23 showed "Increases Forging" on the Diamond ring (DB 21 = Skill Raised: Forging). Two-number values scale with quality; fractions (0.5) work. Plain silver/gold rings and the gilded ring/chain (479, 487, 488, 499) stay Luck. All special jewelry recipes were already workshop-only (2894).
+- **GM spawn list**: `tools/gen_gmobjects.py` regenerated, now includes the clothing variants 3995-4003 and the underwear 4004-4007.
+- **Start bats**: `Start_LiF_Server.bat` (local) and `server/vps/Start_LiF_Server_VPS.bat` force-close a running `ddctd_cm_yo_server.exe` before starting. The `auto` mode (boot task, AmIAlive) still exits when a server is already running.

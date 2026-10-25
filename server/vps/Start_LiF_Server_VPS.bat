@@ -17,6 +17,11 @@ set "SRV=%SRV:~0,-1%"
 set "WORLD=1"
 cd /d "%SRV%"
 if not exist "%SRV%\logs" mkdir "%SRV%\logs"
+rem ---- AmIAlive (watchdog) starts together with this script, even when the server is already running
+if not exist "%SRV%\AmIAlive.exe" goto noalive
+tasklist /FI "IMAGENAME eq AmIAlive.exe" 2>nul | find /I "AmIAlive.exe" >nul
+if errorlevel 1 start "AmIAlive" /MIN "%SRV%\AmIAlive.exe"
+:noalive
 tasklist /FI "IMAGENAME eq ddctd_cm_yo_server.exe" 2>nul | find /I "ddctd_cm_yo_server.exe" >nul
 if not errorlevel 1 (if "%AUTO%"=="auto" exit /b 0)
 echo.
@@ -96,9 +101,15 @@ echo MariaDB is up.
 rem ---- 6) Do not start twice
 tasklist /FI "IMAGENAME eq ddctd_cm_yo_server.exe" 2>nul | find /I "ddctd_cm_yo_server.exe" >nul
 if not errorlevel 1 (
-  echo Server is already running. Close it first if you want to restart it.
-  if not "%AUTO%"=="auto" pause
-  exit /b 1
+  echo Server is already running - closing it first.
+  taskkill /F /IM ddctd_cm_yo_server.exe >nul 2>&1
+  ping -n 6 127.0.0.1 >nul
+  tasklist /FI "IMAGENAME eq ddctd_cm_yo_server.exe" 2>nul | find /I "ddctd_cm_yo_server.exe" >nul
+  if not errorlevel 1 (
+    echo Could not close the running server. Run this bat as Administrator or close it by hand.
+    if not "%AUTO%"=="auto" pause
+    exit /b 1
+  )
 )
 
 rem ---- 7) Stale-link cleanup before boot (harmless if the database is still empty)
