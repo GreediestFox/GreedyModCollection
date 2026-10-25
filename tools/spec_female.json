@@ -1,0 +1,46 @@
+{
+ "clones": [
+  {
+   "from": "Female_Tatters_Eur",
+   "name": "Female_Tatters_Eur_Edel",
+   "materials": {
+    "Female_Tatters_Eur_DIFFUSE": "Female_Tatters_Eur_Edel_DIFFUSE"
+   }
+  },
+  {
+   "from": "Female_Tatters_Mon",
+   "name": "Female_Tatters_Mon_Edel",
+   "materials": {
+    "Female_Tatters_Mon_DIFFUSE": "Female_Tatters_Mon_Edel_DIFFUSE"
+   }
+  },
+  {
+   "from": "Female_Tatters_Mon",
+   "name": "Female_Tatters_Mon_Orange",
+   "materials": {
+    "Female_Tatters_Mon_DIFFUSE": "Female_Tatters_Mon_Orange_DIFFUSE"
+   }
+  },
+  {
+   "from": "Female_Tatters_Vik",
+   "name": "Female_Tatters_Vik_Blau",
+   "materials": {
+    "Female_Tatters_Vik_DIFFUSE": "Female_Tatters_Vik_Blau_DIFFUSE"
+   }
+  },
+  {
+   "from": "Female_Tatters_Vik",
+   "name": "Female_Tatters_Vik_Edel",
+   "materials": {
+    "Female_Tatters_Vik_DIFFUSE": "Female_Tatters_Vik_Edel_DIFFUSE"
+   }
+  },
+  {
+   "from": "Female_Underwear_Vik_Body",
+   "name": "Female_Underwear_Vik_Gruen_Body",
+   "materials": {
+    "Female_Underwear_Vik_DIFFUSE": "Female_Underwear_Vik_Gruen_DIFFUSE"
+   }
+  }
+ ]
+}

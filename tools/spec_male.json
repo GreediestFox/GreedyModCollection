@@ -1,0 +1,53 @@
+{
+    "clones":  [
+                   {
+                       "from":  "Male_Tatters_Eur",
+                       "name":  "Male_Tatters_Eur_Dunkelgruen",
+                       "materials":  {
+                                         "Male_Tatters_Eur_DIFFUSE":  "Male_Tatters_Eur_Dunkelgruen_DIFFUSE"
+                                     }
+                   },
+                   {
+                       "from":  "Male_Tatters_Eur",
+                       "name":  "Male_Tatters_Eur_Edel",
+                       "materials":  {
+                                         "Male_Tatters_Eur_DIFFUSE":  "Male_Tatters_Eur_Edel_DIFFUSE"
+                                     }
+                   },
+                   {
+                       "from":  "Male_Tatters_Vik",
+                       "name":  "Male_Tatters_Vik_Gruen",
+                       "materials":  {
+                                         "Male_Tatters_Vik_DIFFUSE":  "Male_Tatters_Vik_Gruen_DIFFUSE"
+                                     }
+                   },
+                   {
+                       "from":  "Male_Tatters_Vik",
+                       "name":  "Male_Tatters_Vik_Edel",
+                       "materials":  {
+                                         "Male_Tatters_Vik_DIFFUSE":  "Male_Tatters_Vik_Edel_DIFFUSE"
+                                     }
+                   },
+                   {
+                       "from":  "Male_Tatters_Mon",
+                       "name":  "Male_Tatters_Mon_Dunkelbraun",
+                       "materials":  {
+                                         "Male_Tatters_Mon_DIFFUSE":  "Male_Tatters_Mon_Dunkelbraun_DIFFUSE"
+                                     }
+                   },
+                   {
+                       "from":  "Male_Tatters_Mon",
+                       "name":  "Male_Tatters_Mon_Edel",
+                       "materials":  {
+                                         "Male_Tatters_Mon_DIFFUSE":  "Male_Tatters_Mon_Edel_DIFFUSE"
+                                     }
+                   },
+                   {
+                       "from":  "Male_Peasant",
+                       "name":  "Male_Peasant_Blau",
+                       "materials":  {
+                                         "Male_Peasant_DIFFUSE":  "Male_Peasant_Blau_DIFFUSE"
+                                     }
+                   }
+               ]
+}
