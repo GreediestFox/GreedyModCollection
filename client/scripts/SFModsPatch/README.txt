@@ -1,0 +1,1 @@
+﻿The SF Mods release itself is a compiled third-party mod (mod/sf-mods). These scripts patch it from outside: sf-mods-patch.cs is exec'd from the end of art/materials.cs and execs the other two. Controls are found by INTERNAL name (SFGuiWindow > SFGuiWindowCtrl). See docs note 28.

@@ -33,3 +33,4 @@ Offsets (RVAs) refer to one specific Steam build of the YO dedicated server and 
 - [25 VPS operation: auto-start, Steam AppID, GM login, GM spawn lists](25-vps-operation-gm-lists.md)
 - [26 VIP slots](26-vip-slots.md)
 - [27 AmIAlive watchdog and QuickJoin button](27-amialive-quickjoin.md)
+- [28 SF window, armor effects, stonecutter skill, books over http](28-sf-window-armor-effects.md)

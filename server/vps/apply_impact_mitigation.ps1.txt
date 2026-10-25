@@ -1,0 +1,30 @@
+﻿cd "C:\Program Files (x86)\Steam\steamapps\common\Life is Feudal Your Own Dedicated Server"
+# 1) effect 68 (Impact Mitigation) gets the 20 % action slow-down
+$f = "$PWD\data\cm_effects.xml"; Copy-Item $f "$f.bak" -Force
+$t = [IO.File]::ReadAllText($f)
+if (-not $t.Contains('CAST_DURATION" applytype="INCREASE" value="1.2"')) {
+  $par = "
+" + '        <parameter type="CAST_DURATION" applytype="INCREASE" value="1.2" ignore_magnitude="1" />' + "
+" + '        <parameter type="ATTACK_SPEED" applytype="MULTIPLY" value="0.8" ignore_magnitude="1" />' + "
+" + '        <parameter type="RANGED_ATTACK_SPEED" applytype="MULTIPLY" value="0.8" ignore_magnitude="1" />'
+  $rx = [regex]::new('(<effect id="68" name="Impact Mitigation">(?:(?!</effect>).)*?<description>2657</description>)', [Text.RegularExpressions.RegexOptions]::Singleline)
+  $t = $rx.Replace($t, '${1}' + $par, 1)
+  [IO.File]::WriteAllText($f, $t, (New-Object Text.UTF8Encoding $false))
+}
+[void][xml](Get-Content $f -Raw); 'cm_effects ok'
+
+# 1b) a version patched earlier with MULTIPLY: switch it to INCREASE (the form the game understands)
+$f = "$PWD\data\cm_effects.xml"; $t = [IO.File]::ReadAllText($f); $t = $t.Replace('CAST_DURATION" applytype="MULTIPLY" value="1.2"', 'CAST_DURATION" applytype="INCREASE" value="1.2"'); [IO.File]::WriteAllText($f, $t, (New-Object Text.UTF8Encoding $false)); 'cm_effects 1b ok'
+# 2) item_effects: remove the old armor buffs, give the armor "Impact mitigation" (database effect id 28 = effect 68), except Novice/Regular Padded and Leather
+$f = "$PWD\data\item_effects.xml"; Copy-Item $f "$f.bak" -Force
+$t = [IO.File]::ReadAllText($f)
+foreach ($id in ('547,548,549,550,551,552,627,628,629,630,631,632,633,634,635,636,637,638,797,798,799,800,801,802,803,804,805,806,807,808,809,810,811,812,813,814,815,816,817,818,819,820,821,822,823,824,825,826,831,832,833,834,835,836,837,838,839,840,841,842,843,844,845,846,847,848,849,850,851,852,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874,875,876,877,878,879,880,885,886,887,888,889,890,891,892,893,894,895,896,897,898,899,900,901,902,903,904,905,906,907,908,909,910,3643,3644,3645,3646,3647,3648,3649,3650,3651,3652' -split ',')) { $rx = [regex]('(?s)[ \t]*<item id="' + $id + '">.*?</item>[ \t]*\r?\n?'); $t = $rx.Replace($t, '', 1) }
+$new = ''
+foreach ($id in ('547,548,549,550,551,552,627,628,629,630,631,632,633,634,635,636,637,638,797,798,799,800,801,802,803,804,805,806,807,808,809,810,811,812,813,814,815,816,817,818,819,820,821,822,823,824,825,826,831,832,833,834,835,836,837,838,839,840,841,842,843,844,845,846,847,848,849,850,851,852,869,870,871,872,873,874,875,876,877,878,879,880,897,898,899,900,901,902,903,904,905,906,907,908,909,910,3643,3644,3645,3646,3647,3648,3649,3651,3652' -split ',')) { $new += '    <item id="' + $id + '">' + "
+" + '        <effect id="28">1 1</effect>' + "
+" + '    </item>' + "
+" }
+$t = $t.Replace('</items>', $new + '</items>')
+[IO.File]::WriteAllText($f, $t, (New-Object Text.UTF8Encoding $false))
+[void][xml](Get-Content $f -Raw); 'item_effects ok'
+

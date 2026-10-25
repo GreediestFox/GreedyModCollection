@@ -1,0 +1,8 @@
+<effect id="68" name="Impact Mitigation">
+        <flags CanMove="TRUE" CanRun="TRUE" CanJump="TRUE" CanRotate="TRUE" CanRotateHead="TRUE" CanOperate="TRUE" CanBeCanceled="FALSE" RemovedOnDeath="TRUE" />
+        <description>2657</description>
+        <parameter type="CAST_DURATION" applytype="INCREASE" value="1.2" ignore_magnitude="1" />
+        <parameter type="ATTACK_SPEED" applytype="MULTIPLY" value="0.8" ignore_magnitude="1" />
+        <parameter type="RANGED_ATTACK_SPEED" applytype="MULTIPLY" value="0.8" ignore_magnitude="1" />
+        <icon>art/2D/Effects/Impact_Mitigation.png</icon>
+    </effect>

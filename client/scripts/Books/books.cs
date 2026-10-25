@@ -113,6 +113,8 @@ function booksLangParam(%first)
 function booksOpen(%url)
 {
    if (%url $= "") return;
+   // the downloads below (title, ticket) use plain http: the engine downloader has no TLS. The web page itself is opened with https.
+   if (getSubStr(%url, 0, 7) $= "http://" && strpos(%url, "localhost") < 0 && strpos(%url, "127.0.0.1") < 0) %url = "https://" @ getSubStr(%url, 7, 2000);
    %ctrl = openWeb(%url);
    if (isObject(%ctrl)) %ctrl.setText("Skriptorium");
 }
