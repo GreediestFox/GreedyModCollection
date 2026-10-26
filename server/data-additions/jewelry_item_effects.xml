@@ -38,3 +38,10 @@
 <item id="499"> <!-- Gold and Silver Ring -->
         <effect id="26">2.2 11.0</effect>
     </item>
+
+<!-- GM Robe -->
+<item id="1436"> <!-- GM Robe -->
+        <effect id="19">1</effect>
+        <effect id="37">1</effect>
+        <effect id="57">1</effect>
+    </item>
