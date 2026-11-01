@@ -661,7 +661,7 @@ function GMPanel_announce()
 }
 
 // ------------------------------------------------------------------------------------------------
-// GM login: F6 asks for the GM password first. The server checks it (!login) against the password in its own files
+// GM login (Steam ID since 2026-11-01): F6 asks the server to unlock the panel; the server checks the account's Steam ID against its list
 // (gm_password.cs, set by the admin via gm_setpass.txt), switches GM mode on for you and answers with
 // clientCmdGMLoginResult: 1 = ok, 0 = wrong / login needed, 2 = no password set on the server, 4 = password can only be set in the server files.
 $GMPanel::loggedIn = 0;
@@ -788,24 +788,17 @@ function clientCmdGMLoginResult(%code)
       }
       return;
    }
+   // Steam ID access (2026-11-01): no password window. A failed unlock only shows a message when the player asked for the panel.
    $GMPanel::loggedIn = 0;
-   GMLogin_build();
-   if (%code == 2) {
-      GMLogin_status("No GM password set on the server (admin: gm_setpass.txt)", "ffd060");
-   } else if (%code == 4) {
-      GMLogin_status("The GM password is set in the server files only", "ffd060");
-   } else if ($GMLogin::pending) {
-      GMLogin_status("Wrong Login", "ff5050");
-   } else {
-      GMLogin_status("GM login required", "ffd060");
-   }
-   $GMLogin::pending = 0;
    if (isObject(GMPanel) && GMPanel.isAwake()) {
       Canvas.popDialog(GMPanel);
    }
-   if (!GMLoginRoot.isAwake()) {
-      Canvas.pushDialog(GMLoginRoot);
+   if (%code == 3) {
+      MessageBoxOK("GM panel", "Still checking your Steam ID - please press F6 again in a moment.");
+   } else if ($GMLogin::pending) {
+      MessageBoxOK("GM panel", "Your Steam ID is not registered for the GM panel.");
    }
+   $GMLogin::pending = 0;
 }
 function toggleGMPanel()
 {
@@ -818,15 +811,9 @@ function toggleGMPanel()
          GMPanel_startTick();
       }
    } else {
-      GMLogin_build();
-      if (GMLoginRoot.isAwake()) {
-         Canvas.popDialog(GMLoginRoot);
-      } else {
-         GMLogin_pw.setText("");
-         GMLogin_status("", "d8d8d8");
-         Canvas.pushDialog(GMLoginRoot);
-         GMLogin_pw.setFirstResponder();
-      }
+      // Steam ID access: ask the server to unlock the panel for this account (answer: clientCmdGMLoginResult)
+      $GMLogin::pending = 1;
+      gm("login");
    }
 }
 GlobalActionMap.bindCmd(keyboard, "f6", "toggleGMPanel();", "");

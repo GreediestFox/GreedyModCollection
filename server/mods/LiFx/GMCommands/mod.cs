@@ -1,8 +1,8 @@
 /**
-* <author>GreedyFox</author>
+* <author>Michael</author>
 * <description>GM commands for Lif:YO, built on real engine functions (found by decompilation), not on the fictional API of the old GMTools package.
 *              Typed in normal chat (or via the client console helper gm("...") in mod/GMHelper/gm.cs). Only known commands are intercepted, so normal
-*              "!shout" chat still works. Allowed for accounts flagged IsGM in the database (NetConnection::isGM) or listed in $LiFxGM::accounts.
+*              "!shout" chat still works. Allowed only for the Steam IDs registered in mods/LiFx/GMCommands/steamids.cs ($LiFxGM::steamIds); the GM panel opens without a password for them.
 *              Every command is logged with the prefix [GM].
 *              !help | !whoami | !players | !give <type> [qty] [quality] [durability] | !giveto <char id or name> <type> [qty] [quality] [durability]
 *              !spawn <movable object type id> | !build <building type id> | !geo   (CreateTestMovable/Unmovable at Lifx::worldToGeoId(pos), a C++ helper in the LiFx DLL)
@@ -18,8 +18,9 @@ if (!isObject(LiFxGMCommands))
     };
 }
 
-// Extra GM accounts (account ids) that are allowed even when the account is not flagged IsGM. Fill in from "!whoami".
-$LiFxGM::accounts = "1 2 3 4";
+// GM rights belong to STEAM IDs (2026-11-01): the Steam IDs registered in mods/LiFx/GMCommands/steamids.cs ($LiFxGM::steamIds)
+// may open the GM panel and use the GM commands, nobody else. There is no password any more. "!whoami" shows your Steam ID.
+exec("mods/LiFx/GMCommands/steamids.cs");
 
 // Quality given to the ground layer that !ground / !raise puts down (the engine default is 100).
 $LiFxGM::groundQuality = 10;
@@ -43,6 +44,50 @@ package LiFxGMCommands
 {
     function LiFxGMCommands::setup() {
         LiFx::registerCallback($LiFx::hooks::onInitServerDBChangesCallbacks, dbChanges, LiFxGMCommands);
+        echo("[GM] panel access by Steam ID, registered:" SPC getWordCount($LiFxGM::steamIds));
+    }
+
+    // A character has entered the game: the account is known now, so read its Steam ID from the database.
+    // Hooked on the engine function itself (works with or without the LiFx framework).
+    function GameConnection::onClientEnterGame(%this) {
+        Parent::onClientEnterGame(%this);
+        LiFxGMCommands::lookupSteam(%this);
+    }
+
+    function LiFxGMCommands::lookupSteam(%client) {
+        %acc = %client.getAccountId();
+        if (%acc $= "" || %acc == 0) {
+            return;
+        }
+        %req = new ScriptObject() {
+            class = "LiFxGMSteamReq";
+            client = %client;
+        };
+        dbi.select(%req, "onSteam", "SELECT SteamID FROM `account` WHERE ID=" @ %acc);
+    }
+
+    function LiFxGMSteamReq::onSteam(%this, %rs) {
+        %c = %this.client;
+        if (%rs.Ok() && %rs.nextRecord() && isObject(%c)) {
+            %c.steamId = %rs.getFieldValue("SteamID");
+            %c.gmSteam = LiFxGMCommands::steamAllowed(%c.steamId);
+            echo("[GM] account" SPC %c.getAccountId() SPC "steam id" SPC %c.steamId SPC "GM right" SPC %c.gmSteam);
+        }
+        dbi.remove(%rs);
+        %rs.delete();
+        %this.delete();
+    }
+
+    function LiFxGMCommands::steamAllowed(%steam) {
+        if (%steam $= "") {
+            return 0;
+        }
+        for (%i = 0; %i < getWordCount($LiFxGM::steamIds); %i++) {
+            if (getWord($LiFxGM::steamIds, %i) $= %steam) {
+                return 1;
+            }
+        }
+        return 0;
     }
 
     // GM action log table (every executed GM command, never passwords).
@@ -98,21 +143,12 @@ package LiFxGMCommands
         %client.cmSendClientMessage(2475, "<color:d8d8d8>" @ %text);
     }
 
-    // Account-level right to use GM commands (account flagged IsGM, or listed in $LiFxGM::accounts).
+    // Right to use GM commands: the account's Steam ID is registered in steamids.cs (checked when the character entered the game).
     function LiFxGMCommands::hasRight(%client) {
-        if (%client.isGM()) {
-            return 1;
-        }
-        %id = %client.getAccountId();
-        for (%i = 0; %i < getWordCount($LiFxGM::accounts); %i++) {
-            if (getWord($LiFxGM::accounts, %i) $= %id) {
-                return 1;
-            }
-        }
-        return 0;
+        return (%client.gmSteam == 1);
     }
 
-    // Right + logged in with the GM password this session.
+    // Right + opened the GM panel (login) this session.
     function LiFxGMCommands::isAllowed(%client) {
         return (LiFxGMCommands::hasRight(%client) && %client.gmLogin == 1);
     }
@@ -490,13 +526,13 @@ package LiFxGMCommands
     // lifx_gm_settings: set it with "!inflation baseline <n>", or it is taken automatically from the first snapshot that has coins.
     function LiFxGMCommands::inflationInner() {
         %excl = "0";
-        for (%i = 0; %i < getWordCount($LiFxGM::accounts); %i++) {
-            %a = getWord($LiFxGM::accounts, %i);
+        for (%i = 0; %i < getWordCount($LiFxGM::steamIds); %i++) {
+            %a = getWord($LiFxGM::steamIds, %i);
             if (%a !$= "" && stripChars(%a, "0123456789") $= "") {
                 %excl = %excl @ "," @ %a;
             }
         }
-        return "SELECT (SELECT COALESCE(SUM(Quantity),0) FROM `items` WHERE ObjectTypeID=1059) AS cu, (SELECT COALESCE(SUM(Quantity),0) FROM `items` WHERE ObjectTypeID=1060) AS si, (SELECT COALESCE(SUM(Quantity),0) FROM `items` WHERE ObjectTypeID=1061) AS au, GREATEST(1, (SELECT COUNT(*) FROM `character` c JOIN `account` a ON a.ID=c.AccountID WHERE c.IsActive>0 AND a.IsGM=0 AND a.ID NOT IN (" @ %excl @ "))) AS pl";
+        return "SELECT (SELECT COALESCE(SUM(Quantity),0) FROM `items` WHERE ObjectTypeID=1059) AS cu, (SELECT COALESCE(SUM(Quantity),0) FROM `items` WHERE ObjectTypeID=1060) AS si, (SELECT COALESCE(SUM(Quantity),0) FROM `items` WHERE ObjectTypeID=1061) AS au, GREATEST(1, (SELECT COUNT(*) FROM `character` c JOIN `account` a ON a.ID=c.AccountID WHERE c.IsActive>0 AND a.IsGM=0 AND a.SteamID NOT IN (" @ %excl @ "))) AS pl";
     }
 
     // Stores the automatic baseline (only the first time there are coins) and today's snapshot.
@@ -635,8 +671,30 @@ package LiFxGMCommands
 
         if (%cmd $= "whoami") {
             %p = LiFxGMCommands::getPlayer(%client);
-            LiFxGMCommands::reply(%client, "account" SPC %account SPC "character" SPC %client.getCharacterId() SPC "isGM" SPC %client.isGM() SPC "player object" SPC %p SPC "allowed" SPC LiFxGMCommands::isAllowed(%client));
+            LiFxGMCommands::reply(%client, "account" SPC %account SPC "character" SPC %client.getCharacterId() SPC "steam id" SPC %client.steamId SPC "GM right" SPC %client.gmSteam SPC "player object" SPC %p SPC "allowed" SPC LiFxGMCommands::isAllowed(%client));
             echo("[GM] whoami account" SPC %account SPC "player" SPC %p);
+            return 1;
+        }
+
+        if (%cmd $= "login") {
+            // opening the GM panel: no password, the Steam ID decides
+            if (LiFxGMCommands::hasRight(%client)) {
+                %client.gmLogin = 1;
+                LiFxGMCommands::activateGM(%client);
+                echo("[GM] account" SPC %account SPC "steam id" SPC %client.steamId SPC "opened the GM panel, GM mode activated");
+                LiFxGMCommands::reply(%client, "GM panel unlocked (Steam ID registered). GM mode is on.");
+                commandToClient(%client, 'GMLoginResult', 1);
+            } else {
+                if (%client.gmSteam $= "") {
+                    LiFxGMCommands::lookupSteam(%client);
+                    LiFxGMCommands::reply(%client, "Checking your Steam ID, please try again in a moment.");
+                    commandToClient(%client, 'GMLoginResult', 3);
+                } else {
+                    echo("[GM] account" SPC %account SPC "steam id" SPC %client.steamId SPC "tried to open the GM panel: not registered");
+                    LiFxGMCommands::reply(%client, "Your Steam ID is not registered for the GM panel.");
+                    commandToClient(%client, 'GMLoginResult', 0);
+                }
+            }
             return 1;
         }
 
@@ -644,38 +702,6 @@ package LiFxGMCommands
             return 0;   // not a GM account: let it through as ordinary chat (a "!" is a shout)
         }
 
-        if (%cmd $= "login") {
-            %pw = getWords(%message, 1);
-            LiFxGMCommands::loadPassword();   // always the current password from the server files
-            if ($LiFxGM::passwordHash $= "") {
-                LiFxGMCommands::reply(%client, "No GM password is set on the server. The admin writes it into mods/LiFx/GMCommands/gm_setpass.txt (6+ characters).");
-                commandToClient(%client, 'GMLoginResult', 2);
-                return 1;
-            }
-            if ($LiFxGM::lockUntil[%account] > getSimTime()) {
-                LiFxGMCommands::reply(%client, "Wrong Login (too many attempts, wait half a minute)");
-                commandToClient(%client, 'GMLoginResult', 0);
-                return 1;
-            }
-            if (LiFxGMCommands::hashPassword(%pw) $= $LiFxGM::passwordHash) {
-                $LiFxGM::fails[%account] = 0;
-                %client.gmLogin = 1;
-                LiFxGMCommands::activateGM(%client);
-                echo("[GM] account" SPC %account SPC "logged in, GM mode activated");
-                LiFxGMCommands::reply(%client, "GM login ok. GM mode is on.");
-                commandToClient(%client, 'GMLoginResult', 1);
-            } else {
-                $LiFxGM::fails[%account] += 1;
-                if ($LiFxGM::fails[%account] >= 3) {
-                    $LiFxGM::lockUntil[%account] = getSimTime() + 30000;
-                    $LiFxGM::fails[%account] = 0;
-                }
-                echo("[GM] account" SPC %account SPC "wrong GM password");
-                LiFxGMCommands::reply(%client, "Wrong Login");
-                commandToClient(%client, 'GMLoginResult', 0);
-            }
-            return 1;
-        }
 
         if (%cmd $= "setpass") {
             // disabled 2026-10-07: the GM password comes only from the server files (gm_setpass.txt -> gm_password.cs)
