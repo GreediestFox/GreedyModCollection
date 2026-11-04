@@ -43,3 +43,4 @@ Offsets (RVAs) refer to one specific Steam build of the YO dedicated server and 
 - [35 Wardrobe skins, skin table patch, LayDown/books/GM fixes, releases 1.0.108-1.0.124](35-wardrobe-skins-fixes-releases-1108-1124.md)
 - [36 Intelligence ring and the skill cap: engine facts, exe patches, why we stopped](36-int-ring-skill-cap-attempt.md)
 - [37 Jewelry list 2, Inspired Work ring, stock files never shipped, PowerShell traps](37-jewelry-list-2-inspired-work-unshipped-stock-files.md)
+- [38 Equipment rules (armor, ammo, hip slots) and the files a release was still missing](38-equipment-rules-missing-release-files.md)
