@@ -206,7 +206,11 @@ package LiFxBooksPack
             title = %title;
         };
         %roots = "SELECT RootContainerID FROM `character` WHERE ID=" @ %char @ " UNION SELECT EquipmentContainerID FROM `character` WHERE ID=" @ %char;
-        dbi.select(%req, "onBlank", "SELECT i.ID AS ItemID FROM `items` i WHERE i.ObjectTypeID=" @ LiFxBooksPack::itemType(%type) @ " AND (i.ContainerID IN (" @ %roots @ ") OR i.ContainerID IN (SELECT ct.ID FROM `containers` ct WHERE ct.ParentID IN (SELECT i2.ID FROM `items` i2 WHERE i2.ContainerID IN (" @ %roots @ ")))) AND NOT EXISTS (SELECT 1 FROM `book_registry` b WHERE b.BookKey=i.Durability) AND NOT EXISTS (SELECT 1 FROM `book_registry` t WHERE t.Tag='" @ %tag @ "') LIMIT 1");
+        // the unwritten item may sit in the hands/equipment, in a bag, or in a bag inside a bag (3 container levels)
+        %c1 = "SELECT ct.ID FROM `containers` ct WHERE ct.ParentID IN (SELECT i2.ID FROM `items` i2 WHERE i2.ContainerID IN (" @ %roots @ "))";
+        %c2 = "SELECT ct.ID FROM `containers` ct WHERE ct.ParentID IN (SELECT i2.ID FROM `items` i2 WHERE i2.ContainerID IN (" @ %c1 @ "))";
+        %c3 = "SELECT ct.ID FROM `containers` ct WHERE ct.ParentID IN (SELECT i2.ID FROM `items` i2 WHERE i2.ContainerID IN (" @ %c2 @ "))";
+        dbi.select(%req, "onBlank", "SELECT i.ID AS ItemID FROM `items` i WHERE i.ObjectTypeID=" @ LiFxBooksPack::itemType(%type) @ " AND (i.ContainerID IN (" @ %roots @ ") OR i.ContainerID IN (" @ %c1 @ ") OR i.ContainerID IN (" @ %c2 @ ") OR i.ContainerID IN (" @ %c3 @ ")) AND NOT EXISTS (SELECT 1 FROM `book_registry` b WHERE b.BookKey=i.Durability) AND NOT EXISTS (SELECT 1 FROM `book_registry` t WHERE t.Tag='" @ %tag @ "') LIMIT 1");
     }
 
     function LiFxBooksApply::onBlank(%this, %rs) {
@@ -214,6 +218,7 @@ package LiFxBooksPack
         if (%rs.Ok() && %rs.nextRecord()) { %id = %rs.getFieldValue("ItemID"); }
         dbi.remove(%rs);
         %client = %this.client;
+        echo("[Books] apply char" SPC (isObject(%client) ? %client.getCharacterId() : 0) SPC %this.type SPC %this.tag SPC "blank item" SPC %id);
         if (isObject(%client)) {
             if (%id > 0) {
                 LiFxBooksPack::register(%client, %this.type, %this.tag, %this.title, %id);

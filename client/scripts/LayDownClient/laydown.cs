@@ -1,6 +1,6 @@
 // Lay Down (client side, dev feature). The server sends commandToClient('LayDownAnim', phase) when ability 192 starts.
 // knockdown (hold) -> knockdown_stay (re-asserted a few times) ; movement keys or jump stand the character up with riseup_KD.
-// While lying the camera is free-look (mouse turns the camera, not the body).
+// While lying the camera is free-look (mouse turns the camera, not the body). Only "forward" (or jump) stands the character up.
 $LayDown::active = 0;
 
 function LayDown_player() {
@@ -16,7 +16,6 @@ function clientCmdLayDownAnim(%phase) {
     if (%phase $= "start") {
         if ($LayDown::active) { return; }
         $LayDown::active = 1;
-        $LayDown::savedFreeLook = $mvFreeLook;
         $mvFreeLook = true;      // camera turns freely around the lying body
         cancel($LayDown::ev1); cancel($LayDown::ev2); cancel($LayDown::ev3); cancel($LayDown::watchEv);
         %p.setActionThread("knockdown_stay", true);
@@ -37,7 +36,10 @@ function LayDown_stay() {
 
 function LayDown_watch() {
     if (!$LayDown::active) { return; }
-    if ($mvForwardAction != 0 || $mvBackwardAction != 0 || $mvLeftAction != 0 || $mvRightAction != 0) {
+    // while lying only "forward" stands you up; sideways/backward are ignored, the body never turns (free look stays on)
+    $mvFreeLook = true;
+    $mvLeftAction = 0; $mvRightAction = 0; $mvBackwardAction = 0;
+    if ($mvForwardAction != 0) {
         LayDown_rise();
         return;
     }
@@ -48,7 +50,8 @@ function LayDown_rise() {
     if ($LayDown::active) { commandToServer('LayDownRise'); }
     $LayDown::active = 0;
     cancel($LayDown::ev1); cancel($LayDown::ev2); cancel($LayDown::ev3);
-    $mvFreeLook = $LayDown::savedFreeLook;
+    // do not restore a remembered value: it was captured while the free-look key was held and left the camera locked after standing up
+    $mvFreeLook = ($cmFreelookMode ? true : false);
     %p = LayDown_player();
     if (!isObject(%p)) { return; }
     %p.setActionThread("riseup_KD", false);

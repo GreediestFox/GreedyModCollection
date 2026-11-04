@@ -75,7 +75,8 @@ function GuiInventoryItem::onMouseLeave(%this)
 // ---------------------------------------------------------------- server answers
 function clientCmdBookEntry(%key, %type, %tag, %title, %baseUrl)
 {
-   if (%baseUrl !$= "") $Books::baseUrl = %baseUrl;
+   if (%tag !$= "" && %tag $= $Books::pendingTag) { $Books::pendingTag = ""; $Books::pendingTitle = ""; cancel($Books::applyEv); }
+   if (%baseUrl !$= "") { $Books::baseUrl = %baseUrl; echo("[Books] website address from the server:" SPC %baseUrl); }
    if (%tag $= "")
    {
       $Books::title[%key] = "";
@@ -108,6 +109,15 @@ function booksLangParam(%first)
 {
    if ($pref::language::pack $= "") return "";
    return (%first ? "?" : "&") @ "lang=" @ $pref::language::pack;
+}
+
+// The engine downloader (SimDownloadHelper) cannot do TLS here: the client ships no OpenSSL DLLs and every https download fails with
+// "Error creating SSL context". The website answers the plain API calls over http too, so downloads always use http, whatever address
+// the server announces. (The web page itself is opened with https, see booksOpen.)
+function booksHttp(%u)
+{
+   if (getSubStr(%u, 0, 8) $= "https://") return "http://" @ getSubStr(%u, 8, 2000);
+   return %u;
 }
 
 function booksOpen(%url)
@@ -283,7 +293,7 @@ function booksWriteFetchTitle()
    %file = $Books::cacheDir @ %tag @ ".txt";
    createPath(%file);
    %helper = new SimDownloadHelper() {
-      url = $Books::baseUrl @ "/api/title/" @ %tag;
+      url = booksHttp($Books::baseUrl) @ "/api/title/" @ %tag;
       fileName = %file;
    };
    %helper.start();
@@ -378,8 +388,35 @@ function GuiMouseEventCtrl::onMouseUp(%this, %mod, %pos, %clicks)
 // ---------------------------------------------------------------- automatic write ("Schreiben" on an unwritten letter/book)
 // The scriptorium page is opened with a random ticket. When the document is finished there, the website answers
 // /api/ticket/<ticket> with "<code>\n<title>"; the client then asks the server to turn one unwritten item into that document.
+// A finished website document is remembered until the server confirms the item was replaced (clientCmdBookEntry with that code).
+// If the server could not replace an item (none found, inventory full ...), the next "Schreiben" sends the SAME document again
+// instead of opening a new, empty website page.
+function booksSendApply(%tag, %title)
+{
+   $Books::pendingTag = %tag;
+   $Books::pendingTitle = %title;
+   $Books::pendingTime = getSimTime();
+   commandToServer('BookApply', %tag, %title);
+   cancel($Books::applyEv);
+   $Books::applyEv = schedule(12000, 0, "booksApplyTimeout", %tag);
+}
+
+function booksApplyTimeout(%tag)
+{
+   if ($Books::pendingTag !$= %tag) return;
+   echo("[Books] no answer from the server for document" SPC %tag);
+   MessageBoxOK("Skriptorium", "Das Dokument ist fertig, wurde aber noch nicht in dein Schriftstueck uebernommen. Klicke erneut auf Schreiben, dann wird es erneut uebernommen.");
+}
+
 function booksAutoWrite(%type)
 {
+   if ($Books::pendingTag !$= "" && getSimTime() - $Books::pendingTime > 900000) { $Books::pendingTag = ""; $Books::pendingTitle = ""; }   // older than 15 min: start a new document
+   if ($Books::pendingTag !$= "")
+   {
+      echo("[Books] re-applying finished document" SPC $Books::pendingTag);
+      booksSendApply($Books::pendingTag, $Books::pendingTitle);
+      return;
+   }
    if ($Books::baseUrl $= "")
    {
       booksWriteOpen();   // website address unknown yet: the dialog also asks the server for it
@@ -418,7 +455,7 @@ function booksPollTicket(%t, %n)
    createPath(%file);
    if (isFile(%file)) fileDelete(%file);
    %helper = new SimDownloadHelper() {
-      url = $Books::baseUrl @ "/api/ticket/" @ %t;
+      url = booksHttp($Books::baseUrl) @ "/api/ticket/" @ %t;
       fileName = %file;
    };
    %helper.start();
@@ -441,7 +478,7 @@ function booksReadTicket(%t, %n, %file)
    if (%tag !$= "" && %title !$= "" && strlen(%tag) == 14)
    {
       $Books::ticket = "";
-      commandToServer('BookApply', %tag, %title);
+      booksSendApply(%tag, %title);
       return;
    }
    schedule(3000, 0, "booksPollTicket", %t, %n + 1);

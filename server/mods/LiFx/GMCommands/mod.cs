@@ -292,15 +292,135 @@ package LiFxGMCommands
         }
         if (%qty $= "" || %qty < 1) { %qty = 1; }
         if (%quality $= "") { %quality = 100; }
-        if (%dur $= "") { %dur = 0; }
+        if (%dur $= "" || %dur < 1) { %dur = 100; }   // durability 0 = broken item: it cannot be equipped and its effects (rings, robes ...) do nothing
         %p = LiFxGMCommands::getPlayer(%targetClient);
         if (!isObject(%p)) {
             LiFxGMCommands::reply(%caller, "No player object found.");
             return;
         }
+        if (%qty > 1) {
+            // items that do not stack (tools, clothes, furniture ...) ignore the quantity: look the stack size up and add them one by one
+            %req = new ScriptObject() {
+                class = "LiFxGMGiveStack";
+                caller = %caller;
+                target = %targetClient;
+                type = %type;
+                qty = %qty;
+                quality = %quality;
+                dur = %dur;
+            };
+            dbi.select(%req, "onStack", "SELECT MaxStackSize FROM `objects_types` WHERE ID=" @ %type);
+            return;
+        }
+        LiFxGMCommands::giveNow(%caller, %targetClient, %type, 1, %quality, %dur, 1);
+    }
+
+    function LiFxGMGiveStack::onStack(%this, %rs) {
+        %max = 0;
+        if (%rs.Ok() && %rs.nextRecord()) { %max = %rs.getFieldValue("MaxStackSize"); }
+        dbi.remove(%rs);
+        if (isObject(%this.caller) && isObject(%this.target)) {
+            if (%max > 1) {
+                LiFxGMCommands::giveNow(%this.caller, %this.target, %this.type, %this.qty, %this.quality, %this.dur, 1);
+            } else {
+                %n = %this.qty; if (%n > 100) { %n = 100; }
+                %done = 0;
+                for (%i = 0; %i < %n; %i++) { if (LiFxGMCommands::giveNow(%this.caller, %this.target, %this.type, 1, %this.quality, %this.dur, 0)) { %done++; } else { break; } }
+                LiFxGMCommands::reply(%this.caller, "give" SPC %this.type SPC "(does not stack) x" @ %done SPC "of" SPC %n SPC "to character" SPC %this.target.getCharacterId());
+            }
+        }
+        %this.delete();
+    }
+
+    function LiFxGMCommands::giveNow(%caller, %targetClient, %type, %qty, %quality, %dur, %report) {
+        %p = LiFxGMCommands::getPlayer(%targetClient);
+        if (!isObject(%p)) {
+            LiFxGMCommands::reply(%caller, "No player object found.");
+            return 0;
+        }
         %ok = %p.inventoryAddItem(%type, %qty, %quality, %dur, %dur);
+        if (%ok) { LiFxGMCommands::queueEffects(%targetClient, %type, %quality); }
+        if (!%report) { return %ok; }
         echo("[GM] account" SPC %caller.getAccountId() SPC "give type" SPC %type SPC "qty" SPC %qty SPC "quality" SPC %quality SPC "durability" SPC %dur SPC "to character" SPC %targetClient.getCharacterId() SPC "->" SPC %ok);
         LiFxGMCommands::reply(%caller, "give" SPC %type SPC "x" @ %qty SPC "quality" SPC %quality SPC "to character" SPC %targetClient.getCharacterId() SPC ":" SPC (%ok ? "done" : "failed (no space or unknown item type?)"));
+        return %ok;
+    }
+
+    // ---- item effects (rings, necklaces, outfits ...): the engine only attaches data/item_effects.xml effects to items when they are CRAFTED.
+    // A GM-given item has no effects (a ring then does nothing). Rolled here the same way: value = min + (max-min) * quality / 100, written to
+    // `item_effects` + `features` once the item row exists; the effects are active after the next login (the running inventory was loaded without them).
+    function LiFxGMCommands::effectsFor(%type) {
+        if ($LiFxGM::fxLoaded $= "") {
+            $LiFxGM::fxLoaded = 1;
+            %fo = new FileObject();
+            if (%fo.openForRead("data/item_effects.xml")) {
+                %cur = "";
+                while (!%fo.isEOF()) {
+                    %line = %fo.readLine();
+                    %a = strpos(%line, "<item id=\"");
+                    if (%a >= 0) {
+                        %rest = getSubStr(%line, %a + 10, 12);
+                        %cur = getSubStr(%rest, 0, strpos(%rest, "\""));
+                        continue;
+                    }
+                    %b = strpos(%line, "<effect id=\"");
+                    if (%b >= 0 && %cur !$= "") {
+                        %rest = getSubStr(%line, %b + 12, 200);
+                        %q = strpos(%rest, "\"");
+                        %eid = getSubStr(%rest, 0, %q);
+                        %gt = strpos(%rest, ">");
+                        %lt = strpos(%rest, "<");
+                        %vals = trim(getSubStr(%rest, %gt + 1, %lt - %gt - 1));
+                        $LiFxGM::fx[%cur] = $LiFxGM::fx[%cur] @ (($LiFxGM::fx[%cur] $= "") ? "" : "|") @ %eid SPC getWord(%vals, 0) SPC (getWordCount(%vals) > 1 ? getWord(%vals, 1) : getWord(%vals, 0));
+                    }
+                }
+                %fo.close();
+            }
+            %fo.delete();
+        }
+        return $LiFxGM::fx[%type];
+    }
+
+    function LiFxGMCommands::queueEffects(%client, %type, %quality) {
+        if (LiFxGMCommands::effectsFor(%type) $= "") { return; }
+        %char = %client.getCharacterId();
+        cancel($LiFxGM::fxEv[%char @ "_" @ %type]);
+        $LiFxGM::fxEv[%char @ "_" @ %type] = schedule(1500, 0, "LiFxGMCommands_applyFx", %client, %type, %quality);
+    }
+
+    function LiFxGMCommands_applyFx(%client, %type, %quality) {
+        if (!isObject(%client)) { return; }
+        %char = %client.getCharacterId();
+        %req = new ScriptObject() {
+            class = "LiFxGMFx";
+            client = %client;
+            type = %type;
+            quality = %quality;
+        };
+        %roots = "SELECT RootContainerID FROM `character` WHERE ID=" @ %char @ " UNION SELECT EquipmentContainerID FROM `character` WHERE ID=" @ %char;
+        dbi.select(%req, "onItems", "SELECT i.ID AS ItemID FROM `items` i WHERE i.ObjectTypeID=" @ %type @ " AND i.FeatureID IS NULL AND (i.ContainerID IN (" @ %roots @ ") OR i.ContainerID IN (SELECT ct.ID FROM `containers` ct WHERE ct.ParentID IN (SELECT i2.ID FROM `items` i2 WHERE i2.ContainerID IN (" @ %roots @ ")))) LIMIT 100");
+    }
+
+    function LiFxGMFx::onItems(%this, %rs) {
+        %list = LiFxGMCommands::effectsFor(%this.type);
+        %n = 0;
+        if (%rs.Ok()) {
+            while (%rs.nextRecord()) {
+                %id = %rs.getFieldValue("ItemID");
+                for (%k = 0; %k < getFieldCount(strreplace(%list, "|", "\t")); %k++) {
+                    %e = getField(strreplace(%list, "|", "\t"), %k);
+                    %mag = getWord(%e, 1) + (getWord(%e, 2) - getWord(%e, 1)) * %this.quality / 100;
+                    dbi.Update("INSERT INTO `item_effects` (`ItemID`,`EffectID`,`Magnitude`) VALUES (" @ %id @ "," @ getWord(%e, 0) @ "," @ %mag @ ")");
+                }
+                dbi.Update("INSERT INTO `features` (`CustomtextID`,`has_effects`) VALUES (NULL,1)");
+                dbi.Update("UPDATE `items` SET `FeatureID`=(SELECT MAX(`ID`) FROM `features`) WHERE `ID`=" @ %id);
+                %n++;
+            }
+        }
+        dbi.remove(%rs);
+        echo("[GM] item effects written for" SPC %n SPC "item(s) of type" SPC %this.type);
+        if (%n > 0 && isObject(%this.client)) { LiFxGMCommands::reply(%this.client, "Effects added to" SPC %n SPC "item(s) of type" SPC %this.type @ ". They become active after the next login."); }
+        %this.delete();
     }
 
     // !delete <type> [count]: removes items of that type from the caller's inventory (backpack, nested bags, equipped). Uses the engine's Player::inventoryRemoveItem(itemId).
