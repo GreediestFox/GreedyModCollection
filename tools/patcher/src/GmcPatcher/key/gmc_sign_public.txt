@@ -1,0 +1,2 @@
+# GMC manifest signing key (public part), embedded into GmcPatcher
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnk1JYCykrfOf6clQY0yu0+xLMsUml/38DGpnSM796MEsjakwN8qiBtV1ttywB1co1IGPxXCxK3bcjfkmr0N37A==

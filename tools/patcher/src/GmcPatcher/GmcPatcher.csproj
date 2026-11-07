@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>GmcPatcher</AssemblyName>
+    <RootNamespace>GmcPatcher</RootNamespace>
+    <Version>1.1.0</Version>
+    <Product>GMC Patcher</Product>
+    <Description>GreedyModCollection modpack patcher for Life is Feudal: Your Own</Description>
+    <!-- single self-contained exe, no packing/obfuscation -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <PublishTrimmed>true</PublishTrimmed>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <DebugType>embedded</DebugType>
+    <IncludeNativeLibrariesForSelfExtract>false</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>false</EnableCompressionInSingleFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gmc.Core\Gmc.Core.csproj" />
+    <!-- exe patches (built with "GmcManifest exepatch") are compiled in; they are never downloaded -->
+    <EmbeddedResource Include="exepatch\*.gmcx" LogicalName="exepatch.%(Filename)%(Extension)" />
+    <!-- exe pins (since 1.0.7): "<file name>=<sha256>" - the one executable the manifest may ship, checked by hash before it is written -->
+    <EmbeddedResource Include="exepin\*.txt" LogicalName="exepin.%(Filename)%(Extension)" />
+    <!-- since 1.1.0: the publisher's PUBLIC signing key. A manifest with a valid signature may ship executables and a new patcher. -->
+    <EmbeddedResource Include="key\gmc_sign_public.txt" LogicalName="gmckey.public" />
+  </ItemGroup>
+
+</Project>
+
+

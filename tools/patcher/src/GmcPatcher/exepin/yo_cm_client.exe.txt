@@ -1,0 +1,3 @@
+﻿# the unified client exe of the Wulpische Lande pack (stock + our slot patch + the lifmod hooks + the all-skins wardrobe table + the Int-ring skill-cap display), pinned by hash
+yo_cm_client.exe=6d567b3fd0ac716eb85d1fab4f25505efbc7c240fbd3128b7616965f238cef9c
+
