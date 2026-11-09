@@ -1,0 +1,7 @@
+---
+// The wiki is dark only, like the main site: no light/dark switch.
+---
+<script is:inline>
+  document.documentElement.dataset.theme = 'dark';
+  try { localStorage.setItem('starlight-theme', 'dark'); } catch (e) {}
+</script>

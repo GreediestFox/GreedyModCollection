@@ -1,0 +1,41 @@
+/* Crimson -> orange, near-black, moss accents. Matches the main site. */
+:root {
+  --sl-font: 'WikiBody', Georgia, 'Times New Roman', serif;
+  --wiki-head: 'WikiHead', 'WikiBody', Georgia, serif;
+  --sl-text-body: 1.0625rem;
+}
+:root[data-theme='dark'] {
+  --sl-color-white: #f1e6d8;
+  --sl-color-gray-1: #dccdbb;
+  --sl-color-gray-2: #b9a898;
+  --sl-color-gray-3: #8d7c70;
+  --sl-color-gray-4: #54413f;
+  --sl-color-gray-5: #2c1c1e;
+  --sl-color-gray-6: #170d0f;
+  --sl-color-black: #0a0506;
+  --sl-color-accent-low: #3a0e12;
+  --sl-color-accent: #c0392b;
+  --sl-color-accent-high: #f0a24a;
+  --sl-color-text-accent: #f0a24a;
+  --sl-color-hairline: #2c1c1e;
+  --sl-color-hairline-light: #3a2528;
+  --sl-color-hairline-shade: #120a0b;
+}
+body { background: radial-gradient(1200px 500px at 50% -10%, rgba(192,57,43,.18), transparent 70%), var(--sl-color-black); }
+h1, h2, h3, h4, .site-title { font-family: var(--wiki-head); letter-spacing: .02em; }
+.content-panel h1, h1#_top { color: var(--sl-color-white); }
+.content-panel h2 { border-bottom: 1px solid var(--sl-color-hairline-light); padding-bottom: .3rem; }
+.content-panel h2::after { content: ''; display: block; width: 3.5rem; height: 2px; margin-top: .3rem; background: linear-gradient(90deg, #c0392b, #f0a24a); }
+.sl-markdown-content a { text-decoration-color: rgba(240,162,74,.55); }
+header.header { border-bottom: 1px solid var(--sl-color-hairline-light); background: rgba(10,5,6,.92); }
+nav.sidebar a[aria-current='page'] { background: var(--sl-color-accent-low); color: var(--sl-color-accent-high); }
+.sidebar-content details > summary .large { font-family: var(--wiki-head); }
+.sl-markdown-content :not(a) > code, .sl-markdown-content kbd { border-color: var(--sl-color-hairline-light); }
+/* Steps (Starlight <Steps>) get the red/orange numbering */
+.sl-steps > li::before { background-color: #c0392b; }
+/* Note boxes: replace Starlight's default blue/indigo with the site palette */
+:root[data-theme='dark'] {
+  --sl-color-blue-low: #3a0e12;
+  --sl-color-blue: #c0392b;
+  --sl-color-blue-high: #f0a24a;
+}

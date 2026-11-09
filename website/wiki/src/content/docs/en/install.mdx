@@ -1,0 +1,85 @@
+---
+title: Install guide
+description: Step by step from the patcher to joining Myralon.
+---
+
+import { Steps, Aside } from '@astrojs/starlight/components';
+import Annotated from '../../../components/Annotated.astro';
+
+<Aside type="note" title="Before you start">
+You need your own legitimate copy of **Life is Feudal: Your Own** on Steam (Windows). Plan for about **3 GB** of free disk space for the modpack.
+</Aside>
+
+<Steps>
+
+1. **Join our Discord.**
+
+   Join our [Discord](https://discord.gg/E6PrsCYV4x) and read the rules and the concept. You can also get help there if something goes wrong.
+
+2. **Install the game through Steam.**
+
+   If you have not done so yet: install Life is Feudal: Your Own in Steam, but do not start it yet.
+
+3. **Download the patcher and unpack it.**
+
+   You find the download on the [main website](https://wulpischelande.de/?lang=en#join) in the section "Join Myralon". Create **its own folder** on your drive, for example `C:\Games\GMC\`, and unpack the ZIP file there – **not** into the game folder.
+
+   <Annotated
+     src="/img/install/04-folder-games.jpg"
+     alt="The GMC folder inside C:\Games"
+     ratio="897/264"
+   />
+
+   Afterwards your folder looks roughly like this. The important file is `GmcPatcher`:
+
+   <Annotated
+     src="/img/install/05-folder-gmc.jpg"
+     alt="Contents of the folder C:\Games\GMC with the file GmcPatcher"
+     ratio="921/329"
+   />
+
+4. **Open the game's properties in Steam.**
+
+   In your Steam library open the page of Life is Feudal: Your Own and click the gear icon on the right.
+
+   <Annotated
+     src="/img/install/01-steam-gear.jpg"
+     alt="The game's Steam page with the gear icon on the right"
+     ratio="1100/400"
+   />
+
+   Choose **Properties** in the menu.
+
+   <Annotated
+     src="/img/install/02-properties.jpg"
+     alt="The gear menu with the Properties entry"
+     ratio="661/396"
+   />
+
+5. **Enter the launch option.**
+
+   On the **General** tab you find the **Launch Options** field. Paste this (adjust the path if needed):
+
+   ```
+   "C:\Games\GMC\GmcPatcher.exe" %command%
+   ```
+
+   <Annotated
+     src="/img/install/03-launch-options.jpg"
+     alt="Steam properties with the launch option entered"
+     ratio="843/598"
+   />
+
+6. **Start the game through Steam.**
+
+   On the first start the patcher downloads the modpack (about 3 GB). Let it finish. After that it only downloads changes.
+
+7. **Join the server.**
+
+   Choose the server **"Wulpische Lande: Myralon"**, create your character and have fun! Read the [server rules](/en/rules/) first.
+
+</Steps>
+
+<Aside type="caution" title="Windows warns about the patcher?">
+The patcher is not digitally signed yet. Windows (SmartScreen) or your antivirus may therefore warn you or block it briefly on the first start. If something goes wrong, we will help you on [Discord](https://discord.gg/E6PrsCYV4x).
+</Aside>

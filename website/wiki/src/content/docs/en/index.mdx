@@ -1,0 +1,32 @@
+---
+title: Welcome to the Wiki
+description: Install guide, server rules and lore of the Wulpische Lande.
+template: splash
+hero:
+  tagline: Everything you need to arrive on Myralon, follow the rules and know the story of the island.
+  actions:
+    - text: Install guide
+      link: /en/install/
+      icon: right-arrow
+      variant: primary
+    - text: Server rules
+      link: /en/rules/
+      variant: secondary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="Install guide" icon="rocket">
+    From the patcher to your character: [step by step](/en/install/) onto our server.
+  </Card>
+  <Card title="Server concept" icon="setting">
+    Claims, workshops, territories and KoS at night: the [concept](/en/concept/) at a glance.
+  </Card>
+  <Card title="Server rules" icon="approve-check">
+    The binding rules for Discord and the server. [Please read them before your first login](/en/rules/).
+  </Card>
+  <Card title="Server lore" icon="open-book">
+    The [story](/en/lore/) of the island of Myralon and the Wulpische Lande.
+  </Card>
+</CardGrid>

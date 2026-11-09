@@ -1,0 +1,12 @@
+/* Self-hosted fonts: no request ever leaves your own domain.
+   Same fonts as the main website: Almendra Bold for headings, IM Fell English for body text (files in public/fonts/). */
+@font-face {
+  font-family: 'WikiHead';
+  src: url('/fonts/almendra-latin-700.woff2') format('woff2');
+  font-weight: 400 900; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'WikiBody';
+  src: url('/fonts/IMFellEnglish.woff2') format('woff2');
+  font-weight: 400 700; font-style: normal; font-display: swap;
+}

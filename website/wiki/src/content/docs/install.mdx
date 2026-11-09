@@ -1,0 +1,85 @@
+---
+title: Installationsanleitung
+description: Schritt für Schritt vom Patcher bis zum Beitritt auf Myralon.
+---
+
+import { Steps, Aside } from '@astrojs/starlight/components';
+import Annotated from '../../components/Annotated.astro';
+
+<Aside type="note" title="Bevor du anfängst">
+Du brauchst eine eigene, rechtmäßig erworbene Kopie von **Life is Feudal: Your Own** auf Steam (Windows). Plane etwa **3 GB** freien Speicherplatz für das Modpack ein.
+</Aside>
+
+<Steps>
+
+1. **Geh auf unseren Discord.**
+
+   Tritt unserem [Discord](https://discord.gg/E6PrsCYV4x) bei und lies die Regeln und das Konzept. Dort bekommst du auch Hilfe, falls etwas hakt.
+
+2. **Installiere das Spiel über Steam.**
+
+   Falls noch nicht geschehen: Life is Feudal: Your Own in Steam installieren, aber noch nicht starten.
+
+3. **Lade den Patcher herunter und entpacke ihn.**
+
+   Den Download findest du auf der [Hauptseite](https://wulpischelande.de/#join) im Abschnitt „Tritt Myralon bei“. Lege auf deiner Festplatte einen **eigenen Ordner** an, zum Beispiel `C:\Games\GMC\`, und entpacke die ZIP-Datei dort hinein – **nicht** in den Spielordner.
+
+   <Annotated
+     src="/img/install/04-folder-games.jpg"
+     alt="Der Ordner GMC im Verzeichnis C:\Games"
+     ratio="897/264"
+   />
+
+   Danach sieht dein Ordner ungefähr so aus. Wichtig ist die Datei `GmcPatcher`:
+
+   <Annotated
+     src="/img/install/05-folder-gmc.jpg"
+     alt="Inhalt des Ordners C:\Games\GMC mit der Datei GmcPatcher"
+     ratio="921/329"
+   />
+
+4. **Öffne die Eigenschaften des Spiels in Steam.**
+
+   Öffne in deiner Steam-Bibliothek die Seite von Life is Feudal: Your Own und klicke rechts auf das Zahnrad.
+
+   <Annotated
+     src="/img/install/01-steam-gear.jpg"
+     alt="Steam-Seite des Spiels mit dem Zahnrad rechts"
+     ratio="1100/400"
+   />
+
+   Wähle im Menü **Eigenschaften** (englisch „Properties“).
+
+   <Annotated
+     src="/img/install/02-properties.jpg"
+     alt="Zahnrad-Menü mit dem Eintrag Properties"
+     ratio="661/396"
+   />
+
+5. **Trage die Startoption ein.**
+
+   Im Reiter **Allgemein** gibt es das Feld **Startoptionen** („Launch Options“). Füge dort Folgendes ein (Pfad bei Bedarf anpassen):
+
+   ```
+   "C:\Games\GMC\GmcPatcher.exe" %command%
+   ```
+
+   <Annotated
+     src="/img/install/03-launch-options.jpg"
+     alt="Steam-Eigenschaften mit der eingetragenen Startoption"
+     ratio="843/598"
+   />
+
+6. **Starte das Spiel über Steam.**
+
+   Beim ersten Start lädt der Patcher das Modpack herunter (ca. 3 GB). Lass ihn in Ruhe fertig werden. Danach lädt er nur noch Änderungen.
+
+7. **Tritt dem Server bei.**
+
+   Wähle den Server **„Wulpische Lande: Myralon“**, erstelle deinen Charakter und hab Spaß! Lies vorher die [Serverregeln](/rules/).
+
+</Steps>
+
+<Aside type="caution" title="Windows warnt beim Patcher?">
+Der Patcher ist noch nicht digital signiert. Windows (SmartScreen) oder dein Virenschutz kann beim ersten Start deshalb warnen oder ihn kurz blockieren. Wenn etwas hakt, helfen wir dir auf [Discord](https://discord.gg/E6PrsCYV4x).
+</Aside>

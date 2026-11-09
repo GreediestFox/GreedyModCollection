@@ -1,0 +1,23 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro';
+import { MAIN_SITE, DISCORD, SERVER_NAME } from '../config';
+const en = Astro.url.pathname.startsWith('/en/');
+---
+<Default {...Astro.props}><slot /></Default>
+<div class="legal">
+  {en
+    ? <p>{SERVER_NAME} is an independent community project for Life is Feudal: Your Own. It is not affiliated with, endorsed by, or sponsored by the game's developers, publishers or rights holders. A legitimate copy of the game is required to play. All trademarks and game-related rights belong to their respective owners.</p>
+    : <p>{SERVER_NAME} ist ein unabhängiges Community-Projekt für Life is Feudal: Your Own. Es steht in keiner Verbindung zu den Entwicklern, Publishern oder Rechteinhabern des Spiels und wird von diesen weder unterstützt noch gesponsert. Zum Spielen ist eine rechtmäßig erworbene Kopie des Spiels erforderlich. Alle Marken und spielbezogenen Rechte gehören ihren jeweiligen Inhabern.</p>}
+  <p>
+    <a href={MAIN_SITE + '/'}>{en ? 'Main website' : 'Hauptseite'}</a> ·
+    <a href={MAIN_SITE + '/impressum.html'}>Impressum</a> ·
+    <a href={MAIN_SITE + '/datenschutz.html'}>{en ? 'Privacy' : 'Datenschutz'}</a> ·
+    <a href={MAIN_SITE + '/urheberrecht.html'}>{en ? 'Copyright' : 'Urheberrecht'}</a> ·
+    <a href={DISCORD} rel="noopener">Discord</a>
+  </p>
+</div>
+<style>
+  .legal { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--sl-color-hairline); font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); }
+  .legal p { margin: .4rem 0; }
+  .legal a { color: var(--sl-color-gray-2); }
+</style>

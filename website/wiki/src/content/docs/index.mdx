@@ -1,0 +1,32 @@
+---
+title: Willkommen im Wiki
+description: Installationsanleitung, Serverregeln und Lore der wulpischen Lande.
+template: splash
+hero:
+  tagline: Alles, was du brauchst, um auf Myralon anzukommen, dich an die Regeln zu halten und die Geschichte der Insel zu kennen.
+  actions:
+    - text: Installationsanleitung
+      link: /install/
+      icon: right-arrow
+      variant: primary
+    - text: Serverregeln
+      link: /rules/
+      variant: secondary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="Installationsanleitung" icon="rocket">
+    Vom Patcher bis zum Charakter: [Schritt für Schritt](/install/) auf unseren Server.
+  </Card>
+  <Card title="Serverkonzept" icon="setting">
+    Claims, Werkstätten, Herrschaftsgebiete und KoS bei Nacht: das [Konzept](/concept/) im Überblick.
+  </Card>
+  <Card title="Serverregeln" icon="approve-check">
+    Die verbindlichen Regeln für Discord und Server. [Bitte vor dem ersten Login lesen](/rules/).
+  </Card>
+  <Card title="Server-Lore" icon="open-book">
+    Die [Geschichte](/lore/) der Insel Myralon und der wulpischen Lande.
+  </Card>
+</CardGrid>

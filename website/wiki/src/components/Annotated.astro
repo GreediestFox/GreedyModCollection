@@ -1,0 +1,54 @@
+---
+// Screenshot with hand-drawn red circles, like a printed manual.
+// Props:
+//   src     path under /public, e.g. "/img/install/step1.jpg"
+//   alt     describe the screenshot
+//   ratio   width/height of the image, e.g. "16/9" (used for the placeholder)
+//   marks   [{ x, y, r, n?, label? }]  x,y = centre in % of image width/height, r = radius in % of image width
+//   caption optional text under the picture
+import fs from 'node:fs';
+import path from 'node:path';
+interface Mark { x: number; y: number; r?: number; n?: number | string; label?: string }
+interface Props { src: string; alt: string; ratio?: string; marks?: Mark[]; caption?: string }
+const { src, alt, ratio = '16/9', marks = [], caption } = Astro.props as Props;
+const exists = fs.existsSync(path.join(process.cwd(), 'public', src));
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const shapes = [
+  '52% 48% 55% 45% / 48% 54% 46% 52%',
+  '47% 53% 44% 56% / 55% 45% 53% 47%',
+  '55% 45% 50% 50% / 46% 52% 48% 54%',
+];
+---
+<figure class="annot">
+  <div class="frame" style={`aspect-ratio:${ratio}`}>
+    {exists
+      ? <img src={base + src} alt={alt} loading="lazy" />
+      : <div class="ph">Screenshot goes here<br /><small>{src}</small></div>}
+    {marks.map((m, i) => (
+      <span class="mark" style={`left:${m.x}%;top:${m.y}%;width:${(m.r ?? 6) * 2}%;border-radius:${shapes[i % shapes.length]};transform:translate(-50%,-50%) rotate(${(i * 37) % 11 - 5}deg)`}>
+        {(m.n ?? (marks.length > 1 ? i + 1 : null)) !== null && <b>{m.n ?? i + 1}</b>}
+      </span>
+    ))}
+  </div>
+  {(caption || marks.some(m => m.label)) && (
+    <figcaption>
+      {caption && <p>{caption}</p>}
+      {marks.some(m => m.label) && (
+        <ol>{marks.filter(m => m.label).map((m, i) => <li value={typeof m.n === 'number' ? m.n : marks.indexOf(m) + 1}>{m.label}</li>)}</ol>
+      )}
+    </figcaption>
+  )}
+</figure>
+<style>
+  .annot { margin: 1.5rem 0; }
+  .frame { position: relative; width: 100%; border: 1px solid var(--sl-color-hairline); background: var(--sl-color-gray-6); overflow: hidden; }
+  .frame img { display: block; width: 100%; height: 100%; object-fit: cover; margin: 0; }
+  .ph { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; color: var(--sl-color-gray-3);
+        background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(255,255,255,.03) 14px 28px); border: 1px dashed var(--sl-color-gray-4); }
+  .mark { position: absolute; aspect-ratio: 1; border: 4px solid #e0201c; box-shadow: 0 0 0 1px rgba(0,0,0,.45), 0 0 10px rgba(224,32,28,.55); pointer-events: none; }
+  .mark b { position: absolute; top: -14px; right: -14px; min-width: 24px; height: 24px; padding: 0 5px; display: grid; place-items: center;
+            background: #e0201c; color: #fff; font: 700 .8rem/1 var(--sl-font); border-radius: 50%; box-shadow: 0 0 0 2px rgba(0,0,0,.5); }
+  figcaption { margin-top: .6rem; font-size: var(--sl-text-sm); color: var(--sl-color-gray-2); }
+  figcaption p { margin: 0 0 .4rem; }
+  figcaption ol { margin: 0; padding-left: 1.4rem; }
+</style>

@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team-Editor — Die wulpischen Lande</title>
+<style>
+  :root{--bg:#120a0c;--panel:#1c1114;--line:#ffffff22;--text:#eee6d8;--muted:#a89f8f;--acc:#b3162a;--acc2:#e0432f;--ok:#4caf6a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.45 system-ui,Segoe UI,sans-serif}
+  header{position:sticky;top:0;z-index:5;background:#0a0506;border-bottom:1px solid var(--line);padding:.7rem 1rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+  header h1{font-size:1.1rem;margin:0}
+  header .sp{flex:1}
+  #status{color:var(--muted);font-size:.9rem}
+  #status.ok{color:var(--ok)} #status.err{color:#ff7b7b}
+  a{color:var(--acc2)}
+  button,.btn{font:inherit;cursor:pointer;color:#fff;background:var(--acc);border:0;border-radius:4px;padding:.5rem .9rem;text-decoration:none;display:inline-block}
+  button:hover{background:#d4283d}
+  button.alt{background:#3a2a2e} button.alt:hover{background:#4a3a3e}
+  button.small{padding:.25rem .55rem;font-size:.85rem}
+  button.danger{background:#5a1f26}
+  .tabs{display:flex;gap:.4rem;padding:.8rem 1rem 0;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+  .tabs button{background:transparent;border:1px solid var(--line);border-bottom:0;border-radius:4px 4px 0 0;color:var(--muted)}
+  .tabs button.on{background:var(--panel);color:#fff;border-color:var(--acc)}
+  main{max-width:960px;margin:0 auto;padding:1.2rem 1rem 5rem}
+  .card{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:4px;padding:1rem 1.1rem;margin:0 0 1rem}
+  .card h3{margin:0 0 .6rem;font-size:1.05rem;display:flex;gap:.5rem;align-items:center}
+  .card h3 .sp{flex:1}
+  .field{margin:.6rem 0}
+  label{display:block;font-size:.85rem;color:var(--muted);margin-bottom:.15rem}
+  input[type=text],input[type=url],textarea{width:100%;font:inherit;color:var(--text);background:#0e0709;border:1px solid var(--line);border-radius:3px;padding:.45rem .55rem}
+  textarea{min-height:5.2rem;resize:vertical}
+  input:focus,textarea:focus{outline:2px solid var(--acc);outline-offset:0}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+  .pair .en label::before{content:"EN · "} .pair .en input,.pair .en textarea{background:#0b0a10}
+  .hint{color:var(--muted);font-size:.85rem;margin:.2rem 0 .8rem}
+  .row{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+  .row2{display:grid;grid-template-columns:1fr 2fr auto;gap:.5rem;margin:.3rem 0}
+  .pic{display:flex;gap:.8rem;align-items:center;flex-wrap:wrap}
+  .pic img{width:72px;height:90px;object-fit:cover;border:1px solid var(--line);background:#000}
+  .pic .ph{width:72px;height:90px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.75rem;text-align:center}
+  .check{display:flex;gap:.5rem;align-items:center;margin:.4rem 0} .check input{width:1.1rem;height:1.1rem}
+  .empty{color:var(--muted);padding:1rem 0}
+  @media(max-width:700px){.pair,.row2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Team-Editor</h1>
+  <span id="status">Lade …</span>
+  <span class="sp"></span>
+  <a class="btn alt" id="viewTeam" href="/team.html" target="_blank">Team-Seite ansehen</a>
+  <a class="btn alt" id="viewThanks" href="/thanks.html" target="_blank">Danksagung ansehen</a>
+  <button id="save">Speichern</button>
+</header>
+<div class="tabs" id="tabs"></div>
+<main id="app"></main>
+
+<script>
+(function () {
+  'use strict';
+  var TOKEN = null, DICT = {}, M = null, tab = 'team', dirty = false;
+  var statusEl = document.getElementById('status');
+
+  function norm(s) { return String(s || '').replace(/\s+/g, ' ').trim(); }
+  function T(de) { return { de: de || '', en: DICT[norm(de)] || '' }; }
+  function say(t, cls) { statusEl.textContent = t; statusEl.className = cls || ''; }
+  function mark() { if (!dirty) { dirty = true; say('Ungespeicherte Änderungen', ''); } }
+
+  function h(tag, attrs) {
+    var e = document.createElement(tag);
+    attrs = attrs || {};
+    Object.keys(attrs).forEach(function (k) {
+      var v = attrs[k];
+      if (k === 'class') e.className = v;
+      else if (k === 'on') Object.keys(v).forEach(function (ev) { e.addEventListener(ev, v[ev]); });
+      else if (k === 'text') e.textContent = v;
+      else if (k === 'value' || k === 'checked' || k === 'rows') e[k] = v;
+      else e.setAttribute(k, v);
+    });
+    for (var i = 2; i < arguments.length; i++) {
+      [].concat(arguments[i]).forEach(function (c) { if (c != null && c !== false) e.append(c.nodeType ? c : document.createTextNode(c)); });
+    }
+    return e;
+  }
+
+  /* ----- form widgets ----- */
+  function plain(label, obj, key, opts) {
+    opts = opts || {};
+    var inp = opts.area ? h('textarea', { rows: opts.rows || 3 }) : h('input', { type: 'text' });
+    inp.value = obj[key] || '';
+    if (opts.placeholder) inp.placeholder = opts.placeholder;
+    inp.addEventListener('input', function () { obj[key] = inp.value; mark(); });
+    return h('div', { class: 'field' }, h('label', { text: label }), inp);
+  }
+  // German text + optional English text (obj = { de, en })
+  function pair(label, t, opts) {
+    opts = opts || {};
+    function mk(prop) {
+      var inp = opts.area ? h('textarea', { rows: opts.rows || 3 }) : h('input', { type: 'text' });
+      inp.value = t[prop] || '';
+      inp.addEventListener('input', function () { t[prop] = inp.value; mark(); });
+      return inp;
+    }
+    return h('div', { class: 'field pair' },
+      h('div', {}, h('label', { text: label }), mk('de')),
+      h('div', { class: 'en' }, h('label', { text: 'Englisch (optional)' }), mk('en')));
+  }
+  function check(label, obj, key) {
+    var c = h('input', { type: 'checkbox' }); c.checked = !!obj[key];
+    c.addEventListener('change', function () { obj[key] = c.checked; mark(); });
+    return h('label', { class: 'check', style: 'color:inherit;font-size:1rem' }, c, label);
+  }
+  function linkList(list) {
+    var box = h('div', {});
+    function draw() {
+      box.innerHTML = '';
+      list.forEach(function (l, i) {
+        var lab = h('input', { type: 'text', placeholder: 'Name, z. B. Discord' }); lab.value = l.label || '';
+        var url = h('input', { type: 'text', placeholder: 'https://…' }); url.value = l.url || '';
+        lab.addEventListener('input', function () { l.label = lab.value; mark(); });
+        url.addEventListener('input', function () { l.url = url.value; mark(); });
+        box.append(h('div', { class: 'row2' }, lab, url, h('button', { class: 'small danger', type: 'button', text: '✕', on: { click: function () { list.splice(i, 1); mark(); draw(); } } })));
+      });
+      box.append(h('button', { class: 'small alt', type: 'button', text: '+ Link', on: { click: function () { list.push({ label: '', url: '' }); mark(); draw(); } } }));
+    }
+    draw();
+    return h('div', { class: 'field' }, h('label', { text: 'Links (nur https://…)' }), box);
+  }
+  function picker(label, get, set, kind, suggestName) {
+    var wrap = h('div', { class: 'pic' });
+    function draw() {
+      wrap.innerHTML = '';
+      var p = get();
+      wrap.append(p ? h('img', { src: '/' + p + '?t=' + Date.now(), alt: '' }) : h('div', { class: 'ph', text: 'kein Bild' }));
+      var file = h('input', { type: 'file', accept: 'image/jpeg,image/png,image/webp,image/gif,image/avif', style: 'display:none' });
+      file.addEventListener('change', function () {
+        var f = file.files[0]; if (!f) return;
+        say('Bild wird hochgeladen …');
+        fetch('/__edit/api/upload?kind=' + kind + '&name=' + encodeURIComponent(suggestName() || f.name), { method: 'POST', headers: { 'X-Editor-Token': TOKEN, 'Content-Type': 'application/octet-stream' }, body: f })
+          .then(function (r) { return r.json().then(function (j) { if (!r.ok) throw new Error(j.error || r.status); return j; }); })
+          .then(function (j) { set(j.path); mark(); draw(); say('Bild hochgeladen – noch speichern!', 'ok'); })
+          .catch(function (e) { say(e.message, 'err'); });
+      });
+      wrap.append(h('button', { class: 'small alt', type: 'button', text: p ? 'Bild ersetzen …' : 'Bild hochladen …', on: { click: function () { file.click(); } } }), file);
+      if (p) wrap.append(h('button', { class: 'small danger', type: 'button', text: 'Bild entfernen', on: { click: function () { set(''); mark(); draw(); } } }), h('span', { class: 'hint', text: p }));
+    }
+    draw();
+    return h('div', { class: 'field' }, h('label', { text: label }), wrap);
+  }
+  function move(list, i, d, redraw) { var j = i + d; if (j < 0 || j >= list.length) return; var t = list[i]; list[i] = list[j]; list[j] = t; mark(); redraw(); }
+  function cardHead(title, list, i, redraw) {
+    return h('h3', {}, title, h('span', { class: 'sp' }),
+      h('button', { class: 'small alt', type: 'button', text: '↑', on: { click: function () { move(list, i, -1, redraw); } } }),
+      h('button', { class: 'small alt', type: 'button', text: '↓', on: { click: function () { move(list, i, 1, redraw); } } }),
+      h('button', { class: 'small danger', type: 'button', text: 'Löschen', on: { click: function () { if (confirm('Wirklich löschen?')) { list.splice(i, 1); mark(); redraw(); } } } }));
+  }
+
+  /* ----- tabs ----- */
+  function viewTeam(app) {
+    app.append(h('p', { class: 'hint', text: 'Hier pflegst du die Mitglieder der Team-Seite. Das Englisch-Feld ist optional: ohne Eintrag bleibt der Text im EN-Modus deutsch.' }));
+    var box = h('div', {});
+    function draw() {
+      box.innerHTML = '';
+      if (!M.members.length) box.append(h('div', { class: 'empty', text: 'Noch keine Mitglieder.' }));
+      M.members.forEach(function (m, i) {
+        box.append(h('div', { class: 'card' },
+          cardHead('Mitglied ' + (i + 1) + (m.name ? ' – ' + m.name : ''), M.members, i, draw),
+          plain('Name', m, 'name'),
+          pair('Rolle (z. B. Gründer · Server-Admin)', m.role),
+          pair('Kurzbeschreibung (1–2 Sätze)', m.bio, { area: true }),
+          picker('Foto (Hochformat 4:5, z. B. 800×1000)', function () { return m.image; }, function (p) { m.image = p; }, 'team', function () { return m.name; }),
+          linkList(m.links)));
+      });
+    }
+    draw();
+    app.append(box, h('button', { type: 'button', text: '+ Mitglied hinzufügen', on: { click: function () { M.members.push({ name: '', role: T(''), bio: T(''), image: '', links: [] }); mark(); draw(); } } }));
+  }
+  function viewRoles(app) {
+    app.append(
+      h('div', { class: 'card' },
+        h('h3', { text: 'Wir suchen Verstärkung' }),
+        check('Wir suchen aktuell Verstärkung (zeigt die offenen Stellen und den Knopf „Wir suchen Verstärkung“)', M, 'recruiting'),
+        pair('Einleitung über den Stellen', M.recruitIntro, { area: true }),
+        pair('Text, wenn es keine offenen Stellen gibt', M.noRolesText, { area: true })));
+    var box = h('div', {});
+    function draw() {
+      box.innerHTML = '';
+      if (!M.openRoles.length) box.append(h('div', { class: 'empty', text: 'Keine offenen Stellen eingetragen.' }));
+      M.openRoles.forEach(function (r, i) {
+        var tagBox = h('div', {});
+        function drawTags() {
+          tagBox.innerHTML = '';
+          r.tags.forEach(function (t, k) {
+            tagBox.append(h('div', { class: 'row2', style: 'grid-template-columns:1fr 1fr auto' },
+              (function () { var x = h('input', { type: 'text', placeholder: 'Schlagwort (DE)' }); x.value = t.de; x.addEventListener('input', function () { t.de = x.value; mark(); }); return x; })(),
+              (function () { var x = h('input', { type: 'text', placeholder: 'English (optional)' }); x.value = t.en; x.addEventListener('input', function () { t.en = x.value; mark(); }); return x; })(),
+              h('button', { class: 'small danger', type: 'button', text: '✕', on: { click: function () { r.tags.splice(k, 1); mark(); drawTags(); } } })));
+          });
+          tagBox.append(h('button', { class: 'small alt', type: 'button', text: '+ Schlagwort', on: { click: function () { r.tags.push(T('')); mark(); drawTags(); } } }));
+        }
+        drawTags();
+        box.append(h('div', { class: 'card' },
+          cardHead('Stelle ' + (i + 1), M.openRoles, i, draw),
+          pair('Bezeichnung (z. B. Moderator)', r.title),
+          pair('Beschreibung', r.description, { area: true }),
+          h('div', { class: 'field' }, h('label', { text: 'Schlagwörter (z. B. Discord, Teilzeit)' }), tagBox)));
+      });
+    }
+    draw();
+    app.append(box, h('button', { type: 'button', text: '+ Stelle hinzufügen', on: { click: function () { M.openRoles.push({ title: T(''), description: T(''), tags: [] }); mark(); draw(); } } }));
+  }
+  function viewFeatured(app) {
+    app.append(h('p', { class: 'hint', text: 'Vorgestellte Künstler und Helfer für die Danksagungs-Seite: längerer Text, Zitat, bis zu 4 Bilder (das erste ist das große).' }));
+    var box = h('div', {});
+    function draw() {
+      box.innerHTML = '';
+      if (!M.featured.length) box.append(h('div', { class: 'empty', text: 'Noch keine vorgestellten Künstler.' }));
+      M.featured.forEach(function (f, i) {
+        var paras = h('div', {});
+        function drawParas() {
+          paras.innerHTML = '';
+          f.text.forEach(function (p, k) {
+            paras.append(pair('Absatz ' + (k + 1), p, { area: true }), h('button', { class: 'small danger', type: 'button', text: 'Absatz ' + (k + 1) + ' löschen', on: { click: function () { f.text.splice(k, 1); mark(); drawParas(); } } }));
+          });
+          paras.append(h('button', { class: 'small alt', type: 'button', text: '+ Absatz', on: { click: function () { f.text.push(T('')); mark(); drawParas(); } } }));
+        }
+        drawParas();
+        var pics = h('div', {});
+        for (var s = 0; s < 4; s++) (function (s) {
+          pics.append(picker(s === 0 ? 'Hauptbild' : 'Bild ' + (s + 1), function () { return f.images[s] || ''; }, function (p) { f.images[s] = p; f.images = f.images.slice(0, 4); }, 'featured', function () { return f.name; }));
+        })(s);
+        box.append(h('div', { class: 'card' },
+          cardHead('Eintrag ' + (i + 1) + (f.name ? ' – ' + f.name : ''), M.featured, i, draw),
+          plain('Name', f, 'name'),
+          pair('Überschrift über dem Namen (z. B. Vorgestellter Künstler)', f.kind),
+          pair('Wo (z. B. Im Spiel und auf der Website)', f.where),
+          pair('Rolle (z. B. Icons und Banner)', f.role),
+          h('div', { class: 'field' }, h('label', { text: 'Text' }), paras),
+          pair('Zitat (optional)', f.quote, { area: true, rows: 2 }),
+          pics, linkList(f.links)));
+      });
+    }
+    draw();
+    app.append(box, h('button', { type: 'button', text: '+ Künstler hinzufügen', on: { click: function () { M.featured.push({ id: '', name: '', kind: T('Vorgestellter Künstler'), where: T(''), role: T(''), text: [T('')], quote: T(''), images: [], links: [] }); mark(); draw(); } } }));
+  }
+  function viewThanks(app) {
+    app.append(h('p', { class: 'hint', text: 'Die einfache Namensliste („Danksagung“ auf der Startseite und „Und Dank an“ auf der Danksagungs-Seite).' }));
+    var box = h('div', {});
+    function draw() {
+      box.innerHTML = '';
+      M.thanks.forEach(function (p, i) {
+        var n = h('input', { type: 'text', placeholder: 'Name' }); n.value = p.name; n.addEventListener('input', function () { p.name = n.value; mark(); });
+        var r = h('input', { type: 'text', placeholder: 'Rolle (optional)' }); r.value = p.role.de; r.addEventListener('input', function () { p.role.de = r.value; mark(); });
+        var e = h('input', { type: 'text', placeholder: 'English (optional)' }); e.value = p.role.en; e.addEventListener('input', function () { p.role.en = e.value; mark(); });
+        box.append(h('div', { class: 'row2', style: 'grid-template-columns:1.2fr 1.2fr 1.2fr auto auto auto' }, n, r, e,
+          h('button', { class: 'small alt', type: 'button', text: '↑', on: { click: function () { move(M.thanks, i, -1, draw); } } }),
+          h('button', { class: 'small alt', type: 'button', text: '↓', on: { click: function () { move(M.thanks, i, 1, draw); } } }),
+          h('button', { class: 'small danger', type: 'button', text: '✕', on: { click: function () { M.thanks.splice(i, 1); mark(); draw(); } } })));
+      });
+      box.append(h('button', { type: 'button', text: '+ Name hinzufügen', on: { click: function () { M.thanks.push({ name: '', role: T('') }); mark(); draw(); } } }));
+    }
+    draw();
+    app.append(box);
+  }
+
+  var TABS = [['team', 'Mitglieder', viewTeam], ['roles', 'Offene Stellen', viewRoles], ['featured', 'Künstler (Danksagung)', viewFeatured], ['thanks', 'Namensliste', viewThanks]];
+  function render() {
+    var tabs = document.getElementById('tabs'), app = document.getElementById('app');
+    tabs.innerHTML = ''; app.innerHTML = '';
+    TABS.forEach(function (t) { tabs.append(h('button', { type: 'button', class: t[0] === tab ? 'on' : '', text: t[1], on: { click: function () { tab = t[0]; render(); } } })); });
+    TABS.filter(function (t) { return t[0] === tab; })[0][2](app);
+  }
+
+  /* ----- load / save ----- */
+  function build(s) {
+    var t = s.team || {};
+    M = {
+      recruiting: !!t.recruiting, recruitIntro: T(t.recruitIntro), noRolesText: T(t.noRolesText),
+      members: (t.members || []).map(function (m) { return { name: m.name || '', role: T(m.role), bio: T(m.bio), image: m.image || '', links: (m.links || []).map(function (l) { return { label: l.label || '', url: l.url || '' }; }) }; }),
+      openRoles: (t.openRoles || []).map(function (r) { return { title: T(r.title), description: T(r.description), tags: (r.tags || []).map(T) }; }),
+      featured: (s.featured || []).map(function (f) { return { id: f.id || '', name: f.name || '', kind: T(f.kind), where: T(f.where), role: T(f.role), text: (f.text || []).map(T), quote: T(f.quote), images: (f.images || []).slice(), links: (f.links || []).map(function (l) { return { label: l.label || '', url: l.url || '' }; }) }; }),
+      thanks: (s.thanks || []).map(function (p) { return { name: p.name || '', role: T(p.role) }; }),
+    };
+  }
+  function collect() {
+    var en = {};
+    function v(t) { var de = (t.de || '').trim(); if (de && (t.en || '').trim()) en[norm(de)] = t.en.trim(); return de; }
+    var team = {
+      recruiting: M.recruiting, recruitIntro: v(M.recruitIntro), noRolesText: v(M.noRolesText),
+      members: M.members.map(function (m) { return { name: m.name.trim(), role: v(m.role), bio: v(m.bio), image: m.image, links: m.links.filter(function (l) { return l.url.trim(); }) }; }),
+      openRoles: M.openRoles.map(function (r) { return { title: v(r.title), description: v(r.description), tags: r.tags.map(v).filter(Boolean) }; }),
+    };
+    var featured = M.featured.map(function (f) { return { id: f.id, name: f.name.trim(), kind: v(f.kind), where: v(f.where), role: v(f.role), text: f.text.map(v).filter(Boolean), quote: v(f.quote), images: f.images.filter(Boolean), links: f.links.filter(function (l) { return l.url.trim(); }) }; });
+    var thanks = M.thanks.map(function (p) { return { name: p.name.trim(), role: v(p.role) }; });
+    return { team: team, featured: featured, thanks: thanks, en: en };
+  }
+  function save() {
+    say('Speichere …');
+    fetch('/__edit/api/save', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Editor-Token': TOKEN }, body: JSON.stringify(collect()) })
+      .then(function (r) { return r.json().then(function (j) { if (!r.ok) throw new Error(j.error || r.status); return j; }); })
+      .then(function (j) { dirty = false; say('Gespeichert ✓  (Sicherung: ' + j.backup + ') – jetzt „cf.cmd deploy“ ausführen, damit es online geht.', 'ok'); })
+      .catch(function (e) { say('Fehler: ' + e.message, 'err'); });
+  }
+  document.getElementById('save').addEventListener('click', save);
+  document.addEventListener('keydown', function (e) { if ((e.ctrlKey || e.metaKey) && e.key === 's') { e.preventDefault(); save(); } });
+  window.addEventListener('beforeunload', function (e) { if (dirty) { e.preventDefault(); e.returnValue = ''; } });
+
+  fetch('/__edit/api/state', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (s) {
+    TOKEN = s.token; DICT = {}; Object.keys(s.dict || {}).forEach(function (k) { DICT[norm(k)] = s.dict[k]; });
+    build(s); say('Bereit', ''); render();
+  }).catch(function (e) { say('Konnte die Daten nicht laden: ' + e.message + ' (läuft „node tools/editor.mjs“?)', 'err'); });
+})();
+</script>
+</body>
+</html>
