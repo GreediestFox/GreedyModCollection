@@ -1,0 +1,9 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "die-wulpischen-lande-status",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-06",
+  "workers_dev": false,
+  "routes": [{ "pattern": "status.wulpischelande.de", "custom_domain": true }],
+  "observability": { "enabled": true }
+}
