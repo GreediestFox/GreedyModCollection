@@ -39,3 +39,13 @@ nav.sidebar a[aria-current='page'] { background: var(--sl-color-accent-low); col
   --sl-color-blue: #c0392b;
   --sl-color-blue-high: #f0a24a;
 }
+
+/* Lore pictures (since 2026-11-14): centred, never taller than a screen part, slight frame */
+.sl-markdown-content p > img { display: block; margin: 1.6rem auto; max-width: 100%; max-height: 30rem; width: auto; height: auto; border: 1px solid var(--sl-color-hairline-light); border-radius: 2px; }
+
+/* PvP rules: nested numbered outline 1., 1.1, 1.1.1 (the rules refer to numbers like 4 or 5.8.2) */
+.sl-markdown-content ol.legal, .sl-markdown-content ol.legal ol { list-style: none; counter-reset: legal; padding-inline-start: 0; margin-inline-start: 0; }
+.sl-markdown-content ol.legal ol { padding-inline-start: 1.6rem; margin-top: .4rem; }
+.sl-markdown-content ol.legal li { counter-increment: legal; margin-block: .45rem; }
+.sl-markdown-content ol.legal li::before { content: counters(legal, ".") ". "; font-weight: 700; color: var(--sl-color-text-accent); }
+.sl-markdown-content ol.legal > li > strong:first-child { font-family: var(--wiki-head); font-size: 1.15em; }

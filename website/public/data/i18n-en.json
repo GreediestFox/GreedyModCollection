@@ -11,6 +11,13 @@
   "Rezepte": "Recipes",
   "Beitreten": "Join",
   "Wiki": "Wiki",
+  "Server": "Server",
+  "Infos": "Info",
+  "Server-Informationen": "Server information",
+  "Adresse": "Address",
+  "Vote für den Server": "Vote for the server",
+  "Live-Daten von": "Live data from",
+  "Regeln, Konzept und die Geschichte von Myralon.": "Rules, concept and the story of Myralon.",
   "Team": "Team",
   "Dank": "Thanks",
   "Forum": "Forum",
@@ -188,7 +195,12 @@
   "Rezepte:": "Recipes:",
   "Rezepte · Life is Feudal: Your Own · Die wulpischen Lande": "recipes · Life is Feudal: Your Own · Die wulpischen Lande",
   "Alle Rezepte der Fertigkeit": "All recipes of the skill",
-  "auf unserem Server, sortiert nach Fertigkeitsstufe.": "on our server, sorted by skill level."
+  "auf unserem Server, sortiert nach Fertigkeitsstufe.": "on our server, sorted by skill level.",
+  "Community Interaktionen Discord Admin & Support Konzeptentwickler": "Community interactions\nDiscord admin & support\nConcept Design",
+  "In-game Eventmanager Questdesigner": "In-game event manager\nQuest designer",
+  "Data Quality Manager": "Data Quality Manager",
+  "Data Quality Manager Testen & Bug fixen Support": "Data Quality Manager\nTesting & Bug fixing\nSupport",
+  "Website & Patcher Entwickler": "Website & Patcher Developer"
  },
  "patterns": [
   {

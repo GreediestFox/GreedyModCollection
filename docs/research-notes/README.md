@@ -46,3 +46,4 @@ Offsets (RVAs) refer to one specific Steam build of the YO dedicated server and 
 - [38 Equipment rules (armor, ammo, hip slots) and the files a release was still missing](38-equipment-rules-missing-release-files.md)
 - [39 Patcher 1.1.0 (signed manifests, self-update) and releases 1.0.127-1.0.129](39-patcher-1-1-0-signed-manifests-releases-1127-1129.md)
 - [40 Website: Forum button became Rezepte, recipe book moved to a subdomain](40-website-rezepte-subdomain.md)
+- [41 Website and wiki: new documents, live server status, vote button](41-website-wiki-status-helper.md)

@@ -1,103 +1,117 @@
 ---
 title: Serverkonzept
-description: Strukturen der Insel, veränderte Spielinhalte, Claims, Werkstätten, Herrschaftsgebiete und Nacht-KoS auf Myralon.
+description: Die Welt, die Insel Myralon, Handel, Werkstätten, PvP, Herrschaftsgebiete sowie Quests und Events auf dem Server der wulpischen Lande.
 ---
 
-:::note[Work in Progress]
-Das Konzept ist noch in Arbeit, Details können angepasst werden. Dieser Stand enthält das Update nach den Community-Umfragen.
-:::
+## Die Welt
 
-## Strukturen auf der Insel
+Wir spielen in den wulpischen Landen und dort auf der Insel Myralon, die in einer Meerenge zwischen zwei Kontinenten liegt (siehe hierzu auch die [Lore](/lore/)).
 
-### Der Händler und der Hafen
+Es handelt sich um ein fiktives Framework mit ausgearbeiteten Gebieten, Landstrichen, Völkern und auch einer Vorgeschichte. Grundsätzlich ist es möglich, dass eure Charaktere ursprünglich von außerhalb dieser Welt stammen und dass ihre Herkunft auch an unsere reale Welt angelehnt ist. Allerdings zählen Gebiete außerhalb des gesetzten Frameworks nicht zu gemeinhin bekanntem Wissen. Ihr solltet also nicht damit rechnen, dass irgendjemand darüber Bescheid weiß.
 
-- An- und Verkauf von Waren von und für das Festland
-- Rollenspielerischer Akteur für die globale Questreihe
-- Ort mit den meisten NPC-Quests
+## Die Insel Myralon
 
-### Die Burgruine
+Die Insel gehört zwar zu den wulpischen Landen, sie ist aber keinem der drei Reiche (Nordmar, Mesyrna, Valesos) des Kontinents explizit zugehörig. Zum Start des Servers befindet sich die Insel in einem Status der Neubesiedelung, nachdem sie lange Zeit überwiegend unbewohnt war.
 
-- PvP-KoS-Zone (tagsüber und nachts)
-- Bestimmte Quests schicken Spieler dorthin
-- Loot-Events
-- Teilweise von GMs gespielte Charaktere vor Ort
+Bei eurer Ankunft gibt es allerdings ein paar bereits vorhandene Strukturen.
 
-## Veränderte und neue Spielinhalte
+### Die Hafenstadt und der Händler
 
-### Marktsättigung verringern und verzögern
+Der Händler Lutero hat auf eigene Faust eine Siedlung auf Myralon errichten lassen und Kunde in alle Ecken der wulpischen Lande tragen lassen, dass jeder Freiherr, Handwerker, landlose Ritter oder Vertriebene willkommen sei, hier sein Glück zu finden. Natürlich würde das Ganze auch für ihn seinen Nutzen bringen.
 
-- Pro Spieler ist nur ein Charakter erlaubt.
-- Nahrungsmittel verderben.
-- Rüstungen sind nur mit Ausrüstungswartung an der Werkbank reparierbar.
-- Waffen und Werkzeuge sind nicht mehr reparierbar.
-- Die Stahlkosten für Vostaskus werden um ⅔ reduziert.
-- Die Flussmittelkosten für Stahl werden auf 10 pro Barren reduziert.
-- Werkstätten (Schmiede, Küche, Schreinerei, Apotheke) sind erst später und dann nur begrenzt verfügbar.
-- Gewisse Items sind nur an Werkstätten herstellbar, zum Beispiel Metallrüstungen an der Schmiede, verstärkte Stäbe an der Schreinerei sowie 4er- und 5er-Essen an der Küche.
+**Funktion von Lutero und seiner Hafenstadt:**
 
-### Globale Questreihe
+- Ankauf von Spielerwaren für das Festland
+- Verkauf von Festlandwaren an die Spieler
+- Rollenspielerisch der einzige Verbindungspunkt zum Kontinent
+- Akteur einer globalen Questreihe, die zur Freischaltung gewisser Spielinhalte notwendig ist, welche dann bei Lutero im Handelsposten gekauft werden können
+- Ort mit den meisten NPCs, die euch sowohl mit Quests und Belohnungen versorgen als auch Lore-Informationen bereithalten
+- Zu Anfang des Servers werden an Luteros Handelsposten auch einige alltägliche Gegenstände zu kaufen sein (Metallwaren, Essen, Holzarbeiten und vieles mehr). Dieses Angebot soll später von Spielerclaims übernommen werden, und Lutero lässt diese Waren dann nicht mehr vom Festland liefern.
 
-Die Questreihe wird im Discord angekündigt und bei Bedarf vom Händler bespielt. Sie motiviert alle Spieler gleichzeitig, ein bestimmtes Ziel zu verfolgen, um gewisse Spielfortschritte freizuschalten, zum Beispiel Werkstatt-Tokens.
+### Die Burgruine und die Halunken
 
-### NPC-Quests
+Die Burgruine steht auf der kleinen Teilinsel im Osten von Myralon und wird immer wieder von Halunken (zumeist Seeräubern) für kürzere oder längere Zeit als Unterschlupf genutzt.
 
-- Handwerksmeister (Hafen): Skillpunkte
-- Hafenmeister (Hafen): Quest für das Starterpaket
-- und vieles mehr
+**Funktion der Burgruine:**
 
-### Skillcap und Tageslänge
+- dauerhafte KoS-Zone
+- Es wird NPC-Quests wie auch Events geben, die erfordern, diese Insel zu betreten.
+- Es wird Loot-Events geben, bei denen zum Beispiel zurückgelassene oder versteckte Gegenstände von Halunken gefunden werden können.
+- teilweise von GMs gespielte Charaktere vor Ort
 
-Nach den Community-Umfragen gilt:
+## Konzeptionelle Mechaniken
 
-- **Skillcap für Handwerk:** 800 Punkte
-- **Ingame-Tageslänge:** 5 Stunden in echter Zeit
+### Handel
 
-## Claims
+- Der Skillcap von 800 Punkten erfordert vermehrt Handel zwischen den Spielern.
+- Das Angebot des Servermarktes soll in sinnvoller Weise von Spielerclaims über deren eigene Handelsposten übernommen werden, sobald diese Waren von den Claims selbst hergestellt werden können.
+- Die Herstellung vieler Gegenstände setzt eine besondere Werkstatt voraus (Schmiede, Küche, Schreinerei, Apotheke, Schneiderei, Juwelierswerkstatt). Der Bau dieser Werkstätten wird nur limitiert möglich sein, sodass auch größere Gruppen auf die Hilfe von anderen Claims angewiesen sind, wenn sie wirklich alle Bereiche des Spiels nutzen möchten. Gleichzeitig haben wir uns bemüht, jede Werkstatt auf ihre Art attraktiv zu machen, sodass die Wahl der Werkstatt nicht ganz so leicht fallen dürfte.
 
-- Monumente müssen mit Münzen gefüttert werden.
-- Angemeldete Abwesenheit friert den Stand der Unterhaltspunkte ein.
-- Claim-Stufen haben Bedingungen und teils veränderte Größen. Die Verteidigungsanlagen und die Zahl der erlaubten Werkstätten hängen von der Claim-Stufe ab:
+### Marktsättigung verhindern oder verzögern
 
-| Stufe | Radius (Kacheln) | Bedingung | Verteidigung | Werkstätten |
-|---|---|---|---|---|
-| 1 | 20 | 1 Spieler | Palisade | 0 |
-| 2 | 30 | 2 Spieler | Palisade mit Wehrgang | 1 |
-| 3 | 40 | 3 Spieler | Palisade mit Wehrgang | 1 |
-| 4 | 55 | 4 Spieler | Steinmauern | 2 |
-| 5 | 75 | 6 Spieler + Gebietshauptstadt | Burgmauern | 3 |
+- Lebensmittel verderben mit der Zeit.
+- Waffen und Werkzeuge können nicht mehr repariert, sondern nur noch gewartet werden und verlieren dabei an maximaler Haltbarkeit.
 
-Damit auch kleinere Claims mehr Möglichkeiten für die Gestaltung haben, wurde der Radius der ersten vier Stufen um jeweils 5 Kacheln erhöht.
+### Werkstätten
 
-## Werkstätten
+**Schmiede**
 
-Zu den Werkstätten zählen Schmiede, Küche, Schreinerei und Apotheke.
+- gibt einen Qualitätsbonus auf alle Schmiedeerzeugnisse
+- wird benötigt, um Draht, Kettenglieder, Schuppen, kleine Metallplatten und Metallplatten für die Rüstungsherstellung herzustellen
 
-- **Werkstatt-Tokens** sind die Items, die zum Aufbau der Werkstätten nötig sind. Eine begrenzte Anzahl ist über die Homepage kaufbar, zusätzliche Tokens gibt es beim Händler im Rollenspiel.
-- Folglich wird nicht jeder Claim jede Werkstatt bauen können.
-- **Für Einzelspieler:** Sobald die Werkstätten über die globale Quest freigeschaltet wurden, gibt es kurz darauf in der Hafenstadt Werkstätten, die Einzelspieler, die **keinem** Herrschaftsgebiet angehören, gegen eine Gebühr bei einem NPC nutzen können. Das Nutzungsrecht ist zeitlich begrenzt, kann aber immer wieder erworben werden.
+**Schreinerei**
 
-## Herrschaftsgebiet
+- gibt einen Qualitätsbonus auf alle Schreinererzeugnisse
+- wird benötigt, um Holzschäfte, gerade Stäbe und Tormodule herzustellen. Holzschäfte und gerade Stäbe werden für diverse Waffen benötigt.
 
-Jeder kann auf der Insel ein Herrschaftsgebiet gründen, wenn Folgendes erfüllt ist:
+**Küche**
 
-- Es umfasst mindestens **3 Claims**.
-- Die Gebietshauptstadt hat mindestens **Claim-Stufe 3**.
-- Es hat mindestens **6 Einwohner**, verteilt über alle Claims.
+- gibt einen Qualitätsbonus auf alle Kocherzeugnisse
+- wird benötigt, um 4er- und 5er-Essen herzustellen
 
-Vorteile:
+**Apotheke**
 
-- Die Gebietshauptstadt darf eine zusätzliche Werkstatt bauen.
-- Die Gebietshauptstadt bekommt ihr Wappen ingame als Schild zum Aufhängen.
+- gibt einen Qualitätsbonus auf alle alchemistischen Erzeugnisse
+- verdoppelt die Menge der hergestellten Materialien (zum Beispiel ergeben 2 Flussmittelkräuter hier auch 2 Flussmittel)
 
-## KoS bei Nacht
+**Schneiderei**
 
-Zusätzlich zur PvP-Zone (dort gilt tagsüber und nachts KoS) gibt es nachts KoS auf dem Server, mit diesen Einschränkungen:
+- gibt einen Qualitätsbonus auf alle Schneidererzeugnisse
+- wird benötigt, um schwere oder edle gepolsterte sowie schwere oder edle Lederrüstungen herzustellen
+- wird zur Herstellung exklusiver Kleidung und der meisterlichen Handwerkskleidung benötigt
 
-- KoS gilt nur im Zeitfenster der **vollkommenen Dunkelheit**. Die genauen Ingame-Uhrzeiten werden zum Serverstart bekannt gegeben.
-- KoS ist nur **außerhalb von Claimgebieten** erlaubt. Dabei ist es egal, ob es der eigene oder ein fremder Claim ist.
-- Rettet sich jemand in der Nacht in seinen Claim, ist das KoS für diese Situation vorbei. Eine zuvor begonnene KoS-PvP-Handlung darf dann nicht fortgesetzt werden.
-- Wer eine **Fackel trägt und** sich auf einer **Straße** befindet, darf nicht im Sinne von KoS angegriffen werden.
+**Juwelierswerkstatt**
 
-:::tip[Wichtig]
-Bei Nacht kann man auf dem eigenen Claim oder auf der Straße mit Fackel trotzdem rollenspielkonform überfallen werden.
-:::
+- gibt einen Qualitätsbonus auf alle hergestellten Schmuckstücke
+- wird benötigt, um Ringe und Amulette mit Edelsteinen herzustellen
+- Ringe und Amulette mit Edelsteinen geben nun dauerhafte Attributbuffs auf Stärke, Beweglichkeit, Vitalität und/oder Willenskraft, solange sie ausgerüstet sind.
+
+### PvP
+
+- Dauerhafte KoS-Zone sowie Nacht-KoS sollen mehr Möglichkeiten für RP-freudige Spieler bieten.
+- Neue Belagerungsmöglichkeiten (zum Beispiel Leitern und Belagerungsturm) sollen Belagerungen besser bespielbar und attraktiver machen.
+- Die volle Looterlaubnis von besiegten Spielern soll zum einen einen Sieg belohnender machen, zum anderen durch die Angst, das zu verlieren, was man bei sich hat, mehr Spannung in Kämpfe bringen.
+- **Balancing**
+  - Rüstungen haben keine Buffs mehr. Zum einen wird so der ohnehin schon absurd hohe Schadensoutput einiger Waffen reduziert, zum anderen soll die Wahl der Waffe nicht auch automatisch die Rüstungswahl festlegen oder umgekehrt.
+  - Der Attributspool wird durch Ringe und Amulette mit Edelsteinen vergrößert.
+
+### Herrschaftsgebiete
+
+Herrschaftsgebiete sind Zusammenschlüsse von 3 oder mehr Claims, die ein Gebiet auf der Insel beanspruchen (genaue Bedingungen zur Gründung und Vorteile siehe [Regelwerk](/rules/)).
+
+Wenn ein Herrschaftsgebiet gegründet wurde, gibt es 2 Wege, es darüber hinaus zu erweitern:
+
+1. **Diplomatie:** Einigung im RP mit weiteren Claims (zum Beispiel durch ein beiderseitiges Abkommen).
+2. **Eroberung:** Es wird eine Belagerung per Ticket angemeldet, und eines der beiden angegebenen Ziele lautet „Vasallentum“. Ist die Belagerung dann erfolgreich, wird der angegriffene Claim in das Herrschaftsgebiet gezwungen. (Wichtig: Eroberung kann nur zur Erweiterung eines schon bestehenden Herrschaftsgebietes genutzt werden, nicht zur Gründung eines neuen.)
+
+Ist ein Claim einmal Teil eines Herrschaftsgebietes, gibt es verschiedene Wege, aus diesem wieder herauszukommen:
+
+1. **Auflösung:** Die Gebietshauptstadt löst das Herrschaftsgebiet auf.
+2. **Diplomatie:** Einigung im RP, dass man sich mit seiner Siedlung aus diesem Herrschaftsgebiet lösen möchte (zum Beispiel gegen eine Zahlung oder zukünftige Verpflichtungen).
+3. **Rebellion:** Der Claim oder die Claims führen eine Rebellion gegen den Herrscherclaim in Form einer Belagerung der Hauptstadt. Hierbei können die Rebellen Unterstützung von Parteien außerhalb des Herrschaftsgebietes bekommen.
+
+### Quests und Events
+
+- Es wird eine globale Questreihe geben, an der alle Spieler gleichzeitig mitwirken können.
+- Es wird diverse NPC-Quests geben, die sowohl der Welt mehr Tiefe als auch attraktive Belohnungen bringen sollen.
+- Es wird verschiedene Events geben, um das RP-Geschehen auf dem Server anzukurbeln.

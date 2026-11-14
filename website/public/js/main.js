@@ -165,16 +165,17 @@
     if (s === 'unknown') {   // no status data could be read at all: do not claim online or offline
       pill.className = 'status-pill';
       $('span', pill).textContent = 'Status unbekannt';
-      $('#stState').textContent = 'Unbekannt';
+      $('#stState').textContent = 'Unbekannt'; $('#stState').className = '';
       $('#stPlayers').textContent = '—'; $('#stVersion').textContent = '—'; $('#stUpdated').textContent = '—';
       return;
     }
     var online = !!(s && s.online);
     pill.className = 'status-pill ' + (online ? 'online' : 'offline');
     $('span', pill).textContent = online ? 'Online · ' + s.players + (s.max ? '/' + s.max : '') + ' Spieler' : 'Offline';
-    $('#stState').textContent = online ? 'Online' : 'Offline';
+    $('#stState').textContent = online ? 'Online' : 'Offline'; $('#stState').className = online ? 'ok' : 'bad';   // green / red
     $('#stPlayers').textContent = online ? s.players + (s.max ? ' / ' + s.max : '') : '—';
     $('#stVersion').textContent = (s && s.version) || '—';
+    if (s && s.address && $('#stAddress')) $('#stAddress').textContent = s.address;   // live address from the server listing (links.json has a fixed fallback)
     $('#stUpdated').textContent = s && s.updated ? new Date(s.updated).toLocaleString(document.documentElement.lang === 'en' ? 'en-GB' : 'de-AT') : '—';
   }
   // the status file comes from links.json ("status": address of the file the status updater uploads); fallback: data/status.json

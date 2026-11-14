@@ -2,7 +2,9 @@
   "discord": "https://discord.gg/E6PrsCYV4x",
   "rezepte": "https://rezepte.wulpischelande.de",
   "patcher": "https://pub-23d5a23dd23640eaa704c9caa9ad4cf1.r2.dev/download/GMC-Patcher.zip",
-  "status": "https://pub-23d5a23dd23640eaa704c9caa9ad4cf1.r2.dev/status.json",
+  "status": "https://status.wulpischelande.de/",
+  "serverAddress": "45.155.173.134:28000",
+  "vote": "https://life-is-feudal.org/server/25594/vote/",
   "wiki": "https://wiki.wulpischelande.de",
   "paypal": "https://paypal.me/WulpischeLandeServer"
 }

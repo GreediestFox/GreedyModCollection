@@ -11,8 +11,9 @@ This is a **source-only copy**. Deliberately not included (public repository):
 - `public/` - the main site (index, team, thanks, `css/`, `js/`, `data/*.json`, `_redirects`, `sitemap.xml`)
 - `tools/` - local helpers: team editor, admin overlay, maintenance switch, server status updater, recipe generator (`tools/recipes`)
 - `wiki/` - the wiki sources (German root + `/en/`); built by `Wiki-veroeffentlichen.bat` into `wiki-publish/public`
-- `wiki-publish/`, `rezepte-publish/` - deploy folders with their `cloudflare.config.ts`
-- `*.bat` - publish helpers (`cf.cmd deploy`); run `Rezepte-veroeffentlichen.bat` first, then `Website-veroeffentlichen.bat`
+- `wiki-publish/`, `rezepte-publish/` - deploy folders with their `cloudflare.config.ts` (the wiki is built into `wiki-publish/public`, which is not part of this copy)
+- `status-worker/` - small Cloudflare Worker (`status.wulpischelande.de`) that reads the public server listing on life-is-feudal.org and returns address, online state, players and version for the status card (`wrangler.jsonc`, deployed with wrangler, not with `cf`)
+- `*.bat` - publish helpers (`cf.cmd deploy`, for the status helper `wrangler deploy`); order: `Wiki-veroeffentlichen.bat`, `Rezepte-veroeffentlichen.bat` / `Status-Helfer-veroeffentlichen.bat`, then `Website-veroeffentlichen.bat`
 
 ## Recipes
 The recipe book moved to the subdomain `rezepte.wulpischelande.de` (placeholder for now). `public/_redirects` sends the old `/rezepte/...` addresses there.

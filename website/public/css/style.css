@@ -112,15 +112,13 @@ h2::after{content:"";display:block;width:90px;height:2px;margin:.8rem auto 0;bac
 .news p{margin:0;color:#cfc6b6;font-size:1.05rem}
 
 /* ---------- world ---------- */
-.world-grid{display:grid;grid-template-columns:1fr 1.4fr;grid-template-rows:auto auto;gap:1.5rem}
+.world-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}   /* three boxes side by side, all portrait */
 .world-grid figure{margin:0;position:relative}
-.world-grid .tall{grid-row:span 2}
-.world-grid .tall .slot{min-height:520px;height:100%}
-.world-grid .wide .slot{min-height:250px}
+.world-grid .tall .slot,.world-grid .wide .slot{min-height:540px;height:100%}
 .world-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem 1.2rem 1rem;background:linear-gradient(#0000,#000d);display:flex;flex-direction:column;pointer-events:none}
 .world-grid figcaption b{font-family:var(--head);font-size:1.6rem}
 .world-grid figcaption span{color:#d0c8b8;font-size:1rem}
-@media(max-width:760px){.world-grid{grid-template-columns:1fr}.world-grid .tall{grid-row:auto}.world-grid .tall .slot{min-height:340px}}
+@media(max-width:900px){.world-grid{grid-template-columns:1fr}}
 
 /* ---------- gallery ---------- */
 .gallery{columns:3 260px;column-gap:1rem}
@@ -155,11 +153,26 @@ h2::after{content:"";display:block;width:90px;height:2px;margin:.8rem auto 0;bac
 .card:hover{border-color:var(--accent);transform:translateY(-3px)}
 .card b{font-family:var(--head);font-size:1.5rem}
 .card span{color:#c3cab8;font-size:1rem}
-.status-card{margin-top:3rem;padding:1.5rem;background:#050304cc;border:1px solid var(--accent)}
-.status-card h3{font-family:var(--head);margin:0 0 1rem;font-size:1.7rem;letter-spacing:.08em}
-.status-card dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:0}
-.status-card dt{font-family:var(--sc);color:var(--muted);font-size:.9rem;letter-spacing:.1em}
-.status-card dd{margin:0;font-family:var(--head);font-size:1.6rem}
+.status-card{margin-top:2rem;padding:1.1rem 1.4rem 1.2rem;background:#050304cc;border:1px solid var(--accent)}
+.status-card h3{font-family:var(--head);margin:0 0 .7rem;font-size:1.5rem;letter-spacing:.08em}
+/* compact: wide address, big state + players, small version + update time */
+.status-card dl{display:grid;grid-template-columns:minmax(0,2.7fr) minmax(0,1.35fr) minmax(0,1.35fr) minmax(0,.75fr) minmax(0,1.1fr);gap:.7rem 1.4rem;margin:0;align-items:start}
+.status-card dt{font-family:var(--sc);color:var(--muted);font-size:.8rem;letter-spacing:.1em}
+.status-card dd{margin:0;font-family:var(--head);font-size:.85rem;line-height:1.2}
+.status-card dd#stAddress{font-size:2rem;line-height:1.1;overflow-wrap:anywhere;user-select:all}
+.status-card dd#stState,.status-card dd#stPlayers{font-size:2.3rem;line-height:1.05}
+.status-card dd#stState.ok{color:#5fd37a}
+.status-card dd#stState.bad{color:#f26457}
+.status-card dd#stVersion,.status-card dd#stUpdated{font-size:.8rem}
+.status-foot{display:flex;align-items:center;flex-wrap:wrap;gap:.6rem 1.2rem;margin-top:.9rem}
+.status-foot .btn{padding:.5rem 1.2rem;font-size:.95rem}
+.status-src{margin:0;font-size:.9rem}
+@media(max-width:760px){
+  .status-card dl{grid-template-columns:1fr 1fr}
+  .status-card dl>div:first-child{grid-column:1/-1}
+  .status-card dd#stAddress{font-size:1.5rem}
+  .status-card dd#stState,.status-card dd#stPlayers{font-size:1.8rem}
+}
 
 /* ---------- thanks ---------- */
 .thanks{list-style:none;padding:0;margin:0 auto;max-width:760px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.4rem 2rem}
@@ -218,11 +231,11 @@ html.pics{--img-insel:url(../assets/img/insel.webp);--img-beitreten:url(../asset
 /* pictures inside "Die Insel" */
 .world-grid .slot img{object-fit:contain}
 .world-grid .tall .slot.has-img{background:#0e0c0a}                 /* recipe window: whole window, dark UI background */
-.world-grid figure:nth-of-type(2) .slot img{object-fit:cover;object-position:50% 18%}   /* building */
-.world-grid figure:nth-of-type(3) .slot.has-img{background:#0d275a}  /* map: ocean blue */
-.world-grid figure:nth-of-type(3) .slot img{box-sizing:border-box;padding:.15rem}  /* smaller map, clear of the caption */
+.world-grid figure:nth-of-type(2) .slot img{object-fit:cover;object-position:66% 50%}   /* building: the church tower sits right of the middle of the wide picture */
+.world-grid figure:nth-of-type(3) .slot.has-img{background:#142c66}  /* map: ocean blue of the new map */
+.world-grid figure:nth-of-type(3) .slot img{box-sizing:border-box;padding:.15rem;object-position:50% 30%}  /* square map in the upper part, clear of the caption */
 .world-grid .tall .slot img{object-position:50% 0}   /* recipe window sits at the very top, no black bar above it */
 
 
 /* phone: taller recipe box so the whole recipe window shows above its caption */
-@media(max-width:760px){.world-grid .tall .slot{min-height:470px}}
+@media(max-width:900px){.world-grid .tall .slot,.world-grid .wide .slot{min-height:470px}}

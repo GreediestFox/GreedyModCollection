@@ -41,7 +41,7 @@
     <a href="#world">Insel</a>
     <a href="#gallery">Galerie</a>
     <a href="#join">Beitreten</a>
-    <a href="#" class="nav-btn" data-link="wiki" target="_blank" rel="noopener" hidden>Wiki</a>
+    <a href="#" class="nav-btn nav-btn-2" data-link="wiki" target="_blank" rel="noopener" hidden><span>Server</span><span>Infos</span></a>
     <a href="team.html" class="nav-btn">Team</a>
     <a href="thanks.html" class="nav-btn">Dank</a>
     <a href="https://rezepte.wulpischelande.de" class="nav-cta" data-link="rezepte" target="_blank" rel="noopener">Rezepte</a>
@@ -113,7 +113,7 @@
       </ol>
       <div class="join-cards">
         <a class="card" href="#" data-link="wiki" data-path="/install/" hidden><b>Installationsanleitung</b><span>Schritt für Schritt, mit Screenshots.</span></a>
-        <a class="card" href="#" data-link="wiki" hidden><b>Wiki</b><span>Serverregeln und die Geschichte von Myralon.</span></a>
+        <a class="card" href="#" data-link="wiki" hidden><b>Server-Informationen</b><span>Regeln, Konzept und die Geschichte von Myralon.</span></a>
         <a class="card" href="https://rezepte.wulpischelande.de" data-link="rezepte" target="_blank" rel="noopener"><b>Rezepte</b><span>Alle Rezepte an einem Ort – bald online.</span></a>
       </div>
       <!-- shown only when data/links.json has a "patcher" download address -->
@@ -130,11 +130,16 @@
       <div class="status-card" id="statusCard">
         <h3>Server-Status</h3>
         <dl>
+          <div><dt>Adresse</dt><dd id="stAddress" data-text="serverAddress">—</dd></div>
           <div><dt>Zustand</dt><dd id="stState">—</dd></div>
           <div><dt>Spieler</dt><dd id="stPlayers">—</dd></div>
           <div><dt>Version</dt><dd id="stVersion">—</dd></div>
           <div><dt>Aktualisiert</dt><dd id="stUpdated">—</dd></div>
         </dl>
+        <div class="status-foot">
+          <a class="btn btn-solid" href="https://life-is-feudal.org/server/25594/vote/" data-link="vote" target="_blank" rel="noopener">Vote für den Server</a>
+          <p class="muted status-src">Live-Daten von <a href="https://life-is-feudal.org/server/25594/" target="_blank" rel="noopener">life-is-feudal.org</a></p>
+        </div>
       </div>
     </div>
   </section>
